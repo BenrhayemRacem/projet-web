@@ -1,0 +1,34 @@
+#imageProf1{
+    display: block;
+    animation : left-to-right 1s forwards ;
+    margin-top: 20px;
+}
+#imageProf2 {
+    display: block;
+    margin-top: 20px;
+}
+#imageProf3 {
+    display: block;
+    margin-top: 20px;
+}
+#imageProf4{
+    display: block;
+    margin-top: 20px;
+    animation : right-to-left 1s forwards ;
+}
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes right-to-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

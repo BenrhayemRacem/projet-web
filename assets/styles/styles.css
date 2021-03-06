@@ -32,3 +32,70 @@
         transform: translateX(-100%);
     }
 }
+
+@keyframes lets-move {
+    0% {
+        transform: (translateX(0));
+
+    }
+    33% {
+        transform: translateY(100%);
+    }
+    66% {
+        transform: translateX(175%);
+       
+    }
+    100% {
+        transform: translateY(0%);
+    } 
+}
+    @keyframes lets-move-backwards {
+        0% {
+            transform: (translateX(0));
+    
+        }
+        33% {
+            transform: translateY(100%);
+        }
+        66% {
+            transform: translateX(-175%);
+           
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    #about-us img {
+        
+        margin-top: 20px;
+        width: 75%;
+        height: 75%;
+        animation-iteration-count: infinite;
+    }
+    #imageArt ,  #imageSciences ,#imageInformatique ,#imageMath {
+        display: block;
+    }
+
+    #imageArt , #imageSciences  , #imageSecurity ,#imageBook {
+       
+        animation :  lets-move 5s forwards ;
+        
+    }
+
+
+
+#imageInformatique ,#imageMath  , #imageMecanqiue , #imageSolfege{
+   
+    animation :  lets-move-backwards 5s forwards ;
+    
+}
+
+
+
+#imageBook , #imageSolfege , #imageSecurity ,  #imageMecanqiue{
+    display: none;
+    
+   
+}
+

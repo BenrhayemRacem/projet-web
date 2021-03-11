@@ -1,101 +1,91 @@
-#imageProf1{
-    display: block;
-    animation : left-to-right 1s forwards ;
-    margin-top: 20px;
-}
-#imageProf2 {
-    display: block;
-    margin-top: 20px;
-}
-#imageProf3 {
-    display: block;
-    margin-top: 20px;
-}
-#imageProf4{
-    display: block;
-    margin-top: 20px;
-    animation : right-to-left 1s forwards ;
-}
-@keyframes left-to-right {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-@keyframes right-to-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes lets-move {
-    0% {
-        transform: (translateX(0));
-
-    }
-    33% {
-        transform: translateY(100%);
-    }
-    66% {
-        transform: translateX(175%);
-       
-    }
-    100% {
-        transform: translateY(0%);
-    } 
-}
-    @keyframes lets-move-backwards {
-        0% {
-            transform: (translateX(0));
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,900&display=swap');
+* {
+    margin: 0;
     
-        }
-        33% {
-            transform: translateY(100%);
-        }
-        66% {
-            transform: translateX(-175%);
-           
-        }
-        100% {
-            transform: translateY(0%);
-        }
-    }
-
-    #about-us img {
-        
-        margin-top: 20px;
-        width: 75%;
-        height: 75%;
-        animation-iteration-count: infinite;
-    }
-    #imageArt ,  #imageSciences ,#imageInformatique ,#imageMath {
-        display: block;
-    }
-
-    #imageArt , #imageSciences  , #imageSecurity ,#imageBook {
-       
-        animation :  lets-move 5s forwards ;
-        
-    }
-
-
-
-#imageInformatique ,#imageMath  , #imageMecanqiue , #imageSolfege{
-   
-    animation :  lets-move-backwards 5s forwards ;
+    padding: 0;
+    font-family: 'Source Code Pro' , monospace;
+    box-sizing: border-box;
+}
+body {
+    min-height: 1000px;
+}
+ header{
+    overflow: hidden;
     
 }
+ body header section {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #0e0e0e;
+    transition: 1s;
+}
+header.sticky{
+    height:100px;
+    top:0;
+    overflow-x: hidden;
+    
+    
+}
+header.sticky nav.navbar  {
+    position: fixed;
+    top:0 ; 
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    
+}
+ 
+ body header section  .container-fluid h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:900;
+    color: #151515;
+    font-size: 4em;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+}
+body header section  .container-fluid h2 span {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    animation: animate-name 5s linear infinite;
+}
+body header section  .container-fluid h2 span.informatique {
+    animation-delay: -1s;
+    filter: hue-rotate(255deg);
+}
+body header section  .container-fluid h2 span.arts{
+    animation-delay: -2s;
+    filter: hue-rotate(255deg);
+}
+body header section  .container-fluid h2 span.sc {
+    animation-delay: -1.5s;
+    filter: hue-rotate(180deg);
 
-
-
-#imageBook , #imageSolfege , #imageSecurity ,  #imageMecanqiue{
+}
+header nav.navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
     display: none;
-    
-   
 }
 
+@keyframes animate-name {
+    0% , 5% , 10.1% , 25.1% , 45%  , 70.1% , 90% , 100%{
+        color: #222;
+        text-shadow: 0 0 0 #222;
+    }
+    5.1% ,10% , 15.2% , 25%  , 45.1% , 70% , 90.1% , 95%{
+        color: #fff;
+        text-shadow: 0 0 10px #ff3177,
+                    0 0 20px #ff3177,
+                    0 0 40px #ff3177,
+                    0 0 80px #ff3177,
+                    0 0 160px #ff3177;
+
+    }
+}

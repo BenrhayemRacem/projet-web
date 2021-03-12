@@ -13,6 +13,7 @@ body {
 }
  header{
     overflow: hidden;
+    transition: 1s;
     
 }
  body header section {
@@ -76,6 +77,8 @@ header nav.navbar {
     top: 0%;
     width: 100%;
     display: none;
+    transition: 1s;
+    transition-delay: 1s;
 }
 
 @keyframes animate-name {
@@ -159,9 +162,11 @@ body>section img {
     opacity: 0;
     transition: 0.5s;
 }
+
 body>section img.active {
      opacity: 1;
      left: 0;
+     transition: 0.5s;
 }
 
 

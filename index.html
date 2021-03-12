@@ -132,9 +132,8 @@ reveal.forEach((text,i) => {
     ScrollTrigger.create ({
         trigger: text ,
         toggleClass: "active" ,
-       start: "top 100%",
-      end: "top 20%",
-      markers : true 
+       start: "top bottom+=50",
+      end: "top 10%"
     })
 })
 const image  = gsap.utils.toArray('img') ; 

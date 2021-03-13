@@ -12,8 +12,17 @@ window.addEventListener("scroll" ,()=> {
         
         
     }
-    else {
+    if(window.scrollY>250) {
+        navbar.style.display="none";
+    }
+    if((window.scrollY<250) && (window.scrollY>50)) {
+        header.classList.add("sticky") ;
+        navbar.style.display="flex" ;
+    }
+    if(window.scrollY==0) {
+        navbar.style.display="none";
         header.classList.remove("sticky") ;
-        navbar.style.display="none" ;
     }
 } );
+
+  

@@ -14,6 +14,7 @@ body {
  header{
     overflow: hidden;
     transition: 1s;
+    transition-delay: 0.25s;
     
 }
  body header section {
@@ -23,12 +24,14 @@ body {
     width: 100%;
     background: #0e0e0e;
     transition: 2s;
+    transition-delay: 0.25s;
 }
 header.sticky{
     height:100px;
     top:0;
     overflow-x: hidden;
     transition: 2s;
+    transition-delay: 0.25s;
     
     
 }
@@ -39,6 +42,7 @@ header.sticky nav.navbar  {
     overflow: hidden;
     z-index: 10;
     transition: 2s;
+    transition-delay: 0.25s;
     
 }
  
@@ -82,11 +86,11 @@ header nav.navbar {
 }
 
 @keyframes animate-name {
-    0% , 5% , 10.1% , 25.1% , 45%  , 70.1% , 90% , 100%{
+    0% , 5% , 10.25% , 25.1% , 45%  , 70.25% , 90% , 100%{
         color: #222;
         text-shadow: 0 0 0 #222;
     }
-    5.1% ,10% , 15.2% , 25%  , 45.1% , 70% , 90.1% , 95%{
+    5.1% ,10% , 15.2% , 25%  , 45.1% , 70% , 90.25% , 95%{
         color: #fff;
         text-shadow: 0 0 10px #ff3177,
                     0 0 20px #ff3177,
@@ -114,12 +118,13 @@ body >section {
 body>section .reveal {
     position: relative;
     font-size: 2.5em;
-    padding: 0 10px;
+    padding: 30px;
     font-weight: 500;
     transform-origin: left;
     transform: scaleX(0);
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    transition:0.25s;
+    transition-delay: 0.25s;
+    margin-top: 150px;
 }
 body>section .reveal.active {
     transform: scaleX(1);
@@ -134,7 +139,7 @@ body>section .reveal::before{
     height: 100%;
     background: #e02bff;
     transform-origin: right;
-    transition: 0.5s;
+    transition: 0.25s;
     transition-delay: 0s;
 
 }
@@ -150,7 +155,7 @@ body>section .reveal:nth-child(2)::before {
 }
 body>section .reveal.active::before {
     transform: scale(0);
-    transition-delay: 0.5s;
+    transition-delay: 0.25s;
 }
 body>section img {
     position: relative;
@@ -160,14 +165,39 @@ body>section img {
     margin-top: 30px;
     max-width: 300px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 body>section img.active {
      opacity: 1;
      left: 0;
-     transition: 0.5s;
+     transition: 0.25s;
 }
+
+
+footer{
+    margin: 30px;
+    border: grey 2px solid;
+    font-size: larger;
+    padding: 30px;
+}
+footer button {
+    margin-top: 5px;
+    transform: scale(1);
+    transition: 0.25s;
+    transition-delay: 0.25s;
+    
+}
+footer button:hover {
+    width: 500px;
+    z-index: 10;
+    
+}
+
+
+    
+
+
 
 
 

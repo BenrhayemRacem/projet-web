@@ -12,7 +12,7 @@ header {
     height: 120px ;
 }
 
-.container#Navbar {
+.Navbar {
     margin-left: 0 px;
 }
 a{
@@ -144,7 +144,7 @@ li.nav-item#AboutUs {
 
 /** First Section ********************************************************************************************/
 
-div#FirstSection {
+#FirstSection {
     background: linear-gradient(rgba(190, 186, 186, 0.158),#08355fa6),url(/Assets/WebHome.png) ;
     background-size:cover;
     background-position:center;
@@ -216,3 +216,49 @@ span.LTC:hover{
 
 /*************************************************************************************************************/
 
+
+
+section> div.container-fluid {
+    background-color: #000;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  
+    
+}
+section>div.container-fluid div.row h1 {
+   color: #FFF;
+   font-weight: 800; 
+   
+   
+}
+section>div.container-fluid div.row h1 span{
+    position: relative;
+    display: inline-block;
+    animation: animate-wavy 1s ease-in-out infinite;
+   
+}
+
+
+@keyframes animate-wavy {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-40px);
+    }
+    40%,100% {
+        transform: translateY(0);
+    }
+}
+
+section>div.container-fluid div.row img {
+  width: 150px;
+  height: 150px;
+  
+}

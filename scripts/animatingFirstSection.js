@@ -1,5 +1,5 @@
 var spanArray = document.querySelectorAll("section div.container-fluid div.row h1 span");
-console.log(spanArray) ;
+
 
 
 
@@ -24,6 +24,29 @@ document.querySelector("nav").classList.remove("fixed-top");
     }
 
 })
+
+
+var column = document.querySelector("div.d-flex.flex-row-reverse.bd-highlight");
+var btn = document.querySelector("button.navbar-toggler") ;
+btn.addEventListener("click" , ()=> {
+    column.classList.toggle("flex-sm-column");
+    
+     
+})
+
+
+var array=document.querySelectorAll("section> div.container-fluid div.col-sm-12")
+if(window.screen.width<=768) {
+    array.forEach(elt=>{
+        elt.style.position="fixed" ;
+        elt.style.top="60px" ;
+        elt.style.right="5px" ;
+        
+        
+    }) ;
+    array[0].style.top="200px";
+}
+
 
 
 

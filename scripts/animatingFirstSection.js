@@ -21,6 +21,14 @@ document.querySelector("nav").classList.remove("fixed-top");
 
 })
 
+document.querySelector(".searchbtn").addEventListener("click",(e)=> {
+    document.querySelector(".searchbtn").classList.toggle("bg-Blue");
+    document.querySelector(".fa").classList.toggle("color-white");
+    document.querySelector(".input").classList.toggle("active-width");
+})
+
+
+
 
 
  

@@ -1,10 +1,6 @@
 var spanArray = document.querySelectorAll("section div.container-fluid div.row h1 span");
 console.log(spanArray) ;
 
-
-
-
-
 var i =1;
 spanArray.forEach(element=>{
     

@@ -70,12 +70,12 @@ li.nav-item#header {
     margin-bottom: 20px;
 }
 
-li.nav-item#AboutUs {
+/*li.nav-item#AboutUs {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-}
+}*/
 
 
 .active{
@@ -103,36 +103,29 @@ li.nav-item#AboutUs {
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     transition: 300ms;
 }
-/* Gradient */
-.gradient-button {
-    margin: 2px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 10px;
-    padding: 7.5px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #FFF;
-    box-shadow: 0 0 10px #eee;
-    border-radius: 5px;
-    width: 100px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;
-}
-.gradient-button:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+/* Gradient button */
+ 
 
-.gradient-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
-}
-.gradient-button-4:hover { 
-    background-position: right center; 
-    color: #eee; text-decoration: none; }
+.btn-grad {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+.btn-grad {
+   margin: 35px;
+   padding: 15px 70px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
 /*******************************************************/
 .container#Login {
     padding-top: 8px;
@@ -141,6 +134,17 @@ li.nav-item#AboutUs {
     padding-left: 55px;
     padding-right: 55px;
 }
+/** Navbar toggler icon **************************************************************************************/
+
+   /* hide close when burger shown */
+  .navbar-toggler.collapsed .close-icon {
+    display: none;
+ }
+
+ .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+ }
+/*************************************************************************************************************/
 
 /** First Section ********************************************************************************************/
 
@@ -232,10 +236,7 @@ section> div.container-fluid {
     
 }
 section>div.container-fluid div.row h1 {
-   color: #FFF;
-   font-weight: 800; 
-   
-   
+   font-weight: 800;
 }
 section>div.container-fluid div.row h1 span{
     position: relative;
@@ -258,7 +259,7 @@ section>div.container-fluid div.row h1 span{
 }
 
 section>div.container-fluid div.row img {
-  width: 150px;
+  width: 200px;
   height: 150px;
   
 }

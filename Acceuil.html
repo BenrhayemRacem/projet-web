@@ -8,7 +8,6 @@
     <link rel="icon" href="Assets/Logohead.png">
     <link rel="stylesheet" href="Assets/fontawesome.min.css">
     <link rel="stylesheet" href="Assets/Style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>LTC- Learn To Create</title>
 </head>
 <body>
@@ -42,21 +41,25 @@
       </div>
 
     </section>
+
     <header>  
       <nav class="navbar navbar-expand-sm navbar-light bg-light scrolled">
         <a class="navbar-brand" href="#">
           <img src="Assets/SiteName.png" alt="WebsiteLogo" id="SiteName" width="200px" height="auto" />
           <img src="Assets/Logohead.png" alt="WebsiteLogo" id="Logo" width="100px" height="auto" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"> <img src="Assets/MenuIcon.png" alt="WebsiteLogo" id="Logo" width="50px" height="50" /></span>
-            </button>
+
+            <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <div class="close-icon py-1">✖</div>
+              </button>
+
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul id="navMenu" class="navbar-nav ml-auto">
                 <li class="nav-item active">
                   <a href="#">HOME</a>
                 </li>
-                <li class="nav-item" id = "AboutUs">
+                <li class="nav-item" id = "header">
                   <a class="nav-link" href="#" style="text-align: center;">ABOUT US</a>
                 </li>
                 <li class="nav-item" id = "header">
@@ -70,7 +73,14 @@
                 </li>
                 <li></li>
                 <li></li>
-                  <div class="container" id="Login">
+                <li><a class="btn-grad" id="LoginIn" href="#">Login</a></li>
+              </ul>  
+          </div>
+          
+    </nav>
+    </header>
+    <!--
+                        <div class="container" id="Login">
                     <div class="row-">
                       <div class="col-sm">
                         <input type="text" class="form-control" id="idUsername" placeholder="Username">
@@ -83,16 +93,11 @@
                       </div>
                     </div>
                  </div>
-              </ul>
-             
-          </div>
-      
-    </nav>
-    </header>
+    -->
 
-    <section id="FirstSection">
+    <div class="container-ms" id="FirstSection">
       <div class="Introduction">
-      <div class="container" style="height: 80vh; ">
+      <div class="container-ms" style="height: 80vh; ">
           <div class="row" id="IntroText" >
               <div class="col-6 .col-md-4">  
                 <h1>LEARN TO<br/>CREATE </h1> 

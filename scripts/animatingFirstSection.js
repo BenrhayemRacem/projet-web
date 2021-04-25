@@ -1,4 +1,5 @@
 var spanArray = document.querySelectorAll("section div.container-fluid div.row h1 span");
+console.log(spanArray);
 
 
 var i =1;
@@ -25,6 +26,7 @@ document.querySelector(".searchbtn").addEventListener("click",(e)=> {
     document.querySelector(".searchbtn").classList.toggle("bg-Blue");
     document.querySelector(".fa").classList.toggle("color-white");
     document.querySelector(".input").classList.toggle("active-width");
+    
 })
 
 

@@ -62,7 +62,8 @@ visibility: hidden;
     height:0;
     background: black;
    position: absolute;
-   transition: width 1s , height 1s; 
+   transition: 1s;
+   transform: translateY(250px);
    }
 
 

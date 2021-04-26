@@ -1,0 +1,111 @@
+#courses {
+    min-height: 80 vh ;
+    background-color: #e6c4c0;
+    padding-top: -30px;
+}
+#courses  div.row{
+    margin-bottom: 50px;
+    
+    text-align: center;
+}
+
+#courses  div.row div.col-lg-3.col-md-12 {
+border: 2px solid black;
+align-items: center;
+margin-top: 10px;
+margin-right: 80px;
+
+font-weight: 500;
+font-size:200% ;
+background-color: #f6e6e4;
+color: #5b6d5b;
+}
+
+
+#descriptionCours {
+    border: 0.5px solid black;
+    min-height: 80vh;
+    margin: 20px;
+   
+
+}
+#descriptionCours .row.justify-content-center {
+    margin-top: 50px;
+}
+
+
+.classCategories * {
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 30px;
+   min-height: 60px;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.classCategories *:hover {
+    border: 5px solid #eb5e0b;
+    opacity: 1;
+}
+
+
+#descriptionCours h3,h1 {
+    color: #2978b5;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    margin-top: 100px;
+    padding-top: 30px;
+    min-height: 100vh;
+   background-color:  #822659 ;
+   
+   color: white;
+   
+  
+}
+footer a {
+    color: white;
+    opacity: 0.3;
+    text-decoration: none;
+}
+footer a:hover {
+    opacity: 1;
+    color: white;
+}
+
+footer img {
+  
+    height: 50px;
+}
+
+footer div.col-12 {
+    border-bottom: dotted 2px #fdb827 ;
+    margin-bottom: 20px;
+}
+footer div.col-12 div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contactUsIcons {
+    margin-top: 20px;
+    padding-top: 30px;
+    color: white;
+    
+    border-top: 2px dotted #fdb827 ;
+}
+.contactUsIcons col {
+    margin-top: 15px;
+}
+.contactUsIcons * {
+    margin-left: 20px;
+}
+
+
+

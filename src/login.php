@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
                     <h6>   forgot password ? <a href="">click here</a> </h6>   
                 </div>
                 <div class="container">
-                    <h6>Dont have an account? <a href="pageInscription.html">Sign up</a></h6>   
+                    <h6>Dont have an account? <a href="pageInscription.php">Sign up</a></h6>
                 </div>
                 
                 <button type="submit" class="btn btn-secondary">sign in</button>

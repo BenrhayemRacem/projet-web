@@ -1,6 +1,9 @@
+
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head style="border-left-width: 0 px ; border-left-style: solid;">
+<head style="border-left-width: 0  ; border-left-style: solid;">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +73,7 @@
                   <a class="nav-link" href="#courses">COURSES</a>
                 </li>
                 
-                <li><a class="btn-grad" id="LoginIn" href="login.html">Login</a></li>
+                <li><a class="btn-grad" id="LoginIn" href="login.php">Login</a></li>
                 
                   
                  </div></div>
@@ -114,7 +117,7 @@
     Our partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
   </div>
   <div class="row justify-content-center">
-    <button class="btn btn-primary "><a href="login.html" style="color: white;"> login for free </a></button>
+    <button class="btn btn-primary "><a href="login.php" style="color: white;"> login for free </a></button>
   </div>
   </div>  
 <div class="col-6">

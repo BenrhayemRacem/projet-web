@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
               <a class="nav-link" href="#courses">COURSES</a>
             </li>
             
-            <li><a class="btn-grad" id="LoginIn" href="Acceuil.html">Logout</a></li>
+            <li><a class="btn-grad" id="LoginIn" href="Acceuil.php">Logout</a></li>
             
               
              </div></div>

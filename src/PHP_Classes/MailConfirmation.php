@@ -41,8 +41,12 @@ class MailConfirmation
         $mail->IsSMTP();
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = 'ltconlineschool@gmail.com';
-        $mail->Password = 'learntocreate';
+        /*
+         * username and password cant be showen
+         *
+         */
+        $mail->Username = '********';
+        $mail->Password = '**********';
         $mail->setFrom('ltconlineschool@gmail.com', 'Learn_To_Create');
         $mail->addAddress($this->_email);
         $mail->Subject = $this->_subjectOfMessage;

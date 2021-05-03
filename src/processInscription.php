@@ -1,5 +1,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+
 require '../vendor/autoload.php';
 /*
  * $email = $_POST['email'] ;

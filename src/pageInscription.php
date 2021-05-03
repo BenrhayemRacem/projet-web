@@ -1,7 +1,9 @@
 <?php
 session_start() ;
 $show = 0 ;
-if (isset($_SESSION["show"])) $show = 1;
+if (isset($_SESSION["show"])) {
+    $show = 1;
+}
 unset($_SESSION["show"]) ;
 
 

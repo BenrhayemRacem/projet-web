@@ -1,7 +1,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 
-
 class MailConfirmation
 {
     private $_code_unique;
@@ -18,8 +17,9 @@ class MailConfirmation
         $this->_email = $email;
     }
 
-    public  function  setMessage() {
-       $this->_message= '
+    public function setMessage()
+    {
+        $this->_message= '
       
         Confirmation de votre inscription.
         merci pour ne pas répondre à cet email.
@@ -35,7 +35,8 @@ class MailConfirmation
     
 ';
     }
-    public function sendEmail() {
+    public function sendEmail()
+    {
         $this->setMessage();
         $mail = new PHPMailer() ;
         $mail->IsSMTP();
@@ -57,11 +58,5 @@ class MailConfirmation
             header('hello');
             header('location:GoCheckEmail.php');
         }
-
     }
-
-
-
 }
-
-

@@ -15,5 +15,4 @@ class DBfunctions
         $this->tableName = $tableName;
         $this->bd = ConnexionBD::getInstance();
     }
-
 }

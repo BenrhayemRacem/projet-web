@@ -71,7 +71,7 @@ section .color:nth-child(2) {
     backdrop-filter: blur(5px);
     position: absolute  ;
     z-index: 1;
-   
+
     border-radius: 10px;
     animation: animate 10s linear infinite;
     animation-delay: calc(-1s * var(--i));
@@ -109,7 +109,7 @@ div.container.box div.square:nth-child(5) {
     left:40px;
     width: 60px;
     height: 60px;
-   
+
 }
 @keyframes animate {
     0%,100% {
@@ -118,5 +118,5 @@ div.container.box div.square:nth-child(5) {
     50%{
         transform: translateY(40px);
     }
-    
+
 }

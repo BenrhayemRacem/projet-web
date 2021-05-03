@@ -9,7 +9,7 @@ class MailConfirmation
     private $_message;
 
 
-   
+
 
     public function __construct($email, $code_unique)
     {
@@ -20,19 +20,19 @@ class MailConfirmation
     public function setMessage()
     {
         $this->_message= '
-      
+
         Confirmation de votre inscription.
         merci pour ne pas répondre à cet email.
         pour confirmer votre inscription veuillez cliquer sur lien ci-dessous
        http://localhost:63342/projetweb/src/confirmationInscription.php?email='
            . $this->_email.'&code_unique='.$this->_code_unique.'
-       
 
-       
-      
-    
-    
-    
+
+
+
+
+
+
 ';
     }
     public function sendEmail()

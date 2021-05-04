@@ -45,8 +45,8 @@ class MailConfirmation
          * username and password cant be showen
          *
          */
-        $mail->Username = '********';
-        $mail->Password = '**********';
+        $mail->Username = 'ltconlineschool@gmail.com';
+        $mail->Password = '*************';
         $mail->setFrom('ltconlineschool@gmail.com', 'Learn_To_Create');
         $mail->addAddress($this->_email);
         $mail->Subject = $this->_subjectOfMessage;

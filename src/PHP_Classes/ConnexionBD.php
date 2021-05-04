@@ -3,8 +3,6 @@
 
 class ConnexionBD
 {
-
-
     private static $_dbname = "projetweb" ;
     private static $_user = "root";
     private static $_pwd = "";

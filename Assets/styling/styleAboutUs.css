@@ -3,19 +3,19 @@
 #about_us div {
     margin-top: 10px;
     color: white;
-    
-       
+
+
 }
 #about_us div.container-fluid {
-    
+
    background-image: url(../images/WebHomeEdit.jpg);
-    
-}   
+
+}
 
  #about_us img.img-student {
     width: 500px;
     height: 500px;
-   
+
     border-radius: 20px;
     margin-bottom: 30px;;
 }
@@ -36,4 +36,3 @@ section>div.container {
     width: 120PX;
     height: 80px;
 }
-

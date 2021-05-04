@@ -4,7 +4,7 @@
     padding-top: 50px;
 }
 #membersStories .container {
-   
+
     overflow: hidden;
 }
 #membersStories h1 {
@@ -17,9 +17,9 @@
    margin-top: 20px;
    object-fit: cover;
   padding: 3px;
-  
-    
-   
+
+
+
 
 }
 
@@ -51,10 +51,10 @@ visibility: hidden;
    transition: 1s;
    z-index: 0;
    transform: translateY(-250px);
- 
-   
-   
-   
+
+
+
+
 }
 #membersStories div.col-md-12.notHovering  span {
     display: none;
@@ -67,16 +67,10 @@ visibility: hidden;
    }
 
 
-   
+
    @media only screen and (max-width: 768px) {
     #membersStories div.col-md-12.hovering  span {
         transform: translateY(0);
     }
 
 }
-
-
-
-
-
-

@@ -1,7 +1,9 @@
 <?php
 session_start() ;
 $show = 0 ;
-if (isset($_SESSION["show"])) $show = 1;
+if (isset($_SESSION["show"])) {
+    $show = 1;
+}
 unset($_SESSION["show"]) ;
 
 
@@ -12,17 +14,17 @@ unset($_SESSION["show"]) ;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../Assets/styling/styleLogin.css">
     <title>Sign in</title>
 </head>
 <body>
-  
+
     <section>
-        
+
         <div class="container box">
-            
+
             <div class="square" style="--i:1;"></div>
             <div class="square" style="--i:3;"></div>
             <div class="square" style="--i:2;"></div>
@@ -67,7 +69,7 @@ unset($_SESSION["show"]) ;
                     <h6>Already have an account? <a href="login.php">Sign in</a></h6>
                 </div>
                 <button type="submit" class="btn btn-secondary ">Create Account</button>
-                
+
               </form>
             </div>
         <div class="color"></div>
@@ -77,8 +79,8 @@ unset($_SESSION["show"]) ;
     </section>
 
 
-   
-   
+
+
     <script src="../Assets/styling/bootstrap.min.js"></script>
     <script src="../Assets/styling/jquery-2.1.3.min.js"></script>
     <script src="../scripts/controleFormInscrit.js"></script>

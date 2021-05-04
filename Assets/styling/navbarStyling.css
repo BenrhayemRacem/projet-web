@@ -44,8 +44,8 @@ img#Logo {
     background-repeat: repeat;
       /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     font-weight: bold;
@@ -75,8 +75,8 @@ li.nav-item#header {
     background-repeat: repeat;
       /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     font-weight: bold;
@@ -94,7 +94,7 @@ li.nav-item#header {
     transition: 300ms;
 }
 /* Gradient button */
- 
+
 
 .btn-grad {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
 .btn-grad {
@@ -104,7 +104,7 @@ li.nav-item#header {
    text-transform: uppercase;
    transition: 0.5s;
    background-size: 200% auto;
-   color: white;            
+   color: white;
    box-shadow: 0 0 20px #eee;
    border-radius: 10px;
    display: block;

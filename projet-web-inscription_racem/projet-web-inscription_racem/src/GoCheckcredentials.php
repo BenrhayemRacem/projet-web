@@ -1,0 +1,29 @@
+<?php
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Assets/styling/bootstrapCyborg.min.css">
+    <link rel="stylesheet" href="../Assets/styling/styleGoCheckYourEmail.css">
+    <title>Wrong Credentials</title>
+
+</head>
+<body>
+
+<div class=" container alert alert-dismissible alert-danger">
+
+    <h4 class="alert-heading">Warning!</h4>
+    <p class="mb-0"><strong> Oups..</strong> <br> something went wrong <br> please check your credentials ! <br>
+
+
+
+</div>
+
+</body>
+</html>

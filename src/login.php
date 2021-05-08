@@ -2,7 +2,9 @@
 
 session_start() ;
 $show = 0 ;
-if (isset($_SESSION["show"])) $show = $_SESSION['show'];
+if (isset($_SESSION["show"])) {
+    $show = $_SESSION['show'];
+}
 
 unset($_SESSION["show"]) ;
 ?>

@@ -2,119 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32999f68-30d4-46a8-9d7b-bfd8268eceb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/Logohead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/Style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/Stylecourse.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/animation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/fontawesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/AR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/HTMLorganisation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/MenuIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/People.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/Professor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/Project.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/Project2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/SiteName.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/Student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/WebHome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/WebHomeEdit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/World.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/html5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/reseau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/student1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/student2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/student3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/students.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/images/tableau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/jquery-2.1.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLbalises.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLfin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLhistory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLinput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLorganisation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLquiz.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtableaux.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtypesinput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLvideo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/pageHome.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.idea/projetweb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/People.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/Professor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/Project.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/Project2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/Student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/AccueuilIcons/World.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/contactUsIcons/envelope-fill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/contactUsIcons/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/contactUsIcons/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/contactUsIcons/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/coursesIcons/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/coursesIcons/diamond-fill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/coursesIcons/html.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/duke.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/ibm.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/illinois.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/insat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/Icons/universitiesIcons/stanford.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/Logohead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/MenuIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/SiteName.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/WebHome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/WebHomeEdit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/student1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/student2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/student3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/images/students.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/FirstSectionStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/bootstrapCyborg.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/footerStyling.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/jquery-2.1.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/learningPath.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/membersStories.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/navbarStyling.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/styleAboutUs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/styleGoCheckYourEmail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/Assets/styling/styleLogin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/scripts/animatingFirstSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/scripts/animatingMembersStories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/scripts/controleFormInscrit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/Acceuil.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/GoAccountConfirmed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/GoCheckEmail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/GoCheckcredentials.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/PHP_Classes/ConnexionBD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/PHP_Classes/DBfunctions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/PHP_Classes/MailConfirmation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/PHP_Classes/studentBD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/StudentProfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/autoLoad.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/catalogue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/confirmationInscription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/pageInscription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/processInscription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/processLogin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/projet-web-inscription_racem/src/signUpProcess.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/Stylecourse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLbalises.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLfin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLhistory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLinput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLorganisation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLquiz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtableaux.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtypesinput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLvideo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/pageHome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +59,7 @@
       <updated>1620139037249</updated>
       <workItem from="1620139038449" duration="14094000" />
       <workItem from="1620397345094" duration="6929000" />
-      <workItem from="1620430731165" duration="890000" />
+      <workItem from="1620430731165" duration="461000" />
     </task>
     <servers />
   </component>

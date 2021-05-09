@@ -1,7 +1,6 @@
 
 #courses {
     min-height: 80 vh ;
-    background-color: #e6c4c0;
     padding-top: -30px;
 }
 #courses  div.row{
@@ -10,18 +9,50 @@
     text-align: center;
 }
 
-#courses  div.row div.col-lg-3.col-md-12 {
-border: 2px solid black;
+#courses  div.row div.col.Option {
+/* border: 2px solid black;
 align-items: center;
 margin-top: 10px;
 margin-right: 80px;
 
 font-weight: 500;
-font-size:200% ;
-background-color: #f6e6e4;
-color: #5b6d5b;
-}
+font-size:200% ; */
+background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+   margin: 10px;
+   font-size: larger;
+   font-weight: bolder;
+   padding: 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block; }
 
+
+   #courses  div.row div.col.Option:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .row.justify-content-center h1{
+        font-size: 50px;
+        font-weight: bolder;
+        box-sizing: content-box;
+  color: rgba(0, 0, 0, 0.911);
+  text-shadow: 
+						2px 2px #1ff0ff,
+						4px 4px #7ad4b6;
+ }
+
+/* descriptionCours */ 
+i.fas.fa-check-circle {
+height: 5px;
+width: 5px;
+}
 
 #descriptionCours {
     border: 0.5px solid black;

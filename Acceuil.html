@@ -59,9 +59,14 @@
               <span class="navbar-toggler-icon"></span>
               <div class="close-icon py-1">✖</div>
               </button>
-
+           
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul id="navMenu" class="navbar-nav ml-auto">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li class="nav-item actived">
                   <a href="#">HOME</a>
                 </li>
@@ -71,7 +76,9 @@
                 <li class="nav-item" id = "header">
                   <a class="nav-link" href="#courses">COURSES</a>
                 </li>
-                
+                <li></li>
+                <li></li>
+                <li></li>
                 <li><a class="btn-grad" id="LoginIn" href="login.html">Login</a></li>
                 <li><div class="wrapper"><div class ="SearchBox"><input placeholder = "Search" type="text" class="input">
                   <div class="searchbtn"> <i class="fa fa-search"></i></div>
@@ -123,12 +130,12 @@
 
 
 <!-- About us -->
-      <section id="about_us"> 
+      <section id="about_us" > 
   <div class="container-fluid">
     <div class="container">
       <div class="row align-items-center">
   <div class="col-6">
-    <div class="row">
+    <div class="row ">
       
     Our partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
   </div>
@@ -137,7 +144,7 @@
   </div>
   </div>  
 <div class="col-6">
-  <img src="Assets/students.webp" class="img-student" alt="student images">
+  <img src="Assets/Students/students.webp" class="img-student" alt="student images">
 </div>
 </div>
   </div>
@@ -146,11 +153,12 @@
  <!-- /About us -->     
       
  <!-- collaborators -->
-<section id="collaborators" style="margin-top: 100px; margin-bottom: 100px;">
-      <h1> Our main collaborators ...</h1>
+<section id="collaborators" style="max-height: 1000px;">
+     <div class="container" id="CollaboratorContainer">
+      <h1 style="font-size:50px;"> Our main collaborators ...</h1>
 
       <div class="collaborators carousel" >
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -163,21 +171,23 @@
               <div class="row">
               <div class="col"><img  src="Assets/Icons/illinois.webp" alt="" ></div>
           <div class="col"> <img  src="Assets/Icons/stanford.webp" alt="" ></div>
-          <div class="col-carre"> <img src="Assets/Icons/insat.jpg" alt="" ></div>
+          <div class="col-carre"> <img src="Assets/Icons/insat.jpg" alt="carre" ></div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
         </div>
 
+     </div>
+  
       </section>
 <!--/collaborators-->
 
@@ -191,7 +201,7 @@
       <div class="row">
         <div class="col-md-12 col-lg-4">
           <span></span>
-          <img src="Assets/student1.png" class="img-thumbnail"alt="">
+          <img src="Assets/Students/student1.png" class="img-thumbnail"alt="">
           <div>Your courses are simply awesome, the depth they go into and the breadth of coverage is so good that I don't have to refer to 10 different websites looking for interview topics and content.
             <h4>Souvuk ,front-end developer</h4>
            </div> 
@@ -199,7 +209,7 @@
 
         <div class="col-md-12 col-lg-4">
           <span></span>
-          <img src="Assets/student2.png" class="img-thumbnail"alt="">
+          <img src="Assets/Students/student2.png" class="img-thumbnail"alt="">
           
          <div>“LTC's class gave me a positive push to continue to work, . More classes later, 
           each instructor has inspired me in a different way to be the best version of myself.”
@@ -211,12 +221,19 @@
 
         <div class="col-md-12 col-lg-4">
           <span></span>
-          <img src="Assets/student3.png" class="img-thumbnail"alt="">
+          <img src="Assets/Students/student3.png" class="img-thumbnail"alt="">
           <div>You guys are the gold standard of crash-courses... Narrow enough that it doesn't need years of study or a full blown book to get the gist, but broad enough that an afternoon of Googling doesn't cut it.
             <h4>Carlos ,Music Composer</h4>
            </div> 
         </div>
-        <div class="col"><h1 style="margin-bottom: 50px ; color: white;">If you join us you'll be the one to share your success story</h1></div>
+        <div class="container" id="LastTexte">
+          <!-- code here -->
+          <div class="text-box">
+            <div id="Texte1" class="heading-LastTexte1">If you join us you'll be the one</div>
+            <div id="Texte2" class="heading-LastTexte2">to share your success story</div>
+          </div>
+        </div>
+        <div class="col"><h1 style="margin-bottom: 50px ; color: white;"></h1></div>
       </div>
       
   </div>
@@ -224,28 +241,30 @@
 </section>
 <!--/membersStories-->
 
-
+<!-- Courses -->
 <section id="courses">
-  <div class="container justify-items-end">
+  <div class="container">
     <div class="row justify-content-center">
-    <h2>It is such a unique and reader-friendly site, resources available for learners on <strong>LTC</strong> is well organized and deep</h2>
+    <h1>It is such a unique and reader-friendly site, resources available for learners on <strong>LTC</strong> is well organized and deep</h1>
   </div>
   
   <div class="row">
-    <div class="col-lg-3 col-md-12">100+ Classes
-      
+    <div class="col Option">
+      100+ Classes
     </div>
-    <div class="col-lg-3 col-md-12">
+    <div class="col Option">
       20 Lessons
-
-Average per class
+    Average per class
     </div>
-    <div class="col-lg-3 col-md-12">
+    <div class="col Option">
       a friendly-reader courses
     </div>
   </div>
 </div>
 </section>
+<!-- Courses -->
+
+<!-- Description Cours -->
 <section id="descriptionCours">
   <div class="container">
     <div class="row justify-content-around">
@@ -256,7 +275,7 @@ Average per class
       
       Videos are holding you back. The average video tutorial is spoken at 150 words per minute, while you can read at 250. That's why our courses are text-based.
     </div>
-      <div class="row"><img src="Assets/coursesIcons/check.svg" alt=""> Learn at your own pace</div>
+      <div class="row"><i class="fas fa-check-circle"></i>Learn at your own pace</div>
           <div class="row"><img src="Assets/coursesIcons/check.svg" alt=""> Highlight text</div>
           <div class="row"><img src="Assets/coursesIcons/check.svg" alt=""> Practice as you learn</div>
      
@@ -289,9 +308,11 @@ Average per class
   </div>
 
 </section>
+<!-- Description Cours -->
 
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery/dist/cdn/jquery-2.1.3.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="scripts/animatingFirstSection.js"></script>
 <script src="scripts/animatingMembersStories.js"></script>

@@ -3,7 +3,8 @@
     min-height: 10vh;
     background-color: #b8e3e9;
     padding-top: 50px;
-    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);}
+    background-image: url(/Assets/AcceuilBackgroundImages/Background.jpg);
+    background-size: cover;}
 #membersStories .container {
    
     overflow: hidden;
@@ -13,6 +14,7 @@
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    font-size:50px;
 }
 #membersStories div.col-md-12.col-lg-4 {
     overflow: hidden;
@@ -31,37 +33,12 @@ visibility: hidden;
     transform: translateY(-200px);
     visibility: visible;
     transition: 0.5s;
-    font-weight: 500;
+    font-weight: 300;
     z-index: 2;
-}
-
-#membersStories div.col-md-12.hovering  span {
-    display: block;
-    position: absolute;
-    width: 1000px;
-    height:100vh;
     background: black;
-    opacity: 0.5;
-    border-radius: 10px;
-   position: absolute;
-   transition: 1s;
-   z-index: 0;
-   transform: translateY(-250px);
- 
-   
-   
-   
+    opacity: 0.6;
+    padding: 20px;
 }
-#membersStories div.col-md-12.notHovering  span {
-    display: none;
-    width: 0;
-    height:0;
-    background: black;
-   position: absolute;
-   transition: 1s;
-   transform: translateY(250px);
-   }
-
 
    
    @media only screen and (max-width: 768px) {
@@ -70,6 +47,33 @@ visibility: hidden;
     }
 
 }
+
+/*  LastTest */
+.text-box {
+	position: relative;
+	display: grid;
+	justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: auto;
+    font-size: 50px;
+	font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading-LastTexte1{
+	color: #fff;
+	padding: 10px;
+}
+
+.heading-LastTexte2 {
+	background-color: rgba(255, 255, 255, 0.849);
+    color: #8e76e4 ;
+	padding: 10px;
+}
+
+/* / LastTest */
 
 
 

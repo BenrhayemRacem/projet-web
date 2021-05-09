@@ -63,4 +63,37 @@ function animateValue(obj, start, end, duration) {
 }
 // End CountUp  
 
- 
+
+
+ // Collaborators
+var Collaborators = document.querySelectorAll(".carousel-item img");
+console.log(Collaborators);
+Collaborators.forEach(element=> {
+    element.addEventListener("mouseover",(e)=> {
+
+        if (element.alt=="carre")
+            {
+                element.style.height = "205px" ;
+                element.style.width = "205px" ;
+            } else {
+                element.style.height = "105px" ;
+                element.style.width = "305px" ;
+            }
+  
+})
+})
+
+Collaborators.forEach(element=> {
+    element.addEventListener("mouseout",(e)=> {
+
+        if (element.alt=="carre")
+            {
+                element.style.height = "200px" ;
+                element.style.width = "200px" ;
+            } else {
+                element.style.height = "100px" ;
+                element.style.width = "300px" ;
+            }
+})
+})
+ // End Collaborators 

@@ -212,32 +212,31 @@ li.nav-item#header {
     color: white;
 }
 /**** Collaborators **************************************************************************************************/
-.carousel-control-prev , .carousel-control-next {
-    background-color: #9292922d; width : 10% ; }
+#CollaboratorContainer {
+    padding: 10px;
+    margin: 100px ;
+}
 
+.carousel-control-prev , .carousel-control-next {
+    background-color: #9292924d; width : 10% ; }
 .col img {margin-top : 50px  ;margin-bottom : 50px ; height:100px ;  width:300px ; /* object-fit: fill;*/}
 .col-carre {width: 400px ; margin-left: 20px; margin-right: 20px;}
 .col-carre img{height:200px ; width:200px ; }
 
 #collaborators h1 {
+    padding: 30px;
     margin-bottom: 50px;
+    border-radius: 10px;
     text-align: center;
-    color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     text-decoration: none;
-    transition: 0.5s ease;
-    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-      /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    
+    font-weight: 500;
+    color: white;
+    background-image: url(/Assets/AcceuilBackgroundImages/Background.jpg);
+    background-size: cover;
+    text-transform: uppercase;  
+    box-shadow: 0 0 15px 1px #646668; 
 }
+
 /** Numbers **************************************************************************************************/
 
 #Numbers {

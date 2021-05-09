@@ -21,3 +21,32 @@ cardsArray.forEach(element=> {
          
     })
 })
+
+// Animate text : 
+
+var TextBox = document.querySelector(".text-box") ;
+console.log(TextBox);
+
+TextBox.addEventListener('mouseenter' , (e)=> {
+    T1 = document.querySelector("#Texte1") ; 
+    T2 = document.querySelector("#Texte2") ;
+
+    T1.classList.add("heading-LastTexte2") ; 
+    T1.classList.remove("heading-LastTexte1") ;
+
+    T2.classList.add("heading-LastTexte1") ; 
+    T2.classList.remove("heading-LastTexte2") ;
+         
+    })
+
+    TextBox.addEventListener('mouseleave' , (e)=> {
+        T1 = document.querySelector("#Texte1") ; 
+        T2 = document.querySelector("#Texte2") ;
+
+       T2.classList.add("heading-LastTexte2") ; 
+       T2.classList.remove("heading-LastTexte1") ;
+    
+       T1.classList.add("heading-LastTexte1") ; 
+       T1.classList.remove("heading-LastTexte2") ;
+             
+        })

@@ -1,37 +1,33 @@
+
 #membersStories   {
-    min-height: 40vh;
-    background-color: #e4d3cf;
+    min-height: 10vh;
+    background-color: #b8e3e9;
     padding-top: 50px;
-}
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);}
 #membersStories .container {
    
     overflow: hidden;
+    
 }
-#membersStories h1 {
+#membersStories .heading {
     text-align: center;
-    color: #7b113a;
-    font-style: italic;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 #membersStories div.col-md-12.col-lg-4 {
     overflow: hidden;
    margin-top: 20px;
    object-fit: cover;
   padding: 3px;
-  
-    
-   
-
 }
 
 #membersStories div.col-md-12  div:nth-child(3){
 visibility: hidden;
-
-
 }
 
 
 #membersStories div.col-md-12:hover  div:nth-child(3){
-    color:  #fdca40;
+    color:  #ffffff;
     transform: translateY(-200px);
     visibility: visible;
     transition: 0.5s;

@@ -17,7 +17,7 @@ margin-right: 80px;
 
 font-weight: 500;
 font-size:200% ; */
-background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
    margin: 10px;
    font-size: larger;
    font-weight: bolder;
@@ -44,27 +44,43 @@ background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  1
         box-sizing: content-box;
   color: rgba(0, 0, 0, 0.911);
   text-shadow: 
-						2px 2px #1ff0ff,
-						4px 4px #7ad4b6;
+						2px 2px #64d4f0,
+						4px 4px #6567c4;
  }
 
 /* descriptionCours */ 
-i.fas.fa-check-circle {
-height: 5px;
-width: 5px;
+
+.list-group-item {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#ClasseDescp1 *, #ClasseDescp2 * {
+    box-sizing: unset;
+    text-align: left;
+    font-weight: bold;
+}
+
+.fa-check-circle , .fa-star {
+    color: white;
 }
 
 #descriptionCours {
-    border: 0.5px solid black;
     min-height: 80vh;
     margin: 20px;
-   
-
+    border-radius: 10px;
+    padding: 20px;
+   background-image: url(https://konferencija.coming.rs/wp-content/uploads/2018/08/AgendaBack2000x1000.jpg);
+   background-size: cover;
 }
-#descriptionCours .row.justify-content-center {
-    margin-top: 50px;
+#descriptionCours h3 {
+    color: white;
 }
 
+#ClasseDescp2 {
+    margin: 20px;
+    padding: 20px ;
+}
 
 .classCategories * {
     background-color: black;
@@ -76,11 +92,14 @@ width: 5px;
     font-size: 120%;
     text-align: center;
     padding-top: 10px;
+    border-radius: 10px;
+
 }
 
 .classCategories *:hover {
-    border: 5px solid #eb5e0b;
+    border: 5px solid #0bebd8;
     opacity: 1;
+    border-radius: 10px;
 }
 
 

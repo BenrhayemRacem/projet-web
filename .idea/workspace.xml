@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32999f68-30d4-46a8-9d7b-bfd8268eceb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/Assets/Stylecourse.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLbalises.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLfin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLhistory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLinput.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLorganisation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLquiz.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtableaux.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLtypesinput.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/HTMLvideo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet-web-inscription_racem/catalogue/coursHTML/src/pageHome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSSLes sélecteurs descendants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSSclass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSScolor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSSdivetspan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSSpseudoclasses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSSselecteurs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/CSStableaux.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/CSS/calculScoreQuizzCSS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/booleen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/calculScoreQuizzJS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/chaines.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/date.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/dom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/fonctions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/history.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/identifiants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/introduction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/objets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/quizz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/tableaux.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet-web-HTMLcourse/projet-web-HTMLcourse/src/JS/variable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet-web-inscription_racem/src/HTMLquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet-web-inscription_racem/src/HTMLquiz.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/projet-web-inscription_racem/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -45,6 +58,7 @@
       <recent name="D:\gl\sem2\newprojetweb\projet-web-inscription_racem\catalogue\coursHTML\Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gl\sem2\newprojetweb\projet-web-HTMLcourse\projet-web-HTMLcourse\src\HTML" />
       <recent name="D:\gl\sem2\newprojetweb\projet-web-inscription_racem\catalogue\coursHTML\Assets" />
       <recent name="D:\gl\sem2\newprojetweb\projet-web-inscription_racem\catalogue\coursHTML\Assets\images" />
     </key>
@@ -60,6 +74,9 @@
       <workItem from="1620139038449" duration="14094000" />
       <workItem from="1620397345094" duration="6929000" />
       <workItem from="1620430731165" duration="461000" />
+      <workItem from="1620457475334" duration="610000" />
+      <workItem from="1620936921199" duration="7186000" />
+      <workItem from="1621112474037" duration="8084000" />
     </task>
     <servers />
   </component>

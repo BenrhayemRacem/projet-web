@@ -1,10 +1,10 @@
-const cardsArray = document.querySelectorAll("#membersStories div.col-md-12");
-const spanArray = document.querySelectorAll("#membersStories div.col-md-12 > span");
+var cardsArray = document.querySelectorAll("#membersStories div.col-md-12");
+var spanArray = document.querySelectorAll("#membersStories div.col-md-12 > span");
 console.log(cardsArray);
 console.log(spanArray);
 
 cardsArray.forEach(element=> {
-    element.addEventListener('mouseenter' , ()=> {
+    element.addEventListener('mouseenter' , (e)=> {
         element.classList.add("hovering") ;
         element.classList.remove("notHovering") ;
 
@@ -13,7 +13,7 @@ cardsArray.forEach(element=> {
 })
 
 cardsArray.forEach(element=> {
-    element.addEventListener('mouseleave' , ()=> {
+    element.addEventListener('mouseleave' , (e)=> {
 
         element.classList.add("notHovering") ;
         element.classList.remove("hovering") ;
@@ -23,12 +23,12 @@ cardsArray.forEach(element=> {
 })
 
 // Animate text :
-const TextBox = document.querySelector(".text-box");
+var TextBox = document.querySelector(".text-box");
 console.log(TextBox);
 
-TextBox.addEventListener('mouseenter' , ()=> {
-    let T1 = document.querySelector("#Texte1");
-    let T2 = document.querySelector("#Texte2");
+TextBox.addEventListener('mouseenter' , (e)=> {
+    var T1 = document.querySelector("#Texte1");
+    var T2 = document.querySelector("#Texte2");
 
     T1.classList.add("heading-LastTexte2") ;
     T1.classList.remove("heading-LastTexte1") ;
@@ -38,9 +38,9 @@ TextBox.addEventListener('mouseenter' , ()=> {
 
 })
 
-TextBox.addEventListener('mouseleave' , ()=> {
-    let T1 = document.querySelector("#Texte1");
-    let T2 = document.querySelector("#Texte2");
+TextBox.addEventListener('mouseleave' , (e)=> {
+    var T1 = document.querySelector("#Texte1");
+    var T2 = document.querySelector("#Texte2");
 
     T2.classList.add("heading-LastTexte2") ;
     T2.classList.remove("heading-LastTexte1") ;

@@ -1,19 +1,367 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head style="border-left-width: 0 ; border-left-style: solid;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('images/Commun/Logohead.png') }}">
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/brands.js') }}"></script>
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/solid.js') }}"></script>
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/fontawesome.js') }}"></script>
+
+    {% block StyleSheet %}
+        <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/Style.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/home/styleAboutUs.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/home/membersStories.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/home/learningPath.css') }}">
+    {% endblock %}
+    <title> {% block Title %}LTC- Learn To Create{% endblock %}</title>
+</head>
+
+{% block Body %}
+<body>
+
+<!-- The Nav bar -->
+<!--Header -->
+{% block Header %}
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light scrolled sticky ">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('images/Commun/SiteName.png')}}" alt="WebsiteLogo" id="SiteName" style="width:200px ; height:auto"  />
+            <img src="{{ asset('images/Commun/Logohead.png')}}" alt="WebsiteLogo" id="Logo" style="width:100px ; height:auto" />
+        </a>
+
+        <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <div class="close-icon py-1">✖</div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul id="navMenu" class="navbar-nav ml-auto">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="nav-item actived">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="nav-item" id = "header">
+                    <a class="nav-link" href="#about_us" style="text-align: center;">ABOUT US</a>
+                </li>
+                <li class="nav-item" id = "header">
+                    <a class="nav-link" href="#courses">COURSES</a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a class="btn-grad" id="LoginIn" href="{{ path('Login') }}">Login</a></li>
+                <li><div class="wrapper"><div class ="SearchBox"><input placeholder = "Search" type="text" class="input">
+                            <div class="searchbtn"> <i class="fa fa-search"></i></div>
+                        </div></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+{% endblock %}
+<!--/Header -->
+
+
+<!--First section -->
+<div id="firstSection" class="container cover">
+    <h1 class="cover-heading">Build Something big with us</h1>
+    <p class="lead">Want to start learning and creating your awesome projects ?</p>
+    <a href="{{ path('Login') }}" class="btn btn-lg btn-secondary">Take A Course Now</a>
+</div>
+<!--/First section -->
+
+<!-- Increasing Numbers -->
+<div id="Numbers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center animate-box">
+                <span class="Numbericon"><i class="fas fa-user-graduate"></i><br/></span>
+                <div class="Number">4356</div>
+                <span class="Numbers-label">students</span>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <span class="Numbericon"><i class="fas fa-book-open"></i><br/></span>
+                <div class="Number">457</div>
+                <span class="Numbers-label">courses</span>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <span class="Numbericon"><i class="fas fa-chalkboard-teacher"></i><br/></span>
+                <div class="Number">123</div>
+                <span class="Numbers-label">instructors</span>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <span class="Numbericon"><i class="fas fa-globe-africa"></i><br/></span>
+                <div class="Number">24</div>
+                <span class="Numbers-label">countries</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Increasing Numbers -->
+
+
+<!-- About us -->
+<section id="about_us" >
+    <div class="container-fluid" style="background-image: url({{ asset('images/Commun/Background/WebHomeEdit.jpg')}});">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="row ">
+
+                        Our partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
+                    </div>
+                    <div class="row justify-content-center">
+                        <a href="{{path('Login')}}" class="btn btn-lg btn-secondary" style="font-weight: bold;"> login for free </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="{{ asset('images/HomeImages/students.webp')}}" class="img-student" alt="student images">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /About us -->
+
+<!-- collaborators -->
+<section id="collaborators" style="max-height: 1000px;">
+    <div class="container" id="CollaboratorContainer">
+        <h1 style="font-size:50px;background-image: url({{ asset('images/Commun/Background/Background.jpg')}});"> Our main collaborators ...</h1>
+
+        <div class="collaborators carousel" >
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col"> <img src="{{ asset('images/HomeImages/icons/duke.webp')}}" alt="" > </div>
+                            <div class="col"><img src="{{ asset('images/HomeImages/icons/google.png')}}" alt="" ></div>
+                            <div class="col"><img src="{{ asset('images/HomeImages/icons/ibm.webp')}}" alt="" ></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col"><img  src="{{ asset('images/HomeImages/icons/illinois.webp')}}" alt="" ></div>
+                            <div class="col"> <img  src="{{ asset('images/HomeImages/icons/stanford.webp')}}" alt="" ></div>
+                            <div class="col-carre"> <img src="{{ asset('images/HomeImages/icons/insat.jpg')}}" alt="carre" ></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--/collaborators-->
+
+
+<!--membersStories-->
+<section  id="membersStories" style="background-image: url({{ asset('images/Commun/Background/Background.jpg')}});">
+
+    <h1 class="heading"> <strong> Our students talking about us </strong></h1>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <span></span>
+                <img src="{{ asset('images/HomeImages/student1.png')}}" class="img-thumbnail" alt="">
+                <div>Your courses are simply awesome, the depth they go into and the breadth of coverage is so good that I don't have to refer to 10 different websites looking for interview topics and content.
+                    <h4>Souvuk ,front-end developer</h4>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+                <span></span>
+                <img src="{{ asset('images/HomeImages/student2.png')}}" class="img-thumbnail" alt="">
+
+                <div>“LTC's class gave me a positive push to continue to work, . More classes later,
+                    each instructor has inspired me in a different way to be the best version of myself.”
+                    Now , i am establishing my own startup and i am looking forward for my future.
+                    <h4>Mikalia ,data scientist</h4>
+                </div>
+
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+                <span></span>
+                <img src="{{ asset('images/HomeImages/student3.png')}}" class="img-thumbnail" alt="">
+                <div>You guys are the gold standard of crash-courses... Narrow enough that it doesn't need years of study or a full blown book to get the gist, but broad enough that an afternoon of Googling doesn't cut it.
+                    <h4>Carlos ,Music Composer</h4>
+                </div>
+            </div>
+            <div class="container" id="LastTexte">
+                <!-- code here -->
+                <div class="text-box">
+                    <div id="Texte1" class="heading-LastTexte1">If you join us you'll be the one</div>
+                    <div id="Texte2" class="heading-LastTexte2">to share your success story</div>
+                </div>
+            </div>
+            <div class="col"><h1 style="margin-bottom: 50px ; color: white;"></h1></div>
+        </div>
+
+    </div>
+
+</section>
+<!--/membersStories-->
+
+<!-- Courses -->
+<section id="courses">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>It is such a unique and reader-friendly site, resources available for learners on <strong>LTC</strong> is well organized and deep</h1>
+        </div>
+
+        <div class="row">
+            <div class="col Option">
+                100+ Classes
+            </div>
+            <div class="col Option">
+                20 Lessons
+                Average per class
+            </div>
+            <div class="col Option">
+                a friendly-reader courses
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses -->
+
+<!-- Description Cours -->
+<section id="descriptionCours">
+    <div class="container">
+        <div class="container bg"></div>
+        <div class="row">
+            <div class="col" id ="ClasseDescp1">
+                <div class="row" style="text-align: center;">
+                <h3 style="text-align: center;  color:white">Faster than videos</h3>
+
+                Videos are holding you back. The average video tutorial is spoken at 150 words per minute, while you can read at 250. That's why our courses are text-based.
+            </div>
+            <br/>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i>  Learn at your own pace</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i>  Highlight text</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i>  Practice as you learn</li>
+            </ul>
+        </div>
+
+        <div class="col" id ="ClasseDescp2">
+            <h3 style="text-align: center ; color:white;"> Classes Description</h3>
+            <br/>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-star"></i>   new classes added monthly</li>
+                <li class="list-group-item"><i class="fas fa-star"></i>   remunerated by first class universities</li>
+                <li class="list-group-item"><i class="fas fa-star"></i>   PDF workbooks for every class</li>
+                <li class="list-group-item"><i class="fas fa-star"></i>   Apply what you learn with  practical projects at your own pace</li>
+                <li class="list-group-item"><i class="fas fa-star"></i>   A very motivated community</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <h1>our class categories</h1>
+    </div>
+    <div class="row classCategories ">
+        <div class="col-lg-3 col-md-12  offset-1">computer science</div>
+        <div class="col-lg-3 col-md-12 offset-1">Business</div>
+        <div class="col-lg-3 col-md-12 offset-1"> mathematics and logic</div>
+
+
+        <div class="col-lg-3 col-md-12 offset-1">Arts & Entertainment</div>
+        <div class="col-lg-3 col-md-12 offset-1">Writing</div>
+        <div class="col-lg-3 col-md-12 offset-1">Wellness</div>
+    </div>
+    </div>
+
+</section>
+<!-- Description Cours -->
+{% endblock %}
+
+{% block Scripts %}
+<script src="{{ asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
+<!--<script src="/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js"></script>-->
+<script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('Scripts/HomeScripts/animatingFirstSection.js')}}"></script>
+<script src="{{ asset('Scripts/HomeScripts/animatingMembersStories.js')}}"></script>
+{% endblock %}
+
+
+</body>
+
+
+{% block Footer %}
+<footer>
+    <div id="footer" class="container-fluid">
+        <div class="col-12">
+            <img src="{{ asset('images/Commun/Logohead.png')}}" alt="">
+            <div>
+                Learn in-demand skills in half the time
+            </div>
+        </div>
+
+        <div class="row offset-1">
+            <div class="col">
+                <div class="row"><h3>Learn</h3></div>
+                <div class="row"><a href="#"> Courses</a></div>
+                <div class="row"><a href="#"> Forum</a></div>
+                <div class="row"><a href="#"> Classes </a></div>
+                <div class="row"><a href="#"> Tests </a></div>
+            </div>
+            <div class="col">
+                <div class="row"><h3>Legal</h3></div>
+                <div class="row"><a href="#"> Privacy Policy </a></div>
+                <div class="row"><a href="#"> Terms of service </a></div>
+
+            </div>
+            <div class="col">
+                <div class="row"><h3>More</h3></div>
+                <div class="row"><a href="#"> Our team</a></div>
+                <div class="row"><a href="#"> for bootcamps</a> </div>
+                <div class="row"><a href="#"> FAQ </a></div>
+                <div class="row"><a href="#"> Contact Us </a></div>
+            </div>
+        </div>
+        <div class="row contactUsIcons justify-content-between">
+            <div class="col-4">
+                <a href="">
+                    <img  width="32" height = "32" src="{{ asset('images/Commun/icons/envelope-fill.svg')}}" alt="">
+                </a>
+                <a href="">
+                    <img  width="32" height = "32" src="{{ asset('images/Commun/icons/facebook.svg')}}" alt="">
+                </a>
+                <a href="">
+                    <img  width="32" height = "32" src="{{ asset('images/Commun/icons/linkedin.svg')}}" alt="">
+                </a>
+                <a href="">
+                    <img  width="32" height = "32" src="{{ asset('images/Commun/icons/instagram.svg')}}" alt="">
+                </a>
+
+            </div>
+            <div class="col-4">
+                Copyright ©2021 Educative, Inc. All rights reserved
+
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
 </html>

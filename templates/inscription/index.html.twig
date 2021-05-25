@@ -1,20 +1,88 @@
-<!DOCTYPE html>
+{% extends 'home.html.twig'%}
 
-<title>Hello InscriptionController!</title>
+    {% block StyleSheet %}
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"  rel="stylesheet"  type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('CSS/login/styleLogin.css')}}">
+    {% endblock %}
+    {% block Title %}Sign in{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block Body %}
+    {% block Header %}
+    {% endblock %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+ <section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/DELL/OneDrive/Bureau/GL2-Sem2/DeveloppementWeb/Web Project/WebProject/src/Controller/InscriptionController.php'|file_link(0) }}">src/Controller/InscriptionController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/DELL/OneDrive/Bureau/GL2-Sem2/DeveloppementWeb/Web Project/WebProject/templates/inscription/index.html.twig'|file_link(0) }}">templates/inscription/index.html.twig</a></code></li>
-    </ul>
-</div>
+
+
+        <div class="container box">
+
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="square" style="--i:5;"></div>
+            <form>
+                {{ form_start(form) }}
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    {{ form_widget(form.Email) }}
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    {{ form_errors(form.Email) }}
+                </div>
+                <div class="row">
+                    <div class="col"> First name
+
+                        {{ form_widget(form.FirstName) }}
+                        {{ form_errors(form.FirstName) }}
+
+                    </div>
+                    <div class="col">Last name
+
+                        {{ form_widget(form.LastName) }}
+                        {{ form_errors(form.LastName) }}
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+
+                    {{ form_widget(form.plainPassword.first) }}
+                    {{ form_errors(form.plainPassword.first) }}
+
+
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Your password must be 8-20 characters long, contain only letters and numbers at the same time
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Retype Password</label>
+
+                    {{ form_widget(form.plainPassword.second) }}
+                    {{ form_errors(form.plainPassword.second) }}
+                </div>
+                <div class="container">
+                    <h6>Already have an account? <a href="{{ path('Login') }}">Sign in</a></h6>
+                </div>
+                {{ form_row(form.CreateAccount) }}
+                {{ form_end(form) }}
+
+
+            </form>
+        </div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+    </section>
 {% endblock %}
+
+{% block Scripts %}
+    <script src="{{ asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('Scripts/InsciptionScripts/ControleFormInscrit.js')}}"></script>
+{% endblock %}
+
+{% block Footer %}
+{% endblock %}
+

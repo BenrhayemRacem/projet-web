@@ -1,0 +1,75 @@
+#membersStories   {
+    min-height: 10vh;
+    background-color: #b8e3e9;
+    padding-top: 50px;
+    background-image: url(/Assets/AcceuilBackgroundImages/Background.jpg);
+    background-size: cover;}
+#membersStories .container {
+
+    overflow: hidden;
+
+}
+#membersStories .heading {
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size:50px;
+}
+#membersStories div.col-md-12.col-lg-4 {
+    overflow: hidden;
+    margin-top: 20px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+#membersStories div.col-md-12  div:nth-child(3){
+    visibility: hidden;
+}
+
+
+#membersStories div.col-md-12:hover  div:nth-child(3){
+    color:  #ffffff;
+    transform: translateY(-200px);
+    visibility: visible;
+    transition: 0.5s;
+    font-weight: 300;
+    z-index: 2;
+    background: black;
+    opacity: 0.6;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #membersStories div.col-md-12.hovering  span {
+        transform: translateY(0);
+    }
+
+}
+
+/*  LastTest */
+.text-box {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: auto;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading-LastTexte1{
+    color: #fff;
+    padding: 10px;
+}
+
+.heading-LastTexte2 {
+    background-color: rgba(255, 255, 255, 0.849);
+    color: #8e76e4 ;
+    padding: 10px;
+}
+
+/* / LastTest */

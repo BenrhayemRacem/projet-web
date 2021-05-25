@@ -1,0 +1,158 @@
+#courses {
+    min-height: 80 vh ;
+    padding-top: -30px;
+}
+#courses  div.row{
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+#courses  div.row div.col.Option {
+    /* border: 2px solid black;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 80px;
+
+    font-weight: 500;
+    font-size:200% ; */
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    margin: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block; }
+
+
+#courses  div.row div.col.Option:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.row.justify-content-center h1{
+    font-size: 50px;
+    font-weight: bolder;
+    box-sizing: content-box;
+    color: rgba(0, 0, 0, 0.911);
+    text-shadow:
+            2px 2px #64d4f0,
+            4px 4px #6567c4;
+}
+
+/* descriptionCours */
+
+.list-group-item {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#ClasseDescp1 *, #ClasseDescp2 * {
+    box-sizing: unset;
+    text-align: left;
+    font-weight: bold;
+}
+
+.fa-check-circle , .fa-star {
+    color: white;
+}
+
+#descriptionCours {
+    min-height: 80vh;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url(https://konferencija.coming.rs/wp-content/uploads/2018/08/AgendaBack2000x1000.jpg);
+    background-size: cover;
+}
+#descriptionCours h3 {
+    color: white;
+}
+
+#ClasseDescp2 {
+    margin: 20px;
+    padding: 20px ;
+}
+
+.classCategories * {
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    min-height: 60px;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+
+}
+
+.classCategories *:hover {
+    border: 5px solid #0bebd8;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+
+#descriptionCours h3,h1 {
+    color: #2978b5;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    margin-top: 100px;
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: #4291a5 ;
+
+    color: white;
+
+
+}
+footer a {
+    color: white;
+    opacity: 0.3;
+    text-decoration: none;
+}
+footer a:hover {
+    opacity: 1;
+    color: white;
+}
+
+footer img {
+
+    height: 50px;
+}
+
+footer div.col-12 {
+    border-bottom: dotted 2px #fdb827 ;
+    margin-bottom: 20px;
+}
+footer div.col-12 div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contactUsIcons {
+    margin-top: 20px;
+    padding-top: 30px;
+    color: white;
+
+    border-top: 2px dotted #fdb827 ;
+}
+.contactUsIcons col {
+    margin-top: 15px;
+}
+.contactUsIcons * {
+    margin-left: 20px;
+}

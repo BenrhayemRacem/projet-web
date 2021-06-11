@@ -1,0 +1,51 @@
+/****** Header **********/
+header {
+    box-shadow: none ;
+}
+.wrapperUser {
+    margin-top: 30px;
+    height: 20px;
+    padding : 40px 30px 45px 20px ;
+     top : 10%;
+     left: 92%;}
+
+.UserIcon {
+    position: relative;
+    transform: translate(-50% ,-50%);
+    width : 60px ;
+    height : 60px ;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(255, 255, 255) ;
+}
+
+.UserIcon .fa-user{
+    position: relative;
+    top : 50% ;
+    left : 22% ;
+    transform: translate(-50% ,-50%);
+    color : rgb(134, 206, 211) ;
+    font-size: 30px ;
+}
+.Greeting {
+    margin-left: 50px;
+    margin-top: 45px; margin-bottom: 15px ;
+    padding-top : 10px;
+    padding-right : 20px ;
+    width : 400px ;
+    top : 10%;
+    left: 92%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;
+    color: rgba(0,0,0,.55);
+    font-weight: bold;
+}
+.User { position : absolute ; top : 0 ; left : 70% }
+/********** User Dropdown ********************/
+.dropdown-toggle::after , .dropdown-toggle::before{
+    border-top : none;
+    width : 50% ;
+}
+a.dropdown-item.active {
+    background-color: rgb(134, 206, 211) ;
+}

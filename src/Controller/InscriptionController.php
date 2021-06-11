@@ -2,54 +2,52 @@
 
 namespace App\Controller;
 
-
 use App\Entity\User;
 use App\Form\UserType;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+
 class InscriptionController extends AbstractController
 {
-    /**
-     * @Route("/inscription", name="inscription")
-     */
+    private $passwordEncoder;
 
-    public function index(EntityManagerInterface $entityManager ,Request $request , User $user=null ,UserPasswordEncoderInterface $passwordEncoder): Response
+    public function __construct(UserPasswordEncoderInterface $passwordEncoder)
     {
-        // 1) build the form
+        $this->passwordEncoder = $passwordEncoder;
+    }
+
+    /**
+     * @Route("/registration", name="registration")
+     */
+    public function index(Request $request)
+    {
         $user = new User();
+
         $form = $this->createForm(UserType::class, $user);
 
-        // 2) handle the submit (will only happen on POST)
         $form->handleRequest($request);
-            /*dd($form->isSubmitted());*/
+
         if ($form->isSubmitted() && $form->isValid()) {
+            // Encode the new users password
+            $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
 
-            // 3) Encode the password (you could also do this via Doctrine listener)
-            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
-            $user->setPassword($password);
+            // Set their role
+            $user->setRoles(['ROLE_USER']);
 
-            // 4) save the User!
-            dd($user);
-            $entityManager->persist($user);
-            $entityManager->flush();
+            // Save
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
 
-            // ... do any other work - like sending them an email, etc
-            // maybe set a "flash" success message for the user
+            return $this->redirectToRoute('Login');
+        }
 
-            return $this->render('Connected.html.twig', [
-                'user' => $user
-            ]);
-          //  return $this->forward('App\Controller\homeController::home',['user'=>$user]);
-        } else {
-            return $this->render('inscription/index.html.twig', [
-            'form' => $form->createView()
-        ]);}
-
-
+        return $this->render('inscription/index.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 }
+

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head style="border-left-width: 0 ; border-left-style: solid;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('images/Commun/Logohead.png') }}">
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/brands.js') }}"></script>
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/solid.js') }}"></script>
+    <script defer src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/fontawesome.js') }}"></script>
+
+    {% block StyleSheet %}
+        <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/Style.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/home/learningPath.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/User/User.css') }}">
+    {% endblock %}
+    <title> {% block Title %}LTC- Learn To Create{% endblock %}</title>
+</head>
+
+
+<body>
+
+<!-- The Nav bar -->
+<!--Header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light scrolled sticky ">
+
+            <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <div class="close-icon py-1">✖</div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul id="navMenu" class="navbar-nav ml-auto">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    {% block Activated %}
+                    <li class="nav-item actived">
+                        <a href="#">DISCOVER</a>
+                    </li>
+                    <li class="nav-item" id = "header">
+                        <a class="nav-link" href="#">MY COURSES</a>
+                    </li>
+                    <li class="nav-item" id = "header">
+                        <a class="nav-link" href="#">MY PROJECTS</a>
+                    </li>
+                    {% endblock %}
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li> <div class="row dropdown User">
+                            <div class="col Greeting "> Welcome , Hadil </div>
+                                <div class=" col wrapperUser dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="UserIcon"> <i class="fas fa-user"></i></div>
+                                </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width : 60% ; left : 5% ;">
+                                <li><a class="dropdown-item" href="{{ path('Profile') }}">My Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ path('Edit_Profile') }}">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ path('home') }}">Log out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!--/Header -->
+
+{% block Body %}
+{% endblock %}
+
+{% block Scripts %}
+    <script src="{{ asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
+    <!--<script src="/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js"></script>-->
+    <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+{% endblock %}
+
+
+</body>
+
+
+{% block Footer %}
+    <footer>
+        <div id="footer" class="container-fluid">
+            <div class="col-12">
+                <img src="{{ asset('images/Commun/Logohead.png')}}" alt="">
+                <div>
+                    Learn in-demand skills in half the time
+                </div>
+            </div>
+
+            <div class="row offset-1">
+                <div class="col">
+                    <div class="row"><h3>Learn</h3></div>
+                    <div class="row"><a href="#"> Courses</a></div>
+                    <div class="row"><a href="#"> Forum</a></div>
+                    <div class="row"><a href="#"> Classes </a></div>
+                    <div class="row"><a href="#"> Tests </a></div>
+                </div>
+                <div class="col">
+                    <div class="row"><h3>Legal</h3></div>
+                    <div class="row"><a href="#"> Privacy Policy </a></div>
+                    <div class="row"><a href="#"> Terms of service </a></div>
+
+                </div>
+                <div class="col">
+                    <div class="row"><h3>More</h3></div>
+                    <div class="row"><a href="#"> Our team</a></div>
+                    <div class="row"><a href="#"> for bootcamps</a> </div>
+                    <div class="row"><a href="#"> FAQ </a></div>
+                    <div class="row"><a href="#"> Contact Us </a></div>
+                </div>
+            </div>
+            <div class="row contactUsIcons justify-content-between">
+                <div class="col-4">
+                    <a href="">
+                        <img  width="32" height = "32" src="{{ asset('images/Commun/icons/envelope-fill.svg')}}" alt="">
+                    </a>
+                    <a href="">
+                        <img  width="32" height = "32" src="{{ asset('images/Commun/icons/facebook.svg')}}" alt="">
+                    </a>
+                    <a href="">
+                        <img  width="32" height = "32" src="{{ asset('images/Commun/icons/linkedin.svg')}}" alt="">
+                    </a>
+                    <a href="">
+                        <img  width="32" height = "32" src="{{ asset('images/Commun/icons/instagram.svg')}}" alt="">
+                    </a>
+
+                </div>
+                <div class="col-4">
+                    Copyright ©2021 Educative, Inc. All rights reserved
+
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+</html>

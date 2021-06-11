@@ -23,53 +23,56 @@
             <div class="square" style="--i:4;"></div>
             <div class="square" style="--i:5;"></div>
             <form>
+
                 {{ form_start(form) }}
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    {{ form_widget(form.Email) }}
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    {{ form_errors(form.Email) }}
-                </div>
-                <div class="row">
-                    <div class="col"> First name
-
-                        {{ form_widget(form.FirstName) }}
-                        {{ form_errors(form.FirstName) }}
-
-                    </div>
-                    <div class="col">Last name
-
-                        {{ form_widget(form.LastName) }}
-                        {{ form_errors(form.LastName) }}
-
+                <div class="form_group">
+                    <div class="col-md-12 mb-3">
+                        {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                 </div>
+                <div class="form_group">
+                    <div class="row">
+                        <div class="col"> First name
+                            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col">Last name
+                            {{ form_widget(form.lastname, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div class="col-md-12 mb-3">
+                        {{ form_row(form.password.first, {'attr': {'class':
+                            'form-control'}}) }}
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div class="col-md-12 mb-3">
+                        {{ form_row(form.password.second, {'attr': {'class':
+                            'form-control'}}) }}
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                            Your password must be 8-20 characters long, contain only letters and numbers at the same time
+                        </small>
+                    </div>
+                </div>
+
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-
-                    {{ form_widget(form.plainPassword.first) }}
-                    {{ form_errors(form.plainPassword.first) }}
-
-
-                    <small id="passwordHelpBlock" class="form-text text-muted">
-                        Your password must be 8-20 characters long, contain only letters and numbers at the same time
-                    </small>
+                    <div class="container">
+                        <h6>Already have an account? <a href="{{ path('Login') }}">Sign in</a></h6>
+                    </div>
+                    <div class="col-md-8 col-md-offset-4" style="margin-top:5px;">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-btn fa-user"></i> Register
+                        </button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword2">Retype Password</label>
-
-                    {{ form_widget(form.plainPassword.second) }}
-                    {{ form_errors(form.plainPassword.second) }}
-                </div>
-                <div class="container">
-                    <h6>Already have an account? <a href="{{ path('Login') }}">Sign in</a></h6>
-                </div>
-                {{ form_row(form.CreateAccount) }}
                 {{ form_end(form) }}
-
-
-            </form>
+                </form>
         </div>
+
+
+
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>

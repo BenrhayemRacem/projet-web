@@ -1,27 +1,35 @@
 <?php
 
 namespace App\Entity;
-
-use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
-
 /**
- * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
 class User implements UserInterface
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255 , unique=true)
+     * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $Email;
+    private $email;
+
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = [];
+
+    /**
+     * @var string The hashed password
+     * @ORM\Column(type="string")
+     */
+    private $password;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -29,34 +37,24 @@ class User implements UserInterface
     private $FirstName;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isComfirmed;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $LastName;
 
     /**
-     * @ORM\Column(type="string", length=20)
+     * @ORM\Column(type="text", nullable=true)
      */
-    private $PlainPassword;
+    private $Bio;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $Confirmed;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Password;
-
-    /**
-     * @ORM\Column(type="array")
-     */
-    private $roles;
-
-    public function __construct()
-    {
-        $this->roles = array('ROLE_USER');
-    }
+    private $address;
 
     public function getId(): ?int
     {
@@ -65,14 +63,71 @@ class User implements UserInterface
 
     public function getEmail(): ?string
     {
-        return $this->Email;
+        return $this->email;
     }
 
-    public function setEmail(string $Email): self
+    public function setEmail(string $email): self
     {
-        $this->Email = $Email;
-
+        $this->email = $email;
         return $this;
+    }
+
+    /**
+     * A visual identifier that represents this user.
+     *
+     * @see UserInterface
+     */
+    public function getUsername(): string
+    {
+        return (string) $this->email;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function getRoles(): array
+    {
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+        return array_unique($roles);
+    }
+
+    public function setRoles(array $roles): self
+    {
+        $this->roles = $roles;
+        return $this;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function getPassword(): string
+    {
+        return (string) $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+        return $this;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function getSalt()
+    {
+        // not needed when using the "bcrypt" algorithm in security.yaml
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function eraseCredentials()
+    {
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
     }
 
     public function getFirstName(): ?string
@@ -83,6 +138,17 @@ class User implements UserInterface
     public function setFirstName(string $FirstName): self
     {
         $this->FirstName = $FirstName;
+        return $this;
+    }
+
+    public function getIsComfirmed(): ?bool
+    {
+        return $this->isComfirmed;
+    }
+
+    public function setIsComfirmed(bool $isComfirmed): self
+    {
+        $this->isComfirmed = $isComfirmed;
 
         return $this;
     }
@@ -99,57 +165,27 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getPlainPassword(): ?string
+    public function getBio(): ?string
     {
-        return $this->PlainPassword;
+        return $this->Bio;
     }
 
-    public function setPlainPassword(string $PlainPassword): self
+    public function setBio(?string $Bio): self
     {
-        $this->PlainPassword = $PlainPassword;
+        $this->Bio = $Bio;
 
         return $this;
     }
 
-    public function getConfirmed(): ?bool
+    public function getAddress(): ?string
     {
-        return $this->Confirmed;
+        return $this->address;
     }
 
-    public function setConfirmed(bool $Confirmed): self
+    public function setAddress(?string $address): self
     {
-        $this->Confirmed = $Confirmed;
+        $this->address = $address;
 
         return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->Password;
-    }
-
-    public function setPassword(string $Password): self
-    {
-        $this->Password = $Password;
-
-        return $this;
-    }
-
-    public function getRoles()
-    {
-        return $this->roles;
-    }
-
-    public function getSalt()
-    {
-        return null;
-    }
-
-    public function getUsername()
-    {
-    }
-
-    public function eraseCredentials()
-    {
     }
 }

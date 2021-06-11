@@ -1,0 +1,10 @@
+
+.Categories {
+    margin-top: 5% ;
+}
+.Categories .first {
+    justify-content: center;
+}
+.Categories .second {
+    justify-content: flex-end;
+}

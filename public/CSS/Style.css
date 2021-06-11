@@ -393,7 +393,53 @@ section>div.container-fluid div.row img {
     height: 150px;
 
 }
-
+/*******************************************************************************************************/
 #footer{
     background-color: #4291a5;
+}
+footer {
+    margin-top: 100px;
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: #4291a5 ;
+
+    color: white;
+}
+
+footer a {
+    color: white;
+    opacity: 0.3;
+    text-decoration: none;
+}
+footer a:hover {
+    opacity: 1;
+    color: white;
+}
+
+footer img {
+
+    height: 50px;
+}
+
+footer div.col-12 {
+    border-bottom: dotted 2px #fdb827 ;
+    margin-bottom: 20px;
+}
+footer div.col-12 div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contactUsIcons {
+    margin-top: 20px;
+    padding-top: 30px;
+    color: white;
+
+    border-top: 2px dotted #fdb827 ;
+}
+.contactUsIcons col {
+    margin-top: 15px;
+}
+.contactUsIcons * {
+    margin-left: 20px;
 }

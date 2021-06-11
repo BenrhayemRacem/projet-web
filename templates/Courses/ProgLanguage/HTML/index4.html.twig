@@ -1,0 +1,43 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block width %}70%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action  ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action active">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}Les types de l'input{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+
+            <p>
+                -email<br>
+                -url<br>
+                -tel<br>
+                -number<br>
+                -range<br>
+                -checkbox<br>
+                -radio<br>
+                -date<br>
+                -search<br>
+                -...
+            </p>
+
+        </div>
+
+        <div class="container justify-items-end row">
+            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 3 }) }}">< Previous</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 5 }) }}">Next ></a></div>
+        </div>
+    </div>
+{% endblock %}

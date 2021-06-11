@@ -1,19 +1,11 @@
-
-.Categories {
-    margin-top: 5% ;
+.container {
+    margin-top: 2% ;
 }
-.Categories .first {
-    justify-content: center;
+.list-group-item.active {
+    background-color: rgb(134, 206, 211);
+    border-color: rgb(134, 206, 211);
 }
-.Categories .second {
-    justify-content: flex-end;
-}
-#Courses .row {
-    column-gap: 20px;
-    padding: 20px ;
-}
-
-.card-title {
+.titleParagraphe {
     color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     background-size: 100%;
@@ -49,12 +41,19 @@
     width: 100%;
 }
 
-.btn-grad {
-    justify-content: center;
-    font-size: 15px;
+.NextTitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin : 20px 0 20px 0;
+    padding: 10px;
+    color : white;
+    background-color: rgb(134, 206, 211);
+    border-radius: 1%;
 }
 
-
-.description {
-    margin : 20px ;
+li {
+    list-style-type: none ;
+}
+.btn-grad {
+    justify-content: center;
+    font-size: 13px;
 }

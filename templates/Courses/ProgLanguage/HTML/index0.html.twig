@@ -1,0 +1,31 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block titleParagraphe %} HTML History {% endblock %}
+
+                    {% block Course %}
+                    <div class="card" style="margin-top: 20px ">
+                        <div class="card-body">
+                    <p> 1991:HTML1</p>
+                    <p> A partir de 1995, tout s’accélère,création de:
+                    <ul>
+                        <li> Javascript</li>
+                        <li> HTML 2.0</li>
+                        <li> Internet explorer, 1ère version </li>
+                    </ul>
+                    <ul>
+                        <li> 1996:CSS1</li>
+                        <li> 1997:HTML4</li>
+                        <li> 1998:CSS2</li>
+                        <li> 2000:XHTML1</li>
+                        <li> 2008:HTML5</li>
+                    </ul>
+                            <div class="container justify-items-end row">
+                                <div class="col"><a class="btn-grad" href="{{ path('Discover') }}">Home</a></div>
+                                <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse', {num : 1 }) }}">Next ></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+{% endblock %}
+
+

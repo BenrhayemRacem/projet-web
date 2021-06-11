@@ -1,0 +1,41 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block width %}85%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action  ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action active">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}Les balises semantique{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+
+            <p>
+                -header <br>
+                -nav <br>
+                -article<br>
+                -section<br>
+                -aside<br>
+                -footer<br>
+            </p>
+
+            <img src="{{ asset('images/HTML/HTMLorganisation.png')}}" class="img-thumbnail" width="500px"/>
+
+        </div>
+
+        <div class="container justify-items-end row">
+            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 4 }) }}">< Previous</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 6 }) }}">Next ></a></div>
+        </div>
+    </div>
+{% endblock %}

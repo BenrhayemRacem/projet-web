@@ -1,0 +1,48 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block width %}40%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action active">HTML tableaux</a>
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}Les tableaux{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+            <p> la balise table et /table indiquent le debut et la fin du tableau</p>
+
+
+            <p> Chaque ligne est represente par les balises tr et /tr </p>
+            <p> Chaque colonne est represente par les balises td et /td </p>
+
+            <p> <img src="{{ asset('images/HTML/tableau.png') }}" alt="Tableau" width="500px"/>
+            </p>
+            <p> l'execution de cette image donne:
+            <table>
+                <tr>
+                    <td>Ligne 1 – Colonne 1</td>
+                    <td>Ligne 2 – Colonne 2</td>
+                </tr>
+                <tr>
+                    <td>Ligne 2 – Colonne 1</td>
+                    <td>Ligne 2 – Colonne 2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container justify-items-end row">
+            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 1 }) }}">< Previous</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 3 }) }}">Next ></a></div>
+        </div>
+    </div>
+{% endblock %}

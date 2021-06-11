@@ -1,0 +1,42 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block width %}25%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action active ">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}Les balises usuelles{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+                            <div class="card" style=" margin: 20px ;">
+                                <div class="card-body">
+                            <p> Chaque balise represente du contenu <br>
+                                Exemple: < !-- ....--> represente un commentaire <br>
+                                < h1>,< h2>,< h3> representent des titres </p>
+
+                            <p> il existe 2 types de balise :</p>
+
+                            <p> 1/ Les balises « block » : Elles englobent le contenu. Elles
+                                contiennent des paragraphes, des titres, etc.</p>
+
+                            <p> Exemple: < p > Ceci est un paragraphe < /p > </p>
+                            <p> 2/ Les balises « inline » : Elles sont dans le texte. (mettre
+                                en gras, souligner, etc…) <br>
+                                Exemple:la balise strong </p>
+                        </div>
+
+                <div class="container justify-items-end row">
+                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                    <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse') }}">< Previous</a></div>
+                    <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 2 }) }}">Next ></a></div>
+                </div>
+                            </div>
+{% endblock %}

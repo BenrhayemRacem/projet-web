@@ -1,0 +1,45 @@
+{% extends 'Courses/Course.html.twig' %}
+
+{% block width %}100%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action active">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}Media{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+            <p>
+                -image <br>
+                -video<br>
+                -audio<br>
+            </p>
+            <h2 class="NextTitle"> les attributs de ces balises </h2>
+            <p>
+                - controls : pour ajouter les boutons « Lecture », « Pause »
+                et la barre de défilement <br>
+                -Width<br>
+                -Height<br>
+                -loop : jouer en boucle<br>
+                -autoplay : la musique sera jouée dès le chargement de la page<br>
+                -Preload :on ne peut pas le forcer, ça dépend du nav<br>
+
+            </p>
+        </div>
+
+        <div class="container justify-items-end row">
+            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 5 }) }}">< Previous</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 7 }) }}">Next ></a></div>
+        </div>
+    </div>
+{% endblock %}

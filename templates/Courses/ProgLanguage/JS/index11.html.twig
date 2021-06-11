@@ -1,0 +1,158 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}JS Course{% endblock %}
+{% block width %}100%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('JSCourse') }}" class="list-group-item list-group-item-action ">JS History</a>
+    <a href="{{ path('JSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">introduction </a>
+    <a href="{{ path('JSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">Les identifiants</a>
+    <a href="{{ path('JSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">Dates et Times</a>
+    <a href="{{ path('JSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">Les chaines</a>
+    <a href="{{ path('JSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">Les booleens</a>
+    <a href="{{ path('JSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les variables</a>
+    <a href="{{ path('JSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les tableaux</a>
+    <a href="{{ path('JSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">Les objets</a>
+    <a href="{{ path('JSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action ">Les fonctions</a>
+    <a href="{{ path('JSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action ">Le DOM</a>
+    <a href="{{ path('JSCourse',{num : 11 }) }}" class="list-group-item list-group-item-action active">JS quiz</a>
+{% endblock %}
+
+{% block titleParagraphe %}JS QUIZ{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    {% for message in app.flashes('result') %}
+        <div class="alert alert-info">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+            <form action ="{{ path('JSQuiz') }}">
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">Le tableau vide est évalue a </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios1" value="option1" >
+                            true
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios2" value="option2">
+                            false
+                        </label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">soit la chaine s correspond a "Javascript", s.charAt(2) donne</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios1" value="option1" >
+                            J
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios2" value="option2">
+                            a
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios3" value="option3" >
+                            v
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">Parmi ces identifiants, lequel n'est pas valide </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios1" value="option1" >
+                            javascript
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios2" value="option2">
+                            $javascript
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios3" value="option3" >
+                            *javascript
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> Quel outil nous permet de tronquer un tableau  </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios1" value="option1" >
+                            la methode length
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios2" value="option2">
+                            l’attribut length
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios3" value="option3" >
+                            l'element delete
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">var x ; la valeur de x sera</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios1" value="option1" >
+                            false
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios2" value="option2">
+                            0
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios3" value="option3" >
+                            undefined
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="container justify-items-end row">
+                    <div class="col"></div>
+                    <div class="col" style="justify-content: center"><button type="submit" class="btn-grad" >Submit</button></div>
+                    <div class="col"></div>
+                </div>
+            </form>
+
+            <div class="container justify-items-end row">
+                <div class="col-5"><a class="btn-grad" href="{{ path('JSCourse',{num : 10 }) }}">< Previous</a></div>
+                <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                <div class="col">    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

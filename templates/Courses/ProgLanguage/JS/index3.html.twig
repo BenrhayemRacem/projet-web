@@ -1,0 +1,47 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}JS Course{% endblock %}
+{% block width %}36%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('JSCourse') }}" class="list-group-item list-group-item-action ">JS History</a>
+    <a href="{{ path('JSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">introduction </a>
+    <a href="{{ path('JSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">Les identifiants</a>
+    <a href="{{ path('JSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action active">Dates et Times</a>
+    <a href="{{ path('JSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">Les chaines</a>
+    <a href="{{ path('JSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">Les booleens</a>
+    <a href="{{ path('JSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les variables</a>
+    <a href="{{ path('JSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les tableaux</a>
+    <a href="{{ path('JSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">Les objets</a>
+    <a href="{{ path('JSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action ">Les fonctions</a>
+    <a href="{{ path('JSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action ">Le DOM</a>
+    <a href="{{ path('JSCourse',{num : 11 }) }}" class="list-group-item list-group-item-action ">JS quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %}Dates et Times{% endblock %}
+{% block NextTitle %}{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p> setTimout( execFunction, waitingTime, param1,param2,…,paramN)
+                                    est une fonction qui permet d’exécuter la fonction execFunction après
+                                    waitingTime milliseconde de son appel. Les paramètres param1,
+                                    paramN sont les paramètres que nous voulons passer à execFunction
+                                    (ne marche pas dans les internet explorer <10). Cette fonction
+                                    retourne un id qui identifie la fonction pour pouvoir l’annuler avec la
+                                    fonction clearTimout.</p>
+
+
+                                <p>setInterval( execFunction, intervalTime, param1,param2,…,paramN)
+                                    est une fonction qui permet d’exécuter la fonction execFunction tout
+                                    les intervalTime milliseconde à partir de son appel. Les paramètres
+                                    param1, paramN sont les paramètres que nous voulons passer à
+                                    execFunction (ne marche pas dans les internet explorer <10).</p>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 2 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 4 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

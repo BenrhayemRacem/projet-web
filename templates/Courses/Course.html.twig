@@ -1,5 +1,5 @@
 {% extends 'User.html.twig' %}
-
+{% block Title %}CSS Course{% endblock %}
 {% block StyleSheet %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('CSS/Courses/Course.css') }}">
@@ -28,15 +28,6 @@
     <div class="col-3 List " style=" margin: 20px ;">
         <div class="list-group">
             {% block Bar %}
-            <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action active ">HTML History</a>
-            <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">HTML balises</a>
-            <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
-
-            <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">HTML input</a>
-            <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
-            <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
-            <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
-            <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
             {% endblock %}
         </div>
     </div>

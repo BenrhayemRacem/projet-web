@@ -1,0 +1,37 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}CSS Course{% endblock %}
+{% block width %}70%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('CSSCourse') }}" class="list-group-item list-group-item-action ">CSS syntaxe</a>
+    <a href="{{ path('CSSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les methodes d'invocation</a>
+    <a href="{{ path('CSSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">CSS texte</a>
+    <a href="{{ path('CSSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">CSS coleur et bordeur</a>
+    <a href="{{ path('CSSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">les selecteurs principaux</a>
+    <a href="{{ path('CSSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les selecteurs speciaux</a>
+    <a href="{{ path('CSSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action active">les classes</a>
+    <a href="{{ path('CSSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">CSS div et span</a>
+    <a href="{{ path('CSSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">les pseudo classes</a>
+    <a href="{{ path('CSSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action "> les tableaux</a>
+    <a href="{{ path('CSSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action "> CSS quiz </a>
+{% endblock %}
+{% block titleParagraphe %}La notion de classe{% endblock %}
+{% block NextTitle %}{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p>
+                                    Class est un attribut "générique" qui s'applique à toutes sortes
+                                    d'éléments. <br>
+                                    Une classe permet de définir un sous-ensemble. <br>
+                                    Elle peut s'appliquer à plusieurs éléments. <br>
+                                    Exemple: < img class="logo" src=image/img1.jpg> </p>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 5 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 7 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

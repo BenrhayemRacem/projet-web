@@ -1,0 +1,51 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}CSS Course{% endblock %}
+{% block width %}50%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('CSSCourse') }}" class="list-group-item list-group-item-action ">CSS syntaxe</a>
+    <a href="{{ path('CSSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les methodes d'invocation</a>
+    <a href="{{ path('CSSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">CSS texte</a>
+    <a href="{{ path('CSSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">CSS coleur et bordeur</a>
+    <a href="{{ path('CSSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action active">les selecteurs principaux</a>
+    <a href="{{ path('CSSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les selecteurs speciaux</a>
+    <a href="{{ path('CSSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">les classes</a>
+    <a href="{{ path('CSSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">CSS div et span</a>
+    <a href="{{ path('CSSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">les pseudo classes</a>
+    <a href="{{ path('CSSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action "> les tableaux</a>
+    <a href="{{ path('CSSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action "> CSS quiz </a>
+{% endblock %}
+{% block titleParagraphe %}Les selecteurs{% endblock %}
+{% block NextTitle %} <h2 class="NextTitle">Les attributs des coleurs</h2>{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p>
+                                    Les principaux sélecteurs sont : </p>
+
+                                <ul>
+                                    <li> Nom d'élément :
+                                        h1</li>
+                                    <li> LSélecteur multiple (regroupement de sélecteurs) :
+                                        h1, h2, p.</li>
+                                    <li>Sélecteur contextuel (combinaison d'éléments imbriqués )
+                                        h1 a </li>
+                                    <li> Identifiant :
+                                        p#intro1
+                                        #intro1 </li>
+                                    <li> Classe :
+                                        p.intro
+                                        .intro</li>
+                                    <li> Pseudo-classe :
+                                        a:hover</li>
+                                    <li> Sélecteur universel : * </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 3 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 5 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

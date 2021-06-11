@@ -53,7 +53,7 @@
                     conçu pour représenter les pages web. </p>
                 <div class="row buttons">
                     <div class="col"><a href="{{ path('HTMLCourse') }}" class="btn-grad">START NOW!</a></div>
-                    <div class="col"><a href="HTML/HTMLquiz.php" class="btn-grad">GO TO QUIZZ </a></div>
+                    <div class="col"><a href="{{ path('HTMLCourse',{num : 7 }) }}" class="btn-grad">GO TO QUIZZ </a></div>
                 </div>
             </div>
         </div>
@@ -68,8 +68,8 @@
                     unités. On voit également la cascade et l'héritage en CSS, les bases
                     du modèle de boîtes et comment déboguer du code CSS.</p>
                 <div class="row buttons">
-                    <div class="col"><a href="HTML/HTMLhistory.php" class="btn-grad">START NOW!</a></div>
-                    <div class="col"><a href="HTML/HTMLquiz.php" class="btn-grad">GO TO QUIZZ </a></div>
+                    <div class="col"><a href="{{ path('CSSCourse') }}" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="{{ path('CSSCourse',{num : 10}) }}" class="btn-grad">GO TO QUIZZ </a></div>
                 </div>
             </div>
         </div>
@@ -89,8 +89,8 @@
                     indépendamment des considérations
                     de sécurité qui peuvent se poser le cas échéant. </p>
                 <div class="row buttons">
-                    <div class="col"><a href="HTML/HTMLhistory.php" class="btn-grad">START NOW!</a></div>
-                    <div class="col"><a href="HTML/HTMLquiz.php" class="btn-grad">GO TO QUIZZ </a></div>
+                    <div class="col"><a href="{{ path('JSCourse') }}" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="{{ path('JSCourse',{num : 11}) }}" class="btn-grad">GO TO QUIZZ </a></div>
                 </div>
             </div>
         </div>

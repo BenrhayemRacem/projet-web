@@ -1,0 +1,49 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}Discover with us{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item actived">
+        <a href="#">DISCOVER</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="#">MY COURSES</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="#">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+
+    <nav aria-label="..." class="Categories">
+
+        <h1 class="title">
+            <span>So which course </span>
+            <span> do you what to take ?</span>
+        </h1>
+
+        <ul class="pagination pagination-lg first" >
+            <li ><a class="btn active" href="">Courses</a></li>
+            <li ><a class="btn from-right" href="{{ path('Discover_Projects_Music') }}">Projects</a></li>
+        </ul>
+        <ul class="pagination pagination-lg second" >
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover') }}">Programming Languages</a></li>
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Courses_Languages') }}" >Languages</a></li>
+            <li class="page-item active" aria-current="page">
+                <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) "> Music</span>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="Courses">
+
+    </div>
+
+{% endblock  %}

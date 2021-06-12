@@ -49,7 +49,11 @@ class InscriptionController extends AbstractController
             $em->persist($user);
             $em->flush();
 
-            return $this->redirectToRoute('Login');
+
+            return $this->redirectToRoute('mail' , [
+                'name' => $user->getFirstName(),
+                'mail' => $user->getUsername()
+            ] );
         }
 
         return $this->render('inscription/index.html.twig', [

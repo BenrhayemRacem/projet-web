@@ -422,3 +422,13 @@ b, strong {
     line-height: 0;
     border-bottom: 2px solid #f7f7f7;
 }
+
+
+.NextTitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin : 20px 0 20px 0;
+    padding: 10px;
+    color : white;
+    background-color: rgb(134, 206, 211);
+    border-radius: 1%;
+}

@@ -94,6 +94,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/User/Discover.css"), "html", null, true);
         echo "\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/Projects/projects.css"), "html", null, true);
+        echo "\">
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -103,7 +107,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
     }
 
-    // line 10
+    // line 11
     public function block_Activated($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -113,7 +117,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Activated"));
 
-        // line 11
+        // line 12
         echo "    <li class=\"nav-item actived\">
         <a href=\"#\">DISCOVER</a>
     </li>
@@ -132,7 +136,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
     }
 
-    // line 22
+    // line 23
     public function block_Body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -142,7 +146,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Body"));
 
-        // line 23
+        // line 24
         echo "
 <nav aria-label=\"...\" class=\"Categories\">
 
@@ -153,7 +157,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
     <ul class=\"pagination pagination-lg first\" >
         <li ><a class=\"btn from-right\" href=\"";
-        // line 32
+        // line 33
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover");
         echo "\">Courses</a></li>
         <li ><a class=\"btn active\" href=\"\">Projects</a></li>
@@ -163,19 +167,112 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <span class=\"page-link\" style=\"background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) \">Programming Languages</span>
         </li>
         <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \" href=\"";
-        // line 39
+        // line 40
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_Projects_Languages");
         echo "\">Languages</a></li>
         <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \"  href=\"";
-        // line 40
+        // line 41
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_Projects_Music");
         echo "\">Music</a></li>
     </ul>
 </nav>
 
-    <div class=\"container\" id=\"Courses\">
+   <div class=\"container\">
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"";
+        // line 48
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/MLwebAPP.jpg"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Machine Learning Web APP</h5>
+                <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
+                    evaluation metrics for binary classification algorithms</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class=\"project-info-box mb-10\">
+               
+                <p><b>Designer:</b> Si Racem Ben Rhayem</p>
+                <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-5 tablet-top\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
+                <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
+                </p> 
+                       </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                
+                <p><b>Designer:</b> Mehdi Ghorbel</p>
+                <p><b>Tools:</b> Python &amp; Turtle graphics </p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"";
+        // line 95
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/ping pong.jpg"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded\">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"";
+        // line 105
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/chatBot.png"), "html", null, true);
+        echo "\"alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Build Your first Chatbot </h5>
+                <p>Plan a custom development strategy for a chatbot with a specific goal in mind
+
+                    Develop rule-based transactional responses for the most common inputs
+
+                    Build a fully functional, intelligently responding chatbot that is trained for a specific task or for entertainment.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
 
 ";
         
@@ -198,7 +295,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
     public function getDebugInfo()
     {
-        return array (  171 => 40,  167 => 39,  157 => 32,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  248 => 105,  235 => 95,  185 => 48,  175 => 41,  171 => 40,  161 => 33,  150 => 24,  140 => 23,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -210,6 +307,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 {% block StyleSheet %}
     {{ parent() }}
     <link rel=\"stylesheet\" href=\"{{ asset('CSS/User/Discover.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('CSS/Projects/projects.css') }}\">
 {% endblock %}
 
 {% block Activated %}
@@ -246,9 +344,93 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
     </ul>
 </nav>
 
-    <div class=\"container\" id=\"Courses\">
+   <div class=\"container\">
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/MLwebAPP.jpg')}}\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Machine Learning Web APP</h5>
+                <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
+                    evaluation metrics for binary classification algorithms</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class=\"project-info-box mb-10\">
+               
+                <p><b>Designer:</b> Si Racem Ben Rhayem</p>
+                <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-5 tablet-top\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
+                <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
+                </p> 
+                       </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                
+                <p><b>Designer:</b> Mehdi Ghorbel</p>
+                <p><b>Tools:</b> Python &amp; Turtle graphics </p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/ping pong.jpg')}}\" alt=\"project-image\" class=\"rounded\">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/chatBot.png')}}\"alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">Build Your first Chatbot </h5>
+                <p>Plan a custom development strategy for a chatbot with a specific goal in mind
+
+                    Develop rule-based transactional responses for the most common inputs
+
+                    Build a fully functional, intelligently responding chatbot that is trained for a specific task or for entertainment.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
 
 {% endblock  %}", "user/Discover_Projects/DiscoverPLP.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Projects\\DiscoverPLP.html.twig");
     }

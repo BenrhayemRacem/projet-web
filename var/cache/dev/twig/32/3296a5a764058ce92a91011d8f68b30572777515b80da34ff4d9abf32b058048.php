@@ -174,147 +174,73 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
     </nav>
 
 
-<div class=\"container\" id=\"Courses\">
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-               <div class=\"row gradient-underline\"><h5 class=\"card-title\">HTML</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour creer des pages web</h6>
-                <p class=\"card-text\"> Le HyperText Markup Language, généralement abrégé HTML
-                    ou dans sa dernière version HTML5, est le langage de balisage
-                    conçu pour représenter les pages web. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"";
-        // line 55
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse");
-        echo "\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"";
-        // line 56
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 7]);
-        echo "\" class=\"btn-grad\">GO TO QUIZZ </a></div>
+<section id=\"Courses\">
+    <div class=\"container\" >
+        ";
+        // line 47
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["Courses"]) || array_key_exists("Courses", $context) ? $context["Courses"] : (function () { throw new RuntimeError('Variable "Courses" does not exist.', 47, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["Course"]) {
+            // line 48
+            echo "            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table ; align-content: center\">
+                <div class=\"card-body\">
+                    <div class=\"row gradient-underline\"><h5 class=\"card-title\">";
+            // line 50
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 50), "html", null, true);
+            echo "</h5></div>
+                    <h6 class=\"card-subtitle mb-2 text-muted description\"> ";
+            // line 51
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Course"], "summary", [], "any", false, false, false, 51), "html", null, true);
+            echo "</h6>
+                    <p class=\"card-text\"> ";
+            // line 52
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Course"], "description", [], "any", false, false, false, 52), "html", null, true);
+            echo " </p>
+                    <div class=\"row buttons\">
+                        <div class=\"col\" ><a href=\"";
+            // line 54
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 54) . "Course"));
+            echo "\" class=\"btn-grad \">START NOW!</a></div>
+                        ";
+            // line 55
+            if ((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 55) == "HTML")) {
+                // line 56
+                echo "                            <div class=\"col\" ><a href=\"";
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 56) . "Course"), ["num" => 7]);
+                echo "\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 57
+$context["Course"], "name", [], "any", false, false, false, 57) == "CSS")) {
+                // line 58
+                echo "                            <div class=\"col\"><a href=\"";
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 58) . "Course"), ["num" => 10]);
+                echo "\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 59
+$context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")) {
+                // line 60
+                echo "                            <div class=\"col\" ><a href=\"";
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 60) . "Course"), ["num" => 11]);
+                echo "\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        ";
+            } else {
+                // line 62
+                echo "                            <div class=\"col\" ><a href=\"";
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath((twig_get_attribute($this->env, $this->source, $context["Course"], "name", [], "any", false, false, false, 62) . "Course"));
+                echo "\" class=\"btn-grad modified\">GO TO QUIZZ </a></div>
+                        ";
+            }
+            // line 64
+            echo "                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">CSS</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour styler des pages web</h6>
-                <p class=\"card-text\">  Dans ce module, on commence avec les bases du fonctionnement de CSS :
-                    les sélecteurs, les propriétés, écrire des règles CSS, appliquer du CSS
-                    à un document HTML, utiliser des longueurs, des couleurs et d'autres
-                    unités. On voit également la cascade et l'héritage en CSS, les bases
-                    du modèle de boîtes et comment déboguer du code CSS.</p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"";
-        // line 71
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("CSSCourse");
-        echo "\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"";
-        // line 72
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("CSSCourse", ["num" => 10]);
-        echo "\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">JAVASCIPT</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour programmer des pages web</h6>
-                <p class=\"card-text\"> JavaScript est un langage de programmation de
-                    scripts principalement employé dans les pages web interactives et
-                    à ce titre est une partie essentielle des applications web. Avec
-                    les technologies HTML et CSS, JavaScript est parfois considéré comme
-                    l'une des technologies cœur du World Wide Web2. Une grande majorité
-                    des sites web l'utilisent3, et la majorité des navigateurs web
-                    disposent d'un moteur JavaScript4 dédié pour l'interpréter,
-                    indépendamment des considérations
-                    de sécurité qui peuvent se poser le cas échéant. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"";
-        // line 92
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("JSCourse");
-        echo "\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"";
-        // line 93
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("JSCourse", ["num" => 11]);
-        echo "\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">C++</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> C ++ est un langage très populaire pour
-                    les applications critiques en termes de performances qui
-                    reposent sur une gestion rapide et efficace de la mémoire.
-                    Il est utilisé dans un large éventail d'industries, notamment
-                    le développement de logiciels et de jeux, la réalité virtuelle,
-                    la robotique et l'informatique scientifique. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\"> SQL</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de base de donnees</h6>
-                <p class=\"card-text\"> Le langage SQL (Structured Query Language)
-                    est un langage informatique utilisé pour exploiter des bases
-                    de données. Il permet de façon générale la définition,
-                    la manipulation et le contrôle de sécurité de données. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">JAVA</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> Java est un langage de programmation orienté
-                    objet créé par James Gosling et Patrick Naughton, employés de
-                    Sun Microsystems, avec le soutien de Bill Joy (cofondateur de
-                    Sun Microsystems en 1982),
-                    présenté officiellement le 23 mai 1995 au SunWorld. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">Python</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> Python (prononcé en anglais /ˈpaɪ.θɑn/3) est un
-                    langage de programmation interprété, multi-paradigme et
-                    multiplateformes. Il favorise la programmation impérative structurée
-                    , fonctionnelle et orientée objet. Il est doté d'un typage dynamique
-                    fort, d'une gestion automatique de la mémoire par ramasse-miettes et
-                    d'un système de gestion d'exceptions ;
-                    il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Course'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 68
+        echo "    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -336,7 +262,7 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
 
     public function getDebugInfo()
     {
-        return array (  242 => 93,  238 => 92,  215 => 72,  211 => 71,  193 => 56,  189 => 55,  171 => 40,  167 => 39,  158 => 33,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  243 => 68,  234 => 64,  228 => 62,  222 => 60,  220 => 59,  215 => 58,  213 => 57,  208 => 56,  206 => 55,  202 => 54,  197 => 52,  193 => 51,  189 => 50,  185 => 48,  181 => 47,  171 => 40,  167 => 39,  158 => 33,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -385,129 +311,30 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
     </nav>
 
 
-<div class=\"container\" id=\"Courses\">
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-               <div class=\"row gradient-underline\"><h5 class=\"card-title\">HTML</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour creer des pages web</h6>
-                <p class=\"card-text\"> Le HyperText Markup Language, généralement abrégé HTML
-                    ou dans sa dernière version HTML5, est le langage de balisage
-                    conçu pour représenter les pages web. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"{{ path('HTMLCourse') }}\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"{{ path('HTMLCourse',{num : 7 }) }}\" class=\"btn-grad\">GO TO QUIZZ </a></div>
+<section id=\"Courses\">
+    <div class=\"container\" >
+        {% for Course in Courses %}
+            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table ; align-content: center\">
+                <div class=\"card-body\">
+                    <div class=\"row gradient-underline\"><h5 class=\"card-title\">{{ Course.name }}</h5></div>
+                    <h6 class=\"card-subtitle mb-2 text-muted description\"> {{ Course.summary }}</h6>
+                    <p class=\"card-text\"> {{ Course.description }} </p>
+                    <div class=\"row buttons\">
+                        <div class=\"col\" ><a href=\"{{ path(Course.name ~'Course') }}\" class=\"btn-grad \">START NOW!</a></div>
+                        {% if Course.name == 'HTML' %}
+                            <div class=\"col\" ><a href=\"{{ path(Course.name ~'Course',{num : 7 }) }}\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        {% elseif Course.name == 'CSS' %}
+                            <div class=\"col\"><a href=\"{{ path(Course.name ~'Course',{num : 10 }) }}\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        {% elseif Course.name == 'JAVASCRIPT' %}
+                            <div class=\"col\" ><a href=\"{{ path(Course.name ~'Course',{num : 11 }) }}\" class=\"btn-grad \">GO TO QUIZZ </a></div>
+                        {% else %}
+                            <div class=\"col\" ><a href=\"{{ path(Course.name ~'Course') }}\" class=\"btn-grad modified\">GO TO QUIZZ </a></div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">CSS</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour styler des pages web</h6>
-                <p class=\"card-text\">  Dans ce module, on commence avec les bases du fonctionnement de CSS :
-                    les sélecteurs, les propriétés, écrire des règles CSS, appliquer du CSS
-                    à un document HTML, utiliser des longueurs, des couleurs et d'autres
-                    unités. On voit également la cascade et l'héritage en CSS, les bases
-                    du modèle de boîtes et comment déboguer du code CSS.</p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"{{ path('CSSCourse') }}\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"{{ path('CSSCourse',{num : 10}) }}\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">JAVASCIPT</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> Le language pour programmer des pages web</h6>
-                <p class=\"card-text\"> JavaScript est un langage de programmation de
-                    scripts principalement employé dans les pages web interactives et
-                    à ce titre est une partie essentielle des applications web. Avec
-                    les technologies HTML et CSS, JavaScript est parfois considéré comme
-                    l'une des technologies cœur du World Wide Web2. Une grande majorité
-                    des sites web l'utilisent3, et la majorité des navigateurs web
-                    disposent d'un moteur JavaScript4 dédié pour l'interpréter,
-                    indépendamment des considérations
-                    de sécurité qui peuvent se poser le cas échéant. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"{{ path('JSCourse') }}\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"{{ path('JSCourse',{num : 11}) }}\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">C++</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> C ++ est un langage très populaire pour
-                    les applications critiques en termes de performances qui
-                    reposent sur une gestion rapide et efficace de la mémoire.
-                    Il est utilisé dans un large éventail d'industries, notamment
-                    le développement de logiciels et de jeux, la réalité virtuelle,
-                    la robotique et l'informatique scientifique. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\"> SQL</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de base de donnees</h6>
-                <p class=\"card-text\"> Le langage SQL (Structured Query Language)
-                    est un langage informatique utilisé pour exploiter des bases
-                    de données. Il permet de façon générale la définition,
-                    la manipulation et le contrôle de sécurité de données. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">JAVA</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> Java est un langage de programmation orienté
-                    objet créé par James Gosling et Patrick Naughton, employés de
-                    Sun Microsystems, avec le soutien de Bill Joy (cofondateur de
-                    Sun Microsystems en 1982),
-                    présenté officiellement le 23 mai 1995 au SunWorld. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div class=\"row\">
-        <div class=\"card col\" style=\"width: 40rem;\">
-            <div class=\"card-body\">
-                <div class=\"row gradient-underline\"><h5 class=\"card-title\">Python</h5></div>
-                <h6 class=\"card-subtitle mb-2 text-muted description\"> language de programmation </h6>
-                <p class=\"card-text\"> Python (prononcé en anglais /ˈpaɪ.θɑn/3) est un
-                    langage de programmation interprété, multi-paradigme et
-                    multiplateformes. Il favorise la programmation impérative structurée
-                    , fonctionnelle et orientée objet. Il est doté d'un typage dynamique
-                    fort, d'une gestion automatique de la mémoire par ramasse-miettes et
-                    d'un système de gestion d'exceptions ;
-                    il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. </p>
-                <div class=\"row buttons\">
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">START NOW!</a></div>
-                    <div class=\"col\"><a href=\"#\" class=\"btn-grad\">GO TO QUIZZ </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}
 
 ", "user/Discover_Courses/Discover.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Courses\\Discover.html.twig");

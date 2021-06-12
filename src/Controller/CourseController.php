@@ -77,7 +77,7 @@ class CourseController extends AbstractController
     }
 
     /**
-     * @Route("/JS/result", name="JSQuiz")
+     * @Route("/JS/result", name="JAVASCIPTQuiz")
      */
     public function indexJSQuiz(): Response
     {
@@ -103,12 +103,34 @@ class CourseController extends AbstractController
     }
 
     /**
-     * @Route("/JS/{num<\d+>?0}", name="JSCourse")
+     * @Route("/JS/{num<\d+>?0}", name="JAVASCIPTCourse")
      */
     public function indexJS(int $num): Response
     {
         return $this->render('Courses/ProgLanguage/JS/index'.$num.'.html.twig', []);
     }
 
+    /**
+     * @Route("/Cpp/{num<\d+>?0}", name="C++Course")
+     */
+    public function indexCpp(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+    /**
+     * @Route("/SQL/{num<\d+>?0}", name="SQLCourse")
+     */
+    public function indexSQL(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/JAVA/{num<\d+>?0}", name="JAVACourse")
+     */
+    public function indexJava(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
 
 }

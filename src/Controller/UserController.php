@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -33,8 +35,10 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_P(): Response
     {
+        $repository = $this->getDoctrine()->getRepository('App:Course');
+        $Courses = $repository->findAll();
         return $this->render('user/Discover_Courses/Discover.html.twig', [
-            'controller_name' => 'UserController',
+            'Courses' => $Courses
         ]);
     }
 

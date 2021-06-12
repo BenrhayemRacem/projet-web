@@ -15,7 +15,7 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/HTML/result' => [[['_route' => 'HTMLQuiz', '_controller' => 'App\\Controller\\CourseController::indexHTMLQuiz'], null, null, null, false, false, null]],
         '/CSS/result' => [[['_route' => 'CSSQuiz', '_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], null, null, null, false, false, null]],
-        '/JS/result' => [[['_route' => 'JSQuiz', '_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], null, null, null, false, false, null]],
+        '/JS/result' => [[['_route' => 'JAVASCIPTQuiz', '_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/registration' => [[['_route' => 'registration', '_controller' => 'App\\Controller\\InscriptionController::index'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'Login', '_controller' => 'App\\Controller\\LoginController::login'], null, null, null, false, false, null]],
@@ -28,6 +28,8 @@ return [
         '/home/P/LP' => [[['_route' => 'Discover_LP', '_controller' => 'App\\Controller\\UserController::indexDiscover_P_LP'], null, null, null, false, false, null]],
         '/home/P/L' => [[['_route' => 'Discover_Projects_Languages', '_controller' => 'App\\Controller\\UserController::indexDiscover_P_L'], null, null, null, false, false, null]],
         '/home/P/M' => [[['_route' => 'Discover_Projects_Music', '_controller' => 'App\\Controller\\UserController::indexDiscover_P_M'], null, null, null, false, false, null]],
+        '/MyProjets' => [[['_route' => 'MyProjects', '_controller' => 'App\\Controller\\UserController::indexMyProjects'], null, null, null, false, false, null]],
+        '/MyCourses' => [[['_route' => 'MyCourses', '_controller' => 'App\\Controller\\UserController::indexMyCourses'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -69,7 +71,7 @@ return [
         185 => [[['_route' => 'HTMLCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexHTML'], ['num'], null, null, false, true, null]],
         211 => [[['_route' => 'CSSCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexCSS'], ['num'], null, null, false, true, null]],
         232 => [[['_route' => 'C++Course', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexCpp'], ['num'], null, null, false, true, null]],
-        258 => [[['_route' => 'JSCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJS'], ['num'], null, null, false, true, null]],
+        258 => [[['_route' => 'JAVASCIPTCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJS'], ['num'], null, null, false, true, null]],
         280 => [[['_route' => 'JAVACourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJava'], ['num'], null, null, false, true, null]],
         304 => [
             [['_route' => 'SQLCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexSQL'], ['num'], null, null, false, true, null],

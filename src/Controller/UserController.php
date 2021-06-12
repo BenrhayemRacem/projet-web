@@ -78,7 +78,6 @@ class UserController extends AbstractController
     public function indexDiscover_P_L(): Response
     {
         return $this->render('user/Discover_Projects/DiscoverPL.html.twig', [
-            'controller_name' => 'UserController',
         ]);
     }
 
@@ -88,7 +87,24 @@ class UserController extends AbstractController
     public function indexDiscover_P_M(): Response
     {
         return $this->render('user/Discover_Projects/DiscoverPM.html.twig', [
-            'controller_name' => 'UserController',
+        ]);
+    }
+
+    /**
+     * @Route("/MyProjets", name="MyProjects")
+     */
+    public function indexMyProjects(): Response
+    {
+        return $this->render('user/Project.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/MyCourses", name="MyCourses")
+     */
+    public function indexMyCourses(): Response
+    {
+        return $this->render('user/MyCourses.html.twig', [
         ]);
     }
 }

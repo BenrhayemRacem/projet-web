@@ -123,10 +123,16 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"";
+        // line 17
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyCourses");
+        echo "\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"";
+        // line 20
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyProjects");
+        echo "\">MY PROJECTS</a>
     </li>
 ";
         
@@ -304,7 +310,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     public function getDebugInfo()
     {
-        return array (  255 => 112,  242 => 102,  189 => 52,  177 => 43,  170 => 39,  162 => 34,  151 => 25,  141 => 24,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  261 => 112,  248 => 102,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -325,10 +331,10 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"{{ path('MyCourses') }}\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"{{ path('MyProjects') }}\">MY PROJECTS</a>
     </li>
 {% endblock %}
 

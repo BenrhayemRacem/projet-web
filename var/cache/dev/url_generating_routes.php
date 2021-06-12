@@ -19,8 +19,8 @@ return [
     'HTMLCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexHTML'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/HTML']], [], []],
     'CSSQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], [], [['text', '/CSS/result']], [], []],
     'CSSCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexCSS'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/CSS']], [], []],
-    'JSQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], [], [['text', '/JS/result']], [], []],
-    'JSCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJS'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/JS']], [], []],
+    'JAVASCIPTQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], [], [['text', '/JS/result']], [], []],
+    'JAVASCIPTCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJS'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/JS']], [], []],
     'C++Course' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexCpp'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/Cpp']], [], []],
     'SQLCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexSQL'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/SQL']], [], []],
     'JAVACourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJava'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/JAVA']], [], []],
@@ -36,4 +36,6 @@ return [
     'Discover_LP' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_P_LP'], [], [['text', '/home/P/LP']], [], []],
     'Discover_Projects_Languages' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_P_L'], [], [['text', '/home/P/L']], [], []],
     'Discover_Projects_Music' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_P_M'], [], [['text', '/home/P/M']], [], []],
+    'MyProjects' => [[], ['_controller' => 'App\\Controller\\UserController::indexMyProjects'], [], [['text', '/MyProjets']], [], []],
+    'MyCourses' => [[], ['_controller' => 'App\\Controller\\UserController::indexMyCourses'], [], [['text', '/MyCourses']], [], []],
 ];

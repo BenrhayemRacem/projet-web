@@ -118,11 +118,17 @@ class __TwigTemplate_3485bbafdb9435a73bb67cf81ec2506cd46b88f3bfccace9acc67ec59ed
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"";
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyCourses");
+        echo "\">MY COURSES</a>
     </li>
-    <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
-    </li>
+<li class=\"nav-item\" id = \"header\">
+    <a class=\"nav-link\" href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyProjects");
+        echo "\">MY PROJECTS</a>
+</li>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -199,7 +205,7 @@ class __TwigTemplate_3485bbafdb9435a73bb67cf81ec2506cd46b88f3bfccace9acc67ec59ed
 
     public function getDebugInfo()
     {
-        return array (  171 => 40,  164 => 36,  158 => 33,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  177 => 40,  170 => 36,  164 => 33,  152 => 23,  142 => 22,  129 => 18,  123 => 15,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -218,11 +224,11 @@ class __TwigTemplate_3485bbafdb9435a73bb67cf81ec2506cd46b88f3bfccace9acc67ec59ed
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"{{ path('MyCourses') }}\">MY COURSES</a>
     </li>
-    <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
-    </li>
+<li class=\"nav-item\" id = \"header\">
+    <a class=\"nav-link\" href=\"{{ path('MyProjects') }}\">MY PROJECTS</a>
+</li>
 {% endblock %}
 
 {% block Body %}

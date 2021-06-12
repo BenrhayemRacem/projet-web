@@ -118,10 +118,16 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"";
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyCourses");
+        echo "\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyProjects");
+        echo "\">MY PROJECTS</a>
     </li>
 ";
         
@@ -262,7 +268,7 @@ $context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")
 
     public function getDebugInfo()
     {
-        return array (  243 => 68,  234 => 64,  228 => 62,  222 => 60,  220 => 59,  215 => 58,  213 => 57,  208 => 56,  206 => 55,  202 => 54,  197 => 52,  193 => 51,  189 => 50,  185 => 48,  181 => 47,  171 => 40,  167 => 39,  158 => 33,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  249 => 68,  240 => 64,  234 => 62,  228 => 60,  226 => 59,  221 => 58,  219 => 57,  214 => 56,  212 => 55,  208 => 54,  203 => 52,  199 => 51,  195 => 50,  191 => 48,  187 => 47,  177 => 40,  173 => 39,  164 => 33,  152 => 23,  142 => 22,  129 => 18,  123 => 15,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -281,10 +287,10 @@ $context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"{{ path('MyCourses') }}\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"{{ path('MyProjects') }}\">MY PROJECTS</a>
     </li>
 {% endblock %}
 

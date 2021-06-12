@@ -11,74 +11,50 @@
     {% block Header %}
     {% endblock %}
 
- <section>
 
 
 
-        <div class="container box">
+<div class="container box">
 
-            <div class="square" style="--i:1;"></div>
-            <div class="square" style="--i:3;"></div>
-            <div class="square" style="--i:2;"></div>
-            <div class="square" style="--i:4;"></div>
-            <div class="square" style="--i:5;"></div>
-            <form>
-
-                {{ form_start(form) }}
-                <div class="form_group">
-                    <div class="col-md-12 mb-3">
-                        {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                </div>
-                <div class="form_group">
-                    <div class="row">
-                        <div class="col"> First name
-                            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
-                        </div>
-                        <div class="col">Last name
-                            {{ form_widget(form.lastname, {'attr': {'class': 'form-control'}}) }}
-                        </div>
-                    </div>
-                </div>
-                <div class="form_group">
-                    <div class="col-md-12 mb-3">
-                        {{ form_row(form.password.first, {'attr': {'class':
-                            'form-control'}}) }}
-                    </div>
-                </div>
-                <div class="form_group">
-                    <div class="col-md-12 mb-3">
-                        {{ form_row(form.password.second, {'attr': {'class':
-                            'form-control'}}) }}
-                        <small id="passwordHelpBlock" class="form-text text-muted">
-                            Your password must be 8-20 characters long, contain only letters and numbers at the same time
-                        </small>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="container">
-                        <h6>Already have an account? <a href="{{ path('Login') }}">Sign in</a></h6>
-                    </div>
-                    <div class="col-md-8 col-md-offset-4" style="margin-top:5px;">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fa fa-btn fa-user"></i> Register
-                        </button>
-                    </div>
-                </div>
-                {{ form_end(form) }}
-                </form>
-        </div>
+    <div class="square" style="--i:1;"></div>
+    <div class="square" style="--i:3;"></div>
+    <div class="square" style="--i:2;"></div>
+    <div class="square" style="--i:4;"></div>
+    <div class="square" style="--i:5;"></div>
 
 
+        {{ form_start(form  ) }}
+    <div class="form-group ">
+
+        {{ form_row(form.email) }}
+
+    </div>
+
+
+        {{ form_row(form.firstname) }}
+
+        {{ form_row(form.lastname) }}
+
+
+    {{ form_row(form.plainPassword.first) }}
+
+
+        {{ form_row(form.plainPassword.second) }}
+
+
+        <button type="submit">Register!</button>
+
+        {{ form_end(form) }}
+
+
+
+</div>
 
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>
-    </section>
-{% endblock %}
+        {% endblock %}
 
 {% block Scripts %}
     <script src="{{ asset('node_modules/jquery/dist/jquery.min.js')}}"></script>

@@ -22,21 +22,28 @@ class InscriptionController extends AbstractController
     /**
      * @Route("/registration", name="registration")
      */
-    public function index(Request $request)
+    public function index(UserPasswordEncoderInterface $passwordEncoder , Request $request)
     {
         $user = new User();
-
         $form = $this->createForm(UserType::class, $user);
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : ".$e->getMessage();
+        }
 
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            // Encode the new users password
-            $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
+        if ($form->isSubmitted() && $form->isValid() ) {
+
+
+            $password = $passwordEncoder->encodePassword($user , $user->getPlainPassword()) ;
+
+
+            $user->setPassword($password);
 
             // Set their role
-            $user->setRoles(['ROLE_USER']);
 
+            $user->setIsComfirmed(0) ;
             // Save
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
@@ -48,6 +55,13 @@ class InscriptionController extends AbstractController
         return $this->render('inscription/index.html.twig', [
             'form' => $form->createView(),
         ]);
+
+
     }
+
+
+
+
 }
+
 

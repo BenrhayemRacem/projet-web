@@ -203,7 +203,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -216,6 +216,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             <div class=\"project-info-box mt-0\">
                 <h5>HIP HOP Stye Beats</h5>
                 <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
+             
             </div>
             <!-- / project-info-box -->
 
@@ -226,19 +227,19 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
         <div class=\"col-md-7\">
             <img class=\"Project-img\" src=\"";
-        // line 96
+        // line 97
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/Beat-Making.jpg"), "html", null, true);
         echo "\" alt=\"project-image\" class=\"rounded\">
         </div>
         <!-- / column -->
     </div>
-   
+
 </div>
 
 ";
@@ -262,7 +263,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
 
     public function getDebugInfo()
     {
-        return array (  236 => 96,  187 => 50,  173 => 39,  169 => 38,  161 => 33,  150 => 24,  140 => 23,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  237 => 97,  187 => 50,  173 => 39,  169 => 38,  161 => 33,  150 => 24,  140 => 23,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -334,7 +335,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -347,6 +348,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             <div class=\"project-info-box mt-0\">
                 <h5>HIP HOP Stye Beats</h5>
                 <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
+             
             </div>
             <!-- / project-info-box -->
 
@@ -357,7 +359,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -366,7 +368,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
         </div>
         <!-- / column -->
     </div>
-   
+
 </div>
 
 {% endblock  %}

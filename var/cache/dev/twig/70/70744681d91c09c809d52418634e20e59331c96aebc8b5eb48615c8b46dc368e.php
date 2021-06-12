@@ -188,7 +188,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>Machine Learning Web APP</h5>
+                <h5 class=\"NextTitle\">Machine Learning Web APP</h5>
                 <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
                     evaluation metrics for binary classification algorithms</p>
             </div>
@@ -201,7 +201,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -212,7 +212,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>Create PING-PONG Game</h5>
+                <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
                 <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
                 </p> 
                        </div>
@@ -225,7 +225,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -251,7 +251,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>Build Your first Chatbot </h5>
+                <h5 class=\"NextTitle\">Build Your first Chatbot </h5>
                 <p>Plan a custom development strategy for a chatbot with a specific goal in mind
 
                     Develop rule-based transactional responses for the most common inputs
@@ -267,7 +267,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -352,7 +352,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>Machine Learning Web APP</h5>
+                <h5 class=\"NextTitle\">Machine Learning Web APP</h5>
                 <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
                     evaluation metrics for binary classification algorithms</p>
             </div>
@@ -365,7 +365,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -376,7 +376,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>Create PING-PONG Game</h5>
+                <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
                 <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
                 </p> 
                        </div>
@@ -389,7 +389,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -409,7 +409,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>Build Your first Chatbot </h5>
+                <h5 class=\"NextTitle\">Build Your first Chatbot </h5>
                 <p>Plan a custom development strategy for a chatbot with a specific goal in mind
 
                     Develop rule-based transactional responses for the most common inputs
@@ -425,7 +425,7 @@ class __TwigTemplate_7995715eeaad304d33c629c0b58f00bf1dd0a65e93601b6b9484f01ab76
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>

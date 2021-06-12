@@ -387,13 +387,10 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
-<<<<<<< HEAD
-=======
     <service id="App\Repository\ProjectRepository" class="App\Repository\ProjectRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
->>>>>>> 920a3a4a2dbd864011feb9ea20ab5496d21e1558
     <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -4194,11 +4191,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-<<<<<<< HEAD
-      <argument type="service" id=".service_locator.e61spgT"/>
-=======
       <argument type="service" id=".service_locator.Ni_pIXX"/>
->>>>>>> 920a3a4a2dbd864011feb9ea20ab5496d21e1558
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5284,11 +5277,8 @@
     <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CourseRepository" class="App\Repository\CourseRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CourseRepository" class="App\Repository\CourseRepository" autowire="true" autoconfigure="true" abstract="true"/>
-<<<<<<< HEAD
-=======
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ProjectRepository" class="App\Repository\ProjectRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ProjectRepository" class="App\Repository\ProjectRepository" autowire="true" autoconfigure="true" abstract="true"/>
->>>>>>> 920a3a4a2dbd864011feb9ea20ab5496d21e1558
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.Kbr2i2X" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -5858,7 +5848,6 @@
         <argument key="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber"/>
       </argument>
     </service>
-<<<<<<< HEAD
     <service id="cache.doctrine.orm.default.query.compatibility_layer" class="Doctrine\Common\Cache\CacheProvider">
       <argument type="service" id="cache.doctrine.orm.default.query"/>
       <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
@@ -5867,17 +5856,11 @@
       <argument type="service" id="cache.doctrine.orm.default.result"/>
       <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
     </service>
-    <service id=".service_locator.e61spgT" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="App\Repository\CourseRepository" type="service_closure" id="App\Repository\CourseRepository"/>
-=======
     <service id=".service_locator.Ni_pIXX" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\CourseRepository" type="service_closure" id="App\Repository\CourseRepository"/>
         <argument key="App\Repository\ProjectRepository" type="service_closure" id="App\Repository\ProjectRepository"/>
->>>>>>> 920a3a4a2dbd864011feb9ea20ab5496d21e1558
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>

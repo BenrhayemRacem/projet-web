@@ -246,36 +246,6 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
         <!-- / column -->
     </div>
 
-    <!-- / row list-project -->
-
-    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
-
-    <div class=\"row list-project\">
-        <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
-        </div>
-        <!-- / column -->
-        <div class=\"col-md-5\">
-            <div class=\"project-info-box mt-0\">
-                <h5 class=\"NextTitle\">IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
-        </div>
-        <!-- / column -->
-    </div>
-    <!-- / row list-project -->
-
 </div>
 
 ";
@@ -404,36 +374,6 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
         </div>
         <!-- / column -->
     </div>
-
-    <!-- / row list-project -->
-
-    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
-
-    <div class=\"row list-project\">
-        <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
-        </div>
-        <!-- / column -->
-        <div class=\"col-md-5\">
-            <div class=\"project-info-box mt-0\">
-                <h5 class=\"NextTitle\">IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
-        </div>
-        <!-- / column -->
-    </div>
-    <!-- / row list-project -->
 
 </div>
 

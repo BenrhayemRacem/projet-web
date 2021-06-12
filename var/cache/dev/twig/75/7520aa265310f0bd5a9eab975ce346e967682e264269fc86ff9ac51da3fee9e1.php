@@ -184,21 +184,25 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
 <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"";
+        // line 52
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/writebook.png"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>FOIL LOGO</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write Your First Bestselling  Book </h5>
+                <p>You decided to write a book. Maybe you have the perfect idea (so you think, but we’ll get to that), have always wanted to write one, and just aren’t sure where the heck to get started!
+
+                        The process of writing and publishing a book successfully is so much more than just writing and pushing a button to publish on Amazon.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> FOIL COM</p>
-                <p><b>Date:</b> 10.02.2020</p>
-                <p><b>Designer:</b> Brian Hawkins</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+               
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
             <!-- / project-info-box -->
 
@@ -213,16 +217,15 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>STATIONERY</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write your first Poetry</h5>
+                <p>There are no officially sanctioned rules of poetry. However, as with all creative writing, having some degree of structure can help you reign in your ideas and work productively. Here are some guidelines for those looking to take their poetry writing to the next level. Or, if you literally haven’t written a single poem since high school, you can think of this as a beginner's guide that will teach you the basics and have you writing poetry in no time.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> LOGO COMPANY</p>
-                <p><b>Date:</b> 13.02.2020</p>
-                <p><b>Designer:</b> John Doe</p>
-                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+                
+                <p><b>Designer:</b> Sir Ghorbel Mehdi</p>
+                <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
             <!-- / project-info-box -->
 
@@ -231,7 +234,10 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
         <!-- / column -->
 
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+            <img class=\"Project-img\" src=\"";
+        // line 99
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/poetry.jpg"), "html", null, true);
+        echo "\"  alt=\"project-image\" class=\"rounded\">
         </div>
         <!-- / column -->
     </div>
@@ -241,21 +247,27 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
 
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"";
+        // line 109
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/essay.jpg"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Essay Writng Guide </h5>
+                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
+
+                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
+
+                </p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+               
+                <p><b>Designer:</b> Dali Naim</p>
+                <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
             <!-- / project-info-box -->
 
@@ -288,7 +300,7 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
 
     public function getDebugInfo()
     {
-        return array (  177 => 43,  170 => 39,  162 => 34,  151 => 25,  141 => 24,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  252 => 109,  239 => 99,  189 => 52,  177 => 43,  170 => 39,  162 => 34,  151 => 25,  141 => 24,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -344,21 +356,22 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
 <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/writebook.png')}}\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>FOIL LOGO</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write Your First Bestselling  Book </h5>
+                <p>You decided to write a book. Maybe you have the perfect idea (so you think, but we’ll get to that), have always wanted to write one, and just aren’t sure where the heck to get started!
+
+                        The process of writing and publishing a book successfully is so much more than just writing and pushing a button to publish on Amazon.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> FOIL COM</p>
-                <p><b>Date:</b> 10.02.2020</p>
-                <p><b>Designer:</b> Brian Hawkins</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+               
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
             <!-- / project-info-box -->
 
@@ -373,16 +386,15 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>STATIONERY</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write your first Poetry</h5>
+                <p>There are no officially sanctioned rules of poetry. However, as with all creative writing, having some degree of structure can help you reign in your ideas and work productively. Here are some guidelines for those looking to take their poetry writing to the next level. Or, if you literally haven’t written a single poem since high school, you can think of this as a beginner's guide that will teach you the basics and have you writing poetry in no time.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> LOGO COMPANY</p>
-                <p><b>Date:</b> 13.02.2020</p>
-                <p><b>Designer:</b> John Doe</p>
-                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+                
+                <p><b>Designer:</b> Sir Ghorbel Mehdi</p>
+                <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
             <!-- / project-info-box -->
 
@@ -391,7 +403,7 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
         <!-- / column -->
 
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/poetry.jpg')}}\"  alt=\"project-image\" class=\"rounded\">
         </div>
         <!-- / column -->
     </div>
@@ -401,21 +413,24 @@ class __TwigTemplate_55a282343ec3dc6700cbf0498c64848877bf5459e9f233b4e9a3ba26a9c
 
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/essay.jpg')}}\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Essay Writng Guide </h5>
+                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
+
+                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
+
+                </p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+               
+                <p><b>Designer:</b> Dali Naim</p>
+                <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
             <!-- / project-info-box -->
 

@@ -207,6 +207,7 @@
     <parameter key="doctrine.orm.metadata.yml.class">Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver</parameter>
     <parameter key="doctrine.orm.metadata.php.class">Doctrine\ORM\Mapping\Driver\PHPDriver</parameter>
     <parameter key="doctrine.orm.metadata.staticphp.class">Doctrine\ORM\Mapping\Driver\StaticPHPDriver</parameter>
+    <parameter key="doctrine.orm.metadata.attribute.class">Doctrine\ORM\Mapping\Driver\AttributeDriver</parameter>
     <parameter key="doctrine.orm.proxy_cache_warmer.class">Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer</parameter>
     <parameter key="form.type_guesser.doctrine.class">Symfony\Bridge\Doctrine\Form\DoctrineOrmTypeGuesser</parameter>
     <parameter key="doctrine.orm.validator.unique.class">Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator</parameter>
@@ -717,7 +718,6 @@
         <argument>cache.serializer</argument>
         <argument>cache.annotations</argument>
         <argument>cache.property_info</argument>
-        <argument>cache.doctrine.orm.default.metadata</argument>
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
@@ -1115,7 +1115,6 @@
         <argument key="cache.serializer" type="service" id="cache.serializer" on-invalid="ignore_uninitialized"/>
         <argument key="cache.annotations" type="service" id="cache.annotations" on-invalid="ignore_uninitialized"/>
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
-        <argument key="cache.doctrine.orm.default.metadata" type="service" id="cache.doctrine.orm.default.metadata" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.result" type="service" id="cache.doctrine.orm.default.result" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
@@ -2307,10 +2306,6 @@
       <call method="addInstance">
         <argument>cache.property_info</argument>
         <argument type="service" id="cache.property_info"/>
-      </call>
-      <call method="addInstance">
-        <argument>cache.doctrine.orm.default.metadata</argument>
-        <argument type="service" id="cache.doctrine.orm.default.metadata"/>
       </call>
       <call method="addInstance">
         <argument>cache.doctrine.orm.default.result</argument>
@@ -4148,9 +4143,9 @@
     </service>
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" public="true">
       <argument type="collection">
-        <argument key="connection_override_options" type="collection"/>
         <argument key="url">%env(resolve:DATABASE_URL)%</argument>
         <argument key="driver">pdo_mysql</argument>
+        <argument key="connection_override_options" type="collection"/>
         <argument key="host">localhost</argument>
         <argument key="port">null</argument>
         <argument key="user">root</argument>
@@ -4344,14 +4339,14 @@
           <argument key="App">App\Entity</argument>
         </argument>
       </call>
-      <call method="setMetadataCacheImpl">
-        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata"/>
+      <call method="setMetadataCache">
+        <argument type="service" id="cache.doctrine.orm.default.metadata"/>
       </call>
       <call method="setQueryCacheImpl">
-        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.query"/>
+        <argument type="service" id="cache.doctrine.orm.default.query.compatibility_layer"/>
       </call>
       <call method="setResultCacheImpl">
-        <argument type="service" id="doctrine.orm.cache.provider.cache.doctrine.orm.default.result"/>
+        <argument type="service" id="cache.doctrine.orm.default.result.compatibility_layer"/>
       </call>
       <call method="setMetadataDriverImpl">
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
@@ -4390,26 +4385,14 @@
         <argument>C:\Users\DELL\OneDrive\Bureau\GL2-Sem2\DeveloppementWeb\Web Project\WebProject\src\Entity</argument>
       </argument>
     </service>
-    <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\TraceableAdapter">
-      <tag name="cache.pool"/>
-      <argument type="service" id="cache.doctrine.orm.default.metadata.recorder_inner"/>
-    </service>
-    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\DoctrineProvider">
-      <argument type="service" id="cache.doctrine.orm.default.metadata"/>
-    </service>
+    <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.result" class="Symfony\Component\Cache\Adapter\TraceableAdapter">
       <tag name="cache.pool"/>
       <argument type="service" id="cache.doctrine.orm.default.result.recorder_inner"/>
     </service>
-    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.result" class="Symfony\Component\Cache\DoctrineProvider">
-      <argument type="service" id="cache.doctrine.orm.default.result"/>
-    </service>
     <service id="cache.doctrine.orm.default.query" class="Symfony\Component\Cache\Adapter\TraceableAdapter">
       <tag name="cache.pool"/>
       <argument type="service" id="cache.doctrine.orm.default.query.recorder_inner"/>
-    </service>
-    <service id="doctrine.orm.cache.provider.cache.doctrine.orm.default.query" class="Symfony\Component\Cache\DoctrineProvider">
-      <argument type="service" id="cache.doctrine.orm.default.query"/>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver">
       <argument type="service" id="service_container"/>
@@ -5865,6 +5848,14 @@
         <argument key="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber"/>
       </argument>
     </service>
+    <service id="cache.doctrine.orm.default.query.compatibility_layer" class="Doctrine\Common\Cache\CacheProvider">
+      <argument type="service" id="cache.doctrine.orm.default.query"/>
+      <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
+    </service>
+    <service id="cache.doctrine.orm.default.result.compatibility_layer" class="Doctrine\Common\Cache\CacheProvider">
+      <argument type="service" id="cache.doctrine.orm.default.result"/>
+      <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
+    </service>
     <service id=".service_locator.Ni_pIXX" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6391,7 +6382,6 @@
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
-    <service id="cache.doctrine.orm.default.metadata.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
@@ -6524,9 +6514,9 @@
     <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.default_entity_manager"/>
     <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader"/>
     <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
-    <service id="doctrine.orm.default_metadata_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata"/>
-    <service id="doctrine.orm.default_result_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.result"/>
-    <service id="doctrine.orm.default_query_cache" alias="doctrine.orm.cache.provider.cache.doctrine.orm.default.query"/>
+    <service id="doctrine.orm.default_metadata_cache" alias="cache.doctrine.orm.default.metadata"/>
+    <service id="doctrine.orm.default_result_cache" alias="cache.doctrine.orm.default.result.compatibility_layer"/>
+    <service id="doctrine.orm.default_query_cache" alias="cache.doctrine.orm.default.query.compatibility_layer"/>
     <service id="Doctrine\ORM\EntityManagerInterface $defaultEntityManager" alias="doctrine.orm.default_entity_manager"/>
     <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager"/>
     <service id="doctrine.migrations.metadata_storage" alias="doctrine.migrations.storage.table_storage"/>

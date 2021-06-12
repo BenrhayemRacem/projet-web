@@ -182,21 +182,24 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
    <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"";
+        // line 50
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/writesong.jpg"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>FOIL LOGO</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write Your First Song </h5>
+                    <p>Before you pick up an instrument, you need to ask yourself one question: “why am I writing this song?” As song that lacks purpose is a song that won’t connect with anybody — yourself included. Inspiration can come from anywhere.
+                    Here you will be guided from finding inspiration to performing your first song .</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> FOIL COM</p>
-                <p><b>Date:</b> 10.02.2020</p>
-                <p><b>Designer:</b> Brian Hawkins</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+                
+                <p><b>Designer:</b> Dali naim</p>
+                <p><b>Tools:</b>Guitar  </p>
             </div>
             <!-- / project-info-box -->
 
@@ -211,16 +214,15 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>STATIONERY</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>HIP HOP Stye Beats</h5>
+                <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> LOGO COMPANY</p>
-                <p><b>Date:</b> 13.02.2020</p>
-                <p><b>Designer:</b> John Doe</p>
-                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+               
+                <p><b>Designer:</b> Hamzaoui Med Amine</p>
+                <p><b>Tools:</b> DAW: beat making software &amp; Mic</p>
             </div>
             <!-- / project-info-box -->
 
@@ -229,39 +231,14 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
         <!-- / column -->
 
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+            <img class=\"Project-img\" src=\"";
+        // line 96
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/Beat-Making.jpg"), "html", null, true);
+        echo "\" alt=\"project-image\" class=\"rounded\">
         </div>
         <!-- / column -->
     </div>
-    <!-- / row list-project -->
-
-    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
-
-    <div class=\"row list-project\">
-        <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
-        </div>
-        <!-- / column -->
-        <div class=\"col-md-5\">
-            <div class=\"project-info-box mt-0\">
-                <h5>IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
-        </div>
-        <!-- / column -->
-    </div>
-    <!-- / row list-project -->
+   
 </div>
 
 ";
@@ -285,7 +262,7 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
 
     public function getDebugInfo()
     {
-        return array (  173 => 39,  169 => 38,  161 => 33,  150 => 24,  140 => 23,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  236 => 96,  187 => 50,  173 => 39,  169 => 38,  161 => 33,  150 => 24,  140 => 23,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -339,21 +316,21 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
    <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/writesong.jpg')}}\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-                <h5>FOIL LOGO</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>Write Your First Song </h5>
+                    <p>Before you pick up an instrument, you need to ask yourself one question: “why am I writing this song?” As song that lacks purpose is a song that won’t connect with anybody — yourself included. Inspiration can come from anywhere.
+                    Here you will be guided from finding inspiration to performing your first song .</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> FOIL COM</p>
-                <p><b>Date:</b> 10.02.2020</p>
-                <p><b>Designer:</b> Brian Hawkins</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+                
+                <p><b>Designer:</b> Dali naim</p>
+                <p><b>Tools:</b>Guitar  </p>
             </div>
             <!-- / project-info-box -->
 
@@ -368,16 +345,15 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
-                <h5>STATIONERY</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+                <h5>HIP HOP Stye Beats</h5>
+                <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> LOGO COMPANY</p>
-                <p><b>Date:</b> 13.02.2020</p>
-                <p><b>Designer:</b> John Doe</p>
-                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+               
+                <p><b>Designer:</b> Hamzaoui Med Amine</p>
+                <p><b>Tools:</b> DAW: beat making software &amp; Mic</p>
             </div>
             <!-- / project-info-box -->
 
@@ -386,39 +362,11 @@ class __TwigTemplate_d7b052a4a00040f5fecd03eb002587a25d6fd6f3b833212269be9027e6a
         <!-- / column -->
 
         <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+            <img class=\"Project-img\" src=\"{{ asset('images/Projects/Beat-Making.jpg')}}\" alt=\"project-image\" class=\"rounded\">
         </div>
         <!-- / column -->
     </div>
-    <!-- / row list-project -->
-
-    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
-
-    <div class=\"row list-project\">
-        <div class=\"col-md-7\">
-            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
-        </div>
-        <!-- / column -->
-        <div class=\"col-md-5\">
-            <div class=\"project-info-box mt-0\">
-                <h5>IDEA BULB</h5>
-                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <div class=\"project-info-box mb-10\">
-                <p><b>Client:</b> IDEA COMPANY</p>
-                <p><b>Date:</b> 07.02.2020</p>
-                <p><b>Designer:</b> Jessica Smith</p>
-                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
-            </div>
-            <!-- / project-info-box -->
-
-            <a href=\"#\" class=\"btn btn-primary d-block\">VIEW PROJECT</a>
-        </div>
-        <!-- / column -->
-    </div>
-    <!-- / row list-project -->
+   
 </div>
 
 {% endblock  %}

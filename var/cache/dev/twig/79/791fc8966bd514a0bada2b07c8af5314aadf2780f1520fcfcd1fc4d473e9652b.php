@@ -148,7 +148,7 @@ class __TwigTemplate_cb052e867078a99af0d4fa0d7fdc566e4530b24db9c0ad8e950b27c40ae
 
     <h1 class=\"title\">
         <span>So which course </span>
-        <span> do you what to take ?</span>
+        <span> do you want to take ?</span>
     </h1>
 
     <ul class=\"pagination pagination-lg first\" >
@@ -231,7 +231,7 @@ class __TwigTemplate_cb052e867078a99af0d4fa0d7fdc566e4530b24db9c0ad8e950b27c40ae
 
     <h1 class=\"title\">
         <span>So which course </span>
-        <span> do you what to take ?</span>
+        <span> do you want to take ?</span>
     </h1>
 
     <ul class=\"pagination pagination-lg first\" >

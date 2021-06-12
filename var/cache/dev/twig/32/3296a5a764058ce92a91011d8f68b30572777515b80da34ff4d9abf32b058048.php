@@ -188,7 +188,7 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
         $context['_seq'] = twig_ensure_traversable((isset($context["Courses"]) || array_key_exists("Courses", $context) ? $context["Courses"] : (function () { throw new RuntimeError('Variable "Courses" does not exist.', 47, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["Course"]) {
             // line 48
-            echo "            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table ; align-content: center\">
+            echo "            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table;\">
                 <div class=\"card-body\">
                     <div class=\"row gradient-underline\"><h5 class=\"card-title\">";
             // line 50
@@ -320,7 +320,7 @@ $context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")
 <section id=\"Courses\">
     <div class=\"container\" >
         {% for Course in Courses %}
-            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table ; align-content: center\">
+            <div class=\"card\" style=\"width: 40rem; height :35rem; display: inline-table;\">
                 <div class=\"card-body\">
                     <div class=\"row gradient-underline\"><h5 class=\"card-title\">{{ Course.name }}</h5></div>
                     <h6 class=\"card-subtitle mb-2 text-muted description\"> {{ Course.summary }}</h6>

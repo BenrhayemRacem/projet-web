@@ -123,10 +123,16 @@ class __TwigTemplate_af6976f7e74f9f41f842078b4c4480a1a12dece7347db409a783cb01f9f
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"";
+        // line 13
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyCourses");
+        echo "\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"";
+        // line 16
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyProjects");
+        echo "\">MY PROJECTS</a>
     </li>
 ";
         
@@ -302,7 +308,7 @@ class __TwigTemplate_af6976f7e74f9f41f842078b4c4480a1a12dece7347db409a783cb01f9f
 
     public function getDebugInfo()
     {
-        return array (  275 => 39,  256 => 38,  238 => 37,  228 => 31,  218 => 30,  199 => 23,  183 => 40,  180 => 39,  178 => 38,  174 => 37,  167 => 32,  165 => 30,  155 => 23,  151 => 21,  141 => 20,  122 => 9,  112 => 8,  100 => 5,  95 => 4,  85 => 3,  66 => 2,  43 => 1,);
+        return array (  281 => 39,  262 => 38,  244 => 37,  234 => 31,  224 => 30,  205 => 23,  189 => 40,  186 => 39,  184 => 38,  180 => 37,  173 => 32,  171 => 30,  161 => 23,  157 => 21,  147 => 20,  134 => 16,  128 => 13,  122 => 9,  112 => 8,  100 => 5,  95 => 4,  85 => 3,  66 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -319,10 +325,10 @@ class __TwigTemplate_af6976f7e74f9f41f842078b4c4480a1a12dece7347db409a783cb01f9f
         <a href=\"#\">DISCOVER</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+        <a class=\"nav-link\" href=\"{{ path('MyCourses') }}\">MY COURSES</a>
     </li>
     <li class=\"nav-item\" id = \"header\">
-        <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+        <a class=\"nav-link\" href=\"{{ path('MyProjects') }}\">MY PROJECTS</a>
     </li>
 {% endblock %}
 

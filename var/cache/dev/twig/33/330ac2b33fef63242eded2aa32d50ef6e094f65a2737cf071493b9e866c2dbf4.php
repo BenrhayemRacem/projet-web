@@ -390,6 +390,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 {% endblock %}
 
 
-", "user/EditProfile.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\EditProfile.html.twig");
+", "user/EditProfile.html.twig", "D:\\projetjdiiiid\\templates\\user\\EditProfile.html.twig");
     }
 }

@@ -24,6 +24,8 @@ return [
     'C++Course' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexCpp'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/Cpp']], [], []],
     'SQLCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexSQL'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/SQL']], [], []],
     'JAVACourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJava'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/JAVA']], [], []],
+    'francaisQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexfrancaisQuiz'], [], [['text', '/francais/result']], [], []],
+    'francaisCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexfrancais'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/francais']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'registration' => [[], ['_controller' => 'App\\Controller\\InscriptionController::index'], [], [['text', '/registration']], [], []],
     'Login' => [[], ['_controller' => 'App\\Controller\\LoginController::login'], [], [['text', '/login']], [], []],

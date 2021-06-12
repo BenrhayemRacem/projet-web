@@ -335,6 +335,6 @@ class __TwigTemplate_854e1d553ba40022b21e6347274282597c9c88b5e569bf2d8e52916a4bf
 
                             </div>
                         </div>
-                    {% endblock %}", "Courses/ProgLanguage/JS/index7.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\JS\\index7.html.twig");
+                    {% endblock %}", "Courses/ProgLanguage/JS/index7.html.twig", "D:\\projetjdiiiid\\templates\\Courses\\ProgLanguage\\JS\\index7.html.twig");
     }
 }

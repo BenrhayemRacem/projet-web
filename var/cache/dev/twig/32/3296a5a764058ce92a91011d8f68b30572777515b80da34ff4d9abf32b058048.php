@@ -337,6 +337,6 @@ $context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")
     </div>
 {% endblock %}
 
-", "user/Discover_Courses/Discover.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Courses\\Discover.html.twig");
+", "user/Discover_Courses/Discover.html.twig", "D:\\projetjdiiiid\\templates\\user\\Discover_Courses\\Discover.html.twig");
     }
 }

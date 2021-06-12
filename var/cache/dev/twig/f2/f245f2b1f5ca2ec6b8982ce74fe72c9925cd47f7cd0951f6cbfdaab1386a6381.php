@@ -235,12 +235,12 @@ class __TwigTemplate_4cd962c96a14f83fcfa7c475246936168bf1dd2ff521c97ce3f6b97ac3b
                                 <div class=\"container justify-items-end row\">
                                     <div class=\"col\"><a class=\"btn-grad\" href=\"";
         // line 44
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover");
-        echo "\">Home</a></div>
-                                    <div class=\"col\"><a class=\"btn-grad\" href=\"";
-        // line 45
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("CSSCourse", ["num" => 3]);
         echo "\">< Previous</a></div>
+                                    <div class=\"col\"><a class=\"btn-grad\" href=\"";
+        // line 45
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover");
+        echo "\">Home</a></div>
                                     <div class=\"col\"><a class=\"btn-grad\" href=\"";
         // line 46
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("CSSCourse", ["num" => 5]);
@@ -318,13 +318,13 @@ class __TwigTemplate_4cd962c96a14f83fcfa7c475246936168bf1dd2ff521c97ce3f6b97ac3b
                                 </ul>
 
                                 <div class=\"container justify-items-end row\">
-                                    <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('Discover')}}\">Home</a></div>
                                     <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('CSSCourse',{num : 3 }) }}\">< Previous</a></div>
+                                    <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('Discover')}}\">Home</a></div>
                                     <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('CSSCourse',{num : 5 }) }}\">Next ></a></div>
                                 </div>
 
                             </div>
                         </div>
-                    {% endblock %}", "Courses/ProgLanguage/CSS/index4.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\CSS\\index4.html.twig");
+                    {% endblock %}", "Courses/ProgLanguage/CSS/index4.html.twig", "D:\\projetjdiiiid\\templates\\Courses\\ProgLanguage\\CSS\\index4.html.twig");
     }
 }

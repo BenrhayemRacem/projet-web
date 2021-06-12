@@ -432,6 +432,6 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
     <!-- / row list-project -->
 </div>
 
-{% endblock  %}", "user/Discover_Projects/DiscoverPLP.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Projects\\DiscoverPLP.html.twig");
+{% endblock  %}", "user/Discover_Projects/DiscoverPLP.html.twig", "D:\\projetjdiiiid\\templates\\user\\Discover_Projects\\DiscoverPLP.html.twig");
     }
 }

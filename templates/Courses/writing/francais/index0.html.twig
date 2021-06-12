@@ -1,0 +1,61 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Francais Course{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action active ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les nombres {% endblock %}
+{% block NextTitle %} {% endblock %}
+
+       {% block Course %}
+           <div class="card" style="margin-top: 20px ">
+               <div class="card-body">
+                   <p>les nombres entre 0 et 10   </p>
+
+                   <ul>
+                       <li> 0: zero</li>
+                       <li> 1: un </li>
+                       <li> 2:deux</li>
+                       <li>3:trois </li>
+                       <li> 4:quatre</li>
+                       <li> 5:cinq</li>
+                       <li> 6:six</li>
+                       <li> 7:sept</li>
+                       <li> 8:huit</li>
+                       <li> 9:neuf </li>
+
+                   </ul>
+
+                   <p> les nombres multiples de 10 </p>
+                   <ul>
+                       <li> 10: dix </li>
+                       <li> 20:vingt</li>
+                       <li>30:trente </li>
+                       <li> 40:quarante</li>
+                       <li> 50:cinquante</li>
+                       <li> 60:soixante</li>
+                       <li> 70:soixante-dix</li>
+                       <li> 80:quatre-vingts</li>
+                       <li> 90:quatre-vingt-dix </li>
+                       <li> 100:cent </li>
+
+                   </ul>
+
+
+                   <div class="container justify-items-end row">
+                       <div class="col">    </div>
+                       <div class="col"><a class="btn-grad" href="{{ path('Discover') }}">Home</a></div>
+                       <div class="col"><a class="btn-grad" href="{{ path('francaisCourse', {num : 1 }) }}">Next ></a></div>
+                   </div>
+
+               </div>
+           </div>
+       {% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Francais Course{% endblock %}
+{% block width %}12%{% endblock %}
+
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action active">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les jours {% endblock %}
+{% block NextTitle %} <h2 class="NextTitle">les jours de la semaine</h2> {% endblock %}
+
+
+       {% block Course %}
+           <div class="card" style="margin-top: 20px ">
+               <div class="card-body">
+
+                   <ul>
+                       <li> lundi</li>
+                       <li> mardi </li>
+                       <li> mercredi </li>
+                       <li> jeudi </li>
+                       <li> vendredi</li>
+                       <li> samedi </li>
+                       <li> dimanche est le jour de repos </li>
+                       <li> une semaine contient 7 jours</li>
+                   </ul>
+
+                   <div class="container justify-items-end row">
+                       <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 0 }) }}">< Previous</a></div>
+                       <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                       <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 2 }) }}">Next ></a></div>
+                   </div>
+
+               </div>
+           </div>
+       {% endblock %}

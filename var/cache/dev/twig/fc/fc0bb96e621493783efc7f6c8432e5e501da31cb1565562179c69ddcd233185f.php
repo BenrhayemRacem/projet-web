@@ -396,6 +396,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 {% block Footer %}
 {% endblock %}
 
-", "inscription/index.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\inscription\\index.html.twig");
+", "inscription/index.html.twig", "D:\\projetjdiiiid\\templates\\inscription\\index.html.twig");
     }
 }

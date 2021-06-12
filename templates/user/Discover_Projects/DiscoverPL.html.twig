@@ -5,6 +5,8 @@
 {% block StyleSheet %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/Projects/projects.css') }}">
+
 {% endblock %}
 
 {% block Activated %}
@@ -43,8 +45,91 @@
 </nav>
 
 
-    <div class="container" id="Courses">
+    
+<div class="container">
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img src="https://via.placeholder.com/400x300/FFB6C1/000000" alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>FOIL LOGO</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class="project-info-box mb-10">
+                <p><b>Client:</b> FOIL COM</p>
+                <p><b>Date:</b> 10.02.2020</p>
+                <p><b>Designer:</b> Brian Hawkins</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-5 tablet-top">
+            <div class="project-info-box mt-0">
+                <h5>STATIONERY</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                <p><b>Client:</b> LOGO COMPANY</p>
+                <p><b>Date:</b> 13.02.2020</p>
+                <p><b>Designer:</b> John Doe</p>
+                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class="col-md-7">
+            <img src="https://via.placeholder.com/400x300/87CEFA/000000" alt="project-image" class="rounded">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img src="https://via.placeholder.com/400x300/B0C4DE/000000" alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>IDEA BULB</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                <p><b>Client:</b> IDEA COMPANY</p>
+                <p><b>Date:</b> 07.02.2020</p>
+                <p><b>Designer:</b> Jessica Smith</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
+   
 
 {% endblock  %}

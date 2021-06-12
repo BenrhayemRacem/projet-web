@@ -5,6 +5,7 @@
 {% block StyleSheet %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/Projects/projects.css') }}">
 {% endblock %}
 
 {% block Activated %}
@@ -41,8 +42,92 @@
     </ul>
 </nav>
 
-    <div class="container" id="Courses">
+   <div class="container">
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/MLwebAPP.jpg')}}" alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>Machine Learning Web APP</h5>
+                <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
+                    evaluation metrics for binary classification algorithms</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class="project-info-box mb-10">
+               
+                <p><b>Designer:</b> Si Racem Ben Rhayem</p>
+                <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-5 tablet-top">
+            <div class="project-info-box mt-0">
+                <h5>Create PING-PONG Game</h5>
+                <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
+                </p> 
+                       </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                
+                <p><b>Designer:</b> Mehdi Ghorbel</p>
+                <p><b>Tools:</b> Python &amp; Turtle graphics </p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/ping pong.jpg')}}" alt="project-image" class="rounded">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/chatBot.png')}}"alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>Build Your first Chatbot </h5>
+                <p>Plan a custom development strategy for a chatbot with a specific goal in mind
+
+                    Develop rule-based transactional responses for the most common inputs
+
+                    Build a fully functional, intelligently responding chatbot that is trained for a specific task or for entertainment.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
 
 {% endblock  %}

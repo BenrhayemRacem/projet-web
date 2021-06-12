@@ -396,6 +396,6 @@ class __TwigTemplate_7a32ba70009f8ee17b8b35eb634478a73bd4ed4901866277214064f57d7
 {% block Footer %}
 {% endblock %}
 
-", "inscription/index.html.twig", "C:\\Users\\zayne\\projetWEB\\templates\\inscription\\index.html.twig");
+", "inscription/index.html.twig", "C:\\xampp\\htdocs\\projet-web\\templates\\inscription\\index.html.twig");
     }
 }

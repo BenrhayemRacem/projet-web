@@ -25,6 +25,7 @@ class __TwigTemplate_527f400464d125bc1161d2b9b12a2dce02316b403a0a97a85ecc049412a
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'Title' => [$this, 'block_Title'],
             'width' => [$this, 'block_width'],
             'Bar' => [$this, 'block_Bar'],
             'titleParagraphe' => [$this, 'block_titleParagraphe'],
@@ -55,6 +56,25 @@ class __TwigTemplate_527f400464d125bc1161d2b9b12a2dce02316b403a0a97a85ecc049412a
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 2
+    public function block_Title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
+
+        echo "HTML Course";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
     }
 
@@ -197,12 +217,12 @@ class __TwigTemplate_527f400464d125bc1161d2b9b12a2dce02316b403a0a97a85ecc049412a
                 <div class=\"container justify-items-end row\">
                     <div class=\"col\"><a class=\"btn-grad\" href=\"";
         // line 37
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover");
-        echo "\">Home</a></div>
-                    <div class=\"col\"><a class=\"btn-grad\" href=\"";
-        // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse");
         echo "\">< Previous</a></div>
+                    <div class=\"col\"><a class=\"btn-grad\" href=\"";
+        // line 38
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover");
+        echo "\">Home</a></div>
                     <div class=\"col\"><a class=\"btn-grad\" href=\"";
         // line 39
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 2]);
@@ -230,13 +250,13 @@ class __TwigTemplate_527f400464d125bc1161d2b9b12a2dce02316b403a0a97a85ecc049412a
 
     public function getDebugInfo()
     {
-        return array (  208 => 39,  204 => 38,  200 => 37,  180 => 19,  170 => 18,  151 => 16,  132 => 15,  120 => 12,  116 => 11,  112 => 10,  108 => 9,  104 => 8,  100 => 7,  96 => 6,  91 => 5,  81 => 4,  62 => 3,  39 => 1,);
+        return array (  228 => 39,  224 => 38,  220 => 37,  200 => 19,  190 => 18,  171 => 16,  152 => 15,  140 => 12,  136 => 11,  132 => 10,  128 => 9,  124 => 8,  120 => 7,  116 => 6,  111 => 5,  101 => 4,  82 => 3,  63 => 2,  40 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'Courses/Course.html.twig' %}
-
+{% block Title %}HTML Course{% endblock %}
 {% block width %}25%{% endblock %}
 {% block Bar %}
     <a href=\"{{ path('HTMLCourse') }}\" class=\"list-group-item list-group-item-action \">HTML History</a>
@@ -271,11 +291,11 @@ class __TwigTemplate_527f400464d125bc1161d2b9b12a2dce02316b403a0a97a85ecc049412a
                         </div>
 
                 <div class=\"container justify-items-end row\">
-                    <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('Discover')}}\">Home</a></div>
                     <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('HTMLCourse') }}\">< Previous</a></div>
+                    <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('Discover')}}\">Home</a></div>
                     <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('HTMLCourse',{num : 2 }) }}\">Next ></a></div>
                 </div>
                             </div>
-{% endblock %}", "Courses/ProgLanguage/HTML/index1.html.twig", "C:\\Users\\zayne\\projetWEB\\templates\\Courses\\ProgLanguage\\HTML\\index1.html.twig");
+{% endblock %}", "Courses/ProgLanguage/HTML/index1.html.twig", "C:\\xampp\\htdocs\\projet-web\\templates\\Courses\\ProgLanguage\\HTML\\index1.html.twig");
     }
 }

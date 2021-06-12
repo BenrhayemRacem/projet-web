@@ -25,6 +25,7 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'Title' => [$this, 'block_Title'],
             'StyleSheet' => [$this, 'block_StyleSheet'],
             'Activated' => [$this, 'block_Activated'],
             'Body' => [$this, 'block_Body'],
@@ -58,6 +59,25 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 2
+    public function block_Title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
+
+        echo "CSS Course";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
     }
 
@@ -143,23 +163,23 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
             ";
         // line 30
         $this->displayBlock('Bar', $context, $blocks);
-        // line 41
+        // line 32
         echo "        </div>
     </div>
 
     <div class=\"col-8  \">
         <div class=\"jumbotron\" >
             <div class=\"row gradient-underline\"><h5 class=\"titleParagraphe\">";
-        // line 46
+        // line 37
         $this->displayBlock('titleParagraphe', $context, $blocks);
         echo "</h5></div>
             ";
-        // line 47
+        // line 38
         $this->displayBlock('NextTitle', $context, $blocks);
-        // line 48
+        // line 39
         echo "            ";
         $this->displayBlock('Course', $context, $blocks);
-        // line 49
+        // line 40
         echo "        </div>
 
     </div>
@@ -205,39 +225,7 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Bar"));
 
         // line 31
-        echo "            <a href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse");
-        echo "\" class=\"list-group-item list-group-item-action active \">HTML History</a>
-            <a href=\"";
-        // line 32
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 1]);
-        echo "\" class=\"list-group-item list-group-item-action\">HTML balises</a>
-            <a href=\"";
-        // line 33
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 2]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML tableaux</a>
-
-            <a href=\"";
-        // line 35
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 3]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML input</a>
-            <a href=\"";
-        // line 36
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 4]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML types input</a>
-            <a href=\"";
-        // line 37
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 5]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML organisation</a>
-            <a href=\"";
-        // line 38
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 6]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML media</a>
-            <a href=\"";
-        // line 39
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("HTMLCourse", ["num" => 7]);
-        echo "\" class=\"list-group-item list-group-item-action \">HTML quiz</a>
-            ";
+        echo "            ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -246,7 +234,7 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
 
     }
 
-    // line 46
+    // line 37
     public function block_titleParagraphe($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -264,7 +252,7 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
 
     }
 
-    // line 47
+    // line 38
     public function block_NextTitle($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -283,7 +271,7 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
 
     }
 
-    // line 48
+    // line 39
     public function block_Course($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -314,13 +302,13 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
 
     public function getDebugInfo()
     {
-        return array (  287 => 48,  268 => 47,  250 => 46,  238 => 39,  234 => 38,  230 => 37,  226 => 36,  222 => 35,  217 => 33,  213 => 32,  208 => 31,  198 => 30,  179 => 23,  163 => 49,  160 => 48,  158 => 47,  154 => 46,  147 => 41,  145 => 30,  135 => 23,  131 => 21,  121 => 20,  102 => 9,  92 => 8,  80 => 5,  75 => 4,  65 => 3,  42 => 1,);
+        return array (  275 => 39,  256 => 38,  238 => 37,  228 => 31,  218 => 30,  199 => 23,  183 => 40,  180 => 39,  178 => 38,  174 => 37,  167 => 32,  165 => 30,  155 => 23,  151 => 21,  141 => 20,  122 => 9,  112 => 8,  100 => 5,  95 => 4,  85 => 3,  66 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'User.html.twig' %}
-
+{% block Title %}CSS Course{% endblock %}
 {% block StyleSheet %}
     {{ parent() }}
     <link rel=\"stylesheet\" href=\"{{ asset('CSS/Courses/Course.css') }}\">
@@ -349,15 +337,6 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
     <div class=\"col-3 List \" style=\" margin: 20px ;\">
         <div class=\"list-group\">
             {% block Bar %}
-            <a href=\"{{ path('HTMLCourse') }}\" class=\"list-group-item list-group-item-action active \">HTML History</a>
-            <a href=\"{{ path('HTMLCourse',{num : 1 }) }}\" class=\"list-group-item list-group-item-action\">HTML balises</a>
-            <a href=\"{{ path('HTMLCourse',{num : 2 }) }}\" class=\"list-group-item list-group-item-action \">HTML tableaux</a>
-
-            <a href=\"{{ path('HTMLCourse',{num : 3 }) }}\" class=\"list-group-item list-group-item-action \">HTML input</a>
-            <a href=\"{{ path('HTMLCourse',{num : 4 }) }}\" class=\"list-group-item list-group-item-action \">HTML types input</a>
-            <a href=\"{{ path('HTMLCourse',{num : 5 }) }}\" class=\"list-group-item list-group-item-action \">HTML organisation</a>
-            <a href=\"{{ path('HTMLCourse',{num : 6 }) }}\" class=\"list-group-item list-group-item-action \">HTML media</a>
-            <a href=\"{{ path('HTMLCourse',{num : 7 }) }}\" class=\"list-group-item list-group-item-action \">HTML quiz</a>
             {% endblock %}
         </div>
     </div>
@@ -373,6 +352,6 @@ class __TwigTemplate_eaed9e87d5abaa64d868ccf675fe6b096daf63a31425555ebcbab2ffe54
     </div>
     </div>
 
-{% endblock %}", "Courses/Course.html.twig", "C:\\Users\\zayne\\projetWEB\\templates\\Courses\\Course.html.twig");
+{% endblock %}", "Courses/Course.html.twig", "C:\\xampp\\htdocs\\projet-web\\templates\\Courses\\Course.html.twig");
     }
 }

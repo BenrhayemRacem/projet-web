@@ -143,17 +143,18 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 ";
         // line 79
         $this->displayBlock('Scripts', $context, $blocks);
-        // line 84
+        // line 85
         echo "
 
 </body>
 
 
 ";
-        // line 89
+        // line 90
         $this->displayBlock('Footer', $context, $blocks);
-        // line 145
+        // line 146
         echo "</html>
+
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -283,6 +284,10 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         // line 82
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/bootstrap/dist/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
+    <script src=\"";
+        // line 83
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Scripts/UserScripts/UserScripts.js"), "html", null, true);
+        echo "\"></script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -292,7 +297,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 89
+    // line 90
     public function block_Footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -302,12 +307,12 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Footer"));
 
-        // line 90
+        // line 91
         echo "    <footer>
         <div id=\"footer\" class=\"container-fluid\">
             <div class=\"col-12\">
                 <img src=\"";
-        // line 93
+        // line 94
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/Logohead.png"), "html", null, true);
         echo "\" alt=\"\">
                 <div>
@@ -341,25 +346,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                 <div class=\"col-4\">
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 124
+        // line 125
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/envelope-fill.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 127
+        // line 128
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/facebook.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 130
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/linkedin.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 133
+        // line 134
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/instagram.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
@@ -393,7 +398,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     public function getDebugInfo()
     {
-        return array (  363 => 133,  357 => 130,  351 => 127,  345 => 124,  311 => 93,  306 => 90,  296 => 89,  284 => 82,  278 => 80,  268 => 79,  250 => 76,  231 => 43,  221 => 42,  202 => 19,  190 => 17,  186 => 16,  182 => 15,  177 => 14,  167 => 13,  156 => 145,  154 => 89,  147 => 84,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
+        return array (  368 => 134,  362 => 131,  356 => 128,  350 => 125,  316 => 94,  311 => 91,  301 => 90,  289 => 83,  285 => 82,  279 => 80,  269 => 79,  251 => 76,  232 => 43,  222 => 42,  203 => 19,  191 => 17,  187 => 16,  183 => 15,  178 => 14,  168 => 13,  156 => 146,  154 => 90,  147 => 85,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -480,6 +485,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
     <script src=\"{{ asset('node_modules/jquery/dist/jquery.min.js')}}\"></script>
     <!--<script src=\"/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js\"></script>-->
     <script src=\"{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}\"></script>
+    <script src=\"{{ asset('Scripts/UserScripts/UserScripts.js')}}\"></script>
 {% endblock %}
 
 
@@ -543,6 +549,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
     </footer>
 {% endblock %}
 </html>
+
 ", "User.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\User.html.twig");
     }
 }

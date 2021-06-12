@@ -168,7 +168,7 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
             <li class=\"page-item active\" aria-current=\"page\">
                 <span class=\"page-link\" style=\"background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) \">Programming Languages</span>
             </li>
-            <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \" href=\"";
+            <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) ;\" href=\"";
         // line 39
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_Courses_Languages");
         echo "\">Languages</a></li>
@@ -311,7 +311,7 @@ $context["Course"], "name", [], "any", false, false, false, 59) == "JAVASCRIPT")
             <li class=\"page-item active\" aria-current=\"page\">
                 <span class=\"page-link\" style=\"background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) \">Programming Languages</span>
             </li>
-            <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \" href=\"{{ path('Discover_Courses_Languages') }}\">Languages</a></li>
+            <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) ;\" href=\"{{ path('Discover_Courses_Languages') }}\">Languages</a></li>
             <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \"  href=\"{{ path('Discover_Courses_Music') }}\">Music</a></li>
         </ul>
     </nav>

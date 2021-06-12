@@ -4,7 +4,7 @@
 
 {% block StyleSheet %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('CSS/User/MyProjects.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/User/MyProjectsStyle.css') }}">
 {% endblock %}
 
 {% block Activated %}
@@ -17,4 +17,12 @@
     <li class="nav-item actived" id = "header">
         <a href="#" >MY PROJECTS</a>
     </li>
+{% endblock %}
+
+
+{% block Body %}
+    <section id="Courses">
+        <div class="TitleContainer"><h2 class="TitlePage"> <span></span>MY<span>PROJECTS</span></h2></div>
+    </section>
+
 {% endblock %}

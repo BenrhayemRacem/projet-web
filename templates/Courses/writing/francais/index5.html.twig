@@ -1,0 +1,46 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}HTML Course{% endblock %}
+{% block width %}62%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action active">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les temps verbaux {% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Les temps verbaux de l'indicatif</h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p> Cette section présente la conjugaison des verbes aux différents temps de l’indicatif </p>
+                                <ul>
+                                    <li> le present </li>
+                                    <li> le passe compose </li>
+                                    <li> l'imparfait </li>
+                                    <li> le passe recent </li>
+                                    <li> le passe simple </li>
+                                    <li> le plus-que-parfait </li>
+                                    <li> le passe anterieur </li>
+                                    <li> le futur proche </li>
+                                    <li> le futur simple </li>
+                                    <li>  le futur anterieur</li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{path('francaisCourse',{num : 4 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 6 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}
+
+

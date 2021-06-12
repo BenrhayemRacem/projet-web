@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 /**
@@ -56,6 +58,28 @@ class User implements UserInterface
      */
     private $address;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Course::class, mappedBy="user")
+     */
+    private $Course;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Course::class, inversedBy="users")
+     */
+    private $Courses;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Project::class, mappedBy="User")
+     */
+    private $projects;
+
+    public function __construct()
+    {
+        $this->Course = new ArrayCollection();
+        $this->Courses = new ArrayCollection();
+        $this->projects = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -79,7 +103,7 @@ class User implements UserInterface
      */
     public function getUsername(): string
     {
-        return (string) $this->email;
+        return (string)$this->email;
     }
 
     /**
@@ -104,7 +128,7 @@ class User implements UserInterface
      */
     public function getPassword(): string
     {
-        return (string) $this->password;
+        return (string)$this->password;
     }
 
     public function setPassword(string $password): self
@@ -185,6 +209,60 @@ class User implements UserInterface
     public function setAddress(?string $address): self
     {
         $this->address = $address;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Course[]
+     */
+    public function getCourses(): Collection
+    {
+        return $this->Courses;
+    }
+
+    public function addCourse(Course $course): self
+    {
+        if (!$this->Courses->contains($course)) {
+            $this->Courses[] = $course;
+        }
+
+        return $this;
+    }
+
+    public function removeCourse(Course $course): self
+    {
+        $this->Courses->removeElement($course);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Project[]
+     */
+    public function getProjects(): Collection
+    {
+        return $this->projects;
+    }
+
+    public function addProject(Project $project): self
+    {
+        if (!$this->projects->contains($project)) {
+            $this->projects[] = $project;
+            $project->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeProject(Project $project): self
+    {
+        if ($this->projects->removeElement($project)) {
+            // set the owning side to null (unless already changed)
+            if ($project->getUser() === $this) {
+                $project->setUser(null);
+            }
+        }
 
         return $this;
     }

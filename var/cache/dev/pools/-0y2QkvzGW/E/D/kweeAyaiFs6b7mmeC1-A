@@ -11,7 +11,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 '/JS/{num<\\d+>?0}',
             ],
             'name' => [
-                'JSCourse',
+                'JAVASCIPTCourse',
             ],
         ],
     ],

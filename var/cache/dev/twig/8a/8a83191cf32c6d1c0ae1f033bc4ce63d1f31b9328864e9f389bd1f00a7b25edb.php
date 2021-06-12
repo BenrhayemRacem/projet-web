@@ -94,6 +94,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/User/Discover.css"), "html", null, true);
         echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/Projects/projects.css"), "html", null, true);
+        echo "\">
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -103,7 +108,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     }
 
-    // line 10
+    // line 12
     public function block_Activated($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -113,7 +118,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Activated"));
 
-        // line 11
+        // line 13
         echo "    <li class=\"nav-item actived\">
         <a href=\"#\">DISCOVER</a>
     </li>
@@ -132,7 +137,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     }
 
-    // line 22
+    // line 24
     public function block_Body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -142,7 +147,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Body"));
 
-        // line 23
+        // line 25
         echo "
 <nav aria-label=\"...\" class=\"Categories\">
 
@@ -153,7 +158,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     <ul class=\"pagination pagination-lg first\" >
         <li ><a class=\"btn from-right\" href=\"";
-        // line 32
+        // line 34
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_Courses_Languages");
         echo "\">Courses</a></li>
         <li ><a class=\"btn active\" href=\"\">Projects</a></li>
@@ -161,23 +166,106 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     <ul class=\"pagination pagination-lg second\" >
         <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \" href=\"";
-        // line 37
+        // line 39
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_LP");
         echo "\">Programming Languages</a></li>
         <li class=\"page-item active\" aria-current=\"page\">
             <span class=\"page-link\" style=\"background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) \" >Languages</span>
         </li>
         <li class=\"page-item\"><a class=\"page-link\" style=\"color: rgb(134, 206, 211) \" href=\"";
-        // line 41
+        // line 43
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_Projects_Music");
         echo "\">Music</a></li>
     </ul>
 </nav>
 
 
-    <div class=\"container\" id=\"Courses\">
+    
+<div class=\"container\">
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">FOIL LOGO</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> FOIL COM</p>
+                <p><b>Date:</b> 10.02.2020</p>
+                <p><b>Designer:</b> Brian Hawkins</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-5 tablet-top\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">STATIONERY</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> LOGO COMPANY</p>
+                <p><b>Date:</b> 13.02.2020</p>
+                <p><b>Designer:</b> John Doe</p>
+                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">IDEA BULB</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> IDEA COMPANY</p>
+                <p><b>Date:</b> 07.02.2020</p>
+                <p><b>Designer:</b> Jessica Smith</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
+   
 
 ";
         
@@ -200,7 +288,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     public function getDebugInfo()
     {
-        return array (  172 => 41,  165 => 37,  157 => 32,  146 => 23,  136 => 22,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  177 => 43,  170 => 39,  162 => 34,  151 => 25,  141 => 24,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -212,6 +300,8 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 {% block StyleSheet %}
     {{ parent() }}
     <link rel=\"stylesheet\" href=\"{{ asset('CSS/User/Discover.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset('CSS/Projects/projects.css') }}\">
+
 {% endblock %}
 
 {% block Activated %}
@@ -250,9 +340,92 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 </nav>
 
 
-    <div class=\"container\" id=\"Courses\">
+    
+<div class=\"container\">
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/FFB6C1/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">FOIL LOGO</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
 
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> FOIL COM</p>
+                <p><b>Date:</b> 10.02.2020</p>
+                <p><b>Designer:</b> Brian Hawkins</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
     </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-5 tablet-top\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">STATIONERY</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> LOGO COMPANY</p>
+                <p><b>Date:</b> 13.02.2020</p>
+                <p><b>Designer:</b> John Doe</p>
+                <p><b>Tools:</b> Photoshop &amp; Illustrator</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/87CEFA/000000\" alt=\"project-image\" class=\"rounded\">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class=\"spacer-line-fw border-secondary opc-25 mt-30 mb-30\">&nbsp;</div>
+
+    <div class=\"row list-project\">
+        <div class=\"col-md-7\">
+            <img src=\"https://via.placeholder.com/400x300/B0C4DE/000000\" alt=\"project-image\" class=\"rounded tablet-top\">
+        </div>
+        <!-- / column -->
+        <div class=\"col-md-5\">
+            <div class=\"project-info-box mt-0\">
+                <h5 class=\"NextTitle\">IDEA BULB</h5>
+                <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna vel erat.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class=\"project-info-box mb-10\">
+                <p><b>Client:</b> IDEA COMPANY</p>
+                <p><b>Date:</b> 07.02.2020</p>
+                <p><b>Designer:</b> Jessica Smith</p>
+                <p><b>Tools:</b> Photoshop, Illustrator &amp; Sketch</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
+   
 
 {% endblock  %}", "user/Discover_Projects/DiscoverPL.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Projects\\DiscoverPL.html.twig");
     }

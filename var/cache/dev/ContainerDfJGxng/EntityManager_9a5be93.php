@@ -18,7 +18,7 @@ class EntityManager_9a5be93 extends \Doctrine\ORM\EntityManager implements \Prox
      * @var bool[] map of public properties of the parent class
      */
     private static $publicProperties5ace3 = [
-        
+
     ];
 
     public function getConnection()

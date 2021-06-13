@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -37,8 +39,14 @@ class CourseController extends AbstractController
     /**
      * @Route("/HTML/{num<\d+>?0}", name="HTMLCourse")
      */
-    public function indexHTML(int $num): Response
+    public function indexHTML(int $num , EntityManagerInterface $manager): Response
     {
+        $repository = $manager->getRepository('App:Course');
+        $course = $repository->findOneBy(['Name'=>'HTML']);
+        $user = $this->getUser();
+        $user->addCourse($course);
+        $manager->persist($user);
+        $manager->flush();
         return $this->render('Courses/ProgLanguage/HTML/index'.$num.'.html.twig', []);
     }
 
@@ -71,8 +79,14 @@ class CourseController extends AbstractController
     /**
      * @Route("/CSS/{num<\d+>?0}", name="CSSCourse")
      */
-    public function indexCSS(int $num): Response
+    public function indexCSS(int $num, EntityManagerInterface $manager): Response
     {
+        $repository = $manager->getRepository('App:Course');
+        $course = $repository->findOneBy(['Name'=>'CSS']);
+        $user = $this->getUser();
+        $user->addCourse($course);
+        $manager->persist($user);
+        $manager->flush();
         return $this->render('Courses/ProgLanguage/CSS/index'.$num.'.html.twig', []);
     }
 
@@ -105,8 +119,14 @@ class CourseController extends AbstractController
     /**
      * @Route("/JS/{num<\d+>?0}", name="JSCourse")
      */
-    public function indexJS(int $num): Response
+    public function indexJS(int $num, EntityManagerInterface $manager): Response
     {
+        $repository = $manager->getRepository('App:Course');
+        $course = $repository->findOneBy(['Name'=>'Javascript']);
+        $user = $this->getUser();
+        $user->addCourse($course);
+        $manager->persist($user);
+        $manager->flush();
         return $this->render('Courses/ProgLanguage/JS/index'.$num.'.html.twig', []);
     }
 

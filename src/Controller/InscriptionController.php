@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\Uid\Uuid;
 
 
 class InscriptionController extends AbstractController
@@ -44,15 +45,18 @@ class InscriptionController extends AbstractController
             // Set their role
 
             $user->setIsComfirmed(0) ;
+            $uid = Uuid::v4() ;
+            $user->setUniqueId($uid) ;
             // Save
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
 
 
-            return $this->redirectToRoute('mail' , [
+            return $this->redirectToRoute("mail" , [
                 'name' => $user->getFirstName(),
-                'mail' => $user->getUsername()
+                'mail' => $user->getUsername() ,
+                'uniqueId' => $user->getUniqueId()
             ] );
         }
 

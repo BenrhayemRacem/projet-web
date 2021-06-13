@@ -1,12 +1,23 @@
 {# templates/emails/registration.html.twig #}
+<html>
+{% block body %}
+
+
 <h3>You did it! You registered!</h3>
 
-Hi {{ name }}! You're successfully registered.
+Hi  You're successfully registered.
 
 {# example, assuming you have a route named "login" #}
 
-
+    <a href= ' {{ url( "mail.verif" , {  'mail' : mail , 'uniqueId' : uniqueId  ,  } )}}' > click here </a>
 Thanks!
 
+
+
+
+
 {# Makes an absolute URL to the /images/logo.png file #}
-<img src="{{ absolute_url(asset('images/logo.png')) }}">
+{% endblock %}
+
+
+</html>

@@ -63,6 +63,11 @@ class User implements UserInterface
      * @Assert\Length(max=4096)
      */
     private $plainPassword;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $unique_id;
     public function __construct()
     {
         $this->roles = array('ROLE_USER');
@@ -209,6 +214,18 @@ class User implements UserInterface
     public function setPlainPassword(?string $plainPassword): self
     {
         $this->plainPassword = $plainPassword;
+
+        return $this;
+    }
+
+    public function getUniqueId(): ?string
+    {
+        return $this->unique_id;
+    }
+
+    public function setUniqueId(?string $unique_id): self
+    {
+        $this->unique_id = $unique_id;
 
         return $this;
     }

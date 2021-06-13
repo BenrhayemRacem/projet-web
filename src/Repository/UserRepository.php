@@ -18,6 +18,16 @@ class UserRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, User::class);
     }
+    public function verifyCredentials( $mail , $uniqueId) {
+        return $this->createQueryBuilder('u')
+
+            ->andWhere('u.email = :email')
+            ->setParameter('email' , $mail)
+            ->andWhere('u.unique_id = :uniqueId')
+            ->setParameter('uniqueId' , $uniqueId)
+            ->getQuery()
+            ->getOneOrNullResult() ;
+    }
 
     // /**
     //  * @return User[] Returns an array of User objects
@@ -47,4 +57,6 @@ class UserRepository extends ServiceEntityRepository
         ;
     }
     */
+
+
 }

@@ -209,6 +209,6 @@ class __TwigTemplate_0f0d240774690bfaea3ffec6c4105c21b2e9d4d73ab20dd3e2d81466083
 
 
 
-", "user/MyCourses.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\MyCourses.html.twig");
+", "user/MyCourses.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\user\\MyCourses.html.twig");
     }
 }

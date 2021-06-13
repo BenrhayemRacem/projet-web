@@ -297,6 +297,6 @@ class __TwigTemplate_fd36c7c4873d7a58c28cf0f77d2c41de3a3e5edfaab957ec292efaa4886
             <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('HTMLCourse',{num : 6 }) }}\">Next ></a></div>
         </div>
     </div>
-{% endblock %}", "Courses/ProgLanguage/HTML/index5.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\HTML\\index5.html.twig");
+{% endblock %}", "Courses/ProgLanguage/HTML/index5.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\Courses\\ProgLanguage\\HTML\\index5.html.twig");
     }
 }

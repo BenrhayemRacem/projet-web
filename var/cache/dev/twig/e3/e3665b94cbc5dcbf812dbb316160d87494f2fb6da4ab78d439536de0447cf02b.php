@@ -312,6 +312,6 @@ class __TwigTemplate_3c5eaa97450cdedce98422ba96e4cc04b9c9cb5080b2aa30fe5fff9f2f9
         </div>
     </div>
 {% endblock %}
-", "Courses/ProgLanguage/HTML/index2.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\HTML\\index2.html.twig");
+", "Courses/ProgLanguage/HTML/index2.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\Courses\\ProgLanguage\\HTML\\index2.html.twig");
     }
 }

@@ -190,8 +190,14 @@ class CourseController extends AbstractController
     /**
      * @Route("/francais/{num<\d+>?0}", name="francaisCourse")
      */
-    public function indexfrancais(int $num): Response
+    public function indexfrancais(int $num , EntityManagerInterface $manager): Response
     {
+        $repository = $manager->getRepository('App:Course');
+        $course = $repository->findOneBy(['Name'=>'francais']);
+        $user = $this->getUser();
+        $user->addCourse($course);
+        $manager->persist($user);
+        $manager->flush();
         return $this->render('Courses/writing/francais/index'.$num.'.html.twig', []);
     }
 
@@ -224,8 +230,14 @@ class CourseController extends AbstractController
     /**
      * @Route("/anglais/{num<\d+>?0}", name="anglaisCourse")
      */
-    public function indexanglais(int $num): Response
+    public function indexanglais(int $num , EntityManagerInterface $manager): Response
     {
+        $repository = $manager->getRepository('App:Course');
+        $course = $repository->findOneBy(['Name'=>'anglais']);
+        $user = $this->getUser();
+        $user->addCourse($course);
+        $manager->persist($user);
+        $manager->flush();
         return $this->render('Courses/writing/anglais/index'.$num.'.html.twig', []);
     }
 

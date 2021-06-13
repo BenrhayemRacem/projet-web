@@ -123,7 +123,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         echo "\">Edit Profile</a></li>
                                 <li><a class=\"dropdown-item\" href=\"";
         // line 65
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         echo "\">Log out</a></li>
                             </ul>
                         </div>
@@ -467,7 +467,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                             <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width : 60% ; left : 5% ;\">
                                 <li><a class=\"dropdown-item\" href=\"{{ path('Profile') }}\">My Profile</a></li>
                                 <li><a class=\"dropdown-item\" href=\"{{ path('Edit_Profile') }}\">Edit Profile</a></li>
-                                <li><a class=\"dropdown-item\" href=\"{{ path('home') }}\">Log out</a></li>
+                                <li><a class=\"dropdown-item\" href=\"{{ path('app_logout') }}\">Log out</a></li>
                             </ul>
                         </div>
                     </li>
@@ -550,6 +550,6 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 {% endblock %}
 </html>
 
-", "User.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\User.html.twig");
+", "User.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\User.html.twig");
     }
 }

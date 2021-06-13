@@ -134,7 +134,7 @@ class __TwigTemplate_c0aa27c229ec4a5b67f1792eb94fc0381f8b23c358f2868ee0539e245a6
     <a href=\"";
         // line 11
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("JSCourse", ["num" => 6]);
-        echo "\" class=\"list-group-item list-group-item-action \">Les varialbes</a>
+        echo "\" class=\"list-group-item list-group-item-action \">Les variables</a>
     <a href=\"";
         // line 12
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("JSCourse", ["num" => 7]);
@@ -285,7 +285,7 @@ class __TwigTemplate_c0aa27c229ec4a5b67f1792eb94fc0381f8b23c358f2868ee0539e245a6
     <a href=\"{{ path('JSCourse',{num : 3 }) }}\" class=\"list-group-item list-group-item-action \">Dates et Times</a>
     <a href=\"{{ path('JSCourse',{num : 4 }) }}\" class=\"list-group-item list-group-item-action \">Les chaines</a>
     <a href=\"{{ path('JSCourse',{num : 5 }) }}\" class=\"list-group-item list-group-item-action active\">Les booleens</a>
-    <a href=\"{{ path('JSCourse',{num : 6 }) }}\" class=\"list-group-item list-group-item-action \">Les varialbes</a>
+    <a href=\"{{ path('JSCourse',{num : 6 }) }}\" class=\"list-group-item list-group-item-action \">Les variables</a>
     <a href=\"{{ path('JSCourse',{num : 7 }) }}\" class=\"list-group-item list-group-item-action \">les tableaux</a>
     <a href=\"{{ path('JSCourse',{num : 8 }) }}\" class=\"list-group-item list-group-item-action \">Les objets</a>
     <a href=\"{{ path('JSCourse',{num : 9 }) }}\" class=\"list-group-item list-group-item-action \">Les fonctions</a>
@@ -323,6 +323,6 @@ class __TwigTemplate_c0aa27c229ec4a5b67f1792eb94fc0381f8b23c358f2868ee0539e245a6
 
                             </div>
                         </div>
-                    {% endblock %}", "Courses/ProgLanguage/JS/index5.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\JS\\index5.html.twig");
+                    {% endblock %}", "Courses/ProgLanguage/JS/index5.html.twig", "D:\\projetnewnewnew\\templates\\Courses\\ProgLanguage\\JS\\index5.html.twig");
     }
 }

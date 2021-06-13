@@ -313,6 +313,6 @@ class __TwigTemplate_a7d3199b88e75ebb121ae6ab6ce4bf2c43e596ed026d812261de6d491b4
 
                             </div>
                         </div>
-                    {% endblock %}", "Courses/ProgLanguage/JS/index10.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\JS\\index10.html.twig");
+                    {% endblock %}", "Courses/ProgLanguage/JS/index10.html.twig", "D:\\projetnewnewnew\\templates\\Courses\\ProgLanguage\\JS\\index10.html.twig");
     }
 }

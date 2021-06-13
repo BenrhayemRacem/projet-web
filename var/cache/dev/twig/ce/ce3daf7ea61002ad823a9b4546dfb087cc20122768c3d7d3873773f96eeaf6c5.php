@@ -69,7 +69,7 @@ class __TwigTemplate_83b99828e9fc1c08684cf1ebd813465c07d86dc883eed0e35dfcc04c07a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
 
-        echo "HTML Course";
+        echo "Francais Course";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -277,7 +277,7 @@ class __TwigTemplate_83b99828e9fc1c08684cf1ebd813465c07d86dc883eed0e35dfcc04c07a
     public function getSourceContext()
     {
         return new Source("{% extends 'Courses/Course.html.twig' %}
-{% block Title %}HTML Course{% endblock %}
+{% block Title %}Francais Course{% endblock %}
 {% block width %}75%{% endblock %}
 {% block Bar %}
     <a href=\"{{ path('francaisCourse') }}\" class=\"list-group-item list-group-item-action  \">les nombres</a>

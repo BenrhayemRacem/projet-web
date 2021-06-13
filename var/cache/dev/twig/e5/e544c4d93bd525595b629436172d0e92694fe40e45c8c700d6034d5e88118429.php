@@ -145,14 +145,13 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $this->displayBlock('Scripts', $context, $blocks);
         // line 85
         echo "
-
 </body>
 
 
 ";
-        // line 90
+        // line 89
         $this->displayBlock('Footer', $context, $blocks);
-        // line 146
+        // line 145
         echo "</html>
 
 ";
@@ -297,7 +296,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 90
+    // line 89
     public function block_Footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -307,12 +306,12 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Footer"));
 
-        // line 91
+        // line 90
         echo "    <footer>
         <div id=\"footer\" class=\"container-fluid\">
             <div class=\"col-12\">
                 <img src=\"";
-        // line 94
+        // line 93
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/Logohead.png"), "html", null, true);
         echo "\" alt=\"\">
                 <div>
@@ -346,25 +345,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                 <div class=\"col-4\">
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 125
+        // line 124
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/envelope-fill.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 128
+        // line 127
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/facebook.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 131
+        // line 130
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/linkedin.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 134
+        // line 133
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/instagram.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
@@ -398,7 +397,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     public function getDebugInfo()
     {
-        return array (  368 => 134,  362 => 131,  356 => 128,  350 => 125,  316 => 94,  311 => 91,  301 => 90,  289 => 83,  285 => 82,  279 => 80,  269 => 79,  251 => 76,  232 => 43,  222 => 42,  203 => 19,  191 => 17,  187 => 16,  183 => 15,  178 => 14,  168 => 13,  156 => 146,  154 => 90,  147 => 85,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
+        return array (  367 => 133,  361 => 130,  355 => 127,  349 => 124,  315 => 93,  310 => 90,  300 => 89,  288 => 83,  284 => 82,  278 => 80,  268 => 79,  250 => 76,  231 => 43,  221 => 42,  202 => 19,  190 => 17,  186 => 16,  182 => 15,  177 => 14,  167 => 13,  155 => 145,  153 => 89,  147 => 85,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -487,7 +486,6 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
     <script src=\"{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}\"></script>
     <script src=\"{{ asset('Scripts/UserScripts/UserScripts.js')}}\"></script>
 {% endblock %}
-
 
 </body>
 

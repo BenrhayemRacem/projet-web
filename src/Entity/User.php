@@ -74,13 +74,22 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
+
     private $unique_id;
+
     public function __construct()
     {
         $this->roles = array('ROLE_USER');
-      
+        $this->Course = new ArrayCollection();
+        $this->Courses = new ArrayCollection();
+        $this->projects = new ArrayCollection();
+    }
+
+        /**
+         *
      * @ORM\OneToMany(targetEntity=Course::class, mappedBy="user")
      */
+
     private $Course;
 
     /**
@@ -93,13 +102,7 @@ class User implements UserInterface
      */
     private $projects;
 
-    public function __construct()
-    {
-        $this->Course = new ArrayCollection();
-        $this->Courses = new ArrayCollection();
-        $this->projects = new ArrayCollection();
 
-    }
 
     public function getId(): ?int
     {
@@ -243,6 +246,8 @@ class User implements UserInterface
     public function setPlainPassword(?string $plainPassword): self
     {
         $this->plainPassword = $plainPassword;
+        return $this ;
+    }
 
     /**
      * @return Collection|Course[]
@@ -274,7 +279,7 @@ class User implements UserInterface
 
         return $this;
     }
-}
+
 
     public function removeCourse(Course $course): self
     {

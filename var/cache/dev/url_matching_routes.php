@@ -20,8 +20,8 @@ return [
         '/anglais/result' => [[['_route' => 'anglaisQuiz', '_controller' => 'App\\Controller\\CourseController::indexanglaisQuiz'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/registration' => [[['_route' => 'registration', '_controller' => 'App\\Controller\\InscriptionController::index'], null, null, null, false, false, null]],
-        '/login' => [[['_route' => 'Login', '_controller' => 'App\\Controller\\LoginController::login'], null, null, null, false, false, null]],
-        '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\LoginController::logout'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+        '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/EditProfile' => [[['_route' => 'Edit_Profile', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\UserController::indexProfile'], null, null, null, false, false, null]],
         '/home/C/P' => [[['_route' => 'Discover', '_controller' => 'App\\Controller\\UserController::indexDiscover_C_P'], null, null, null, false, false, null]],
@@ -62,6 +62,10 @@ return [
                 .'|/SQL(?:/(\\d+))?(*:304)'
                 .'|/francais(?:/(\\d+))?(*:332)'
                 .'|/anglais(?:/(\\d+))?(*:359)'
+                .'|/mail/([^/]++)/([^/]++)(?'
+                    .'|/([^/]++)(*:402)'
+                    .'|(*:410)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -79,8 +83,10 @@ return [
         280 => [[['_route' => 'JAVACourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexJava'], ['num'], null, null, false, true, null]],
         304 => [[['_route' => 'SQLCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexSQL'], ['num'], null, null, false, true, null]],
         332 => [[['_route' => 'francaisCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexfrancais'], ['num'], null, null, false, true, null]],
-        359 => [
-            [['_route' => 'anglaisCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexanglais'], ['num'], null, null, false, true, null],
+        359 => [[['_route' => 'anglaisCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexanglais'], ['num'], null, null, false, true, null]],
+        402 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
+        410 => [
+            [['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,9 +15,12 @@ class UserController extends AbstractController
      * @Route("/EditProfile", name="Edit_Profile")
      */
     public function index(): Response
-    {
+    {$user = $this->getUser();
         return $this->render('user/EditProfile.html.twig', [
             'controller_name' => 'UserController',
+            'user' =>$user
+
+
         ]);
     }
 
@@ -24,9 +28,10 @@ class UserController extends AbstractController
      * @Route("/Profile", name="Profile")
      */
     public function indexProfile(): Response
-    {
+    {   $user = $this->getUser();
         return $this->render('user/Profile.html.twig', [
             'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -35,10 +40,12 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_P(): Response
     {
+        $user=$this->getUser() ;
         $repository = $this->getDoctrine()->getRepository('App:Course');
         $Courses = $repository->findAll();
         return $this->render('user/Discover_Courses/Discover.html.twig', [
-            'Courses' => $Courses
+
+            'user' =>$user
         ]);
     }
 

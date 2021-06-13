@@ -51,8 +51,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_L(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Courses/DiscoverCL.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -61,8 +62,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_M(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Courses/DiscoverCM.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -71,8 +73,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_LP(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPLP.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -81,7 +84,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_L(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPL.html.twig', [
+            'user' =>$user
         ]);
     }
 
@@ -90,7 +95,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_M(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPM.html.twig', [
+            'user' =>$user
         ]);
     }
 
@@ -99,7 +106,9 @@ class UserController extends AbstractController
      */
     public function indexMyProjects(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Project.html.twig', [
+            'user' =>$user
         ]);
     }
 
@@ -108,7 +117,9 @@ class UserController extends AbstractController
      */
     public function indexMyCourses(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/MyCourses.html.twig', [
+            'user' =>$user
         ]);
     }
 }

@@ -42,7 +42,7 @@ class MailController extends AbstractController
 
         $mailer->send($message) ;
 
-        return $this->render('home.html.twig') ;
+        return $this->render('emailVerification/GoCheckEmail.html.twig') ;
     }
 
     /**

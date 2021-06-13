@@ -29,6 +29,7 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
             'StyleSheet' => [$this, 'block_StyleSheet'],
             'Activated' => [$this, 'block_Activated'],
             'Body' => [$this, 'block_Body'],
+            'greetings' => [$this, 'block_greetings'],
         ];
     }
 
@@ -330,6 +331,29 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
 
     }
 
+    // line 71
+    public function block_greetings($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        // line 72
+        echo "        <div class=\"col Greeting \"> Welcome,";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 72, $this->source); })()), "FirstName", [], "any", false, false, false, 72), "html", null, true);
+        echo " </div>
+    ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "user/Discover_Courses/Discover.html.twig";
@@ -342,7 +366,11 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD
         return array (  247 => 92,  243 => 91,  220 => 71,  216 => 70,  198 => 55,  194 => 54,  177 => 40,  173 => 39,  164 => 33,  152 => 23,  142 => 22,  129 => 18,  123 => 15,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+=======
+        return array (  271 => 72,  261 => 71,  250 => 68,  241 => 64,  235 => 62,  229 => 60,  227 => 59,  222 => 58,  220 => 57,  215 => 56,  213 => 55,  209 => 54,  204 => 52,  200 => 51,  196 => 50,  192 => 48,  188 => 47,  178 => 40,  174 => 39,  165 => 33,  153 => 23,  143 => 22,  130 => 18,  124 => 15,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+>>>>>>> f8ba43ef024d074c2dd82002bad2eb2fdb6017d9
     }
 
     public function getSourceContext()
@@ -516,6 +544,14 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
 
 {% endblock %}
 
+<<<<<<< HEAD
 ", "user/Discover_Courses/Discover.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\projet-web\\templates\\user\\Discover_Courses\\Discover.html.twig");
+=======
+    {% block greetings %}
+        <div class=\"col Greeting \"> Welcome,{{ user.FirstName}} </div>
+    {% endblock %}
+
+", "user/Discover_Courses/Discover.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\user\\Discover_Courses\\Discover.html.twig");
+>>>>>>> f8ba43ef024d074c2dd82002bad2eb2fdb6017d9
     }
 }

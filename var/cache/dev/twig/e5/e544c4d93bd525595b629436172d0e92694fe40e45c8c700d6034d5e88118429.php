@@ -30,6 +30,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
             'StyleSheet' => [$this, 'block_StyleSheet'],
             'Title' => [$this, 'block_Title'],
             'Activated' => [$this, 'block_Activated'],
+            'greetings' => [$this, 'block_greetings'],
             'Body' => [$this, 'block_Body'],
             'Scripts' => [$this, 'block_Scripts'],
             'Footer' => [$this, 'block_Footer'],
@@ -108,8 +109,11 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                     <li></li>
                     <li></li>
                     <li> <div class=\"row dropdown User\">
-                            <div class=\"col Greeting \"> Welcome , Hadil </div>
-                                <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        ";
+        // line 58
+        $this->displayBlock('greetings', $context, $blocks);
+        // line 59
+        echo "                                <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                     <div class=\"UserIcon\"> <i class=\"fas fa-user\"></i></div>
                                 </div>
                             <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width : 60% ; left : 5% ;\">
@@ -239,6 +243,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                         <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
                     </li>
                     ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 58
+    public function block_greetings($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        echo " <div class=\"col Greeting \"> Welcome , Hadil </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -398,7 +421,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     public function getDebugInfo()
     {
-        return array (  368 => 134,  362 => 131,  356 => 128,  350 => 125,  316 => 94,  311 => 91,  301 => 90,  289 => 83,  285 => 82,  279 => 80,  269 => 79,  251 => 76,  232 => 43,  222 => 42,  203 => 19,  191 => 17,  187 => 16,  183 => 15,  178 => 14,  168 => 13,  156 => 146,  154 => 90,  147 => 85,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
+        return array (  391 => 134,  385 => 131,  379 => 128,  373 => 125,  339 => 94,  334 => 91,  324 => 90,  312 => 83,  308 => 82,  302 => 80,  292 => 79,  274 => 76,  255 => 58,  236 => 43,  226 => 42,  207 => 19,  195 => 17,  191 => 16,  187 => 15,  182 => 14,  172 => 13,  160 => 146,  158 => 90,  151 => 85,  149 => 79,  146 => 78,  144 => 76,  130 => 65,  126 => 64,  122 => 63,  116 => 59,  114 => 58,  107 => 53,  105 => 42,  78 => 19,  76 => 13,  71 => 11,  67 => 10,  63 => 9,  59 => 8,  50 => 1,);
     }
 
     public function getSourceContext()
@@ -460,7 +483,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                     <li></li>
                     <li></li>
                     <li> <div class=\"row dropdown User\">
-                            <div class=\"col Greeting \"> Welcome , Hadil </div>
+                        {% block greetings %} <div class=\"col Greeting \"> Welcome , Hadil </div> {% endblock %}
                                 <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                     <div class=\"UserIcon\"> <i class=\"fas fa-user\"></i></div>
                                 </div>

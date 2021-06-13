@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
 use App\Repository\UserRepository;
+
 ;
 
 class MailController extends AbstractController
@@ -20,10 +20,9 @@ class MailController extends AbstractController
      * */
 
 
-    public function index($name  , $mail  , $uniqueId)
+    public function index($name, $mail, $uniqueId)
     {
-
-        $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465 , 'ssl'))
+        $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
             ->setUsername("ltconlineschool@gmail.com")
             ->setPassword("projetweb") ;
         $mailer = new \Swift_Mailer($transport) ;
@@ -41,10 +40,9 @@ class MailController extends AbstractController
             );
 
 
-     $mailer->send($message) ;
+        $mailer->send($message) ;
 
         return $this->render('home.html.twig') ;
-
     }
 
     /**
@@ -52,24 +50,20 @@ class MailController extends AbstractController
      * @Route("/mail/{mail}/{uniqueId}", name= "mail.verif")
      *
      * */
-    public  function  verificationEmail (  $mail , $uniqueId , UserRepository  $repository) {
-$user = $repository->findOneBy(array('email' => $mail)) ;
+    public function verificationEmail($mail, $uniqueId, UserRepository  $repository)
+    {
+        $user = $repository->findOneBy(array('email' => $mail)) ;
 
-if($user) {
-    if( $repository->verifyCredentials( $mail , $uniqueId)) {
-        $user->setIsComfirmed(1) ;
-        $em = $this->getDoctrine()->getManager();
-        $em->persist($user);
-        $em->flush();
-        return $this->render('emailVerification/GoAccountConfirmed.html.twig');
+        if ($user) {
+            if ($repository->verifyCredentials($mail, $uniqueId)) {
+                $user->setIsComfirmed(1) ;
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($user);
+                $em->flush();
+                return $this->render('emailVerification/GoAccountConfirmed.html.twig');
+            }
+        }
+
+        return  $this->render('emailVerification/GoCheckCredentials.html.twig') ;
     }
-
-
-
-}
-
-return  $this->render('emailVerification/GoCheckCredentials.html.twig') ;
-    }
-
-
 }

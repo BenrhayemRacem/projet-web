@@ -10,7 +10,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Uid\Uuid;
 
-
 class InscriptionController extends AbstractController
 {
     private $passwordEncoder;
@@ -23,7 +22,7 @@ class InscriptionController extends AbstractController
     /**
      * @Route("/registration", name="registration")
      */
-    public function index(UserPasswordEncoderInterface $passwordEncoder , Request $request)
+    public function index(UserPasswordEncoderInterface $passwordEncoder, Request $request)
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
@@ -34,10 +33,8 @@ class InscriptionController extends AbstractController
         }
 
 
-        if ($form->isSubmitted() && $form->isValid() ) {
-
-
-            $password = $passwordEncoder->encodePassword($user , $user->getPlainPassword()) ;
+        if ($form->isSubmitted() && $form->isValid()) {
+            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword()) ;
 
 
             $user->setPassword($password);
@@ -53,23 +50,15 @@ class InscriptionController extends AbstractController
             $em->flush();
 
 
-            return $this->redirectToRoute("mail" , [
+            return $this->redirectToRoute("mail", [
                 'name' => $user->getFirstName(),
                 'mail' => $user->getUsername() ,
                 'uniqueId' => $user->getUniqueId()
-            ] );
+            ]);
         }
 
         return $this->render('inscription/index.html.twig', [
             'form' => $form->createView(),
         ]);
-
-
     }
-
-
-
-
 }
-
-

@@ -2,7 +2,6 @@
 
 namespace ContainerDfJGxng;
 
-
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
@@ -18,6 +17,6 @@ class getSession_Storage_NativeService extends App_KernelDevDebugContainer
      */
     public static function do($container, $lazyLoad = true)
     {
-        return $container->privates['session.storage.native'] = new \Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage($container->parameters['session.storage.options'], NULL, new \Symfony\Component\HttpFoundation\Session\Storage\MetadataBag('_sf2_meta', 0));
+        return $container->privates['session.storage.native'] = new \Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage($container->parameters['session.storage.options'], null, new \Symfony\Component\HttpFoundation\Session\Storage\MetadataBag('_sf2_meta', 0));
     }
 }

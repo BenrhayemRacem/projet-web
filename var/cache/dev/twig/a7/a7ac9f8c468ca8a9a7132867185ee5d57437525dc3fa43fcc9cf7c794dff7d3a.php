@@ -53,7 +53,6 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -68,7 +67,9 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         // line 4
         echo "    ";
-        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source); })()), "requestCount", [], "any", false, false, false, 4)) {
+        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source);
+        })()), "requestCount", [], "any", false, false, false, 4)) {
             // line 5
             echo "        ";
             ob_start();
@@ -81,7 +82,9 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
             $context["status_color"] = "";
             // line 8
             echo "            <span class=\"sf-toolbar-value\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 8, $this->source); })()), "requestCount", [], "any", false, false, false, 8), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 8, $this->source);
+            })()), "requestCount", [], "any", false, false, false, 8), "html", null, true);
             echo "</span>
         ";
             $context["icon"] = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
@@ -95,16 +98,22 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
                 <b>Total requests</b>
                 <span>";
             // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 14, $this->source); })()), "requestCount", [], "any", false, false, false, 14), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 14, $this->source);
+            })()), "requestCount", [], "any", false, false, false, 14), "html", null, true);
             echo "</span>
             </div>
             <div class=\"sf-toolbar-info-piece\">
                 <b>HTTP errors</b>
                 <span class=\"sf-toolbar-status ";
             // line 18
-            echo (((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 18, $this->source); })()), "errorCount", [], "any", false, false, false, 18) > 0)) ? ("sf-toolbar-status-red") : (""));
+            echo(((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 18, $this->source);
+            })()), "errorCount", [], "any", false, false, false, 18) > 0)) ? ("sf-toolbar-status-red") : (""));
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 18, $this->source); })()), "errorCount", [], "any", false, false, false, 18), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 18, $this->source);
+            })()), "errorCount", [], "any", false, false, false, 18), "html", null, true);
             echo "</span>
             </div>
         ";
@@ -113,7 +122,11 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
             echo "
         ";
             // line 22
-            echo twig_include($this->env, $context, "@WebProfiler/Profiler/toolbar_item.html.twig", ["link" => (isset($context["profiler_url"]) || array_key_exists("profiler_url", $context) ? $context["profiler_url"] : (function () { throw new RuntimeError('Variable "profiler_url" does not exist.', 22, $this->source); })()), "status" => (isset($context["status_color"]) || array_key_exists("status_color", $context) ? $context["status_color"] : (function () { throw new RuntimeError('Variable "status_color" does not exist.', 22, $this->source); })())]);
+            echo twig_include($this->env, $context, "@WebProfiler/Profiler/toolbar_item.html.twig", ["link" => (isset($context["profiler_url"]) || array_key_exists("profiler_url", $context) ? $context["profiler_url"] : (function () {
+                throw new RuntimeError('Variable "profiler_url" does not exist.', 22, $this->source);
+            })()), "status" => (isset($context["status_color"]) || array_key_exists("status_color", $context) ? $context["status_color"] : (function () {
+                throw new RuntimeError('Variable "status_color" does not exist.', 22, $this->source);
+            })())]);
             echo "
     ";
         }
@@ -122,7 +135,6 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 26
@@ -137,7 +149,9 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         // line 27
         echo "<span class=\"label ";
-        echo (((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 27, $this->source); })()), "requestCount", [], "any", false, false, false, 27) == 0)) ? ("disabled") : (""));
+        echo(((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 27, $this->source);
+        })()), "requestCount", [], "any", false, false, false, 27) == 0)) ? ("disabled") : (""));
         echo "\">
     <span class=\"icon\">";
         // line 28
@@ -146,12 +160,16 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
     <strong>HTTP Client</strong>
     ";
         // line 30
-        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 30, $this->source); })()), "requestCount", [], "any", false, false, false, 30)) {
+        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 30, $this->source);
+        })()), "requestCount", [], "any", false, false, false, 30)) {
             // line 31
             echo "        <span class=\"count\">
             ";
             // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 32, $this->source); })()), "requestCount", [], "any", false, false, false, 32), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 32, $this->source);
+            })()), "requestCount", [], "any", false, false, false, 32), "html", null, true);
             echo "
         </span>
     ";
@@ -164,7 +182,6 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 38
@@ -181,7 +198,9 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
         echo "    <h2>HTTP Client</h2>
     ";
         // line 40
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 40, $this->source); })()), "requestCount", [], "any", false, false, false, 40) == 0)) {
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 40, $this->source);
+        })()), "requestCount", [], "any", false, false, false, 40) == 0)) {
             // line 41
             echo "        <div class=\"empty\">
             <p>No HTTP requests were made.</p>
@@ -193,14 +212,18 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
             <div class=\"metric\">
                 <span class=\"value\">";
             // line 47
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 47, $this->source); })()), "requestCount", [], "any", false, false, false, 47), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 47, $this->source);
+            })()), "requestCount", [], "any", false, false, false, 47), "html", null, true);
             echo "</span>
                 <span class=\"label\">Total requests</span>
             </div>
             <div class=\"metric\">
                 <span class=\"value\">";
             // line 51
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 51, $this->source); })()), "errorCount", [], "any", false, false, false, 51), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 51, $this->source);
+            })()), "errorCount", [], "any", false, false, false, 51), "html", null, true);
             echo "</span>
                 <span class=\"label\">HTTP errors</span>
             </div>
@@ -210,11 +233,13 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
             ";
             // line 57
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 57, $this->source); })()), "clients", [], "any", false, false, false, 57));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 57, $this->source);
+            })()), "clients", [], "any", false, false, false, 57));
             foreach ($context['_seq'] as $context["name"] => $context["client"]) {
                 // line 58
                 echo "                <div class=\"tab ";
-                echo (((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["client"], "traces", [], "any", false, false, false, 58)) == 0)) ? ("disabled") : (""));
+                echo(((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["client"], "traces", [], "any", false, false, false, 58)) == 0)) ? ("disabled") : (""));
                 echo "\">
                     <h3 class=\"tab-title\">";
                 // line 59
@@ -300,7 +325,7 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
                         echo "
                                             ";
                         // line 88
-                        if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, $context["trace"], "options", [], "any", false, false, false, 88))) {
+                        if (!twig_test_empty(twig_get_attribute($this->env, $this->source, $context["trace"], "options", [], "any", false, false, false, 88))) {
                             // line 89
                             echo "                                                ";
                             echo $this->extensions['Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension']->dumpData($this->env, twig_get_attribute($this->env, $this->source, $context["trace"], "options", [], "any", false, false, false, 89), 1);
@@ -311,7 +336,11 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
                         echo "                                        </th>
                                         ";
                         // line 92
-                        if (((isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () { throw new RuntimeError('Variable "profiler_token" does not exist.', 92, $this->source); })()) && (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () { throw new RuntimeError('Variable "profiler_link" does not exist.', 92, $this->source); })()))) {
+                        if (((isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () {
+                            throw new RuntimeError('Variable "profiler_token" does not exist.', 92, $this->source);
+                        })()) && (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () {
+                            throw new RuntimeError('Variable "profiler_link" does not exist.', 92, $this->source);
+                        })()))) {
                             // line 93
                             echo "                                            <th>
                                                 Profile
@@ -347,7 +376,9 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
                         }
                         // line 109
                         echo "                                            <span class=\"label status-";
-                        echo twig_escape_filter($this->env, (isset($context["responseStatus"]) || array_key_exists("responseStatus", $context) ? $context["responseStatus"] : (function () { throw new RuntimeError('Variable "responseStatus" does not exist.', 109, $this->source); })()), "html", null, true);
+                        echo twig_escape_filter($this->env, (isset($context["responseStatus"]) || array_key_exists("responseStatus", $context) ? $context["responseStatus"] : (function () {
+                            throw new RuntimeError('Variable "responseStatus" does not exist.', 109, $this->source);
+                        })()), "html", null, true);
                         echo "\">
                                                 ";
                         // line 110
@@ -363,14 +394,22 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
                                         </td>
                                         ";
                         // line 116
-                        if (((isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () { throw new RuntimeError('Variable "profiler_token" does not exist.', 116, $this->source); })()) && (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () { throw new RuntimeError('Variable "profiler_link" does not exist.', 116, $this->source); })()))) {
+                        if (((isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () {
+                            throw new RuntimeError('Variable "profiler_token" does not exist.', 116, $this->source);
+                        })()) && (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () {
+                            throw new RuntimeError('Variable "profiler_link" does not exist.', 116, $this->source);
+                        })()))) {
                             // line 117
                             echo "                                            <td>
                                                 <span><a href=\"";
                             // line 118
-                            echo twig_escape_filter($this->env, (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () { throw new RuntimeError('Variable "profiler_link" does not exist.', 118, $this->source); })()), "html", null, true);
+                            echo twig_escape_filter($this->env, (isset($context["profiler_link"]) || array_key_exists("profiler_link", $context) ? $context["profiler_link"] : (function () {
+                                throw new RuntimeError('Variable "profiler_link" does not exist.', 118, $this->source);
+                            })()), "html", null, true);
                             echo "\" target=\"_blank\">";
-                            echo twig_escape_filter($this->env, (isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () { throw new RuntimeError('Variable "profiler_token" does not exist.', 118, $this->source); })()), "html", null, true);
+                            echo twig_escape_filter($this->env, (isset($context["profiler_token"]) || array_key_exists("profiler_token", $context) ? $context["profiler_token"] : (function () {
+                                throw new RuntimeError('Variable "profiler_token" does not exist.', 118, $this->source);
+                            })()), "html", null, true);
                             echo "</a></span>
                                             </td>
                                         ";
@@ -406,7 +445,6 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -421,7 +459,7 @@ class __TwigTemplate_fe0cec27ce8a1df406d359092d7898fcccab188cdaa4453d9ccca295eb7
 
     public function getDebugInfo()
     {
-        return array (  402 => 130,  399 => 129,  391 => 126,  388 => 125,  379 => 121,  371 => 118,  368 => 117,  366 => 116,  361 => 114,  354 => 110,  349 => 109,  346 => 108,  343 => 107,  340 => 106,  337 => 105,  334 => 104,  331 => 103,  329 => 102,  322 => 97,  316 => 93,  314 => 92,  311 => 91,  305 => 89,  303 => 88,  299 => 87,  293 => 84,  287 => 80,  284 => 79,  278 => 78,  275 => 77,  272 => 76,  269 => 75,  266 => 74,  263 => 73,  260 => 72,  255 => 71,  252 => 70,  249 => 69,  246 => 68,  242 => 67,  239 => 66,  233 => 63,  230 => 62,  228 => 61,  221 => 59,  216 => 58,  212 => 57,  203 => 51,  196 => 47,  192 => 45,  186 => 41,  184 => 40,  181 => 39,  171 => 38,  160 => 35,  154 => 32,  151 => 31,  149 => 30,  144 => 28,  139 => 27,  129 => 26,  116 => 22,  113 => 21,  105 => 18,  98 => 14,  94 => 12,  92 => 11,  89 => 10,  83 => 8,  81 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
+        return array(  402 => 130,  399 => 129,  391 => 126,  388 => 125,  379 => 121,  371 => 118,  368 => 117,  366 => 116,  361 => 114,  354 => 110,  349 => 109,  346 => 108,  343 => 107,  340 => 106,  337 => 105,  334 => 104,  331 => 103,  329 => 102,  322 => 97,  316 => 93,  314 => 92,  311 => 91,  305 => 89,  303 => 88,  299 => 87,  293 => 84,  287 => 80,  284 => 79,  278 => 78,  275 => 77,  272 => 76,  269 => 75,  266 => 74,  263 => 73,  260 => 72,  255 => 71,  252 => 70,  249 => 69,  246 => 68,  242 => 67,  239 => 66,  233 => 63,  230 => 62,  228 => 61,  221 => 59,  216 => 58,  212 => 57,  203 => 51,  196 => 47,  192 => 45,  186 => 41,  184 => 40,  181 => 39,  171 => 38,  160 => 35,  154 => 32,  151 => 31,  149 => 30,  144 => 28,  139 => 27,  129 => 26,  116 => 22,  113 => 21,  105 => 18,  98 => 14,  94 => 12,  92 => 11,  89 => 10,  83 => 8,  81 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()

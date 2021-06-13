@@ -293,6 +293,6 @@ class __TwigTemplate_dbf76bd8b2f6776c702cbce73442399fe5011a80d59f0dd54c8f2d824b7
                         </div>
                     {% endblock %}
 
-", "Courses/ProgLanguage/CSS/index0.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\ProgLanguage\\CSS\\index0.html.twig");
+", "Courses/ProgLanguage/CSS/index0.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\projet-web\\templates\\Courses\\ProgLanguage\\CSS\\index0.html.twig");
     }
 }

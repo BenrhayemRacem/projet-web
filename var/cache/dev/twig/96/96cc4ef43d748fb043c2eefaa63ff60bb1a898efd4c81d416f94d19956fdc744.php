@@ -207,6 +207,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
     </section>
 
 {% endblock %}
-", "user/Project.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Project.html.twig");
+", "user/Project.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\projet-web\\templates\\user\\Project.html.twig");
     }
 }

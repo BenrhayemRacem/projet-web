@@ -41,30 +41,129 @@
         </ul>
     </nav>
 
-
-<section id="Courses">
-    <div class="container" >
-        {% for Course in Courses %}
-            <div class="card" style="width: 40rem; height :35rem; display: inline-table;">
-                <div class="card-body">
-                    <div class="row gradient-underline"><h5 class="card-title">{{ Course.name }}</h5></div>
-                    <h6 class="card-subtitle mb-2 text-muted description"> {{ Course.summary }}</h6>
-                    <p class="card-text"> {{ Course.description }} </p>
-                    <div class="row buttons">
-                        <div class="col" ><a href="{{ path(Course.name ~'Course') }}" class="btn-grad ">START NOW!</a></div>
-                        {% if Course.name == 'HTML' %}
-                            <div class="col" ><a href="{{ path(Course.name ~'Course',{num : 7 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
-                        {% elseif Course.name == 'CSS' %}
-                            <div class="col"><a href="{{ path(Course.name ~'Course',{num : 10 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
-                        {% elseif Course.name == 'JAVASCRIPT' %}
-                            <div class="col" ><a href="{{ path(Course.name ~'Course',{num : 11 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
-                        {% else %}
-                            <div class="col" ><a href="{{ path(Course.name ~'Course') }}" class="btn-grad modified">GO TO QUIZZ </a></div>
-                        {% endif %}
-                    </div>
+<div class="container" id="Courses">
+    <div class="row">
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">HTML</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> Le language pour creer des pages web</h6>
+                <p class="card-text"> Le HyperText Markup Language, généralement abrégé HTML
+                    ou dans sa dernière version HTML5, est le langage de balisage
+                    conçu pour représenter les pages web. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="{{ path('HTMLCourse') }}" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="{{ path('HTMLCourse' , {num : 7  })}}" class="btn-grad">GO TO QUIZZ </a></div>
                 </div>
             </div>
-        {% endfor %}
+        </div>
+
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">CSS</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> Le language pour styler des pages web</h6>
+                <p class="card-text">  Dans ce module, on commence avec les bases du fonctionnement de CSS :
+                    les sélecteurs, les propriétés, écrire des règles CSS, appliquer du CSS
+                    à un document HTML, utiliser des longueurs, des couleurs et d'autres
+                    unités. On voit également la cascade et l'héritage en CSS, les bases
+                    du modèle de boîtes et comment déboguer du code CSS.</p>
+                <div class="row buttons">
+                    <div class="col"><a href="{{ path('CSSCourse') }}" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="{{ path('CSSCourse' , {num: 10 })}}" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="row">
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">JAVASCIPT</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> Le language pour programmer des pages web</h6>
+                <p class="card-text"> JavaScript est un langage de programmation de
+                    scripts principalement employé dans les pages web interactives et
+                    à ce titre est une partie essentielle des applications web. Avec
+                    les technologies HTML et CSS, JavaScript est parfois considéré comme
+                    l'une des technologies cœur du World Wide Web2. Une grande majorité
+                    des sites web l'utilisent3, et la majorité des navigateurs web
+                    disposent d'un moteur JavaScript4 dédié pour l'interpréter,
+                    indépendamment des considérations
+                    de sécurité qui peuvent se poser le cas échéant. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="{{ path('JAVASCIPTCourse') }}" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="{{ path('JAVASCIPTCourse' , {num : 11 })}}" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">C++</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> language de programmation </h6>
+                <p class="card-text"> C ++ est un langage très populaire pour
+                    les applications critiques en termes de performances qui
+                    reposent sur une gestion rapide et efficace de la mémoire.
+                    Il est utilisé dans un large éventail d'industries, notamment
+                    le développement de logiciels et de jeux, la réalité virtuelle,
+                    la robotique et l'informatique scientifique. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="#" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="#" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> SQL</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> language de base de donnees</h6>
+                <p class="card-text"> Le langage SQL (Structured Query Language)
+                    est un langage informatique utilisé pour exploiter des bases
+                    de données. Il permet de façon générale la définition,
+                    la manipulation et le contrôle de sécurité de données. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="#" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="#" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">JAVA</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> language de programmation </h6>
+                <p class="card-text"> Java est un langage de programmation orienté
+                    objet créé par James Gosling et Patrick Naughton, employés de
+                    Sun Microsystems, avec le soutien de Bill Joy (cofondateur de
+                    Sun Microsystems en 1982),
+                    présenté officiellement le 23 mai 1995 au SunWorld. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="#" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="#" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title">Python</h5></div>
+                <h6 class="card-subtitle mb-2 text-muted description"> language de programmation </h6>
+                <p class="card-text"> Python (prononcé en anglais /ˈpaɪ.θɑn/3) est un
+                    langage de programmation interprété, multi-paradigme et
+                    multiplateformes. Il favorise la programmation impérative structurée
+                    , fonctionnelle et orientée objet. Il est doté d'un typage dynamique
+                    fort, d'une gestion automatique de la mémoire par ramasse-miettes et
+                    d'un système de gestion d'exceptions ;
+                    il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. </p>
+                <div class="row buttons">
+                    <div class="col"><a href="#" class="btn-grad">START NOW!</a></div>
+                    <div class="col"><a href="#" class="btn-grad">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 

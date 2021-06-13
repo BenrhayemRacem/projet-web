@@ -1,5 +1,16 @@
 {% extends 'Courses/Course.html.twig' %}
+{% block Title %}HTML Course{% endblock %}
+{% block Bar %}
+    <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action active ">HTML History</a>
+    <a href="{{ path('HTMLCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">HTML balises</a>
+    <a href="{{ path('HTMLCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">HTML tableaux</a>
 
+    <a href="{{ path('HTMLCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">HTML input</a>
+    <a href="{{ path('HTMLCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">HTML types input</a>
+    <a href="{{ path('HTMLCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">HTML organisation</a>
+    <a href="{{ path('HTMLCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">HTML media</a>
+    <a href="{{ path('HTMLCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">HTML quiz</a>
+{% endblock %}
 {% block titleParagraphe %} HTML History {% endblock %}
 
                     {% block Course %}
@@ -20,6 +31,7 @@
                         <li> 2008:HTML5</li>
                     </ul>
                             <div class="container justify-items-end row">
+                                <div class="col">    </div>
                                 <div class="col"><a class="btn-grad" href="{{ path('Discover') }}">Home</a></div>
                                 <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse', {num : 1 }) }}">Next ></a></div>
                             </div>

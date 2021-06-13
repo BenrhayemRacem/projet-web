@@ -1,0 +1,74 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}CSS Course{% endblock %}
+{% block width %}60%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('CSSCourse') }}" class="list-group-item list-group-item-action ">CSS syntaxe</a>
+    <a href="{{ path('CSSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les methodes d'invocation</a>
+    <a href="{{ path('CSSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">CSS texte</a>
+    <a href="{{ path('CSSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">CSS coleur et bordeur</a>
+    <a href="{{ path('CSSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">les selecteurs principaux</a>
+    <a href="{{ path('CSSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action active">les selecteurs speciaux</a>
+    <a href="{{ path('CSSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">les classes</a>
+    <a href="{{ path('CSSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">CSS div et span</a>
+    <a href="{{ path('CSSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">les pseudo classes</a>
+    <a href="{{ path('CSSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action "> les tableaux</a>
+    <a href="{{ path('CSSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action "> CSS quiz </a>
+{% endblock %}
+{% block titleParagraphe %}Les selecteurs speciaux{% endblock %}
+{% block NextTitle %} <h2 class="NextTitle">Les sélecteurs descendants</h2>{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p>
+                                    A B : une balise contenue dans une autre <br>
+                                    Exemple : h1 em <br>
+                                    h1 est un ancêtre de em, même lointain.
+                                    em est un descendant de h1, même lointain</p>
+                            </div>
+                        </div>
+
+                        <h2 class="NextTitle">Les sélecteurs d'enfants</h2>
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p>
+                                    A >B : une balise enfant direct de l’autre<br>
+                                    Exemple: ol>li
+                                    <br>
+                                    LI enfant direct de OL</p>
+
+                            </div>
+                        </div>
+
+                        <h2 class="NextTitle">Sélecteur adjacent</h2>
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                <p>
+                                    A + B : une première balise B qui suit A <br>
+                                    Exemple : h3+p  <br>
+                                    Sélectionne la première balise < p> située après un titre < h3>..
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <h2 class="NextTitle">Les sélecteurs d’attribut</h2>
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                <p>
+                                    A[attribut] : une balise qui possède un attribut <br>
+                                    Exemple : a[title] <br>
+                                    Sélectionne tous les liens < a> qui possèdent un attribut title.
+                                </p>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 4 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 6 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

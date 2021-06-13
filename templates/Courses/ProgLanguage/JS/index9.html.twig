@@ -1,0 +1,53 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}JS Course{% endblock %}
+{% block width %}90%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('JSCourse') }}" class="list-group-item list-group-item-action ">JS History</a>
+    <a href="{{ path('JSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">introduction </a>
+    <a href="{{ path('JSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">Les identifiants</a>
+    <a href="{{ path('JSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">Dates et Times</a>
+    <a href="{{ path('JSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">Les chaines</a>
+    <a href="{{ path('JSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">Les booleens</a>
+    <a href="{{ path('JSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les variables</a>
+    <a href="{{ path('JSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les tableaux</a>
+    <a href="{{ path('JSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">Les objets</a>
+    <a href="{{ path('JSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action active">Les fonctions</a>
+    <a href="{{ path('JSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action ">Le DOM</a>
+    <a href="{{ path('JSCourse',{num : 11 }) }}" class="list-group-item list-group-item-action ">JS quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %}Les Fonctions {% endblock %}
+{% block NextTitle %}{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p>  C’est un objet « spécial »,Vous pouvez lui ajouter des propriétés et invoquer des méthodes
+                                </p>
+                                <p>C’est un bloc JS défini une fois mais qui peut être exécuté à volonté.</p>
+                                <p> Paramétrable : </p>
+                                <ul>
+                                    <li> Inclut un ensemble d’identifiant, paramètres travaillant comme des
+                                        variables locales.</li>
+                                    <li>L’invocation de la fonction nécessite de lui passer les arguments</li>
+                                </ul>
+
+                                <p>Peut retourner une valeur   </p>
+                                <p> TPossède un contexte d’invocation: le mot cle this  </p>
+                                <p>Peut être assigné à la propriété d’un objet qui devient une méthode   </p>
+                                <p>Quand une fonction est invoqué à travers un objet, cet objet devient son
+                                    contexte d’invocation   </p>
+                                <p>Peut être utilisé pour initialiser un objet. C’est le constructeur de l’objet.   </p>
+                                <p> Une fonction est déclaré en utilisant le mot clé
+                                    function </p>
+                                <p> Une fonction littérale est déclarée
+                                    var carre=function(x){return x*x;}</p>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 8 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 10 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

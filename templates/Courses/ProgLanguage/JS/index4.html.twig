@@ -1,0 +1,58 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}JS Course{% endblock %}
+{% block width %}45%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('JSCourse') }}" class="list-group-item list-group-item-action ">JS History</a>
+    <a href="{{ path('JSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">introduction </a>
+    <a href="{{ path('JSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">Les identifiants</a>
+    <a href="{{ path('JSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">Dates et Times</a>
+    <a href="{{ path('JSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action active">Les chaines</a>
+    <a href="{{ path('JSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">Les booleens</a>
+    <a href="{{ path('JSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les variables</a>
+    <a href="{{ path('JSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les tableaux</a>
+    <a href="{{ path('JSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">Les objets</a>
+    <a href="{{ path('JSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action ">Les fonctions</a>
+    <a href="{{ path('JSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action ">Le DOM</a>
+    <a href="{{ path('JSCourse',{num : 11 }) }}" class="list-group-item list-group-item-action ">JS quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %}Les chaines{% endblock %}
+{% block NextTitle %}{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p> Les chaines en JS peuvent être mises entre ’ ou «
+                                </p>
+                                <p> Il y a deux types de chaines de caractère, le type primitif
+                                    et les strings</p>
+                                <p>Exemple: var primitifChaine = « bjr »; var varString = new
+                                    String(« bjr »); </p>
+
+                                <p>La concatenation se fait avec +
+                                    <br> Pour avoir le nombre de caractère on utilise l’attribut
+                                    length.</p>
+                                <ul>
+                                    <li>s.charAt(0) "h": premier caractère </li>
+                                    <li>s.charAt(s.length-1) "d": le dernier caractère </li>
+                                    <li>s.substring(1,4) "ell": les 2éme 3éme et 4éme caractère. </li>
+                                    <li>s.slice(1,4) "ell": même résultat </li>
+                                    <li>s.slice(-3) "rld": le deuxième paramètre peut être négatif ce qui indique
+                                        qu’on commence par la fin </li>
+                                    <li>s.indexOf("l") 2: position de la première occurrence de l, -1 si la chaine ou le
+                                        caractère n’existe pas. </li>
+                                    <li>s.lastIndexOf("l") 10: position du dernier caractère ou chaine. </li>
+                                    <li>s.indexOf("l", 3) 3: position of first "l" at or after 3</li>
+                                    <li>s[0] "h"</li>
+                                    <li>s[s.length-1] "d"</li>
+                                    <li>s.trim() supprime les blanc à gauche et à droite </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 3 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 5 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

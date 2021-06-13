@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -29,13 +31,80 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/home", name="Discover")
+     * @Route("/home/C/P", name="Discover")
      */
-    public function indexDiscover(): Response
+    public function indexDiscover_C_P(): Response
     {
-        return $this->render('user/Discover.html.twig', [
+        $repository = $this->getDoctrine()->getRepository('App:Course');
+        $Courses = $repository->findAll();
+        return $this->render('user/Discover_Courses/Discover.html.twig', [
+            'Courses' => $Courses
+        ]);
+    }
+
+    /**
+     * @Route("/home/C/L", name="Discover_Courses_Languages")
+     */
+    public function indexDiscover_C_L(): Response
+    {
+        return $this->render('user/Discover_Courses/DiscoverCL.html.twig', [
             'controller_name' => 'UserController',
         ]);
     }
 
+    /**
+     * @Route("/home/C/M", name="Discover_Courses_Music")
+     */
+    public function indexDiscover_C_M(): Response
+    {
+        return $this->render('user/Discover_Courses/DiscoverCM.html.twig', [
+            'controller_name' => 'UserController',
+        ]);
+    }
+
+    /**
+     * @Route("/home/P/LP", name="Discover_LP")
+     */
+    public function indexDiscover_P_LP(): Response
+    {
+        return $this->render('user/Discover_Projects/DiscoverPLP.html.twig', [
+            'controller_name' => 'UserController',
+        ]);
+    }
+
+    /**
+     * @Route("/home/P/L", name="Discover_Projects_Languages")
+     */
+    public function indexDiscover_P_L(): Response
+    {
+        return $this->render('user/Discover_Projects/DiscoverPL.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/home/P/M", name="Discover_Projects_Music")
+     */
+    public function indexDiscover_P_M(): Response
+    {
+        return $this->render('user/Discover_Projects/DiscoverPM.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/MyProjets", name="MyProjects")
+     */
+    public function indexMyProjects(): Response
+    {
+        return $this->render('user/Project.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/MyCourses", name="MyCourses")
+     */
+    public function indexMyCourses(): Response
+    {
+        return $this->render('user/MyCourses.html.twig', [
+        ]);
+    }
 }

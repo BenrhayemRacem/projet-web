@@ -1,0 +1,30 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}My Courses{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{asset('CSS/User/MyCoursesStyle.css')}}">
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item " id = "header">
+        <a class="nav-link" href="{{ path('Discover') }}">DISCOVER</a>
+    </li>
+    <li class="nav-item actived" id = "header">
+        <a href="#">MY COURSES</a>
+    </li>
+    <li class="nav-item " id = "header">
+        <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+    <section id="Courses">
+        <div class="TitleContainer"><h2 class="TitlePage"> <span></span>MY<span>COURSES</span></h2></div>
+    </section>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,43 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}CSS Course{% endblock %}
+{% block width %}30%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('CSSCourse') }}" class="list-group-item list-group-item-action ">CSS syntaxe</a>
+    <a href="{{ path('CSSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les methodes d'invocation</a>
+    <a href="{{ path('CSSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action active">CSS texte</a>
+    <a href="{{ path('CSSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">CSS coleur et bordeur</a>
+    <a href="{{ path('CSSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">les selecteurs principaux</a>
+    <a href="{{ path('CSSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les selecteurs speciaux</a>
+    <a href="{{ path('CSSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">les classes</a>
+    <a href="{{ path('CSSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">CSS div et span</a>
+    <a href="{{ path('CSSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">les pseudo classes</a>
+    <a href="{{ path('CSSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action "> les tableaux</a>
+    <a href="{{ path('CSSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action "> CSS quiz </a>
+{% endblock %}
+{% block titleParagraphe %}CSS texte{% endblock %}
+{% block NextTitle %} <h2 class="NextTitle">Formatage du texte</h2>{% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <ul>
+                                    <li> la taille: Balise { font-size : valeur} </li>
+                                    <li> la police: balise { font-family: police; }</li>
+                                    <li> styles du texte </li>
+                                    <ul>
+                                        <li> font-style : normal| oblique| italic</li>
+                                        <li> font-weight : normal| bold</li>
+                                        <li>text-decoration : underline |line-through|overline| none </li>
+                                    </ul>
+                                    <li> l'alignement: text-align : left| center| right| justify </li>
+                                    <li> les fottants: Float peut prendre deux valeurs très simples: left et right </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 1 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 3 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

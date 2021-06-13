@@ -1,0 +1,44 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}JS Course{% endblock %}
+{% block width %}9%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('JSCourse') }}" class="list-group-item list-group-item-action active">JS History</a>
+    <a href="{{ path('JSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">introduction </a>
+    <a href="{{ path('JSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">Les identifiants</a>
+    <a href="{{ path('JSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">Dates et Times</a>
+    <a href="{{ path('JSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">Les chaines</a>
+    <a href="{{ path('JSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">Les booleens</a>
+    <a href="{{ path('JSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les variables</a>
+    <a href="{{ path('JSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les tableaux</a>
+    <a href="{{ path('JSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">Les objets</a>
+    <a href="{{ path('JSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action ">Les fonctions</a>
+    <a href="{{ path('JSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action ">Le DOM</a>
+    <a href="{{ path('JSCourse',{num : 11 }) }}" class="list-group-item list-group-item-action ">JS quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %}JS History {% endblock %}
+{% block NextTitle %} <h1 class="NextTitle">Evolution</h1> {% endblock %}
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <p> Netscape Communications a eu besoin d’un langage
+                                    coller au HTML afin de rendre les pages un peu
+                                    plus dynamique</p>
+                                <ul>
+                                    <li> Le premier nom de ce langage a été Mocha</li>
+                                    <li> Ensuite LiveScript</li>
+                                    <li> Il a été renommé « JavaScript » lorsque sa
+                                        version Beta 3 a été déployé </li>
+                                    <li> Normalisé par Ecma International en 1996 il a été
+                                        batisé ECMAScript</li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col">    </div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('JSCourse',{num : 1 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

@@ -1,0 +1,104 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}Discover with us{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/Projects/projects.css') }}">
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item actived">
+        <a href="#">DISCOVER</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+
+<nav aria-label="..." class="Categories">
+
+    <h1 class="title">
+        <span>So Do You Want To</span>
+        <span> discover some projects ?</span>
+    </h1>
+
+    <ul class="pagination pagination-lg first" >
+        <li ><a class="btn from-right" href="{{ path('Discover_Courses_Music') }}">Courses</a></li>
+        <li ><a class="btn active" href="">Projects</a></li>
+    </ul>
+
+    <ul class="pagination pagination-lg second" >
+        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_LP') }}">Programming Languages</a></li>
+        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Projects_Languages') }}" >Languages</a></li>
+        <li class="page-item active" aria-current="page">
+            <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) "> Music</span>
+        </li>
+    </ul>
+</nav>
+
+
+   <div class="container">
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/writesong.jpg')}}" alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5  class="NextTitle">Write Your First Song </h5>
+                    <p>Before you pick up an instrument, you need to ask yourself one question: “why am I writing this song?” As song that lacks purpose is a song that won’t connect with anybody — yourself included. Inspiration can come from anywhere.
+                    Here you will be guided from finding inspiration to performing your first song .</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                
+                <p><b>Designer:</b> Dali naim</p>
+                <p><b>Tools:</b>Guitar  </p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn-grad">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-5 tablet-top">
+            <div class="project-info-box mt-0">
+                <h5 class="NextTitle">HIP HOP Stye Beats</h5>
+                <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
+
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+               
+                <p><b>Designer:</b> Hamzaoui Med Amine</p>
+                <p><b>Tools:</b> DAW: beat making software &amp; Mic</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn-grad">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/Beat-Making.jpg')}}" alt="project-image" class="rounded">
+        </div>
+        <!-- / column -->
+    </div>
+
+</div>
+
+{% endblock  %}

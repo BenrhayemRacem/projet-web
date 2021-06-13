@@ -1,0 +1,149 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}francais quizz{% endblock %}
+{% block width %}100%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action active">francais quiz</a>
+
+{% endblock %}
+
+{% block titleParagraphe %}francais QUIZ{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    {% for message in app.flashes('result') %}
+        <div class="alert alert-info">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+            <form action ="{{ path('francaisQuiz') }}">
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> the day following Tuesday is  </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios1" value="option1" >
+                            Wednesday
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios2" value="option2">
+                            Monday
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios2" value="option3">
+                            Friday
+                        </label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> 2+1= ?<div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question2" id="optionsRadios1" value="option1" >
+                                one
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question2" id="optionsRadios2" value="option2">
+                                three
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question2" id="optionsRadios3" value="option3" >
+                                four
+                            </label>
+                        </div>
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> the children are<div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question3" id="optionsRadios1" value="option1" >
+                                mother and father
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question3" id="optionsRadios2" value="option2">
+                                son and daughter
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question3" id="optionsRadios3" value="option3" >
+                                father and son
+                            </label>
+                        </div>
+                </fieldset>
+
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> 'SHE' is <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question4" id="optionsRadios1" value="option1" >
+                                plural pronom
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question4" id="optionsRadios2" value="option2">
+                                singuler pronom
+                            </label>
+                        </div>
+
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">December is the last month   </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios1" value="option1" >
+                            true
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios2" value="option2">
+                            false
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <div class="container justify-items-end row">
+                    <div class="col"></div>
+                    <div class="col" style="justify-content: center"><button type="submit" class="btn-grad" >Submit</button></div>
+                    <div class="col"></div>
+                </div>
+            </form>
+
+            <div class="container justify-items-end row">
+                <div class="col-5"><a class="btn-grad" href="{{ path('francaisCourse',{num : 7 }) }}">< Previous</a></div>
+                <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                <div class="col">    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

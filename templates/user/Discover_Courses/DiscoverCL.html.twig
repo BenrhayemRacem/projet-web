@@ -1,0 +1,71 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}Discover with us{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item actived">
+        <a href="#">DISCOVER</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="#">MY COURSES</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="#">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+
+    <nav aria-label="..." class="Categories">
+
+        <h1 class="title">
+            <span>So which course </span>
+            <span> do you want to take ?</span>
+        </h1>
+
+        <ul class="pagination pagination-lg first" >
+            <li ><a class="btn active" href="">Courses</a></li>
+            <li ><a class="btn from-right" href="{{ path('Discover_Projects_Languages') }}">Projects</a></li>
+        </ul>
+        <ul class="pagination pagination-lg second" >
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{path('Discover')}}">Programming Languages</a></li>
+            <li class="page-item active" aria-current="page">
+                <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) " >Languages</span>
+            </li>
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Courses_Music') }}">Music</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="Courses">
+
+        {% for Course in Courses %}
+            <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+                <div class="card-body">
+                    <div class="row gradient-underline"><h5 class="card-title">{{ Course.name }}</h5></div>
+                    <h6 class="card-subtitle mb-2 text-muted description"> {{ Course.summary }}</h6>
+                    <p class="card-text"> {{ Course.description }} </p>
+                    <div class="row buttons">
+                        <div class="col" ><a href="{{ path(Course.name ~'Course') }}" class="btn-grad ">START NOW!</a></div>
+                        {% if Course.name == 'Francais' %}
+                            <div class="col" ><a href="{{ path(Course.name ~'Course',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                        {% elseif Course.name == 'Anglais' %}
+                            <div class="col"><a href="{{ path(Course.name ~'Course',{num :  }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                        {% else %}
+                            <div class="col" ><a href="{{ path(Course.name ~'Course') }}" class="btn-grad modified">GO TO QUIZZ </a></div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+
+    </div>
+
+{% endblock  %}

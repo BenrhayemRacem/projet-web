@@ -1,5 +1,5 @@
 {% extends 'Courses/Course.html.twig' %}
-
+{% block Title %}HTML Course{% endblock %}
 {% block width %}40%{% endblock %}
 {% block Bar %}
     <a href="{{ path('HTMLCourse') }}" class="list-group-item list-group-item-action ">HTML History</a>
@@ -37,8 +37,8 @@
         </div>
 
         <div class="container justify-items-end row">
-            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
             <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 2 }) }}">< Previous</a></div>
+            <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
             <div class="col"><a class="btn-grad" href="{{ path('HTMLCourse',{num : 4 }) }}">Next ></a></div>
         </div>
     </div>

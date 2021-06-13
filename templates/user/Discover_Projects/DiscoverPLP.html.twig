@@ -1,0 +1,133 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}Discover with us{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/User/Discover.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/Projects/projects.css') }}">
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item actived">
+        <a href="#">DISCOVER</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+
+<nav aria-label="..." class="Categories">
+
+    <h1 class="title">
+        <span>So Do You Want To</span>
+        <span> discover some projects ?</span>
+    </h1>
+
+    <ul class="pagination pagination-lg first" >
+        <li ><a class="btn from-right" href="{{ path('Discover') }}">Courses</a></li>
+        <li ><a class="btn active" href="">Projects</a></li>
+    </ul>
+    <ul class="pagination pagination-lg second" >
+        <li class="page-item active" aria-current="page">
+            <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) ">Programming Languages</span>
+        </li>
+        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Projects_Languages') }}">Languages</a></li>
+        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) "  href="{{ path('Discover_Projects_Music') }}">Music</a></li>
+    </ul>
+</nav>
+
+   <div class="container">
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/MLwebAPP.jpg')}}" alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5 class="NextTitle">Machine Learning Web APP</h5>
+                <p>Build interactive web applications with Train Logistic Regression, Random Forest, and Support Vector Classifiers using scikit-learnPlot
+                    evaluation metrics for binary classification algorithms</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+               
+                <p><b>Designer:</b> Si Racem Ben Rhayem</p>
+                <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn-grad">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-5 tablet-top">
+            <div class="project-info-box mt-0">
+                <h5 class="NextTitle">Create PING-PONG Game</h5>
+                <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
+                </p> 
+                       </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                
+                <p><b>Designer:</b> Mehdi Ghorbel</p>
+                <p><b>Tools:</b> Python &amp; Turtle graphics </p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn-grad">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/ping pong.jpg')}}" alt="project-image" class="rounded">
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+
+    <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+
+    <div class="row list-project">
+        <div class="col-md-7">
+            <img class="Project-img" src="{{ asset('images/Projects/chatBot.png')}}"alt="project-image" class="rounded tablet-top">
+        </div>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5 class="NextTitle">Build Your first Chatbot </h5>
+                <p>Plan a custom development strategy for a chatbot with a specific goal in mind
+
+                    Develop rule-based transactional responses for the most common inputs
+
+                    Build a fully functional, intelligently responding chatbot that is trained for a specific task or for entertainment.</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <div class="project-info-box mb-10">
+                
+                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a href="#" class="btn-grad">VIEW PROJECT</a>
+        </div>
+        <!-- / column -->
+    </div>
+    <!-- / row list-project -->
+</div>
+
+{% endblock  %}

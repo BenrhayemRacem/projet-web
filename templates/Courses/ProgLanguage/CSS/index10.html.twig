@@ -1,0 +1,163 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}CSS Course{% endblock %}
+{% block width %}100%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('CSSCourse') }}" class="list-group-item list-group-item-action ">CSS syntaxe</a>
+    <a href="{{ path('CSSCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les methodes d'invocation</a>
+    <a href="{{ path('CSSCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">CSS texte</a>
+    <a href="{{ path('CSSCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">CSS coleur et bordeur</a>
+    <a href="{{ path('CSSCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">les selecteurs principaux</a>
+    <a href="{{ path('CSSCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les selecteurs speciaux</a>
+    <a href="{{ path('CSSCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">les classes</a>
+    <a href="{{ path('CSSCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">CSS div et span</a>
+    <a href="{{ path('CSSCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">les pseudo classes</a>
+    <a href="{{ path('CSSCourse',{num : 9 }) }}" class="list-group-item list-group-item-action "> les tableaux</a>
+    <a href="{{ path('CSSCourse',{num : 10 }) }}" class="list-group-item list-group-item-action active"> CSS quiz </a>
+{% endblock %}
+
+{% block titleParagraphe %}CSS QUIZ{% endblock %}
+{% block NextTitle %} {% endblock %}
+
+{% block Course %}
+    {% for message in app.flashes('result') %}
+        <div class="alert alert-info">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <div class="card" style=" margin: 20px ;">
+        <div class="card-body">
+            <form action ="{{ path('CSSQuiz') }}">
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">Quelle methode ne permet pas d'introduire un code en langage CSS </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios1" value="option1" >
+                            Directement dans les balises via l’attribut style
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios2" value="option2">
+                            Dans un fichier CSS avec la balise  link
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question1" id="optionsRadios3" value="option3" >
+                            Dans un fichier CSS avec la balise script
+                        </label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">A >B correspond a </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios1" value="option1" >
+                            une balise contenue dans une autre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios2" value="option2">
+                            une balise enfant direct de l’autre
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question2" id="optionsRadios3" value="option3" >
+                            une première balise B qui suit A
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">une première balise B qui suit A est represente par </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios1" value="option1" >
+                            A[B]
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios2" value="option2">
+                            A B
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question3" id="optionsRadios3" value="option3" >
+                            A+B
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4"> le selecteur du l'identifiant numero du paragraphe p est  </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios1" value="option1" >
+                            p#numero
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios2" value="option2">
+                            p.numero
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question4" id="optionsRadios3" value="option3" >
+                            p:numero
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="form-group" style="text-align: left">
+                    <legend class="mt-4">lien affecte au survol est </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios1" value="option1" >
+                            A:active
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios2" value="option2">
+                            A:hover
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="question5" id="optionsRadios3" value="option3" >
+                            A:visited
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="container justify-items-end row">
+                    <div class="col"></div>
+                    <div class="col" style="justify-content: center"><button type="submit" class="btn-grad" >Submit</button></div>
+                    <div class="col"></div>
+                </div>
+            </form>
+
+            <div class="container justify-items-end row">
+                <div class="col"><a class="btn-grad" href="{{ path('CSSCourse',{num : 9 }) }}">< Previous</a></div>
+                <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                <div class="col">    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

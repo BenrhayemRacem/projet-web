@@ -3,27 +3,17 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Form\UserModifyType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserController extends AbstractController
 {
-    /**
-     * @Route("/EditProfile", name="Edit_Profile")
-     */
-    public function index(): Response
-    {$user = $this->getUser();
-        return $this->render('user/EditProfile.html.twig', [
-            'controller_name' => 'UserController',
-            'user' =>$user
-
-
-        ]);
-    }
-
     /**
      * @Route("/Profile", name="Profile")
      */
@@ -34,6 +24,68 @@ class UserController extends AbstractController
             'user' =>$user
         ]);
     }
+
+    /**
+     * @Route("/EditProfilePassword", name="Edit_Profile_Password")
+     */
+    public function indexPassword(UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    {
+        $user = $this->getUser();
+        $user = new User();
+        $form = $this->createForm(UserModifyType::class, $user);
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : " . $e->getMessage();
+        }
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
+            $user->setPassword($password);
+
+            return $this->render('user/EditProfilePassword.html.twig', [
+                'controller_name' => 'UserController',
+                'user' => $user
+            ]);
+        }
+        return  $this->render('user/EditProfilePassword.html.twig', [
+            'controller_name' => 'UserController',
+            'user' => $user
+        ]);
+    }
+
+    /**
+     * @Route("/EditProfileInfo", name="Edit_Profile_Info")
+     */
+    public function indexEditInfo(UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    {
+        $user = $this->getUser();
+        $user = new User();
+        $form = $this->createForm(UserModifyType::class, $user);
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : " . $e->getMessage();
+        }
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
+            $user->setPassword($password);
+
+            return $this->render('user/EditProfileInfo.html.twig', [
+                'controller_name' => 'UserController',
+                'user' => $user
+
+
+            ]);
+        }
+        return $this->render(
+            'user/EditProfilePassword.html.twig', [
+                'controller_name' => 'UserController',
+                'user' => $user
+            ]);
+    }
+
 
     /**
      * @Route("/home/C/P", name="Discover")

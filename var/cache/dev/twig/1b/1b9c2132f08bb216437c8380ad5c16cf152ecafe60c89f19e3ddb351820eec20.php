@@ -169,8 +169,17 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
         echo "  ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "LastName", [], "any", false, false, false, 33), "html", null, true);
         echo "</h4>
-                                    <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
-                                </div>
+                                    ";
+        // line 34
+        if ( !(null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 34, $this->source); })()), "address", [], "any", false, false, false, 34))) {
+            // line 35
+            echo "                                        <p class=\"text-muted font-size-sm\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 35, $this->source); })()), "address", [], "any", false, false, false, 35), "html", null, true);
+            echo "</p>
+                                    ";
+        }
+        // line 37
+        echo "                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,10 +194,10 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
                                     <p>";
-        // line 49
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 49, $this->source); })()), "FirstName", [], "any", false, false, false, 49), "html", null, true);
+        // line 51
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 51, $this->source); })()), "FirstName", [], "any", false, false, false, 51), "html", null, true);
         echo "  ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 49, $this->source); })()), "LastName", [], "any", false, false, false, 49), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 51, $this->source); })()), "LastName", [], "any", false, false, false, 51), "html", null, true);
         echo "</p>
                                 </div>
                             </div>
@@ -198,33 +207,60 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
                                     <p>";
-        // line 57
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 57, $this->source); })()), "email", [], "any", false, false, false, 57), "html", null, true);
+        // line 59
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 59, $this->source); })()), "email", [], "any", false, false, false, 59), "html", null, true);
         echo "</p>
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
                                 <div class=\"col-sm-3\">
+
                                     <h6 class=\"mb-0\">Address</h6>
                                 </div>
-                                <div class=\"col-sm-9 text-secondary\">
 
-                                    <p>Mahdia, Tunisia</p>
-                                </div>
+                                <div class=\"col-sm-9 text-secondary\">
+                                    ";
+        // line 69
+        if ( !(null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 69, $this->source); })()), "address", [], "any", false, false, false, 69))) {
+            // line 70
+            echo "                                    <p>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 70, $this->source); })()), "address", [], "any", false, false, false, 70), "html", null, true);
+            echo "</p>
+                                    ";
+        } else {
+            // line 72
+            echo "                                    <p>Not set yet</p>
+                                    ";
+        }
+        // line 74
+        echo "                                </div>
                             </div>
                             <div class=\"row\">
                                 <div class=\"col-sm-3\">
                                     <h6 class=\"mb-0\">My Bio</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>I have nothing to say about myself xD</p>
-                                </div>
+                                    ";
+        // line 81
+        if ( !(null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 81, $this->source); })()), "Bio", [], "any", false, false, false, 81))) {
+            // line 82
+            echo "                                        <p>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 82, $this->source); })()), "Bio", [], "any", false, false, false, 82), "html", null, true);
+            echo "</p>
+                                    ";
+        } else {
+            // line 84
+            echo "                                        <p>Not set yet</p>
+                                    ";
+        }
+        // line 86
+        echo "                                </div>
                             </div>
 
                             <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
                                 <a class=\"btn-grad\" id=\"EditInfo\" href=\"";
-        // line 79
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile");
+        // line 90
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile_Info");
         echo "\">Edit Info</a>
                             </div>
 
@@ -238,8 +274,8 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 
                             <div class=\"row\" style=\" width: 50%; font-size: 15px\">
                                 <a class=\"btn-grad\" id=\"ChangePassword\" href=\"";
-        // line 91
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile");
+        // line 102
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile_Password");
         echo "\" style=\"margin-top: 0;\">Change password</a>
                             </div>
                         </div>
@@ -258,7 +294,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 
     }
 
-    // line 102
+    // line 113
     public function block_greetings($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -269,7 +305,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
 
         echo " <div class=\"col Greeting \"> Welcome,";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 102, $this->source); })()), "FirstName", [], "any", false, false, false, 102), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 113, $this->source); })()), "FirstName", [], "any", false, false, false, 113), "html", null, true);
         echo " </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -291,7 +327,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 
     public function getDebugInfo()
     {
-        return array (  262 => 102,  242 => 91,  227 => 79,  202 => 57,  189 => 49,  168 => 33,  156 => 23,  146 => 22,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  298 => 113,  278 => 102,  263 => 90,  257 => 86,  253 => 84,  247 => 82,  245 => 81,  236 => 74,  232 => 72,  226 => 70,  224 => 69,  211 => 59,  198 => 51,  182 => 37,  176 => 35,  174 => 34,  168 => 33,  156 => 23,  146 => 22,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -329,7 +365,9 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                 <!-- <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" alt=\"Admin\" class=\"rounded-circle p-1 bg-primary\" width=\"110\"> -->
                                 <div class=\"mt-3\">
                                     <h4>{{ user.FirstName }}  {{ user.LastName }}</h4>
-                                    <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
+                                    {% if user.address is not null %}
+                                        <p class=\"text-muted font-size-sm\">{{ user.address }}</p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -357,11 +395,16 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                             </div>
                             <div class=\"row mb-3\">
                                 <div class=\"col-sm-3\">
+
                                     <h6 class=\"mb-0\">Address</h6>
                                 </div>
-                                <div class=\"col-sm-9 text-secondary\">
 
-                                    <p>Mahdia, Tunisia</p>
+                                <div class=\"col-sm-9 text-secondary\">
+                                    {% if user.address is not null %}
+                                    <p>{{ user.address }}</p>
+                                    {% else %}
+                                    <p>Not set yet</p>
+                                    {% endif %}
                                 </div>
                             </div>
                             <div class=\"row\">
@@ -369,12 +412,16 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                     <h6 class=\"mb-0\">My Bio</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>I have nothing to say about myself xD</p>
+                                    {% if user.Bio is not null %}
+                                        <p>{{ user.Bio }}</p>
+                                    {% else %}
+                                        <p>Not set yet</p>
+                                    {% endif %}
                                 </div>
                             </div>
 
                             <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
-                                <a class=\"btn-grad\" id=\"EditInfo\" href=\"{{ path('Edit_Profile') }}\">Edit Info</a>
+                                <a class=\"btn-grad\" id=\"EditInfo\" href=\"{{ path('Edit_Profile_Info') }}\">Edit Info</a>
                             </div>
 
                             <div  class=\"row headings gradient-underline \"> <h5>Change Password</h5></div>
@@ -386,7 +433,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                             </div>
 
                             <div class=\"row\" style=\" width: 50%; font-size: 15px\">
-                                <a class=\"btn-grad\" id=\"ChangePassword\" href=\"{{ path('Edit_Profile') }}\" style=\"margin-top: 0;\">Change password</a>
+                                <a class=\"btn-grad\" id=\"ChangePassword\" href=\"{{ path('Edit_Profile_Password') }}\" style=\"margin-top: 0;\">Change password</a>
                             </div>
                         </div>
                     </div>
@@ -398,6 +445,6 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 {% endblock %}
 
 {% block greetings %} <div class=\"col Greeting \"> Welcome,{{ user.FirstName }} </div> {% endblock %}
-", "user/Profile.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\user\\Profile.html.twig");
+", "user/Profile.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\user\\Profile.html.twig");
     }
 }

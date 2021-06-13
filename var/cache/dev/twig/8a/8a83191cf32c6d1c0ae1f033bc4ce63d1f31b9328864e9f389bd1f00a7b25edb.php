@@ -198,11 +198,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-
                 <h5 class=\"NextTitle\">Write Your First Bestselling  Book </h5>
                 <p>You decided to write a book. Maybe you have the perfect idea (so you think, but we’ll get to that), have always wanted to write one, and just aren’t sure where the heck to get started!
 
                         The process of writing and publishing a book successfully is so much more than just writing and pushing a button to publish on Amazon.</p>
+
             </div>
             <!-- / project-info-box -->
 
@@ -227,7 +227,6 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
                 <h5 class=\"NextTitle\">Write your first Poetry</h5>
                 <p>There are no officially sanctioned rules of poetry. However, as with all creative writing, having some degree of structure can help you reign in your ideas and work productively. Here are some guidelines for those looking to take their poetry writing to the next level. Or, if you literally haven’t written a single poem since high school, you can think of this as a beginner's guide that will teach you the basics and have you writing poetry in no time.</p>
-
             </div>
             <!-- / project-info-box -->
 
@@ -244,7 +243,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
         <div class=\"col-md-7\">
             <img class=\"Project-img\" src=\"";
-        // line 102
+        // line 101
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/poetry.jpg"), "html", null, true);
         echo "\"  alt=\"project-image\" class=\"rounded\">
         </div>
@@ -257,7 +256,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
             <img class=\"Project-img\" src=\"";
-        // line 112
+        // line 111
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/essay.jpg"), "html", null, true);
         echo "\" alt=\"project-image\" class=\"rounded tablet-top\">
         </div>
@@ -265,12 +264,14 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
 
+
                 <h5 class=\"NextTitle\">Essay Writng Guide </h5>
                 <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
 
                         “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
 
                 </p>
+
             </div>
             <!-- / project-info-box -->
 
@@ -310,7 +311,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     public function getDebugInfo()
     {
-        return array (  261 => 112,  248 => 102,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  260 => 111,  247 => 101,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -371,11 +372,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
-
                 <h5 class=\"NextTitle\">Write Your First Bestselling  Book </h5>
                 <p>You decided to write a book. Maybe you have the perfect idea (so you think, but we’ll get to that), have always wanted to write one, and just aren’t sure where the heck to get started!
 
                         The process of writing and publishing a book successfully is so much more than just writing and pushing a button to publish on Amazon.</p>
+
             </div>
             <!-- / project-info-box -->
 
@@ -400,7 +401,6 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
                 <h5 class=\"NextTitle\">Write your first Poetry</h5>
                 <p>There are no officially sanctioned rules of poetry. However, as with all creative writing, having some degree of structure can help you reign in your ideas and work productively. Here are some guidelines for those looking to take their poetry writing to the next level. Or, if you literally haven’t written a single poem since high school, you can think of this as a beginner's guide that will teach you the basics and have you writing poetry in no time.</p>
-
             </div>
             <!-- / project-info-box -->
 
@@ -432,12 +432,14 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
 
+
                 <h5 class=\"NextTitle\">Essay Writng Guide </h5>
                 <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
 
                         “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
 
                 </p>
+
             </div>
             <!-- / project-info-box -->
 
@@ -456,6 +458,6 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 </div>
    
 
-{% endblock  %}", "user/Discover_Projects/DiscoverPL.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Projects\\DiscoverPL.html.twig");
+{% endblock  %}", "user/Discover_Projects/DiscoverPL.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\user\\Discover_Projects\\DiscoverPL.html.twig");
     }
 }

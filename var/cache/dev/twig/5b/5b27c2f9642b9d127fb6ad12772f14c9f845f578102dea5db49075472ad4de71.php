@@ -196,7 +196,9 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
+
                 <h5  class=\"NextTitle\">Write Your First Song </h5>
+
                     <p>Before you pick up an instrument, you need to ask yourself one question: “why am I writing this song?” As song that lacks purpose is a song that won’t connect with anybody — yourself included. Inspiration can come from anywhere.
                     Here you will be guided from finding inspiration to performing your first song .</p>
             </div>
@@ -220,6 +222,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
+
                 <h5 class=\"NextTitle\">HIP HOP Stye Beats</h5>
                 <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
 
@@ -239,7 +242,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
 
         <div class=\"col-md-7\">
             <img class=\"Project-img\" src=\"";
-        // line 97
+        // line 100
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Projects/Beat-Making.jpg"), "html", null, true);
         echo "\" alt=\"project-image\" class=\"rounded\">
         </div>
@@ -269,7 +272,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
 
     public function getDebugInfo()
     {
-        return array (  243 => 97,  193 => 50,  179 => 39,  175 => 38,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  246 => 100,  193 => 50,  179 => 39,  175 => 38,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -328,7 +331,9 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
         <!-- / column -->
         <div class=\"col-md-5\">
             <div class=\"project-info-box mt-0\">
+
                 <h5  class=\"NextTitle\">Write Your First Song </h5>
+
                     <p>Before you pick up an instrument, you need to ask yourself one question: “why am I writing this song?” As song that lacks purpose is a song that won’t connect with anybody — yourself included. Inspiration can come from anywhere.
                     Here you will be guided from finding inspiration to performing your first song .</p>
             </div>
@@ -352,6 +357,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
     <div class=\"row list-project\">
         <div class=\"col-md-5 tablet-top\">
             <div class=\"project-info-box mt-0\">
+
                 <h5 class=\"NextTitle\">HIP HOP Stye Beats</h5>
                 <p>In this Project, we’ll discuss how beats are constructed and how to get into beat-making. We’ll break down the essential aspects of a standard beat, listening techniques, exercises to develop your abilities, and various resources to use as you learn.</p>
 
@@ -378,6 +384,6 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
 </div>
 
 {% endblock  %}
-", "user/Discover_Projects/DiscoverPM.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Projects\\DiscoverPM.html.twig");
+", "user/Discover_Projects/DiscoverPM.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\user\\Discover_Projects\\DiscoverPM.html.twig");
     }
 }

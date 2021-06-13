@@ -169,8 +169,17 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         echo "  ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 34, $this->source); })()), "LastName", [], "any", false, false, false, 34), "html", null, true);
         echo "</h4>
-                                    <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
-                                </div>
+                                    ";
+        // line 35
+        if ( !(null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 35, $this->source); })()), "address", [], "any", false, false, false, 35))) {
+            // line 36
+            echo "                                    <p class=\"text-muted font-size-sm\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 36, $this->source); })()), "address", [], "any", false, false, false, 36), "html", null, true);
+            echo "</p>
+                                    ";
+        }
+        // line 38
+        echo "                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,22 +193,11 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Full Name</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"text\" class=\"form-control\" value=\"";
-        // line 50
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 50, $this->source); })()), "FirstName", [], "any", false, false, false, 50), "html", null, true);
+                                    <input type=\"text\" name=\"FullName\" class=\"form-control\" value=\"";
+        // line 52
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 52, $this->source); })()), "FirstName", [], "any", false, false, false, 52), "html", null, true);
         echo "  ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 50, $this->source); })()), "LastName", [], "any", false, false, false, 50), "html", null, true);
-        echo "\">
-                                </div>
-                            </div>
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Email</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"text\" class=\"form-control\" value=\"";
-        // line 58
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 58, $this->source); })()), "email", [], "any", false, false, false, 58), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 52, $this->source); })()), "LastName", [], "any", false, false, false, 52), "html", null, true);
         echo "\">
                                 </div>
                             </div>
@@ -210,25 +208,24 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 <div class=\"col-sm-9 text-secondary\">
 
                                     ";
-        // line 67
-        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 67, $this->source); })()), "address", [], "any", false, false, false, 67))) {
-            // line 68
+        // line 61
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 61, $this->source); })()), "address", [], "any", false, false, false, 61))) {
+            // line 62
             echo "                                    <input type=\"text\" class=\"form-control\" placeholder=\"please enter your address\">
                                     ";
         } else {
-            // line 70
-            echo "                                        <input type=\"text\" class=\"form-control\" value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 70, $this->source); })()), "address", [], "any", false, false, false, 70), "html", null, true);
+            // line 64
+            echo "                                        <input type=\"text\"  name=\"Address\" class=\"form-control\" value=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 64, $this->source); })()), "address", [], "any", false, false, false, 64), "html", null, true);
             echo "\">
                                     ";
-            // line 71
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 71, $this->source); })()), "address", [], "any", false, false, false, 71), "html", null, true);
+            // line 65
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 65, $this->source); })()), "address", [], "any", false, false, false, 65), "html", null, true);
             echo "
                                     ";
         }
-        // line 73
-        echo "
-                                </div>
+        // line 67
+        echo "                                </div>
                             </div>
 
 
@@ -238,24 +235,23 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
                                     ";
-        // line 83
-        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 83, $this->source); })()), "Bio", [], "any", false, false, false, 83))) {
-            // line 84
-            echo "                                    <textarea class=\"form-control\" rows=\"5\" placeholder=\"tell us more about yourself\">
+        // line 76
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 76, $this->source); })()), "Bio", [], "any", false, false, false, 76))) {
+            // line 77
+            echo "                                    <textarea class=\"form-control\" name=\"Bio\" rows=\"5\" placeholder=\"tell us more about yourself\"></textarea>
                                     ";
         } else {
-            // line 86
-            echo "                                        <textarea class=\"form-control\" rows=\"5\" value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 86, $this->source); })()), "Bio", [], "any", false, false, false, 86), "html", null, true);
-            echo "\">
+            // line 79
+            echo "                                        <textarea class=\"form-control\" rows=\"5\">
                                         ";
-            // line 87
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 87, $this->source); })()), "Bio", [], "any", false, false, false, 87), "html", null, true);
+            // line 80
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 80, $this->source); })()), "Bio", [], "any", false, false, false, 80), "html", null, true);
             echo "
+                                        </textarea>
                                         ";
         }
-        // line 89
-        echo "                                        </textarea>
+        // line 83
+        echo "
                             </div>
 
                             <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
@@ -268,7 +264,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Current Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -277,7 +273,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">New Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" name=\"PlainPassword\" class=\"form-control\" value=\"";
+        // line 105
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 105, $this->source); })()), "plainPassword", [], "any", false, false, false, 105), "html", null, true);
+        echo "\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -286,7 +285,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Confirm Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -309,7 +308,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
     }
 
-    // line 136
+    // line 130
     public function block_greetings($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -320,7 +319,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
 
         echo " <div class=\"col Greeting \"> Welcome,";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 136, $this->source); })()), "FirstName", [], "any", false, false, false, 136), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 130, $this->source); })()), "FirstName", [], "any", false, false, false, 130), "html", null, true);
         echo " </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -342,7 +341,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
     public function getDebugInfo()
     {
-        return array (  313 => 136,  258 => 89,  253 => 87,  248 => 86,  244 => 84,  242 => 83,  230 => 73,  225 => 71,  220 => 70,  216 => 68,  214 => 67,  202 => 58,  189 => 50,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  312 => 130,  278 => 105,  254 => 83,  248 => 80,  245 => 79,  241 => 77,  239 => 76,  228 => 67,  223 => 65,  218 => 64,  214 => 62,  212 => 61,  198 => 52,  182 => 38,  176 => 36,  174 => 35,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -381,7 +380,9 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                <!-- <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" alt=\"Admin\" class=\"rounded-circle p-1 bg-primary\" width=\"110\"> -->
                                 <div class=\"mt-3\">
                                     <h4>{{ user.FirstName }}  {{ user.LastName }}</h4>
-                                    <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
+                                    {% if user.address is not null %}
+                                    <p class=\"text-muted font-size-sm\">{{ user.address }}</p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -396,15 +397,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Full Name</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"text\" class=\"form-control\" value=\"{{ user.FirstName }}  {{ user.LastName }}\">
-                                </div>
-                            </div>
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Email</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"text\" class=\"form-control\" value=\"{{ user.email }}\">
+                                    <input type=\"text\" name=\"FullName\" class=\"form-control\" value=\"{{ user.FirstName }}  {{ user.LastName }}\">
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
@@ -416,10 +409,9 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     {% if user.address is null %}
                                     <input type=\"text\" class=\"form-control\" placeholder=\"please enter your address\">
                                     {% else %}
-                                        <input type=\"text\" class=\"form-control\" value=\"{{ user.address }}\">
+                                        <input type=\"text\"  name=\"Address\" class=\"form-control\" value=\"{{ user.address }}\">
                                     {{ user.address }}
                                     {% endif %}
-
                                 </div>
                             </div>
 
@@ -430,12 +422,13 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
                                     {% if user.Bio is null %}
-                                    <textarea class=\"form-control\" rows=\"5\" placeholder=\"tell us more about yourself\">
+                                    <textarea class=\"form-control\" name=\"Bio\" rows=\"5\" placeholder=\"tell us more about yourself\"></textarea>
                                     {% else %}
-                                        <textarea class=\"form-control\" rows=\"5\" value=\"{{ user.Bio }}\">
+                                        <textarea class=\"form-control\" rows=\"5\">
                                         {{ user.Bio }}
-                                        {% endif %}
                                         </textarea>
+                                        {% endif %}
+
                             </div>
 
                             <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
@@ -448,7 +441,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Current Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -457,7 +450,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">New Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" name=\"PlainPassword\" class=\"form-control\" value=\"{{user.plainPassword}}\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -466,7 +459,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                     <h6 class=\"mb-0\">Confirm Password</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
+                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••••••\">
                                 </div>
                             </div>
 
@@ -485,6 +478,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 {% block greetings %} <div class=\"col Greeting \"> Welcome,{{ user.FirstName }} </div> {% endblock %}
 
 
-", "user/EditProfile.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\user\\EditProfile.html.twig");
+", "user/EditProfile.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\user\\EditProfile.html.twig");
     }
 }

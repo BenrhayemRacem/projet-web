@@ -123,10 +123,14 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         echo "\">My Profile</a></li>
                                 <li><a class=\"dropdown-item\" href=\"";
         // line 64
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile");
-        echo "\">Edit Profile</a></li>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile_Info");
+        echo "\">Edit Profile Info</a></li>
                                 <li><a class=\"dropdown-item\" href=\"";
         // line 65
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Edit_Profile_Password");
+        echo "\">Edit Profile Password</a></li>
+                                <li><a class=\"dropdown-item\" href=\"";
+        // line 66
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         echo "\">Log out</a></li>
                             </ul>
@@ -140,23 +144,23 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 <!--/Header -->
 
 ";
-        // line 76
+        // line 77
         $this->displayBlock('Body', $context, $blocks);
-        // line 78
+        // line 79
         echo "
 ";
-        // line 79
+        // line 80
         $this->displayBlock('Scripts', $context, $blocks);
-        // line 85
+        // line 86
         echo "
 
 </body>
 
 
 ";
-        // line 90
+        // line 91
         $this->displayBlock('Footer', $context, $blocks);
-        // line 146
+        // line 147
         echo "</html>
 
 ";
@@ -270,7 +274,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 76
+    // line 77
     public function block_Body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -288,7 +292,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 79
+    // line 80
     public function block_Scripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -298,17 +302,17 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Scripts"));
 
-        // line 80
+        // line 81
         echo "    <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/jquery/dist/jquery.min.js"), "html", null, true);
         echo "\"></script>
     <!--<script src=\"/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js\"></script>-->
     <script src=\"";
-        // line 82
+        // line 83
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/bootstrap/dist/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 83
+        // line 84
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Scripts/UserScripts/UserScripts.js"), "html", null, true);
         echo "\"></script>
 ";
@@ -320,7 +324,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 90
+    // line 91
     public function block_Footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -330,12 +334,12 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Footer"));
 
-        // line 91
+        // line 92
         echo "    <footer>
         <div id=\"footer\" class=\"container-fluid\">
             <div class=\"col-12\">
                 <img src=\"";
-        // line 94
+        // line 95
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/Logohead.png"), "html", null, true);
         echo "\" alt=\"\">
                 <div>
@@ -369,25 +373,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                 <div class=\"col-4\">
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 125
+        // line 126
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/envelope-fill.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 128
+        // line 129
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/facebook.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 131
+        // line 132
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/linkedin.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 134
+        // line 135
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/instagram.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
@@ -421,7 +425,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     public function getDebugInfo()
     {
-        return array (  391 => 134,  385 => 131,  379 => 128,  373 => 125,  339 => 94,  334 => 91,  324 => 90,  312 => 83,  308 => 82,  302 => 80,  292 => 79,  274 => 76,  255 => 58,  236 => 43,  226 => 42,  207 => 19,  195 => 17,  191 => 16,  187 => 15,  182 => 14,  172 => 13,  160 => 146,  158 => 90,  151 => 85,  149 => 79,  146 => 78,  144 => 76,  130 => 65,  126 => 64,  122 => 63,  116 => 59,  114 => 58,  107 => 53,  105 => 42,  78 => 19,  76 => 13,  71 => 11,  67 => 10,  63 => 9,  59 => 8,  50 => 1,);
+        return array (  395 => 135,  389 => 132,  383 => 129,  377 => 126,  343 => 95,  338 => 92,  328 => 91,  316 => 84,  312 => 83,  306 => 81,  296 => 80,  278 => 77,  259 => 58,  240 => 43,  230 => 42,  211 => 19,  199 => 17,  195 => 16,  191 => 15,  186 => 14,  176 => 13,  164 => 147,  162 => 91,  155 => 86,  153 => 80,  150 => 79,  148 => 77,  134 => 66,  130 => 65,  126 => 64,  122 => 63,  116 => 59,  114 => 58,  107 => 53,  105 => 42,  78 => 19,  76 => 13,  71 => 11,  67 => 10,  63 => 9,  59 => 8,  50 => 1,);
     }
 
     public function getSourceContext()
@@ -489,7 +493,8 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                                 </div>
                             <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width : 60% ; left : 5% ;\">
                                 <li><a class=\"dropdown-item\" href=\"{{ path('Profile') }}\">My Profile</a></li>
-                                <li><a class=\"dropdown-item\" href=\"{{ path('Edit_Profile') }}\">Edit Profile</a></li>
+                                <li><a class=\"dropdown-item\" href=\"{{ path('Edit_Profile_Info') }}\">Edit Profile Info</a></li>
+                                <li><a class=\"dropdown-item\" href=\"{{ path('Edit_Profile_Password') }}\">Edit Profile Password</a></li>
                                 <li><a class=\"dropdown-item\" href=\"{{ path('app_logout') }}\">Log out</a></li>
                             </ul>
                         </div>

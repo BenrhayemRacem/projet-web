@@ -16,7 +16,7 @@ header {
     height : 60px ;
     border-radius: 50%;
     cursor: pointer;
-    background: rgb(255, 255, 255) ;
+    background: rgb(134, 206, 211) ;
 }
 
 .UserIcon .fa-user{
@@ -24,7 +24,7 @@ header {
     top : 50% ;
     left : 22% ;
     transform: translate(-50% ,-50%);
-    color : rgb(134, 206, 211) ;
+    color : white ;
     font-size: 30px ;
 }
 .Greeting {

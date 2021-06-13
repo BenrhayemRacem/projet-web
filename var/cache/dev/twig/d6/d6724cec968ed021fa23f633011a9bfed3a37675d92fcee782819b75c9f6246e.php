@@ -1043,6 +1043,6 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
 </footer>
 {% endblock %}
 </html>
-", "home.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\home.html.twig");
+", "home.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\home.html.twig");
     }
 }

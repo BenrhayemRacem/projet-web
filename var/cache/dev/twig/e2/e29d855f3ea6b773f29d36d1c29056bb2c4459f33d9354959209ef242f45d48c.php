@@ -68,7 +68,7 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
 
-        echo "Francais Course";
+        echo "english Course";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -89,40 +89,40 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
 
         // line 4
         echo "    <a href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse");
-        echo "\" class=\"list-group-item list-group-item-action active \">les nombres</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse");
+        echo "\" class=\"list-group-item list-group-item-action active \">the numbers</a>
     <a href=\"";
         // line 5
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 1]);
-        echo "\" class=\"list-group-item list-group-item-action\">les jours</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 1]);
+        echo "\" class=\"list-group-item list-group-item-action\">the days</a>
     <a href=\"";
         // line 6
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 2]);
-        echo "\" class=\"list-group-item list-group-item-action \">les mois</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 2]);
+        echo "\" class=\"list-group-item list-group-item-action \">the months</a>
     <a href=\"";
         // line 7
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 3]);
-        echo "\" class=\"list-group-item list-group-item-action \">les saisons</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 3]);
+        echo "\" class=\"list-group-item list-group-item-action \">the seasons </a>
     <a href=\"";
         // line 8
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 4]);
-        echo "\" class=\"list-group-item list-group-item-action \">la famille</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 4]);
+        echo "\" class=\"list-group-item list-group-item-action \">the family</a>
     <a href=\"";
         // line 9
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 5]);
-        echo "\" class=\"list-group-item list-group-item-action \">les temps verbaux</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 5]);
+        echo "\" class=\"list-group-item list-group-item-action \">verbal tenses</a>
     <a href=\"";
         // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 6]);
-        echo "\" class=\"list-group-item list-group-item-action \">Les Pronoms personnels</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 6]);
+        echo "\" class=\"list-group-item list-group-item-action \">Personal pronouns</a>
     <a href=\"";
         // line 11
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 7]);
-        echo "\" class=\"list-group-item list-group-item-action \">les articles</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 7]);
+        echo "\" class=\"list-group-item list-group-item-action \">the articles</a>
     <a href=\"";
         // line 12
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 8]);
-        echo "\" class=\"list-group-item list-group-item-action \">francais quiz</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 8]);
+        echo "\" class=\"list-group-item list-group-item-action \">english quiz</a>
 
 ";
         
@@ -143,7 +143,7 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "titleParagraphe"));
 
-        echo " les nombres ";
+        echo " the number ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -194,7 +194,7 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
                        <li> 4: four </li>
                        <li> 5: five </li>
                        <li> 6: six </li>
-                       <li> 7: Sep </li>
+                       <li> 7: seven </li>
                        <li> 8: eight </li>
                        <li> 9: nine </li>
 
@@ -202,11 +202,11 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
 
                    <p> numbers multiple of 10 </p>
                    <ul>
-                       <li> 10:10 </li>
-                       <li> 20:20 </li>
-                       <li> 30:30 </li>
-                       <li> 40:40 </li>
-                       <li> 50:50 </li>
+                       <li> 10:ten </li>
+                       <li> 20:twenty </li>
+                       <li> 30:thirty </li>
+                       <li> 40:forty </li>
+                       <li> 50:fifty </li>
                        <li> 60: sixty </li>
                        <li> 70: seventy </li>
                        <li> 80: eighty </li>
@@ -224,7 +224,7 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
         echo "\">Home</a></div>
                        <div class=\"col\"><a class=\"btn-grad\" href=\"";
         // line 56
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("francaisCourse", ["num" => 1]);
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("anglaisCourse", ["num" => 1]);
         echo "\">Next ></a></div>
                    </div>
 
@@ -257,20 +257,20 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
     public function getSourceContext()
     {
         return new Source("{% extends 'Courses/Course.html.twig' %}
-{% block Title %}Francais Course{% endblock %}
+{% block Title %}english Course{% endblock %}
 {% block Bar %}
-    <a href=\"{{ path('francaisCourse') }}\" class=\"list-group-item list-group-item-action active \">les nombres</a>
-    <a href=\"{{ path('francaisCourse',{num : 1 }) }}\" class=\"list-group-item list-group-item-action\">les jours</a>
-    <a href=\"{{ path('francaisCourse',{num : 2 }) }}\" class=\"list-group-item list-group-item-action \">les mois</a>
-    <a href=\"{{ path('francaisCourse',{num : 3 }) }}\" class=\"list-group-item list-group-item-action \">les saisons</a>
-    <a href=\"{{ path('francaisCourse',{num : 4 }) }}\" class=\"list-group-item list-group-item-action \">la famille</a>
-    <a href=\"{{ path('francaisCourse',{num : 5 }) }}\" class=\"list-group-item list-group-item-action \">les temps verbaux</a>
-    <a href=\"{{ path('francaisCourse',{num : 6 }) }}\" class=\"list-group-item list-group-item-action \">Les Pronoms personnels</a>
-    <a href=\"{{ path('francaisCourse',{num : 7 }) }}\" class=\"list-group-item list-group-item-action \">les articles</a>
-    <a href=\"{{ path('francaisCourse',{num : 8 }) }}\" class=\"list-group-item list-group-item-action \">francais quiz</a>
+    <a href=\"{{ path('anglaisCourse') }}\" class=\"list-group-item list-group-item-action active \">the numbers</a>
+    <a href=\"{{ path('anglaisCourse',{num : 1 }) }}\" class=\"list-group-item list-group-item-action\">the days</a>
+    <a href=\"{{ path('anglaisCourse',{num : 2 }) }}\" class=\"list-group-item list-group-item-action \">the months</a>
+    <a href=\"{{ path('anglaisCourse',{num : 3 }) }}\" class=\"list-group-item list-group-item-action \">the seasons </a>
+    <a href=\"{{ path('anglaisCourse',{num : 4 }) }}\" class=\"list-group-item list-group-item-action \">the family</a>
+    <a href=\"{{ path('anglaisCourse',{num : 5 }) }}\" class=\"list-group-item list-group-item-action \">verbal tenses</a>
+    <a href=\"{{ path('anglaisCourse',{num : 6 }) }}\" class=\"list-group-item list-group-item-action \">Personal pronouns</a>
+    <a href=\"{{ path('anglaisCourse',{num : 7 }) }}\" class=\"list-group-item list-group-item-action \">the articles</a>
+    <a href=\"{{ path('anglaisCourse',{num : 8 }) }}\" class=\"list-group-item list-group-item-action \">english quiz</a>
 
 {% endblock %}
-{% block titleParagraphe %} les nombres {% endblock %}
+{% block titleParagraphe %} the number {% endblock %}
 {% block NextTitle %} {% endblock %}
 
        {% block Course %}
@@ -286,7 +286,7 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
                        <li> 4: four </li>
                        <li> 5: five </li>
                        <li> 6: six </li>
-                       <li> 7: Sep </li>
+                       <li> 7: seven </li>
                        <li> 8: eight </li>
                        <li> 9: nine </li>
 
@@ -294,11 +294,11 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
 
                    <p> numbers multiple of 10 </p>
                    <ul>
-                       <li> 10:10 </li>
-                       <li> 20:20 </li>
-                       <li> 30:30 </li>
-                       <li> 40:40 </li>
-                       <li> 50:50 </li>
+                       <li> 10:ten </li>
+                       <li> 20:twenty </li>
+                       <li> 30:thirty </li>
+                       <li> 40:forty </li>
+                       <li> 50:fifty </li>
                        <li> 60: sixty </li>
                        <li> 70: seventy </li>
                        <li> 80: eighty </li>
@@ -311,12 +311,11 @@ class __TwigTemplate_637f7c1b810404a375df1278045abc69cabcc8c827eedfc9a2bbb20ade3
                    <div class=\"container justify-items-end row\">
                        <div class=\"col\">    </div>
                        <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('Discover') }}\">Home</a></div>
-                       <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('francaisCourse', {num : 1 }) }}\">Next ></a></div>
+                       <div class=\"col\"><a class=\"btn-grad\" href=\"{{ path('anglaisCourse', {num : 1 }) }}\">Next ></a></div>
                    </div>
 
                </div>
            </div>
-       {% endblock %}
-", "Courses/writing/anglais/index0.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\Courses\\writing\\anglais\\index0.html.twig");
+       {% endblock %}", "Courses/writing/anglais/index0.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\Courses\\writing\\anglais\\index0.html.twig");
     }
 }

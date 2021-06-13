@@ -1,21 +1,21 @@
 {% extends 'Courses/Course.html.twig' %}
-{% block Title %}Francais Course{% endblock %}
+{% block Title %}English Course{% endblock %}
 {% block width %}12%{% endblock %}
 
 {% block Bar %}
-    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
-    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action active">les jours</a>
-    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
-    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
-    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
-    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
-    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
-    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
-    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+    <a href="{{ path('anglaisCourse') }}" class="list-group-item list-group-item-action  ">the numbers</a>
+    <a href="{{ path('anglaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action active ">the days</a>
+    <a href="{{ path('anglaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">the months</a>
+    <a href="{{ path('anglaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">the seasons </a>
+    <a href="{{ path('anglaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">the family</a>
+    <a href="{{ path('anglaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">verbal tenses</a>
+    <a href="{{ path('anglaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Personal pronouns</a>
+    <a href="{{ path('anglaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">the articles</a>
+    <a href="{{ path('anglaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">english quiz</a>
 
 {% endblock %}
-{% block titleParagraphe %} les jours {% endblock %}
-{% block NextTitle %} <h2 class="NextTitle">les jours de la semaine</h2> {% endblock %}
+{% block titleParagraphe %} the days {% endblock %}
+{% block NextTitle %} <h2 class="NextTitle">Days of the week </h2> {% endblock %}
 
 
        {% block Course %}
@@ -34,9 +34,9 @@
                    </ul>
 
                    <div class="container justify-items-end row">
-                       <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 0 }) }}">< Previous</a></div>
+                       <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 0 }) }}">< Previous</a></div>
                        <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
-                       <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 2 }) }}">Next ></a></div>
+                       <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 2 }) }}">Next ></a></div>
                    </div>
 
                </div>

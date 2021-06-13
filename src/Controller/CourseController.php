@@ -77,7 +77,7 @@ class CourseController extends AbstractController
     }
 
     /**
-     * @Route("/JS/result", name="JAVASCIPTQuiz")
+     * @Route("/JS/result", name="JSQuiz")
      */
     public function indexJSQuiz(): Response
     {
@@ -103,7 +103,7 @@ class CourseController extends AbstractController
     }
 
     /**
-     * @Route("/JS/{num<\d+>?0}", name="JAVASCIPTCourse")
+     * @Route("/JS/{num<\d+>?0}", name="JSCourse")
      */
     public function indexJS(int $num): Response
     {
@@ -132,6 +132,15 @@ class CourseController extends AbstractController
     {
         return $this->render('home.html.twig', []);
     }
+
+    /**
+     * @Route("/Python/{num<\d+>?0}", name="PythonCourse")
+     */
+    public function indexPython(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
     /**
      * @Route("/francais/result", name="francaisQuiz")
      */
@@ -200,5 +209,44 @@ class CourseController extends AbstractController
         return $this->render('Courses/writing/anglais/index'.$num.'.html.twig', []);
     }
 
+    /**
+     * @Route("/allemand/{num<\d+>?0}", name="AllemandCourse")
+     */
+    public function indexAllemand(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/espagnol/{num<\d+>?0}", name="EspagnolCourse")
+     */
+    public function indexEspagnol(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/Italien/{num<\d+>?0}", name="ItalienCourse")
+     */
+    public function indexItalien(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/Russe/{num<\d+>?0}", name="RusseCourse")
+     */
+    public function indexRusse(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/Portugais/{num<\d+>?0}", name="PortugaisCourse")
+     */
+    public function indexPortugais(int $num): Response
+    {
+        return $this->render('home.html.twig', []);
+    }
 
 }

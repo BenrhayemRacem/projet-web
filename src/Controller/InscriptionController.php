@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-
+use Symfony\Component\Uid\Uuid;
 
 class InscriptionController extends AbstractController
 {
@@ -22,27 +22,39 @@ class InscriptionController extends AbstractController
     /**
      * @Route("/registration", name="registration")
      */
-    public function index(Request $request)
+    public function index(UserPasswordEncoderInterface $passwordEncoder, Request $request)
     {
         $user = new User();
-
         $form = $this->createForm(UserType::class, $user);
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : ".$e->getMessage();
+        }
 
-        $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // Encode the new users password
-            $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
+            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword()) ;
+
+
+            $user->setPassword($password);
 
             // Set their role
-            $user->setRoles(['ROLE_USER']);
 
+            $user->setIsComfirmed(0) ;
+            $uid = Uuid::v4() ;
+            $user->setUniqueId($uid) ;
             // Save
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
 
-            return $this->redirectToRoute('Login');
+
+            return $this->redirectToRoute("mail", [
+                'name' => $user->getFirstName(),
+                'mail' => $user->getUsername() ,
+                'uniqueId' => $user->getUniqueId()
+            ]);
         }
 
         return $this->render('inscription/index.html.twig', [
@@ -50,4 +62,3 @@ class InscriptionController extends AbstractController
         ]);
     }
 }
-

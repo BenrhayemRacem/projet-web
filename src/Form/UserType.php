@@ -17,17 +17,19 @@ class UserType extends AbstractType
     {
         $builder
             ->add('email', EmailType::class)
-            ->add('name', TextType::class)
-            ->add('lastname',TextType::class)
-            ->add('password', RepeatedType::class, [
-                'type' => PasswordType::class,
-                'first_options' => ['label' => 'Password'],
-                'second_options' => ['label' => 'Confirm Password']
-            ])
+            ->add('firstname', TextType::class)
+            ->add('lastname', TextType::class)
+            ->add('plainPassword', RepeatedType::class, array(
+                'type' => PasswordType::class ,
+                'first_options'=> array('label'=>'Password') ,
+                'second_options' => array('label' => 'Repeat Password') ,
+            ))
+
         ;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
             'data_class' => User::class,

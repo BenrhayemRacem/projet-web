@@ -1,10 +1,16 @@
 <?php
 
 namespace App\Entity;
+
+
+
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
@@ -59,6 +65,20 @@ class User implements UserInterface
     private $address;
 
     /**
+
+     * @Assert\NotBlank()
+     * @Assert\Length(max=4096)
+     */
+    private $plainPassword;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $unique_id;
+    public function __construct()
+    {
+        $this->roles = array('ROLE_USER');
+      
      * @ORM\OneToMany(targetEntity=Course::class, mappedBy="user")
      */
     private $Course;
@@ -78,6 +98,7 @@ class User implements UserInterface
         $this->Course = new ArrayCollection();
         $this->Courses = new ArrayCollection();
         $this->projects = new ArrayCollection();
+
     }
 
     public function getId(): ?int
@@ -213,6 +234,16 @@ class User implements UserInterface
         return $this;
     }
 
+
+    public function getPlainPassword(): ?string
+    {
+        return $this->plainPassword;
+    }
+
+    public function setPlainPassword(?string $plainPassword): self
+    {
+        $this->plainPassword = $plainPassword;
+
     /**
      * @return Collection|Course[]
      */
@@ -227,8 +258,23 @@ class User implements UserInterface
             $this->Courses[] = $course;
         }
 
+
         return $this;
     }
+
+
+    public function getUniqueId(): ?string
+    {
+        return $this->unique_id;
+    }
+
+    public function setUniqueId(?string $unique_id): self
+    {
+        $this->unique_id = $unique_id;
+
+        return $this;
+    }
+}
 
     public function removeCourse(Course $course): self
     {
@@ -267,3 +313,4 @@ class User implements UserInterface
         return $this;
     }
 }
+

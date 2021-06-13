@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3518142913849f001ed65e8e804c234dc41b66de',
+    'reference' => '07ea7dac835deaff99d9cd12bf8d71a6fc6cad6f',
     'name' => '__root__',
   ),
   'versions' => 
@@ -44,7 +44,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3518142913849f001ed65e8e804c234dc41b66de',
+      'reference' => '07ea7dac835deaff99d9cd12bf8d71a6fc6cad6f',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -237,12 +237,12 @@ private static $installed = array (
     ),
     'laminas/laminas-code' => 
     array (
-      'pretty_version' => '3.4.1',
-      'version' => '3.4.1.0',
+      'pretty_version' => '4.3.0',
+      'version' => '4.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '1cb8f203389ab1482bf89c0e70a04849bacd7766',
+      'reference' => '1beb4447f9efd26041eba7eff50614e798c353fd',
     ),
     'laminas/laminas-eventmanager' => 
     array (
@@ -337,12 +337,12 @@ private static $installed = array (
     ),
     'psr/cache' => 
     array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+      'reference' => '213f9dbc5b9bfbc4f8db86d2838dc968752ce13b',
     ),
     'psr/cache-implementation' => 
     array (
@@ -392,12 +392,12 @@ private static $installed = array (
     ),
     'psr/link' => 
     array (
-      'pretty_version' => '1.0.0',
-      'version' => '1.0.0.0',
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'eea8e8662d5cd3ae4517c9b864493f59fca95562',
+      'reference' => '846c25f58a1f02b93a00f2404e3626b6bf9b7807',
     ),
     'psr/link-implementation' => 
     array (
@@ -438,6 +438,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
+    ),
+    'swiftmailer/swiftmailer' => 
+    array (
+      'pretty_version' => 'v6.2.7',
+      'version' => '6.2.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '15f7faf8508e04471f666633addacf54c0ab5933',
     ),
     'symfony/asset' => 
     array (
@@ -868,6 +877,15 @@ private static $installed = array (
       ),
       'reference' => 'e66119f3de95efc359483f810c4c3e6436279436',
     ),
+    'symfony/polyfill-uuid' => 
+    array (
+      'pretty_version' => 'v1.23.0',
+      'version' => '1.23.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9165effa2eb8a31bb3fa608df9d529920d21ddd9',
+    ),
     'symfony/process' => 
     array (
       'pretty_version' => 'v5.2.10',
@@ -1001,6 +1019,15 @@ private static $installed = array (
       ),
       'reference' => 'abd6bb17be75ddb10b022f02820464b785882a7f',
     ),
+    'symfony/swiftmailer-bundle' => 
+    array (
+      'pretty_version' => 'v3.5.2',
+      'version' => '3.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6b72355549f02823a2209180f9c035e46ca3f178',
+    ),
     'symfony/translation' => 
     array (
       'pretty_version' => 'v5.2.10',
@@ -1043,6 +1070,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c078458e37a90b4ec8abb9f8fe6c3011d35e8039',
+    ),
+    'symfony/uid' => 
+    array (
+      'pretty_version' => 'v5.2.10',
+      'version' => '5.2.10.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9e052369bf8292c0f536b457312c2d3cd8e0b850',
     ),
     'symfony/validator' => 
     array (
@@ -1129,7 +1165,7 @@ private static $installed = array (
     array (
       'replaced' => 
       array (
-        0 => '3.4.1',
+        0 => '4.3.0',
       ),
     ),
     'zendframework/zend-eventmanager' => 
@@ -1320,23 +1356,9 @@ return $installed[0]['root'];
 
 
 
-
 public static function getRawData()
 {
-@trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
-
 return self::$installed;
-}
-
-
-
-
-
-
-
-public static function getAllRawData()
-{
-return self::getInstalled();
 }
 
 

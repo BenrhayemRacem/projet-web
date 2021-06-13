@@ -30,6 +30,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
             'StyleSheet' => [$this, 'block_StyleSheet'],
             'Title' => [$this, 'block_Title'],
             'Activated' => [$this, 'block_Activated'],
+            'greetings' => [$this, 'block_greetings'],
             'Body' => [$this, 'block_Body'],
             'Scripts' => [$this, 'block_Scripts'],
             'Footer' => [$this, 'block_Footer'],
@@ -108,8 +109,11 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                     <li></li>
                     <li></li>
                     <li> <div class=\"row dropdown User\">
-                            <div class=\"col Greeting \"> Welcome , Hadil </div>
-                                <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        ";
+        // line 58
+        $this->displayBlock('greetings', $context, $blocks);
+        // line 59
+        echo "                                <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                     <div class=\"UserIcon\"> <i class=\"fas fa-user\"></i></div>
                                 </div>
                             <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width : 60% ; left : 5% ;\">
@@ -123,7 +127,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         echo "\">Edit Profile</a></li>
                                 <li><a class=\"dropdown-item\" href=\"";
         // line 65
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         echo "\">Log out</a></li>
                             </ul>
                         </div>
@@ -143,17 +147,18 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 ";
         // line 79
         $this->displayBlock('Scripts', $context, $blocks);
-        // line 84
+        // line 85
         echo "
 
 </body>
 
 
 ";
-        // line 89
+        // line 90
         $this->displayBlock('Footer', $context, $blocks);
-        // line 145
+        // line 146
         echo "</html>
+
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -246,6 +251,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
+    // line 58
+    public function block_greetings($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        echo " <div class=\"col Greeting \"> Welcome , Hadil </div> ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     // line 76
     public function block_Body($context, array $blocks = [])
     {
@@ -283,6 +307,10 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         // line 82
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/bootstrap/dist/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
+    <script src=\"";
+        // line 83
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Scripts/UserScripts/UserScripts.js"), "html", null, true);
+        echo "\"></script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -292,7 +320,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     }
 
-    // line 89
+    // line 90
     public function block_Footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -302,12 +330,12 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Footer"));
 
-        // line 90
+        // line 91
         echo "    <footer>
         <div id=\"footer\" class=\"container-fluid\">
             <div class=\"col-12\">
                 <img src=\"";
-        // line 93
+        // line 94
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/Logohead.png"), "html", null, true);
         echo "\" alt=\"\">
                 <div>
@@ -341,25 +369,25 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                 <div class=\"col-4\">
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 124
+        // line 125
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/envelope-fill.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 127
+        // line 128
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/facebook.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 130
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/linkedin.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
                     <a href=\"\">
                         <img  width=\"32\" height = \"32\" src=\"";
-        // line 133
+        // line 134
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Commun/icons/instagram.svg"), "html", null, true);
         echo "\" alt=\"\">
                     </a>
@@ -393,7 +421,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
 
     public function getDebugInfo()
     {
-        return array (  363 => 133,  357 => 130,  351 => 127,  345 => 124,  311 => 93,  306 => 90,  296 => 89,  284 => 82,  278 => 80,  268 => 79,  250 => 76,  231 => 43,  221 => 42,  202 => 19,  190 => 17,  186 => 16,  182 => 15,  177 => 14,  167 => 13,  156 => 145,  154 => 89,  147 => 84,  145 => 79,  142 => 78,  140 => 76,  126 => 65,  122 => 64,  118 => 63,  106 => 53,  104 => 42,  77 => 19,  75 => 13,  70 => 11,  66 => 10,  62 => 9,  58 => 8,  49 => 1,);
+        return array (  391 => 134,  385 => 131,  379 => 128,  373 => 125,  339 => 94,  334 => 91,  324 => 90,  312 => 83,  308 => 82,  302 => 80,  292 => 79,  274 => 76,  255 => 58,  236 => 43,  226 => 42,  207 => 19,  195 => 17,  191 => 16,  187 => 15,  182 => 14,  172 => 13,  160 => 146,  158 => 90,  151 => 85,  149 => 79,  146 => 78,  144 => 76,  130 => 65,  126 => 64,  122 => 63,  116 => 59,  114 => 58,  107 => 53,  105 => 42,  78 => 19,  76 => 13,  71 => 11,  67 => 10,  63 => 9,  59 => 8,  50 => 1,);
     }
 
     public function getSourceContext()
@@ -455,14 +483,14 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
                     <li></li>
                     <li></li>
                     <li> <div class=\"row dropdown User\">
-                            <div class=\"col Greeting \"> Welcome , Hadil </div>
+                        {% block greetings %} <div class=\"col Greeting \"> Welcome , Hadil </div> {% endblock %}
                                 <div class=\" col wrapperUser dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                     <div class=\"UserIcon\"> <i class=\"fas fa-user\"></i></div>
                                 </div>
                             <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width : 60% ; left : 5% ;\">
                                 <li><a class=\"dropdown-item\" href=\"{{ path('Profile') }}\">My Profile</a></li>
                                 <li><a class=\"dropdown-item\" href=\"{{ path('Edit_Profile') }}\">Edit Profile</a></li>
-                                <li><a class=\"dropdown-item\" href=\"{{ path('home') }}\">Log out</a></li>
+                                <li><a class=\"dropdown-item\" href=\"{{ path('app_logout') }}\">Log out</a></li>
                             </ul>
                         </div>
                     </li>
@@ -480,6 +508,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
     <script src=\"{{ asset('node_modules/jquery/dist/jquery.min.js')}}\"></script>
     <!--<script src=\"/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js\"></script>-->
     <script src=\"{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}\"></script>
+    <script src=\"{{ asset('Scripts/UserScripts/UserScripts.js')}}\"></script>
 {% endblock %}
 
 
@@ -543,6 +572,7 @@ class __TwigTemplate_904b90361680fae26150c2e3aff3f8aeedd291358477d07a929a822e25e
     </footer>
 {% endblock %}
 </html>
-", "User.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\User.html.twig");
+
+", "User.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\User.html.twig");
     }
 }

@@ -30,19 +30,9 @@ class Course
     private $users;
 
     /**
-     * @ORM\Column(type="text")
-     */
-    private $Description;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $Summary;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Field;
+    private $Path;
 
     public function __construct()
     {
@@ -93,38 +83,14 @@ class Course
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getPath(): ?string
     {
-        return $this->Description;
+        return $this->Path;
     }
 
-    public function setDescription(string $Description): self
+    public function setPath(string $Path): self
     {
-        $this->Description = $Description;
-
-        return $this;
-    }
-
-    public function getSummary(): ?string
-    {
-        return $this->Summary;
-    }
-
-    public function setSummary(?string $Summary): self
-    {
-        $this->Summary = $Summary;
-
-        return $this;
-    }
-
-    public function getField(): ?string
-    {
-        return $this->Field;
-    }
-
-    public function setField(string $Field): self
-    {
-        $this->Field = $Field;
+        $this->Path = $Path;
 
         return $this;
     }

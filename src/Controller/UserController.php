@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,9 +15,12 @@ class UserController extends AbstractController
      * @Route("/EditProfile", name="Edit_Profile")
      */
     public function index(): Response
-    {
+    {$user = $this->getUser();
         return $this->render('user/EditProfile.html.twig', [
             'controller_name' => 'UserController',
+            'user' =>$user
+
+
         ]);
     }
 
@@ -24,9 +28,10 @@ class UserController extends AbstractController
      * @Route("/Profile", name="Profile")
      */
     public function indexProfile(): Response
-    {
+    {   $user = $this->getUser();
         return $this->render('user/Profile.html.twig', [
             'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -35,10 +40,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_P(): Response
     {
-        $repository = $this->getDoctrine()->getRepository('App:Course');
-        $Courses = $repository->findAll();
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Courses/Discover.html.twig', [
-            'Courses' => $Courses
+            'user' =>$user
         ]);
     }
 
@@ -47,8 +51,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_L(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Courses/DiscoverCL.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -57,8 +62,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_C_M(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Courses/DiscoverCM.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -67,8 +73,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_LP(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPLP.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -77,8 +84,9 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_L(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPL.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
         ]);
     }
 
@@ -87,8 +95,31 @@ class UserController extends AbstractController
      */
     public function indexDiscover_P_M(): Response
     {
+        $user=$this->getUser() ;
         return $this->render('user/Discover_Projects/DiscoverPM.html.twig', [
-            'controller_name' => 'UserController',
+            'user' =>$user
+        ]);
+    }
+
+    /**
+     * @Route("/MyProjets", name="MyProjects")
+     */
+    public function indexMyProjects(): Response
+    {
+        $user=$this->getUser() ;
+        return $this->render('user/Project.html.twig', [
+            'user' =>$user
+        ]);
+    }
+
+    /**
+     * @Route("/MyCourses", name="MyCourses")
+     */
+    public function indexMyCourses(): Response
+    {
+        $user=$this->getUser() ;
+        return $this->render('user/MyCourses.html.twig', [
+            'user' =>$user
         ]);
     }
 }

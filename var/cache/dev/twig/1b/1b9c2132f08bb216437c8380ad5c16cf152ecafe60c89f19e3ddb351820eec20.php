@@ -29,6 +29,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
             'StyleSheet' => [$this, 'block_StyleSheet'],
             'Activated' => [$this, 'block_Activated'],
             'Body' => [$this, 'block_Body'],
+            'greetings' => [$this, 'block_greetings'],
         ];
     }
 
@@ -121,10 +122,16 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
         echo "\">DISCOVER</a>
      </li>
      <li class=\"nav-item\" id = \"header\">
-         <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+         <a class=\"nav-link\" href=\"";
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyCourses");
+        echo "\">MY COURSES</a>
      </li>
      <li class=\"nav-item\" id = \"header\">
-         <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+         <a class=\"nav-link\" href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("MyProjects");
+        echo "\">MY PROJECTS</a>
      </li>
  ";
         
@@ -156,7 +163,12 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                 <img src=\"https://icons-for-free.com/iconfiles/png/512/agenda+app+contacts+online+profile+user+icon-1320183042135412367.png\" alt=\"Admin\" width=\"200\"/>
                                 <!-- <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" alt=\"Admin\" class=\"rounded-circle p-1 bg-primary\" width=\"110\"> -->
                                 <div class=\"mt-3\">
-                                    <h4>Hadil Helali</h4>
+                                    <h4>";
+        // line 33
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "FirstName", [], "any", false, false, false, 33), "html", null, true);
+        echo "  ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "LastName", [], "any", false, false, false, 33), "html", null, true);
+        echo "</h4>
                                     <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
                                 </div>
                             </div>
@@ -172,7 +184,12 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                     <h6 class=\"mb-0\">Full Name</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>Helali Hadil</p>
+                                    <p>";
+        // line 49
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 49, $this->source); })()), "FirstName", [], "any", false, false, false, 49), "html", null, true);
+        echo "  ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 49, $this->source); })()), "LastName", [], "any", false, false, false, 49), "html", null, true);
+        echo "</p>
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
@@ -180,7 +197,10 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                     <h6 class=\"mb-0\">Email</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>helalihadil4@gmail.com</p>
+                                    <p>";
+        // line 57
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 57, $this->source); })()), "email", [], "any", false, false, false, 57), "html", null, true);
+        echo "</p>
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
@@ -238,6 +258,27 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 
     }
 
+    // line 102
+    public function block_greetings($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
+
+        echo " <div class=\"col Greeting \"> Welcome,";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 102, $this->source); })()), "FirstName", [], "any", false, false, false, 102), "html", null, true);
+        echo " </div> ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "user/Profile.html.twig";
@@ -250,7 +291,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
 
     public function getDebugInfo()
     {
-        return array (  222 => 91,  207 => 79,  149 => 23,  139 => 22,  120 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  262 => 102,  242 => 91,  227 => 79,  202 => 57,  189 => 49,  168 => 33,  156 => 23,  146 => 22,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -269,10 +310,10 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
          <a class=\"nav-link\" href=\"{{ path('Discover') }}\">DISCOVER</a>
      </li>
      <li class=\"nav-item\" id = \"header\">
-         <a class=\"nav-link\" href=\"#\">MY COURSES</a>
+         <a class=\"nav-link\" href=\"{{ path('MyCourses') }}\">MY COURSES</a>
      </li>
      <li class=\"nav-item\" id = \"header\">
-         <a class=\"nav-link\" href=\"#\">MY PROJECTS</a>
+         <a class=\"nav-link\" href=\"{{ path('MyProjects') }}\">MY PROJECTS</a>
      </li>
  {% endblock %}
 
@@ -287,7 +328,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                 <img src=\"https://icons-for-free.com/iconfiles/png/512/agenda+app+contacts+online+profile+user+icon-1320183042135412367.png\" alt=\"Admin\" width=\"200\"/>
                                 <!-- <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" alt=\"Admin\" class=\"rounded-circle p-1 bg-primary\" width=\"110\"> -->
                                 <div class=\"mt-3\">
-                                    <h4>Hadil Helali</h4>
+                                    <h4>{{ user.FirstName }}  {{ user.LastName }}</h4>
                                     <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
                                 </div>
                             </div>
@@ -303,7 +344,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                     <h6 class=\"mb-0\">Full Name</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>Helali Hadil</p>
+                                    <p>{{ user.FirstName }}  {{ user.LastName }}</p>
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
@@ -311,7 +352,7 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
                                     <h6 class=\"mb-0\">Email</h6>
                                 </div>
                                 <div class=\"col-sm-9 text-secondary\">
-                                    <p>helalihadil4@gmail.com</p>
+                                    <p>{{ user.email }}</p>
                                 </div>
                             </div>
                             <div class=\"row mb-3\">
@@ -355,6 +396,8 @@ class __TwigTemplate_c693b9d1ea25a25eb579b1f951676d480e6a0415ea01878e3d0e0e62a74
         </div>
     </div>
 {% endblock %}
-", "user/Profile.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Profile.html.twig");
+
+{% block greetings %} <div class=\"col Greeting \"> Welcome,{{ user.FirstName }} </div> {% endblock %}
+", "user/Profile.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\user\\Profile.html.twig");
     }
 }

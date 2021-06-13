@@ -1,0 +1,66 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Francais Course{% endblock %}
+{% block width %}87%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action active">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les artciles {% endblock %}
+{% block NextTitle %}  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                    <h1>  L’article défini : le - la - les  </h1>
+                                    <ul>
+                                        <li> Il sert à introduire un nom ou groupe nominal désignant  Une chose ou un être déjà identifié.<br>
+                                        Ex. Il y a eu un cambriolage. Le voleur a été arrêté.
+                                        </li>
+                                        <li>  Une chose ou un être facilement identifiable.<br>
+                                        Ex. Passe-moi les papiers qui sont sur la table.
+                                        </li>
+                                        <li>  Une catégorie générale d’êtres ou de choses. <br>
+                                         Ex. Le poisson rouge est une espèce raffinée qui aime le confort.
+                                         </li>
+                                    </ul>
+
+                                    <h1>  L’article indéfini : un - une - des </h1>
+                                    <p>Il s’emploie pour renvoyer à une personne ou à une chose :</p>
+                                    <ul>
+                                        <li> Difficilement identifiable <br>
+                                            Ex. Un homme est entré dans la salle. (On ne sait pas qui est cet homme)
+                                        </li>
+                                        <li>  Que le locuteur ne veut pas préciser.<br>
+                                            Ex. Ex. Hier, j’ai vu un bon film.
+                                        </li>
+                                    </ul>
+
+                                    <h1> L’article partitif : du - de la - des </h1>
+                                    <p>C’est un article indéfini employé devant un nom désignant :
+
+                                    </p>
+                                    <ul>
+                                        <li> Une réalité indénombrable (Il boit du lait).</li>
+                                        <li>  Une chose abstraite (Vous avez du courage pour agir ainsi).</li>
+                                    </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 6 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 8 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}
+
+

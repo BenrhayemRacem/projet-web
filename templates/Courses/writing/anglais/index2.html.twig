@@ -1,0 +1,47 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Anglais Course{% endblock %}
+{% block width %}25%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('anglaisCourse') }}" class="list-group-item list-group-item-action  ">the numbers</a>
+    <a href="{{ path('anglaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">the days</a>
+    <a href="{{ path('anglaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action active ">the months</a>
+    <a href="{{ path('anglaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">the seasons </a>
+    <a href="{{ path('anglaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">the family</a>
+    <a href="{{ path('anglaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">verbal tenses</a>
+    <a href="{{ path('anglaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Personal pronouns</a>
+    <a href="{{ path('anglaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">the articles</a>
+    <a href="{{ path('anglaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">english quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} the months {% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Months of the year</h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <hr class="my-4">
+
+                                <ul>
+                                    <li> January contains 31 days </li>
+                                    <li> February contains 28 or 29 days </li>
+                                    <li> March contains 31 days </li>
+                                    <li> April contains 30 days </li>
+                                    <li> May contains 31 days </li>
+                                    <li> June contains 30 days </li>
+                                    <li> July contains 31 days </li>
+                                    <li> August contains 31 days </li>
+                                    <li> September contains 30 days </li>
+                                    <li> October contains 31 days </li>
+                                    <li> November contains 30 days </li>
+                                    <li> December contains 31 days </li>
+                                    <li> a year contains 12 months </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 1 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 3 })}}">Next ></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endblock %}

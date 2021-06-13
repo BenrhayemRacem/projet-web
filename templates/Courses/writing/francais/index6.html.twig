@@ -1,0 +1,61 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Francais Course{% endblock %}
+{% block width %}75%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action active">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les pronoms personnels {% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Les Pronoms personnels sujets</h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                <p> Le pronom personnel sujet est un mot qui remplace un sujet. Il permet d’éviter
+                                    les répétitions dans un texte. Il peut être au singulier (une seule personne, une
+                                    seule chose, ou un seul animal) ou au pluriel (plusieurs).
+                                </p>
+                                <p> Singulier </p>
+                                <ul>
+                                    <li>  Première personne Je /J’  </li>
+                                    <li>  Deuxième personne Tu  </li>
+                                    <li> Troisième personne Il /Elle </li>
+                                </ul>
+
+                                <p> Pluriel </p>
+                                <ul>
+                                    <li> Première personne Nous = moi+ les autres </li>
+                                    <li>  Deuxième personne Vous = vous+ les autres </li>
+                                    <li> Troisième personne  Ils /Elles </li>
+                                </ul>
+                                <h1> Remarques</h1>
+                                <p> Je » devient « j' » devant une voyelle, ou devant un « h » muet = j'habite en ville, j'ai de la chance. Il reste 'je'
+                                    devant les consonnes et les verbes commençant par un 'h' aspiré comme « haïr » : Je hais le mauvais temps
+                                    (j'aime mieux le soleil).</p>
+                                <p>  Les 3e personnes du singulier et du pluriel sont différentes au masculin et au féminin :
+                                    il, elle ; ils, elles.</p>
+                                <p>« vous » de politesse : est utilisé à la place de « tu » pour s'adresser à une seule personne que l'on rencontre pour
+                                    la première fois, ou à qui on veut témoigner du respect, ou une certaine distance par rapport à son âge par exemple,
+                                    ou à son statut social. Le verbe qui le suit est conjugué de la même façon qu'avec le « vous » collectif
+                                    (exemple : Au revoir Monsieur, pouvez-vous me rappeler la semaine prochaine ?)</p>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 5 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 7 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}
+
+

@@ -1,0 +1,38 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}English Course{% endblock %}
+{% block width %}87%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('anglaisCourse') }}" class="list-group-item list-group-item-action  ">the numbers</a>
+    <a href="{{ path('anglaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">the days</a>
+    <a href="{{ path('anglaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">the months</a>
+    <a href="{{ path('anglaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">the seasons </a>
+    <a href="{{ path('anglaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">the family</a>
+    <a href="{{ path('anglaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">verbal tenses</a>
+    <a href="{{ path('anglaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Personal pronouns</a>
+    <a href="{{ path('anglaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action active">the articles</a>
+    <a href="{{ path('anglaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">english quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les artciles {% endblock %}
+{% block NextTitle %}  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                <ul>
+                                    <li>  defined article  : the  </li>
+                                    <li>  undefined article  :/a/an </li>
+                                    <li> article : zero (no article) </li>
+                                </ul>
+
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 6 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 8 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

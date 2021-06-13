@@ -193,7 +193,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
     <p class=\"lead\">Want to start learning and creating your awesome projects ?</p>
     <a href=\"";
         // line 78
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Login");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" class=\"btn btn-lg btn-secondary\">Take A Course Now</a>
 </div>
 <!--/First section -->
@@ -244,7 +244,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
                     <div class=\"row justify-content-center\">
                         <a href=\"";
         // line 123
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Login");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" class=\"btn btn-lg btn-secondary\" style=\"font-weight: bold;\"> login for free </a>
                     </div>
                 </div>
@@ -514,7 +514,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
                 <li></li>
                 <li><a class=\"btn-grad\" id=\"LoginIn\" href=\"";
         // line 60
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Login");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Login</a></li>
                 <li><div class=\"wrapper\"><div class =\"SearchBox\"><input placeholder = \"Search\" type=\"text\" class=\"input\">
                             <div class=\"searchbtn\"> <i class=\"fa fa-search\"></i></div>
@@ -735,7 +735,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
                 <li></li>
                 <li></li>
                 <li></li>
-                <li><a class=\"btn-grad\" id=\"LoginIn\" href=\"{{ path('Login') }}\">Login</a></li>
+                <li><a class=\"btn-grad\" id=\"LoginIn\" href=\"{{ path('app_login') }}\">Login</a></li>
                 <li><div class=\"wrapper\"><div class =\"SearchBox\"><input placeholder = \"Search\" type=\"text\" class=\"input\">
                             <div class=\"searchbtn\"> <i class=\"fa fa-search\"></i></div>
                         </div></div>
@@ -753,7 +753,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
 <div id=\"firstSection\" class=\"container cover\">
     <h1 class=\"cover-heading\">Build Something big with us</h1>
     <p class=\"lead\">Want to start learning and creating your awesome projects ?</p>
-    <a href=\"{{ path('Login') }}\" class=\"btn btn-lg btn-secondary\">Take A Course Now</a>
+    <a href=\"{{ path('app_login') }}\" class=\"btn btn-lg btn-secondary\">Take A Course Now</a>
 </div>
 <!--/First section -->
 
@@ -798,7 +798,7 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
                         Our partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
                     </div>
                     <div class=\"row justify-content-center\">
-                        <a href=\"{{path('Login')}}\" class=\"btn btn-lg btn-secondary\" style=\"font-weight: bold;\"> login for free </a>
+                        <a href=\"{{path('app_login')}}\" class=\"btn btn-lg btn-secondary\" style=\"font-weight: bold;\"> login for free </a>
                     </div>
                 </div>
                 <div class=\"col-6\">
@@ -1043,6 +1043,6 @@ class __TwigTemplate_02bc7646d2daf0d6e7694e0cf6a9f6ca7ea73c07cdfd3af28c51b5405a4
 </footer>
 {% endblock %}
 </html>
-", "home.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\home.html.twig");
+", "home.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\home.html.twig");
     }
 }

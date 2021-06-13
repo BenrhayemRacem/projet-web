@@ -12,38 +12,146 @@
         <a href="#">DISCOVER</a>
     </li>
     <li class="nav-item" id = "header">
-        <a class="nav-link" href="#">MY COURSES</a>
+        <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
     </li>
     <li class="nav-item" id = "header">
-        <a class="nav-link" href="#">MY PROJECTS</a>
+        <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
     </li>
 {% endblock %}
 
 {% block Body %}
 
-<nav aria-label="..." class="Categories">
+    <nav aria-label="..." class="Categories">
 
-    <h1 class="title">
-        <span>So which course </span>
-        <span> do you want to take ?</span>
-    </h1>
+        <h1 class="title">
+            <span>So which course </span>
+            <span> do you want to take ?</span>
+        </h1>
 
-    <ul class="pagination pagination-lg first" >
-        <li ><a class="btn active" href="">Courses</a></li>
-        <li ><a class="btn from-right" href="{{ path('Discover_Projects_Languages') }}">Projects</a></li>
-    </ul>
-    <ul class="pagination pagination-lg second" >
-        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{path('Discover')}}">Programming Languages</a></li>
-        <li class="page-item active" aria-current="page">
-            <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) " >Languages</span>
-        </li>
-        <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Courses_Music') }}">Music</a></li>
-    </ul>
-</nav>
+        <ul class="pagination pagination-lg first" >
+            <li ><a class="btn active" href="">Courses</a></li>
+            <li ><a class="btn from-right" href="{{ path('Discover_Projects_Languages') }}">Projects</a></li>
+        </ul>
+        <ul class="pagination pagination-lg second" >
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{path('Discover')}}">Programming Languages</a></li>
+            <li class="page-item active" aria-current="page">
+                <span class="page-link" style="background-color: rgb(134, 206, 211)  ;  border-color: rgb(134, 206, 211) " >Languages</span>
+            </li>
+            <li class="page-item"><a class="page-link" style="color: rgb(134, 206, 211) " href="{{ path('Discover_Courses_Music') }}">Music</a></li>
+        </ul>
+    </nav>
 
 
-<div class="container" id="Courses">
+    <div class="container" id="Courses">
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Francais</h5></div>
+                <p class="card-text"> Le français est une langue indo-européenne de la famille des langues romanes
+                    dont les locuteurs sont appelés francophones.
+                    Le français est parlé, en 2018, sur tous les continents par environ 300 millions de personnes :
+                    235 millions l'emploient quotidiennement, et 90 millions3 en sont des locuteurs natifs.
+                    Selon l'Organisation internationale de la francophonie, il pourrait y avoir 700 millions de francophones sur Terre en 20507.
+                </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{ path('francaisCourse') }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{ path('francaisCourse',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
 
-</div>
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Anglais</h5></div>
+                <p class="card-text"> L'anglais est une langue indo-européenne germanique originaire d'Angleterre
+                    qui tire ses racines de langues du nord de l'Europe (terre d'origine des Angles, des Saxons et des Frisons)
+                    dont le vocabulaire a été enrichi et la syntaxe et la grammaire modifiées par le français anglo-normandNote
+                    , apporté par les Normands, puis par le français avec les
+                    Plantagenêt. La langue anglaise est ainsi composée d'environ 29 % de mots d'origine normande et
+                    française et plus des deux tiers de son vocabulaire proviennent du français ou du latin.
+                </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{ path('anglaisCourse') }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{ path('anglaisCourse',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Espagnol</h5></div>
+                <p class="card-text"> L’espagnol, ou le castillan est une
+                    langue romane parlée en Espagne et dans de nombreux pays
+                    d'Amérique et d'autres territoires dans le monde associés à un moment de leur histoire à l'Empire espagnol.
+                </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{  path('francaisCourse') }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{  path('francaisCourse',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Italien </h5></div>
+                <p class="card-text"> L'italien est une langue appartenant au groupe des langues romanes
+                    de la famille indo-européenne. Il existe un très grand nombre de dialectes italo-romans.
+                    Comme beaucoup de langues nationales, l'italien moderne est un dialecte qui a « réussi » en
+                    s'imposant comme langue propre à une région beaucoup plus vaste que sa région dialectale originelle.
+                </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{ path('francaisCourse')  }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{ path('francaisCourse',{num : 8 })  }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Allemand </h5></div>
+                <p class="card-text"> L’allemand est l'une des langues
+                    indo-européennes appartenant à la branche occidentale des langues germaniques.
+                    Du fait de ses nombreux dialectes,
+                    l'allemand constitue dans une certaine mesure une langue-toit
+                </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{ path('francaisCourse')  }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{ path('francaisCourse',{num : 8 })  }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Russe </h5></div>
+                <p class="card-text"> Le russe est une langue appartenant au groupe des langues slaves orientales de
+                    la famille des langues indo-européennes, auquel appartiennent aussi l'ukrainien et le biélorusse.
+                    Il compte plus de 280 millions de locuteurs. Il est
+                    la langue officielle de la Fédération de Russie et l'une des langues officielles des
+                    républiques de Biélorussie, du Kazakhstan et du Kirghizistan, langue de communication
+                    au sein de la Communauté des États indépendants, dominante dans certaines régions d'Ukraine
+                    . Il est également une des langues officielles de l'ONU.</p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{ path('francaisCourse')  }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{  path('francaisCourse',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 40rem; height :35rem; display: inline-table ; align-content: center">
+            <div class="card-body">
+                <div class="row gradient-underline"><h5 class="card-title"> Portugais </h5></div>
+                <p class="card-text"> Le portugais est une langue appartenant à la
+                    branche romane de la famille des langues indo-européennes. Les locuteurs du portugais
+                    s'appellent les lusophones. </p>
+                <div class="row buttons">
+                    <div class="col" ><a href="{{  path('francaisCourse') }}" class="btn-grad ">START NOW!</a></div>
+                    <div class="col" ><a href="{{  path('francaisCourse',{num : 8 }) }}" class="btn-grad ">GO TO QUIZZ </a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 {% endblock  %}

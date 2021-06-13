@@ -12,10 +12,10 @@
          <a class="nav-link" href="{{ path('Discover') }}">DISCOVER</a>
      </li>
      <li class="nav-item" id = "header">
-         <a class="nav-link" href="#">MY COURSES</a>
+         <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
      </li>
      <li class="nav-item" id = "header">
-         <a class="nav-link" href="#">MY PROJECTS</a>
+         <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
      </li>
  {% endblock %}
 
@@ -30,7 +30,7 @@
                                 <img src="https://icons-for-free.com/iconfiles/png/512/agenda+app+contacts+online+profile+user+icon-1320183042135412367.png" alt="Admin" width="200"/>
                                 <!-- <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110"> -->
                                 <div class="mt-3">
-                                    <h4>Hadil Helali</h4>
+                                    <h4>{{ user.FirstName }}  {{ user.LastName }}</h4>
                                     <p class="text-muted font-size-sm">Mahdia, Tunisia</p>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                                     <h6 class="mb-0">Full Name</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <p>Helali Hadil</p>
+                                    <p>{{ user.FirstName }}  {{ user.LastName }}</p>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -54,7 +54,7 @@
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <p>helalihadil4@gmail.com</p>
+                                    <p>{{ user.email }}</p>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -98,3 +98,5 @@
         </div>
     </div>
 {% endblock %}
+
+{% block greetings %} <div class="col Greeting "> Welcome,{{ user.FirstName }} </div> {% endblock %}

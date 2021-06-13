@@ -1,0 +1,41 @@
+/****** Title *********/
+#Courses{
+    margin-top : 5% ;
+}
+h2.TitlePage{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 7px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.TitleContainer{
+    margin: auto;
+    max-width: 50%;
+    align-self: center;
+    border: 5px solid #96B7C4 ;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #96B7C4;
+}
+h2.TitlePage span{
+    transition: .5s linear
+}
+h2.TitlePage:hover span:nth-child(1){
+    margin-right: 5px
+}
+h2.TitlePage:hover span:nth-child(1):after{
+    content: "";
+}
+h2.TitlePage:hover span:nth-child(2){
+    margin-left: 30px
+}
+h2.TitlePage:hover span{
+    color: #344B47;
+    text-shadow: 0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 40px #FFFFFF;
+}
+/****************************************/

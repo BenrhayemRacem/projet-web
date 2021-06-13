@@ -1,0 +1,50 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}Francais Course{% endblock %}
+{% block width %}25%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('francaisCourse') }}" class="list-group-item list-group-item-action  ">les nombres</a>
+    <a href="{{ path('francaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action ">les jours</a>
+    <a href="{{ path('francaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action active">les mois</a>
+    <a href="{{ path('francaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">les saisons</a>
+    <a href="{{ path('francaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">la famille</a>
+    <a href="{{ path('francaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">les temps verbaux</a>
+    <a href="{{ path('francaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Les Pronoms personnels</a>
+    <a href="{{ path('francaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">les articles</a>
+    <a href="{{ path('francaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">francais quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} les mois {% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Les mois de l'annee</h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <hr class="my-4">
+
+                                <ul>
+                                    <li> Janvier contient 31 jours</li>
+                                    <li> Fevrier contient 28 ou 29 jours </li>
+                                    <li> Mars contient 31 jours</li>
+                                    <li> Avril contient 30 jours</li>
+                                    <li> Mai contient 31 jours</li>
+                                    <li> Juin contient 30 jours</li>
+                                    <li> Juillet contient 31 jours</li>
+                                    <li> Aout contient 31 jours</li>
+                                    <li> Septembre contient 30 jours</li>
+                                    <li> Octobre contient 31 jours</li>
+                                    <li> Novembre contient 30 jours</li>
+                                    <li> Decembre contient 31 jours</li>
+                                    <li> une annee contient 12 mois</li>
+                                </ul>
+
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 1 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('francaisCourse',{num : 3 })}}">Next ></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endblock %}
+
+

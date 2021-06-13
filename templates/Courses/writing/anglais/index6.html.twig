@@ -1,0 +1,46 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}English Course{% endblock %}
+{% block width %}75%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('anglaisCourse') }}" class="list-group-item list-group-item-action  ">the numbers</a>
+    <a href="{{ path('anglaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">the days</a>
+    <a href="{{ path('anglaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">the months</a>
+    <a href="{{ path('anglaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">the seasons </a>
+    <a href="{{ path('anglaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">the family</a>
+    <a href="{{ path('anglaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action ">verbal tenses</a>
+    <a href="{{ path('anglaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action active ">Personal pronouns</a>
+    <a href="{{ path('anglaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">the articles</a>
+    <a href="{{ path('anglaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">english quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %} Pronom Personnel{% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Pronom Personnel sujet </h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+
+                                <p> singular </p>
+                                <ul>
+                                    <li> I  </li>
+                                    <li>  You  </li>
+                                    <li> He/She </li>
+                                    <li> It  </li>
+                                </ul>
+
+                                <p> plural </p>
+                                <ul>
+                                    <li> We </li>
+                                    <li>  You </li>
+                                    <li> They </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 5 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 7 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

@@ -50,7 +50,7 @@ class __TwigTemplate_0ddf14013e35926e55e900f5a0a8f20c64f31cb975424630c25c2190e7b
     ";
         // line 7
         echo "
-if (typeof Sfjs === 'undefined') {
+if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
     Sfjs = (function() {
         \"use strict\";
 
@@ -921,7 +921,7 @@ if (typeof Sfjs === 'undefined') {
                 them as JavaScript source code. Always use '/*' comments instead
                 of '//' comments to avoid impossible-to-debug side-effects #}
 
-if (typeof Sfjs === 'undefined') {
+if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
     Sfjs = (function() {
         \"use strict\";
 
@@ -1730,6 +1730,6 @@ if (typeof Sfjs === 'undefined') {
     });
 }
 /*]]>*/</script>
-", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
+", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
     }
 }

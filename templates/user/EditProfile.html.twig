@@ -12,10 +12,10 @@
          <a class="nav-link" href="{{ path('Discover') }}">DISCOVER</a>
      </li>
      <li class="nav-item" id = "header">
-         <a class="nav-link" href="#">MY COURSES</a>
+         <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
      </li>
      <li class="nav-item" id = "header">
-         <a class="nav-link" href="#">MY PROJECTS</a>
+         <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
      </li>
  {% endblock %}
 
@@ -31,7 +31,7 @@
                                 <img src="https://icons-for-free.com/iconfiles/png/512/agenda+app+contacts+online+profile+user+icon-1320183042135412367.png" alt="Admin" width="200"/>
                                <!-- <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110"> -->
                                 <div class="mt-3">
-                                    <h4>Hadil Helali</h4>
+                                    <h4>{{ user.FirstName }}  {{ user.LastName }}</h4>
                                     <p class="text-muted font-size-sm">Mahdia, Tunisia</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                     <h6 class="mb-0">Full Name</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" value="Helali Hadil">
+                                    <input type="text" class="form-control" value="{{ user.FirstName }}  {{ user.LastName }}">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -55,24 +55,38 @@
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" value="helalihadil4@gmail.com">
+                                    <input type="text" class="form-control" value="{{ user.email }}">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3" >
                                     <h6 class="mb-0">Address</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" value="Mahdia, Tunisia">
+
+                                    {% if user.address is null %}
+                                    <input type="text" class="form-control" placeholder="please enter your address">
+                                    {% else %}
+                                        <input type="text" class="form-control" value="{{ user.address }}">
+                                    {{ user.address }}
+                                    {% endif %}
+
                                 </div>
                             </div>
+
+
                             <div class="row">
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">My Bio</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                        <textarea class="form-control" rows="5" placeholder="My Bio"></textarea>
-                                </div>
+                                    {% if user.Bio is null %}
+                                    <textarea class="form-control" rows="5" placeholder="tell us more about yourself">
+                                    {% else %}
+                                        <textarea class="form-control" rows="5" value="{{ user.Bio }}">
+                                        {{ user.Bio }}
+                                        {% endif %}
+                                        </textarea>
                             </div>
 
                             <div class="row" style="margin-top: 20px; width: 50%; font-size: 15px">
@@ -118,5 +132,7 @@
         </div>
     </div>
 {% endblock %}
+
+{% block greetings %} <div class="col Greeting "> Welcome,{{ user.FirstName }} </div> {% endblock %}
 
 

@@ -1,0 +1,43 @@
+{% extends 'Courses/Course.html.twig' %}
+{% block Title %}English Course{% endblock %}
+{% block width %}62%{% endblock %}
+{% block Bar %}
+    <a href="{{ path('anglaisCourse') }}" class="list-group-item list-group-item-action  ">the numbers</a>
+    <a href="{{ path('anglaisCourse',{num : 1 }) }}" class="list-group-item list-group-item-action">the days</a>
+    <a href="{{ path('anglaisCourse',{num : 2 }) }}" class="list-group-item list-group-item-action ">the months</a>
+    <a href="{{ path('anglaisCourse',{num : 3 }) }}" class="list-group-item list-group-item-action ">the seasons </a>
+    <a href="{{ path('anglaisCourse',{num : 4 }) }}" class="list-group-item list-group-item-action ">the family</a>
+    <a href="{{ path('anglaisCourse',{num : 5 }) }}" class="list-group-item list-group-item-action active">verbal tenses</a>
+    <a href="{{ path('anglaisCourse',{num : 6 }) }}" class="list-group-item list-group-item-action ">Personal pronouns</a>
+    <a href="{{ path('anglaisCourse',{num : 7 }) }}" class="list-group-item list-group-item-action ">the articles</a>
+    <a href="{{ path('anglaisCourse',{num : 8 }) }}" class="list-group-item list-group-item-action ">english quiz</a>
+
+{% endblock %}
+{% block titleParagraphe %}Time conjugations{% endblock %}
+{% block NextTitle %}<h2 class="NextTitle">Indicative </h2>  {% endblock %}
+
+                    {% block Course %}
+                        <div class="card" style="margin-top: 20px ">
+                            <div class="card-body">
+                                <ul>
+                                    <li> simple present </li>
+                                    <li> simple past </li>
+                                    <li> present perfect simple </li>
+                                    <li> past perfect </li>
+                                    <li> present progressive/continuous </li>
+                                    <li> Past progressive/continuous</li>
+                                    <li> Present perfect progressive/continuous</li>
+                                    <li> Past perfect progressive/continuous</li>
+                                    <li> Future </li>
+                                    <li>  Future progressive/continuous </li>
+                                </ul>
+
+                                <div class="container justify-items-end row">
+                                    <div class="col"><a class="btn-grad" href="{{path('anglaisCourse',{num : 4 }) }}">< Previous</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('Discover')}}">Home</a></div>
+                                    <div class="col"><a class="btn-grad" href="{{ path('anglaisCourse',{num : 6 }) }}">Next ></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endblock %}

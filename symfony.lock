@@ -154,6 +154,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "swiftmailer/swiftmailer": {
+        "version": "v6.2.7"
+    },
     "symfony/asset": {
         "version": "v5.2.7"
     },
@@ -378,162 +381,198 @@
     "symfony/polyfill-php80": {
         "version": "v1.22.1"
     },
-    "symfony/polyfill-php81": {
-        "version": "v1.23.0"
-    },
-    "symfony/process": {
-        "version": "v5.2.7"
-    },
-    "symfony/profiler-pack": {
-        "version": "v1.0.5"
-    },
-    "symfony/property-access": {
-        "version": "v5.2.4"
-    },
-    "symfony/property-info": {
-        "version": "v5.2.8"
-    },
-    "symfony/proxy-manager-bridge": {
-        "version": "v5.2.9"
-    },
-    "symfony/routing": {
-        "version": "5.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "5.1",
-            "ref": "b4f3e7c95e38b606eef467e8a42a8408fc460c43"
+    "symfony/polyfill-uuid": {
+        "symfony/polyfill-php81": {
+            "version": "v1.23.0"
         },
-        "files": [
-            "./config/packages/prod/routing.yaml",
-            "./config/packages/routing.yaml",
-            "./config/routes.yaml"
-        ]
-    },
-    "symfony/security-bundle": {
-        "version": "5.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "5.1",
-            "ref": "0a4bae19389d3b9cba1ca0102e3b2bccea724603"
+        "symfony/process": {
+            "version": "v5.2.7"
         },
-        "files": [
-            "./config/packages/security.yaml"
-        ]
-    },
-    "symfony/security-core": {
-        "version": "v5.2.9"
-    },
-    "symfony/security-csrf": {
-        "version": "v5.2.7"
-    },
-    "symfony/security-guard": {
-        "version": "v5.2.8"
-    },
-    "symfony/security-http": {
-        "version": "v5.2.9"
-    },
-    "symfony/serializer": {
-        "version": "v5.2.9"
-    },
-    "symfony/serializer-pack": {
-        "version": "v1.0.4"
-    },
-    "symfony/service-contracts": {
-        "version": "v2.4.0"
-    },
-    "symfony/stopwatch": {
-        "version": "v5.2.7"
-    },
-    "symfony/string": {
-        "version": "v5.2.8"
-    },
-    "symfony/test-pack": {
-        "version": "v1.0.7"
-    },
-    "symfony/translation": {
-        "version": "3.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
+        "symfony/profiler-pack": {
+            "version": "v1.0.5"
+        },
+        "symfony/property-access": {
+            "version": "v5.2.4"
+        },
+        "symfony/property-info": {
+            "version": "v5.2.8"
+        },
+        "symfony/proxy-manager-bridge": {
+            "version": "v5.2.9"
+        },
+        "symfony/routing": {
+            "version": "5.1",
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "5.1",
+                "ref": "b4f3e7c95e38b606eef467e8a42a8408fc460c43"
+            },
+            "files": [
+                "./config/packages/prod/routing.yaml",
+                "./config/packages/routing.yaml",
+                "./config/routes.yaml"
+            ]
+        },
+        "symfony/security-bundle": {
+            "version": "5.1",
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "5.1",
+                "ref": "0a4bae19389d3b9cba1ca0102e3b2bccea724603"
+            },
+            "files": [
+                "./config/packages/security.yaml"
+            ]
+        },
+        "symfony/security-core": {
+            "version": "v5.2.9"
+        },
+        "symfony/security-csrf": {
+            "version": "v5.2.7"
+        },
+        "symfony/security-guard": {
+            "version": "v5.2.8"
+        },
+        "symfony/security-http": {
+            "version": "v5.2.9"
+        },
+        "symfony/serializer": {
+            "version": "v5.2.9"
+        },
+        "symfony/serializer-pack": {
+            "version": "v1.0.4"
+        },
+        "symfony/service-contracts": {
+            "version": "v2.4.0"
+        },
+        "symfony/stopwatch": {
+            "version": "v5.2.7"
+        },
+        "symfony/string": {
+            "version": "v5.2.8"
+        },
+        "symfony/swiftmailer-bundle": {
+            "version": "2.5",
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "2.5",
+                "ref": "ae4d22af30bbd484506bc1817c5a3ef72c855b93"
+            },
+            "files": [
+                "./config/packages/dev/swiftmailer.yaml",
+                "./config/packages/swiftmailer.yaml",
+                "./config/packages/test/swiftmailer.yaml"
+            ]
+        },
+        "symfony/test-pack": {
+            "version": "v1.0.7"
+        },
+        "symfony/translation": {
             "version": "3.3",
-            "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "3.3",
+                "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+            },
+            "files": [
+                "./config/packages/translation.yaml",
+                "./translations/.gitignore"
+            ]
         },
-        "files": [
-            "./config/packages/translation.yaml",
-            "./translations/.gitignore"
-        ]
-    },
-    "symfony/translation-contracts": {
-        "version": "v2.4.0"
-    },
-    "symfony/twig-bridge": {
-        "version": "v5.2.8"
-    },
-    "symfony/twig-bundle": {
-        "version": "5.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
+        "symfony/translation-contracts": {
+            "version": "v2.4.0"
+        },
+        "symfony/twig-bridge": {
+            "version": "v5.2.8"
+        },
+        "symfony/twig-bundle": {
             "version": "5.0",
-            "ref": "fab9149bbaa4d5eca054ed93f9e1b66cc500895d"
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "5.0",
+                "ref": "fab9149bbaa4d5eca054ed93f9e1b66cc500895d"
+            },
+            "files": [
+                "./config/packages/test/twig.yaml",
+                "./config/packages/twig.yaml",
+                "./templates/base.html.twig"
+            ]
         },
-        "files": [
-            "./config/packages/test/twig.yaml",
-            "./config/packages/twig.yaml",
-            "./templates/base.html.twig"
-        ]
-    },
-    "symfony/twig-pack": {
-        "version": "v1.0.1"
-    },
-    "symfony/validator": {
-        "version": "4.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
+        "symfony/twig-pack": {
+            "version": "v1.0.1"
+        },
+        "symfony/uid": {
+            "version": "v5.2.10"
+        },
+        "symfony/validator": {
             "version": "4.3",
-            "ref": "d902da3e4952f18d3bf05aab29512eb61cabd869"
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "4.3",
+                "ref": "d902da3e4952f18d3bf05aab29512eb61cabd869"
+            },
+            "files": [
+                "./config/packages/test/validator.yaml",
+                "./config/packages/validator.yaml"
+            ]
         },
-        "files": [
-            "./config/packages/test/validator.yaml",
-            "./config/packages/validator.yaml"
-        ]
+        "symfony/var-dumper": {
+            "version": "v5.2.8"
+        },
+        "symfony/var-exporter": {
+            "version": "v5.2.8"
+        },
+        "symfony/web-link": {
+            "version": "v5.2.5"
+        },
+        "symfony/web-profiler-bundle": {
+            "version": "3.3",
+            "recipe": {
+                "repo": "github.com/symfony/recipes",
+                "branch": "master",
+                "version": "3.3",
+                "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
+            },
+            "files": [
+                "./config/packages/dev/web_profiler.yaml",
+                "./config/packages/test/web_profiler.yaml",
+                "./config/routes/dev/web_profiler.yaml"
+            ]
+        },
+        "symfony/yaml": {
+            "version": "v5.2.9"
+        },
+        "twig/extra-bundle": {
+            "version": "v3.3.1"
+        },
+        "twig/twig": {
+            "version": "v3.3.2"
+        },
+        "webmozart/assert": {
+            "version": "1.10.0"
+        }
     },
-    "symfony/var-dumper": {
-        "version": "v5.2.8"
-    },
-    "symfony/var-exporter": {
-        "version": "v5.2.8"
-    },
-    "symfony/web-link": {
-        "version": "v5.2.5"
-    },
-    "symfony/web-profiler-bundle": {
-        "version": "3.3",
+    "symfony/swiftmailer-bundle": {
+        "version": "2.5",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "3.3",
-            "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
+            "version": "2.5",
+            "ref": "ae4d22af30bbd484506bc1817c5a3ef72c855b93"
         },
         "files": [
-            "./config/packages/dev/web_profiler.yaml",
-            "./config/packages/test/web_profiler.yaml",
-            "./config/routes/dev/web_profiler.yaml"
+            "./config/packages/dev/swiftmailer.yaml",
+            "./config/packages/swiftmailer.yaml",
+            "./config/packages/test/swiftmailer.yaml"
         ]
     },
-    "symfony/yaml": {
-        "version": "v5.2.9"
-    },
-    "twig/extra-bundle": {
-        "version": "v3.3.1"
-    },
-    "twig/twig": {
-        "version": "v3.3.2"
-    },
-    "webmozart/assert": {
-        "version": "1.10.0"
+    "symfony/uid": {
+        "version": "v5.2.10"
     }
 }

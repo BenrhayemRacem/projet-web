@@ -55,14 +55,14 @@
                     <li></li>
                     <li></li>
                     <li> <div class="row dropdown User">
-                            <div class="col Greeting "> Welcome , Hadil </div>
+                        {% block greetings %} <div class="col Greeting "> Welcome , Hadil </div> {% endblock %}
                                 <div class=" col wrapperUser dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="UserIcon"> <i class="fas fa-user"></i></div>
                                 </div>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width : 60% ; left : 5% ;">
                                 <li><a class="dropdown-item" href="{{ path('Profile') }}">My Profile</a></li>
                                 <li><a class="dropdown-item" href="{{ path('Edit_Profile') }}">Edit Profile</a></li>
-                                <li><a class="dropdown-item" href="{{ path('home') }}">Log out</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_logout') }}">Log out</a></li>
                             </ul>
                         </div>
                     </li>
@@ -80,6 +80,7 @@
     <script src="{{ asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
     <!--<script src="/node_modules/jquery/dist/cdn/jquery-2.1.3.min.js"></script>-->
     <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('Scripts/UserScripts/UserScripts.js')}}"></script>
 {% endblock %}
 
 
@@ -143,3 +144,4 @@
     </footer>
 {% endblock %}
 </html>
+

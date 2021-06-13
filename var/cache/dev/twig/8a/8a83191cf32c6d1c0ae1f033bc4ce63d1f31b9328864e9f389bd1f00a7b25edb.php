@@ -49,12 +49,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
         $this->parent = $this->loadTemplate("User.html.twig", "user/Discover_Projects/DiscoverPL.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
     }
 
     // line 3
@@ -68,12 +67,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
 
         echo "Discover with us";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     // line 5
@@ -100,12 +98,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         echo "\">
 
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     // line 12
@@ -135,12 +132,11 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
         echo "\">MY PROJECTS</a>
     </li>
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     // line 24
@@ -186,7 +182,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 </nav>
 
 
-    
+
 <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
@@ -207,7 +203,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Hadil Hellali</p>
                 <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
@@ -232,7 +228,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Sir Ghorbel Mehdi</p>
                 <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
@@ -266,16 +262,16 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <div class=\"project-info-box mt-0\">
 
                 <h5 class=\"NextTitle\">Essay Writng Guide </h5>
-                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
+                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay!
 
-                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
+                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework.
 
                 </p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Dali Naim</p>
                 <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
@@ -287,15 +283,14 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
     </div>
     <!-- / row list-project -->
 </div>
-   
+
 
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     public function getTemplateName()
@@ -310,7 +305,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     public function getDebugInfo()
     {
-        return array (  261 => 112,  248 => 102,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array(  261 => 112,  248 => 102,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -362,7 +357,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 </nav>
 
 
-    
+
 <div class=\"container\">
     <div class=\"row list-project\">
         <div class=\"col-md-7\">
@@ -380,7 +375,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Hadil Hellali</p>
                 <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
@@ -405,7 +400,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Sir Ghorbel Mehdi</p>
                 <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
@@ -433,16 +428,16 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             <div class=\"project-info-box mt-0\">
 
                 <h5 class=\"NextTitle\">Essay Writng Guide </h5>
-                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay! 
+                <p>Feel passionately about something and want to share it? Write an essay! Disagree with a popular opinion and wish to convince others to join you? Write an essay! Need to write something because the college you dream of attending is making you? Write an essay!
 
-                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework. 
+                        “Essay” is a loose term for writing that asserts the author’s opinion on a topic, whether academic, editorial, or even humorous. There are a thousand different approaches to essay writing and a million different topics to choose from, but what we’ve found is that good essay writing tends to follow the same framework.
 
                 </p>
             </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Dali Naim</p>
                 <p><b>Tools:</b> Pen &amp; Paper</p>
             </div>
@@ -454,7 +449,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
     </div>
     <!-- / row list-project -->
 </div>
-   
+
 
 {% endblock  %}", "user/Discover_Projects/DiscoverPL.html.twig", "D:\\projetnewnewnew\\templates\\user\\Discover_Projects\\DiscoverPL.html.twig");
     }

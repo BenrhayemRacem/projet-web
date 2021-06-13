@@ -2,7 +2,6 @@
 
 namespace ContainerDfJGxng;
 
-
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
@@ -18,7 +17,7 @@ class getConsole_Command_DebugAutowiringService extends App_KernelDevDebugContai
      */
     public static function do($container, $lazyLoad = true)
     {
-        $container->privates['console.command.debug_autowiring'] = $instance = new \Symfony\Bundle\FrameworkBundle\Command\DebugAutowiringCommand(NULL, ($container->privates['debug.file_link_formatter'] ?? $container->getDebug_FileLinkFormatterService()));
+        $container->privates['console.command.debug_autowiring'] = $instance = new \Symfony\Bundle\FrameworkBundle\Command\DebugAutowiringCommand(null, ($container->privates['debug.file_link_formatter'] ?? $container->getDebug_FileLinkFormatterService()));
 
         $instance->setName('debug:autowiring');
 

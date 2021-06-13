@@ -42,12 +42,11 @@ class __TwigTemplate_7de0692e78234270f8f5ed9b1bc03103dcc69078c956ab84f5486d66c99
         // line 1
         echo "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"#AAA\" d=\"M13 3v18c0 1.1-.9 2-2 2s-2-.9-2-2V3c0-1.1.9-2 2-2s2 .9 2 2zm10.2 1.6l-1.8-1.4c-.2-.3-.6-.2-1-.2H14v5h6.4c.4 0 .8-.3 1.1-.5l1.8-1.6c.3-.3.3-1-.1-1.3zm-3.7 4.8c-.3-.3-.7-.4-1.1-.4H14v5h4.4a2 2 0 0 0 1.1-.3l1.8-1.5c.4-.3.4-.9 0-1.3l-1.8-1.5zM3.5 7c-.4 0-.7 0-1 .3L.7 8.8c-.4.3-.4.9 0 1.3l1.8 1.6c.3.2.6.3 1 .3H8V7H3.5z\"/></svg>
 ";
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
     }
 
     public function getTemplateName()
@@ -57,7 +56,7 @@ class __TwigTemplate_7de0692e78234270f8f5ed9b1bc03103dcc69078c956ab84f5486d66c99
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array(  43 => 1,);
     }
 
     public function getSourceContext()

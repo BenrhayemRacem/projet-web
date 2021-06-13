@@ -48,12 +48,11 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
 
         $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "@Debug/Profiler/dump.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
     }
 
     // line 3
@@ -68,7 +67,9 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
 
         // line 4
         echo "    ";
-        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source); })()), "dumpsCount", [], "any", false, false, false, 4)) {
+        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source);
+        })()), "dumpsCount", [], "any", false, false, false, 4)) {
             // line 5
             echo "        ";
             ob_start();
@@ -78,7 +79,9 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
             echo "
             <span class=\"sf-toolbar-value\">";
             // line 7
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 7, $this->source); })()), "dumpsCount", [], "any", false, false, false, 7), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 7, $this->source);
+            })()), "dumpsCount", [], "any", false, false, false, 7), "html", null, true);
             echo "</span>
         ";
             $context["icon"] = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
@@ -90,7 +93,9 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
             // line 11
             echo "            ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 11, $this->source); })()), "getDumps", [0 => "html"], "method", false, false, false, 11));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+                throw new RuntimeError('Variable "collector" does not exist.', 11, $this->source);
+            })()), "getDumps", [0 => "html"], "method", false, false, false, 11));
             foreach ($context['_seq'] as $context["_key"] => $context["dump"]) {
                 // line 12
                 echo "                <div class=\"sf-toolbar-info-piece\">
@@ -103,10 +108,14 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
                     $context["link"] = $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink(twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 15), twig_get_attribute($this->env, $this->source, $context["dump"], "line", [], "any", false, false, false, 15));
                     // line 16
                     echo "                        ";
-                    if ((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 16, $this->source); })())) {
+                    if ((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+                        throw new RuntimeError('Variable "link" does not exist.', 16, $this->source);
+                    })())) {
                         // line 17
                         echo "                            <a href=\"";
-                        echo twig_escape_filter($this->env, (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 17, $this->source); })()), "html", null, true);
+                        echo twig_escape_filter($this->env, (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+                            throw new RuntimeError('Variable "link" does not exist.', 17, $this->source);
+                        })()), "html", null, true);
                         echo "\" title=\"";
                         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 17), "html", null, true);
                         echo "\">";
@@ -159,12 +168,11 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
             echo "
     ";
         }
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     // line 36
@@ -179,7 +187,9 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
 
         // line 37
         echo "    <span class=\"label ";
-        echo (((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 37, $this->source); })()), "dumpsCount", [], "any", false, false, false, 37) == 0)) ? ("disabled") : (""));
+        echo(((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 37, $this->source);
+        })()), "dumpsCount", [], "any", false, false, false, 37) == 0)) ? ("disabled") : (""));
         echo "\">
         <span class=\"icon\">";
         // line 38
@@ -188,12 +198,11 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
         <strong>Debug</strong>
     </span>
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     // line 43
@@ -212,7 +221,9 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
     ";
         // line 46
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 46, $this->source); })()), "getDumps", [0 => "html"], "method", false, false, false, 46));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 46, $this->source);
+        })()), "getDumps", [0 => "html"], "method", false, false, false, 46));
         $context['_iterated'] = false;
         $context['loop'] = [
           'parent' => $context['_parent'],
@@ -239,10 +250,14 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
                 $context["link"] = $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink(twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 50), twig_get_attribute($this->env, $this->source, $context["dump"], "line", [], "any", false, false, false, 50));
                 // line 51
                 echo "                    ";
-                if ((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 51, $this->source); })())) {
+                if ((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+                    throw new RuntimeError('Variable "link" does not exist.', 51, $this->source);
+                })())) {
                     // line 52
                     echo "                        <a href=\"";
-                    echo twig_escape_filter($this->env, (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 52, $this->source); })()), "html", null, true);
+                    echo twig_escape_filter($this->env, (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+                        throw new RuntimeError('Variable "link" does not exist.', 52, $this->source);
+                    })()), "html", null, true);
                     echo "\" title=\"";
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 52), "html", null, true);
                     echo "\">";
@@ -282,7 +297,7 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
                 <div class=\"trace\">
                     ";
             // line 64
-            echo ((twig_get_attribute($this->env, $this->source, $context["dump"], "fileExcerpt", [], "any", false, false, false, 64)) ? (twig_get_attribute($this->env, $this->source, $context["dump"], "fileExcerpt", [], "any", false, false, false, 64)) : ($this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->fileExcerpt(twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 64), twig_get_attribute($this->env, $this->source, $context["dump"], "line", [], "any", false, false, false, 64))));
+            echo((twig_get_attribute($this->env, $this->source, $context["dump"], "fileExcerpt", [], "any", false, false, false, 64)) ? (twig_get_attribute($this->env, $this->source, $context["dump"], "fileExcerpt", [], "any", false, false, false, 64)) : ($this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->fileExcerpt(twig_get_attribute($this->env, $this->source, $context["dump"], "file", [], "any", false, false, false, 64), twig_get_attribute($this->env, $this->source, $context["dump"], "line", [], "any", false, false, false, 64))));
             echo "
                 </div>
             </div>
@@ -313,12 +328,11 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['dump'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
     public function getTemplateName()
@@ -333,7 +347,7 @@ class __TwigTemplate_567dfcf18f819f1138eb57db69750aa47517c8aee3ca6dd7bfe2ba9a18c
 
     public function getDebugInfo()
     {
-        return array (  308 => 71,  292 => 68,  285 => 64,  280 => 62,  271 => 59,  265 => 57,  262 => 56,  254 => 54,  244 => 52,  241 => 51,  238 => 50,  236 => 49,  232 => 47,  214 => 46,  210 => 44,  200 => 43,  186 => 38,  181 => 37,  171 => 36,  158 => 32,  155 => 31,  152 => 30,  143 => 27,  138 => 25,  135 => 24,  129 => 22,  126 => 21,  118 => 19,  108 => 17,  105 => 16,  102 => 15,  100 => 14,  96 => 12,  91 => 11,  89 => 10,  86 => 9,  81 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
+        return array(  308 => 71,  292 => 68,  285 => 64,  280 => 62,  271 => 59,  265 => 57,  262 => 56,  254 => 54,  244 => 52,  241 => 51,  238 => 50,  236 => 49,  232 => 47,  214 => 46,  210 => 44,  200 => 43,  186 => 38,  181 => 37,  171 => 36,  158 => 32,  155 => 31,  152 => 30,  143 => 27,  138 => 25,  135 => 24,  129 => 22,  126 => 21,  118 => 19,  108 => 17,  105 => 16,  102 => 15,  100 => 14,  96 => 12,  91 => 11,  89 => 10,  86 => 9,  81 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()

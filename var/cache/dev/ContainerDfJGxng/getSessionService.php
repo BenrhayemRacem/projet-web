@@ -2,7 +2,6 @@
 
 namespace ContainerDfJGxng;
 
-
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
@@ -18,6 +17,6 @@ class getSessionService extends App_KernelDevDebugContainer
      */
     public static function do($container, $lazyLoad = true)
     {
-        return $container->services['session'] = new \Symfony\Component\HttpFoundation\Session\Session(($container->privates['session.storage.native'] ?? $container->load('getSession_Storage_NativeService')), NULL, NULL, [0 => ($container->privates['session_listener'] ?? $container->getSessionListenerService()), 1 => 'onSessionUsage']);
+        return $container->services['session'] = new \Symfony\Component\HttpFoundation\Session\Session(($container->privates['session.storage.native'] ?? $container->load('getSession_Storage_NativeService')), null, null, [0 => ($container->privates['session_listener'] ?? $container->getSessionListenerService()), 1 => 'onSessionUsage']);
     }
 }

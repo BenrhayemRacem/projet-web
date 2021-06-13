@@ -32,6 +32,8 @@ return [
     'registration' => [[], ['_controller' => 'App\\Controller\\InscriptionController::index'], [], [['text', '/registration']], [], []],
     'Login' => [[], ['_controller' => 'App\\Controller\\LoginController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\LoginController::logout'], [], [['text', '/logout']], [], []],
+    'mail' => [['name', 'mail', 'uniqueId'], ['_controller' => 'App\\Controller\\MailController::index'], [], [['variable', '/', '[^/]++', 'uniqueId', true], ['variable', '/', '[^/]++', 'mail', true], ['variable', '/', '[^/]++', 'name', true], ['text', '/mail']], [], []],
+    'mail.verif' => [['mail', 'uniqueId'], ['_controller' => 'App\\Controller\\MailController::verificationEmail'], [], [['variable', '/', '[^/]++', 'uniqueId', true], ['variable', '/', '[^/]++', 'mail', true], ['text', '/mail']], [], []],
     'Edit_Profile' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/EditProfile']], [], []],
     'Profile' => [[], ['_controller' => 'App\\Controller\\UserController::indexProfile'], [], [['text', '/Profile']], [], []],
     'Discover' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_C_P'], [], [['text', '/home/C/P']], [], []],

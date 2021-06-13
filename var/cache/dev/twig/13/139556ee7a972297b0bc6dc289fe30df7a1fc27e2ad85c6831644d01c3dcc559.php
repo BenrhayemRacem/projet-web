@@ -534,6 +534,6 @@ class __TwigTemplate_c312132a42bff15f816f0469f5099c1ed921e05920632c67f62bbc7e742
         </div>
     </div>
 {% endblock %}
-", "Courses/writing/francais/index8.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\Courses\\writing\\francais\\index8.html.twig");
+", "Courses/writing/francais/index8.html.twig", "D:\\projetnewnewnew\\templates\\Courses\\writing\\francais\\index8.html.twig");
     }
 }

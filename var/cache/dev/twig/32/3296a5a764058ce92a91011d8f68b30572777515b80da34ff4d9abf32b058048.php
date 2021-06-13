@@ -526,6 +526,6 @@ class __TwigTemplate_decc66aaf6349e981967fe66d2adbfface457d84e5072b7482da2bcd135
 
     </div>
 
-{% endblock  %}", "user/Discover_Courses/Discover.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\user\\Discover_Courses\\Discover.html.twig");
+{% endblock  %}", "user/Discover_Courses/Discover.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\user\\Discover_Courses\\Discover.html.twig");
     }
 }

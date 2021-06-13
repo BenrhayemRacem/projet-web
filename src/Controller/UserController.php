@@ -41,10 +41,7 @@ class UserController extends AbstractController
     public function indexDiscover_C_P(): Response
     {
         $user=$this->getUser() ;
-        $repository = $this->getDoctrine()->getRepository('App:Course');
-        $Courses = $repository->findAll();
         return $this->render('user/Discover_Courses/Discover.html.twig', [
-
             'user' =>$user
         ]);
     }

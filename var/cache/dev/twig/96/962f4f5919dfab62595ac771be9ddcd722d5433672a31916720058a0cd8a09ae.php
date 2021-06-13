@@ -41,9 +41,13 @@ class __TwigTemplate_0ddf14013e35926e55e900f5a0a8f20c64f31cb975424630c25c2190e7b
 
         // line 3
         echo "<script";
-        if ((array_key_exists("csp_script_nonce", $context) && (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 3, $this->source); })()))) {
+        if ((array_key_exists("csp_script_nonce", $context) && (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () {
+            throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 3, $this->source);
+        })()))) {
             echo " nonce=\"";
-            echo twig_escape_filter($this->env, (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 3, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () {
+                throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 3, $this->source);
+            })()), "html", null, true);
             echo "\"";
         }
         echo ">/*<![CDATA[*/
@@ -339,7 +343,9 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                     }
                     if (!url.match(new RegExp(";
             // line 292
-            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 292, $this->source); })()));
+            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () {
+                throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 292, $this->source);
+            })()));
             echo "))) {
                         var method = 'GET';
                         if (params && params.method !== undefined) {
@@ -385,27 +391,41 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                     if (url.substr(0, 1) === '/') {
                         if (0 === url.indexOf('";
             // line 335
-            echo twig_escape_filter($this->env, twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 335, $this->source); })()), "basePath", [], "any", false, false, false, 335), "js"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 335, $this->source);
+            })()), "basePath", [], "any", false, false, false, 335), "js"), "html", null, true);
             echo "')) {
                             path = url.substr(";
             // line 336
-            echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 336, $this->source); })()), "basePath", [], "any", false, false, false, 336)), "html", null, true);
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 336, $this->source);
+            })()), "basePath", [], "any", false, false, false, 336)), "html", null, true);
             echo ");
                         }
                     }
                     else if (0 === url.indexOf('";
             // line 339
-            echo twig_escape_filter($this->env, twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 339) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "basePath", [], "any", false, false, false, 339)), "js"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 339, $this->source);
+            })()), "schemeAndHttpHost", [], "any", false, false, false, 339) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 339, $this->source);
+            })()), "basePath", [], "any", false, false, false, 339)), "js"), "html", null, true);
             echo "')) {
                         path = url.substr(";
             // line 340
-            echo twig_escape_filter($this->env, twig_length_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 340, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 340) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 340, $this->source); })()), "basePath", [], "any", false, false, false, 340))), "html", null, true);
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 340, $this->source);
+            })()), "schemeAndHttpHost", [], "any", false, false, false, 340) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () {
+                throw new RuntimeError('Variable "request" does not exist.', 340, $this->source);
+            })()), "basePath", [], "any", false, false, false, 340))), "html", null, true);
             echo ");
                     }
 
                     if (!path.match(new RegExp(";
             // line 343
-            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 343, $this->source); })()));
+            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () {
+                throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 343, $this->source);
+            })()));
             echo "))) {
                         var stackElement = {
                             error: false,
@@ -894,7 +914,6 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     public function getTemplateName()
@@ -909,7 +928,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
 
     public function getDebugInfo()
     {
-        return array (  620 => 547,  496 => 426,  440 => 372,  408 => 343,  402 => 340,  398 => 339,  392 => 336,  388 => 335,  342 => 292,  321 => 273,  319 => 272,  52 => 7,  43 => 3,);
+        return array(  620 => 547,  496 => 426,  440 => 372,  408 => 343,  402 => 340,  398 => 339,  392 => 336,  388 => 335,  342 => 292,  321 => 273,  319 => 272,  52 => 7,  43 => 3,);
     }
 
     public function getSourceContext()

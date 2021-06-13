@@ -41,33 +41,53 @@ class __TwigTemplate_7f0bc9da9a6923e5792a6e38eb6bfe9606b0b1612896876c7b699dd8383
 
         // line 1
         echo "<div class=\"sf-toolbar-block sf-toolbar-block-";
-        echo twig_escape_filter($this->env, (isset($context["name"]) || array_key_exists("name", $context) ? $context["name"] : (function () { throw new RuntimeError('Variable "name" does not exist.', 1, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["name"]) || array_key_exists("name", $context) ? $context["name"] : (function () {
+            throw new RuntimeError('Variable "name" does not exist.', 1, $this->source);
+        })()), "html", null, true);
         echo " sf-toolbar-status-";
-        echo twig_escape_filter($this->env, ((array_key_exists("status", $context)) ? (_twig_default_filter((isset($context["status"]) || array_key_exists("status", $context) ? $context["status"] : (function () { throw new RuntimeError('Variable "status" does not exist.', 1, $this->source); })()), "normal")) : ("normal")), "html", null, true);
+        echo twig_escape_filter($this->env, ((array_key_exists("status", $context)) ? (_twig_default_filter((isset($context["status"]) || array_key_exists("status", $context) ? $context["status"] : (function () {
+            throw new RuntimeError('Variable "status" does not exist.', 1, $this->source);
+        })()), "normal")) : ("normal")), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, ((array_key_exists("additional_classes", $context)) ? (_twig_default_filter((isset($context["additional_classes"]) || array_key_exists("additional_classes", $context) ? $context["additional_classes"] : (function () { throw new RuntimeError('Variable "additional_classes" does not exist.', 1, $this->source); })()), "")) : ("")), "html", null, true);
+        echo twig_escape_filter($this->env, ((array_key_exists("additional_classes", $context)) ? (_twig_default_filter((isset($context["additional_classes"]) || array_key_exists("additional_classes", $context) ? $context["additional_classes"] : (function () {
+            throw new RuntimeError('Variable "additional_classes" does not exist.', 1, $this->source);
+        })()), "")) : ("")), "html", null, true);
         echo "\" ";
-        echo ((array_key_exists("block_attrs", $context)) ? (_twig_default_filter((isset($context["block_attrs"]) || array_key_exists("block_attrs", $context) ? $context["block_attrs"] : (function () { throw new RuntimeError('Variable "block_attrs" does not exist.', 1, $this->source); })()), "")) : (""));
+        echo((array_key_exists("block_attrs", $context)) ? (_twig_default_filter((isset($context["block_attrs"]) || array_key_exists("block_attrs", $context) ? $context["block_attrs"] : (function () {
+            throw new RuntimeError('Variable "block_attrs" does not exist.', 1, $this->source);
+        })()), "")) : (""));
         echo ">
     ";
         // line 2
-        if (( !array_key_exists("link", $context) || (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 2, $this->source); })()))) {
+        if ((!array_key_exists("link", $context) || (isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+            throw new RuntimeError('Variable "link" does not exist.', 2, $this->source);
+        })()))) {
             echo "<a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("_profiler", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 2, $this->source); })()), "panel" => (isset($context["name"]) || array_key_exists("name", $context) ? $context["name"] : (function () { throw new RuntimeError('Variable "name" does not exist.', 2, $this->source); })())]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("_profiler", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () {
+                throw new RuntimeError('Variable "token" does not exist.', 2, $this->source);
+            })()), "panel" => (isset($context["name"]) || array_key_exists("name", $context) ? $context["name"] : (function () {
+                throw new RuntimeError('Variable "name" does not exist.', 2, $this->source);
+            })())]), "html", null, true);
             echo "\">";
         }
         // line 3
         echo "        <div class=\"sf-toolbar-icon\">";
-        echo twig_escape_filter($this->env, ((array_key_exists("icon", $context)) ? (_twig_default_filter((isset($context["icon"]) || array_key_exists("icon", $context) ? $context["icon"] : (function () { throw new RuntimeError('Variable "icon" does not exist.', 3, $this->source); })()), "")) : ("")), "html", null, true);
+        echo twig_escape_filter($this->env, ((array_key_exists("icon", $context)) ? (_twig_default_filter((isset($context["icon"]) || array_key_exists("icon", $context) ? $context["icon"] : (function () {
+            throw new RuntimeError('Variable "icon" does not exist.', 3, $this->source);
+        })()), "")) : ("")), "html", null, true);
         echo "</div>
     ";
         // line 4
-        if (((array_key_exists("link", $context)) ? (_twig_default_filter((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () { throw new RuntimeError('Variable "link" does not exist.', 4, $this->source); })()), false)) : (false))) {
+        if (((array_key_exists("link", $context)) ? (_twig_default_filter((isset($context["link"]) || array_key_exists("link", $context) ? $context["link"] : (function () {
+            throw new RuntimeError('Variable "link" does not exist.', 4, $this->source);
+        })()), false)) : (false))) {
             echo "</a>";
         }
         // line 5
         echo "        <div class=\"sf-toolbar-info\">";
-        echo twig_escape_filter($this->env, ((array_key_exists("text", $context)) ? (_twig_default_filter((isset($context["text"]) || array_key_exists("text", $context) ? $context["text"] : (function () { throw new RuntimeError('Variable "text" does not exist.', 5, $this->source); })()), "")) : ("")), "html", null, true);
+        echo twig_escape_filter($this->env, ((array_key_exists("text", $context)) ? (_twig_default_filter((isset($context["text"]) || array_key_exists("text", $context) ? $context["text"] : (function () {
+            throw new RuntimeError('Variable "text" does not exist.', 5, $this->source);
+        })()), "")) : ("")), "html", null, true);
         echo "</div>
 </div>
 ";
@@ -76,7 +96,6 @@ class __TwigTemplate_7f0bc9da9a6923e5792a6e38eb6bfe9606b0b1612896876c7b699dd8383
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     public function getTemplateName()
@@ -91,7 +110,7 @@ class __TwigTemplate_7f0bc9da9a6923e5792a6e38eb6bfe9606b0b1612896876c7b699dd8383
 
     public function getDebugInfo()
     {
-        return array (  69 => 5,  65 => 4,  60 => 3,  54 => 2,  43 => 1,);
+        return array(  69 => 5,  65 => 4,  60 => 3,  54 => 2,  43 => 1,);
     }
 
     public function getSourceContext()

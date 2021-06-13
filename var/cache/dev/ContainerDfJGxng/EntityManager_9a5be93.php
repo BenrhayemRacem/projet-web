@@ -329,10 +329,9 @@ class EntityManager_9a5be93 extends \Doctrine\ORM\EntityManager implements \Prox
         if (! $this->valueHolderddc4d) {
             $reflection = $reflection ?? new \ReflectionClass('Doctrine\\ORM\\EntityManager');
             $this->valueHolderddc4d = $reflection->newInstanceWithoutConstructor();
-        \Closure::bind(function (\Doctrine\ORM\EntityManager $instance) {
-            unset($instance->config, $instance->conn, $instance->metadataFactory, $instance->unitOfWork, $instance->eventManager, $instance->proxyFactory, $instance->repositoryFactory, $instance->expressionBuilder, $instance->closed, $instance->filterCollection, $instance->cache);
-        }, $this, 'Doctrine\\ORM\\EntityManager')->__invoke($this);
-
+            \Closure::bind(function (\Doctrine\ORM\EntityManager $instance) {
+                unset($instance->config, $instance->conn, $instance->metadataFactory, $instance->unitOfWork, $instance->eventManager, $instance->proxyFactory, $instance->repositoryFactory, $instance->expressionBuilder, $instance->closed, $instance->filterCollection, $instance->cache);
+            }, $this, 'Doctrine\\ORM\\EntityManager')->__invoke($this);
         }
 
         $this->valueHolderddc4d->__construct($conn, $config, $eventManager);

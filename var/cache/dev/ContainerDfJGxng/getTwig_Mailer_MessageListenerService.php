@@ -2,7 +2,6 @@
 
 namespace ContainerDfJGxng;
 
-
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
@@ -18,6 +17,6 @@ class getTwig_Mailer_MessageListenerService extends App_KernelDevDebugContainer
      */
     public static function do($container, $lazyLoad = true)
     {
-        return $container->privates['twig.mailer.message_listener'] = new \Symfony\Component\Mailer\EventListener\MessageListener(NULL, new \Symfony\Bridge\Twig\Mime\BodyRenderer(($container->services['.container.private.twig'] ?? $container->get_Container_Private_TwigService())));
+        return $container->privates['twig.mailer.message_listener'] = new \Symfony\Component\Mailer\EventListener\MessageListener(null, new \Symfony\Bridge\Twig\Mime\BodyRenderer(($container->services['.container.private.twig'] ?? $container->get_Container_Private_TwigService())));
     }
 }

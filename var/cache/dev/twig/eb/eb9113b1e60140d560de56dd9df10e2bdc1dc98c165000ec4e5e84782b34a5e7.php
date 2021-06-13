@@ -53,7 +53,6 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -68,12 +67,16 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         // line 4
         echo "    ";
-        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source); })()), "hasexception", [], "any", false, false, false, 4)) {
+        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 4, $this->source);
+        })()), "hasexception", [], "any", false, false, false, 4)) {
             // line 5
             echo "        <style>
             ";
             // line 6
-            echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("web_profiler.controller.exception_panel::stylesheet", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 6, $this->source); })())]));
+            echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("web_profiler.controller.exception_panel::stylesheet", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () {
+                throw new RuntimeError('Variable "token" does not exist.', 6, $this->source);
+            })())]));
             echo "
             ";
             // line 7
@@ -92,7 +95,6 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 13
@@ -107,7 +109,9 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         // line 14
         echo "    <span class=\"label ";
-        echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 14, $this->source); })()), "hasexception", [], "any", false, false, false, 14)) ? ("label-status-error") : ("disabled"));
+        echo((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 14, $this->source);
+        })()), "hasexception", [], "any", false, false, false, 14)) ? ("label-status-error") : ("disabled"));
         echo "\">
         <span class=\"icon\">";
         // line 15
@@ -116,7 +120,9 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
         <strong>Exception</strong>
         ";
         // line 17
-        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 17, $this->source); })()), "hasexception", [], "any", false, false, false, 17)) {
+        if (twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 17, $this->source);
+        })()), "hasexception", [], "any", false, false, false, 17)) {
             // line 18
             echo "            <span class=\"count\">
                 <span>1</span>
@@ -131,7 +137,6 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 25
@@ -149,7 +154,9 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
     ";
         // line 28
-        if ( !twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 28, $this->source); })()), "hasexception", [], "any", false, false, false, 28)) {
+        if (!twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () {
+            throw new RuntimeError('Variable "collector" does not exist.', 28, $this->source);
+        })()), "hasexception", [], "any", false, false, false, 28)) {
             // line 29
             echo "        <div class=\"empty\">
             <p>No exception was thrown and caught during the request.</p>
@@ -160,7 +167,9 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
             echo "        <div class=\"sf-reset\">
             ";
             // line 34
-            echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("web_profiler.controller.exception_panel::body", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 34, $this->source); })())]));
+            echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("web_profiler.controller.exception_panel::body", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () {
+                throw new RuntimeError('Variable "token" does not exist.', 34, $this->source);
+            })())]));
             echo "
         </div>
     ";
@@ -170,7 +179,6 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -185,7 +193,7 @@ class __TwigTemplate_75700ffd1cfc527b824527aa5cc59a134b47788cb400a6c2ff28a00b3ac
 
     public function getDebugInfo()
     {
-        return array (  163 => 34,  160 => 33,  154 => 29,  152 => 28,  148 => 26,  138 => 25,  127 => 22,  121 => 18,  119 => 17,  114 => 15,  109 => 14,  99 => 13,  86 => 10,  80 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
+        return array(  163 => 34,  160 => 33,  154 => 29,  152 => 28,  148 => 26,  138 => 25,  127 => 22,  121 => 18,  119 => 17,  114 => 15,  109 => 14,  99 => 13,  86 => 10,  80 => 7,  76 => 6,  73 => 5,  70 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()

@@ -41,7 +41,9 @@ class __TwigTemplate_454a01ca415418047fdbe85316bae817e174766d23cd922b0fbd626f79e
 
         // line 1
         echo "<div id=\"sfwdt";
-        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 1, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () {
+            throw new RuntimeError('Variable "token" does not exist.', 1, $this->source);
+        })()), "html", null, true);
         echo "\" class=\"sf-toolbar sf-display-none\" role=\"region\" aria-label=\"Symfony Web Debug Toolbar\"></div>
 ";
         // line 2
@@ -49,9 +51,13 @@ class __TwigTemplate_454a01ca415418047fdbe85316bae817e174766d23cd922b0fbd626f79e
         echo "
 <style";
         // line 3
-        if ((isset($context["csp_style_nonce"]) || array_key_exists("csp_style_nonce", $context) ? $context["csp_style_nonce"] : (function () { throw new RuntimeError('Variable "csp_style_nonce" does not exist.', 3, $this->source); })())) {
+        if ((isset($context["csp_style_nonce"]) || array_key_exists("csp_style_nonce", $context) ? $context["csp_style_nonce"] : (function () {
+            throw new RuntimeError('Variable "csp_style_nonce" does not exist.', 3, $this->source);
+        })())) {
             echo " nonce=\"";
-            echo twig_escape_filter($this->env, (isset($context["csp_style_nonce"]) || array_key_exists("csp_style_nonce", $context) ? $context["csp_style_nonce"] : (function () { throw new RuntimeError('Variable "csp_style_nonce" does not exist.', 3, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["csp_style_nonce"]) || array_key_exists("csp_style_nonce", $context) ? $context["csp_style_nonce"] : (function () {
+                throw new RuntimeError('Variable "csp_style_nonce" does not exist.', 3, $this->source);
+            })()), "html", null, true);
             echo "\"";
         }
         echo ">
@@ -62,16 +68,22 @@ class __TwigTemplate_454a01ca415418047fdbe85316bae817e174766d23cd922b0fbd626f79e
 </style>
 <script";
         // line 6
-        if ((isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 6, $this->source); })())) {
+        if ((isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () {
+            throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 6, $this->source);
+        })())) {
             echo " nonce=\"";
-            echo twig_escape_filter($this->env, (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 6, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () {
+                throw new RuntimeError('Variable "csp_script_nonce" does not exist.', 6, $this->source);
+            })()), "html", null, true);
             echo "\"";
         }
         echo ">/*<![CDATA[*/
     (function () {
         Sfjs.loadToolbar('";
         // line 8
-        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 8, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () {
+            throw new RuntimeError('Variable "token" does not exist.', 8, $this->source);
+        })()), "html", null, true);
         echo "');
     })();
 /*]]>*/</script>
@@ -81,7 +93,6 @@ class __TwigTemplate_454a01ca415418047fdbe85316bae817e174766d23cd922b0fbd626f79e
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     public function getTemplateName()
@@ -96,7 +107,7 @@ class __TwigTemplate_454a01ca415418047fdbe85316bae817e174766d23cd922b0fbd626f79e
 
     public function getDebugInfo()
     {
-        return array (  74 => 8,  65 => 6,  60 => 4,  52 => 3,  48 => 2,  43 => 1,);
+        return array(  74 => 8,  65 => 6,  60 => 4,  52 => 3,  48 => 2,  43 => 1,);
     }
 
     public function getSourceContext()

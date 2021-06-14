@@ -56,7 +56,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -82,7 +81,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 8
@@ -101,7 +99,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 10
@@ -133,13 +130,17 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         ";
         // line 26
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), 'form_start');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 26, $this->source);
+        })()), 'form_start');
         echo "
     <div class=\"form-group \">
 
         ";
         // line 29
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), "email", [], "any", false, false, false, 29), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 29, $this->source);
+        })()), "email", [], "any", false, false, false, 29), 'row');
         echo "
 
     </div>
@@ -147,24 +148,32 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         ";
         // line 34
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 34, $this->source); })()), "firstname", [], "any", false, false, false, 34), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 34, $this->source);
+        })()), "firstname", [], "any", false, false, false, 34), 'row');
         echo "
 
         ";
         // line 36
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 36, $this->source); })()), "lastname", [], "any", false, false, false, 36), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 36, $this->source);
+        })()), "lastname", [], "any", false, false, false, 36), 'row');
         echo "
 
 
     ";
         // line 39
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), "plainPassword", [], "any", false, false, false, 39), "first", [], "any", false, false, false, 39), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 39, $this->source);
+        })()), "plainPassword", [], "any", false, false, false, 39), "first", [], "any", false, false, false, 39), 'row');
         echo "
 
 
         ";
         // line 42
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 42, $this->source); })()), "plainPassword", [], "any", false, false, false, 42), "second", [], "any", false, false, false, 42), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 42, $this->source);
+        })()), "plainPassword", [], "any", false, false, false, 42), "second", [], "any", false, false, false, 42), 'row');
         echo "
 
 
@@ -172,7 +181,9 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         ";
         // line 47
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 47, $this->source); })()), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 47, $this->source);
+        })()), 'form_end');
         echo "
 
 
@@ -189,7 +200,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 11
@@ -209,7 +219,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 59
@@ -240,7 +249,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 65
@@ -258,7 +266,6 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -273,7 +280,7 @@ class __TwigTemplate_dfaa375b24a0662ba3c6e81d1558856a436166fed4bd72215d2b063de3f
 
     public function getDebugInfo()
     {
-        return array (  247 => 65,  235 => 62,  231 => 61,  226 => 60,  216 => 59,  206 => 12,  196 => 11,  175 => 47,  167 => 42,  161 => 39,  155 => 36,  150 => 34,  142 => 29,  136 => 26,  121 => 13,  118 => 11,  108 => 10,  89 => 8,  77 => 6,  73 => 4,  63 => 3,  40 => 1,);
+        return array(  247 => 65,  235 => 62,  231 => 61,  226 => 60,  216 => 59,  206 => 12,  196 => 11,  175 => 47,  167 => 42,  161 => 39,  155 => 36,  150 => 34,  142 => 29,  136 => 26,  121 => 13,  118 => 11,  108 => 10,  89 => 8,  77 => 6,  73 => 4,  63 => 3,  40 => 1,);
     }
 
     public function getSourceContext()

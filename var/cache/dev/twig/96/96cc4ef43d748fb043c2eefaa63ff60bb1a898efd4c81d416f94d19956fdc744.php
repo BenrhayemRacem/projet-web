@@ -54,7 +54,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -73,7 +72,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 5
@@ -100,7 +98,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 10
@@ -135,7 +132,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 23
@@ -154,7 +150,9 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
             ";
         // line 26
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "session", [], "any", false, false, false, 26), "flashbag", [], "any", false, false, false, 26), "get", [0 => "success"], "method", false, false, false, 26));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () {
+            throw new RuntimeError('Variable "app" does not exist.', 26, $this->source);
+        })()), "session", [], "any", false, false, false, 26), "flashbag", [], "any", false, false, false, 26), "get", [0 => "success"], "method", false, false, false, 26));
         foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
             // line 27
             echo "                <div class=\"alert alert-success\"> ";
@@ -181,7 +179,9 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
                 ";
         // line 41
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["Projects"]) || array_key_exists("Projects", $context) ? $context["Projects"] : (function () { throw new RuntimeError('Variable "Projects" does not exist.', 41, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["Projects"]) || array_key_exists("Projects", $context) ? $context["Projects"] : (function () {
+            throw new RuntimeError('Variable "Projects" does not exist.', 41, $this->source);
+        })()));
         $context['_iterated'] = false;
         $context['loop'] = [
           'parent' => $context['_parent'],
@@ -257,7 +257,6 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -272,7 +271,7 @@ class __TwigTemplate_b0c0740b3767149ccb1866883a093bcd4ac22a55dddd9a348552a29377c
 
     public function getDebugInfo()
     {
-        return array (  248 => 60,  236 => 53,  219 => 49,  213 => 46,  208 => 44,  204 => 43,  201 => 42,  183 => 41,  169 => 29,  160 => 27,  156 => 26,  152 => 24,  142 => 23,  126 => 15,  120 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array(  248 => 60,  236 => 53,  219 => 49,  213 => 46,  208 => 44,  204 => 43,  201 => 42,  183 => 41,  169 => 29,  160 => 27,  156 => 26,  152 => 24,  142 => 23,  126 => 15,  120 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()

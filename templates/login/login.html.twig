@@ -1,4 +1,4 @@
-{% extends 'home.html.twig'%}
+
 
     {% block StyleSheet %}
         <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"  rel="stylesheet"  type='text/css'>
@@ -22,9 +22,7 @@
         <div class="square" style="--i:5;"></div>
 
             <form method="post">
-                {% if error %}
-                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                {% endif %}
+
 
                 {% if app.user %}
                     <div class="mb-3">
@@ -55,15 +53,16 @@
                 </label>
             </div>
 
-            <div class="container">
-                <h6>   forgot password ? <a href="">click here</a> </h6>
-            </div>
+
             <div class="container">
                 <h6>Dont have an account? <a href="{{ path('registration') }}">Sign up</a></h6>
             </div>
 
             <button type="submit" class="btn btn-secondary">sign in</button>
             </form>
+        <div class="container">
+            <h6>   forgot password ? <a href="{{ path('forget') }}">click here</a> </h6>
+        </div>
     </div>
 
     <div class="color"></div>

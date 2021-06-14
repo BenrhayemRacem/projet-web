@@ -2,7 +2,6 @@
 
 namespace Container5wCsSfz;
 
-
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
@@ -23,6 +22,6 @@ class getSecurity_Firewall_Map_Context_DevService extends App_KernelDevDebugCont
 
         return $container->privates['security.firewall.map.context.dev'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(new RewindableGenerator(function () use ($container) {
             return new \EmptyIterator();
-        }, 0), NULL, NULL, new \Symfony\Bundle\SecurityBundle\Security\FirewallConfig('dev', 'security.user_checker', '.security.request_matcher.Iy.T22O', false, false, NULL, NULL, NULL, NULL, NULL, [], NULL));
+        }, 0), null, null, new \Symfony\Bundle\SecurityBundle\Security\FirewallConfig('dev', 'security.user_checker', '.security.request_matcher.Iy.T22O', false, false, null, null, null, null, null, [], null));
     }
 }

@@ -55,7 +55,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -74,7 +73,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 5
@@ -101,7 +99,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 10
@@ -139,7 +136,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 23
@@ -165,9 +161,13 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 <div class=\"mt-3\">
                                     <h4>";
         // line 34
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 34, $this->source); })()), "FirstName", [], "any", false, false, false, 34), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 34, $this->source);
+        })()), "FirstName", [], "any", false, false, false, 34), "html", null, true);
         echo "  ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 34, $this->source); })()), "LastName", [], "any", false, false, false, 34), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 34, $this->source);
+        })()), "LastName", [], "any", false, false, false, 34), "html", null, true);
         echo "</h4>
                                     <p class=\"text-muted font-size-sm\">Mahdia, Tunisia</p>
                                 </div>
@@ -186,9 +186,13 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 <div class=\"col-sm-9 text-secondary\">
                                     <input type=\"text\" class=\"form-control\" value=\"";
         // line 50
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 50, $this->source); })()), "FirstName", [], "any", false, false, false, 50), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 50, $this->source);
+        })()), "FirstName", [], "any", false, false, false, 50), "html", null, true);
         echo "  ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 50, $this->source); })()), "LastName", [], "any", false, false, false, 50), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 50, $this->source);
+        })()), "LastName", [], "any", false, false, false, 50), "html", null, true);
         echo "\">
                                 </div>
                             </div>
@@ -199,7 +203,9 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 <div class=\"col-sm-9 text-secondary\">
                                     <input type=\"text\" class=\"form-control\" value=\"";
         // line 58
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 58, $this->source); })()), "email", [], "any", false, false, false, 58), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 58, $this->source);
+        })()), "email", [], "any", false, false, false, 58), "html", null, true);
         echo "\">
                                 </div>
                             </div>
@@ -211,18 +217,24 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
                                     ";
         // line 67
-        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 67, $this->source); })()), "address", [], "any", false, false, false, 67))) {
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 67, $this->source);
+        })()), "address", [], "any", false, false, false, 67))) {
             // line 68
             echo "                                    <input type=\"text\" class=\"form-control\" placeholder=\"please enter your address\">
                                     ";
         } else {
             // line 70
             echo "                                        <input type=\"text\" class=\"form-control\" value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 70, $this->source); })()), "address", [], "any", false, false, false, 70), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+                throw new RuntimeError('Variable "user" does not exist.', 70, $this->source);
+            })()), "address", [], "any", false, false, false, 70), "html", null, true);
             echo "\">
                                     ";
             // line 71
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 71, $this->source); })()), "address", [], "any", false, false, false, 71), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+                throw new RuntimeError('Variable "user" does not exist.', 71, $this->source);
+            })()), "address", [], "any", false, false, false, 71), "html", null, true);
             echo "
                                     ";
         }
@@ -239,18 +251,24 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                 <div class=\"col-sm-9 text-secondary\">
                                     ";
         // line 83
-        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 83, $this->source); })()), "Bio", [], "any", false, false, false, 83))) {
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 83, $this->source);
+        })()), "Bio", [], "any", false, false, false, 83))) {
             // line 84
             echo "                                    <textarea class=\"form-control\" rows=\"5\" placeholder=\"tell us more about yourself\">
                                     ";
         } else {
             // line 86
             echo "                                        <textarea class=\"form-control\" rows=\"5\" value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 86, $this->source); })()), "Bio", [], "any", false, false, false, 86), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+                throw new RuntimeError('Variable "user" does not exist.', 86, $this->source);
+            })()), "Bio", [], "any", false, false, false, 86), "html", null, true);
             echo "\">
                                         ";
             // line 87
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 87, $this->source); })()), "Bio", [], "any", false, false, false, 87), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+                throw new RuntimeError('Variable "user" does not exist.', 87, $this->source);
+            })()), "Bio", [], "any", false, false, false, 87), "html", null, true);
             echo "
                                         ";
         }
@@ -260,19 +278,27 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
                            ";
         // line 92
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 92, $this->source); })()), 'form_start');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 92, $this->source);
+        })()), 'form_start');
         echo "
                             ";
         // line 93
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 93, $this->source); })()), "oldPassword", [], "any", false, false, false, 93), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 93, $this->source);
+        })()), "oldPassword", [], "any", false, false, false, 93), 'row');
         echo "
                                 ";
         // line 94
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 94, $this->source); })()), "plainPassword", [], "any", false, false, false, 94), "first", [], "any", false, false, false, 94), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 94, $this->source);
+        })()), "plainPassword", [], "any", false, false, false, 94), "first", [], "any", false, false, false, 94), 'row');
         echo "
                                 ";
         // line 95
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 95, $this->source); })()), "plainPassword", [], "any", false, false, false, 95), "second", [], "any", false, false, false, 95), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 95, $this->source);
+        })()), "plainPassword", [], "any", false, false, false, 95), "second", [], "any", false, false, false, 95), 'row');
         echo "
 
 
@@ -280,7 +306,9 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
                                 ";
         // line 100
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 100, $this->source); })()), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () {
+            throw new RuntimeError('Variable "form" does not exist.', 100, $this->source);
+        })()), 'form_end');
         echo "
 
 
@@ -293,7 +321,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 108
@@ -307,14 +334,15 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
 
         echo " <div class=\"col Greeting \"> Welcome,";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 108, $this->source); })()), "FirstName", [], "any", false, false, false, 108), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () {
+            throw new RuntimeError('Variable "user" does not exist.', 108, $this->source);
+        })()), "FirstName", [], "any", false, false, false, 108), "html", null, true);
         echo " </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -329,7 +357,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
     public function getDebugInfo()
     {
-        return array (  300 => 108,  283 => 100,  275 => 95,  271 => 94,  267 => 93,  263 => 92,  258 => 89,  253 => 87,  248 => 86,  244 => 84,  242 => 83,  230 => 73,  225 => 71,  220 => 70,  216 => 68,  214 => 67,  202 => 58,  189 => 50,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array(  300 => 108,  283 => 100,  275 => 95,  271 => 94,  267 => 93,  263 => 92,  258 => 89,  253 => 87,  248 => 86,  244 => 84,  242 => 83,  230 => 73,  225 => 71,  220 => 70,  216 => 68,  214 => 67,  202 => 58,  189 => 50,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()

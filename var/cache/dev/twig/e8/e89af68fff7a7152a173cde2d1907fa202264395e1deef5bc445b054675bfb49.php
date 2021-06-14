@@ -69,7 +69,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     // line 3
@@ -95,7 +94,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 11
@@ -124,10 +122,16 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
     <form method=\"post\">
         ";
         // line 24
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 24, $this->source); })())) {
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () {
+            throw new RuntimeError('Variable "error" does not exist.', 24, $this->source);
+        })())) {
             // line 25
             echo "            <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 25, $this->source); })()), "messageKey", [], "any", false, false, false, 25), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 25, $this->source); })()), "messageData", [], "any", false, false, false, 25), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () {
+                throw new RuntimeError('Variable "error" does not exist.', 25, $this->source);
+            })()), "messageKey", [], "any", false, false, false, 25), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () {
+                throw new RuntimeError('Variable "error" does not exist.', 25, $this->source);
+            })()), "messageData", [], "any", false, false, false, 25), "security"), "html", null, true);
             echo "</div>
         ";
         }
@@ -139,7 +143,9 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
         <label for=\"inputEmail\">Email</label>
         <input type=\"email\" value=\"";
         // line 32
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 32, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () {
+            throw new RuntimeError('Variable "last_username" does not exist.', 32, $this->source);
+        })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" required autofocus>
         <label for=\"inputPassword\">Password</label>
         <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" required>
@@ -186,7 +192,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 12
@@ -206,7 +211,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 75
@@ -233,7 +237,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     // line 80
@@ -253,7 +256,6 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
     }
 
     public function getTemplateName()
@@ -263,7 +265,7 @@ class __TwigTemplate_93d7b749325c4390a13d5a2c5b5424efd4ca42355a90a6472b4696c18c6
 
     public function getDebugInfo()
     {
-        return array (  250 => 81,  240 => 80,  228 => 77,  223 => 76,  213 => 75,  203 => 13,  193 => 12,  168 => 60,  156 => 50,  150 => 37,  142 => 32,  135 => 27,  129 => 25,  127 => 24,  115 => 14,  112 => 12,  102 => 11,  90 => 6,  86 => 4,  76 => 3,  66 => 80,  63 => 79,  61 => 75,  59 => 11,  54 => 8,  52 => 3,  48 => 1,);
+        return array(  250 => 81,  240 => 80,  228 => 77,  223 => 76,  213 => 75,  203 => 13,  193 => 12,  168 => 60,  156 => 50,  150 => 37,  142 => 32,  135 => 27,  129 => 25,  127 => 24,  115 => 14,  112 => 12,  102 => 11,  90 => 6,  86 => 4,  76 => 3,  66 => 80,  63 => 79,  61 => 75,  59 => 11,  54 => 8,  52 => 3,  48 => 1,);
     }
 
     public function getSourceContext()

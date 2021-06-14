@@ -1,6 +1,7 @@
 <?php
 
 namespace ContainerIxn2ZBn;
+
 include_once \dirname(__DIR__, 4).''.\DIRECTORY_SEPARATOR.'vendor'.\DIRECTORY_SEPARATOR.'doctrine'.\DIRECTORY_SEPARATOR.'persistence'.\DIRECTORY_SEPARATOR.'lib'.\DIRECTORY_SEPARATOR.'Doctrine'.\DIRECTORY_SEPARATOR.'Persistence'.\DIRECTORY_SEPARATOR.'ObjectManager.php';
 include_once \dirname(__DIR__, 4).''.\DIRECTORY_SEPARATOR.'vendor'.\DIRECTORY_SEPARATOR.'doctrine'.\DIRECTORY_SEPARATOR.'orm'.\DIRECTORY_SEPARATOR.'lib'.\DIRECTORY_SEPARATOR.'Doctrine'.\DIRECTORY_SEPARATOR.'ORM'.\DIRECTORY_SEPARATOR.'EntityManagerInterface.php';
 include_once \dirname(__DIR__, 4).''.\DIRECTORY_SEPARATOR.'vendor'.\DIRECTORY_SEPARATOR.'doctrine'.\DIRECTORY_SEPARATOR.'orm'.\DIRECTORY_SEPARATOR.'lib'.\DIRECTORY_SEPARATOR.'Doctrine'.\DIRECTORY_SEPARATOR.'ORM'.\DIRECTORY_SEPARATOR.'EntityManager.php';
@@ -332,10 +333,9 @@ class EntityManager_9a5be93 extends \Doctrine\ORM\EntityManager implements \Prox
         if (! $this->valueHolderaa49c) {
             $reflection = $reflection ?? new \ReflectionClass('Doctrine\\ORM\\EntityManager');
             $this->valueHolderaa49c = $reflection->newInstanceWithoutConstructor();
-        \Closure::bind(function (\Doctrine\ORM\EntityManager $instance) {
-            unset($instance->config, $instance->conn, $instance->metadataFactory, $instance->unitOfWork, $instance->eventManager, $instance->proxyFactory, $instance->repositoryFactory, $instance->expressionBuilder, $instance->closed, $instance->filterCollection, $instance->cache);
-        }, $this, 'Doctrine\\ORM\\EntityManager')->__invoke($this);
-
+            \Closure::bind(function (\Doctrine\ORM\EntityManager $instance) {
+                unset($instance->config, $instance->conn, $instance->metadataFactory, $instance->unitOfWork, $instance->eventManager, $instance->proxyFactory, $instance->repositoryFactory, $instance->expressionBuilder, $instance->closed, $instance->filterCollection, $instance->cache);
+            }, $this, 'Doctrine\\ORM\\EntityManager')->__invoke($this);
         }
 
         $this->valueHolderaa49c->__construct($conn, $config, $eventManager);

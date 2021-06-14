@@ -47,7 +47,6 @@ class __TwigTemplate_716136d05b8e485d4460af1940da46b590be1a4aafb1a58e20a54eb337a
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
     }
 
     public function getTemplateName()
@@ -57,7 +56,7 @@ class __TwigTemplate_716136d05b8e485d4460af1940da46b590be1a4aafb1a58e20a54eb337a
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array(  43 => 1,);
     }
 
     public function getSourceContext()

@@ -26,9 +26,8 @@ class ChangepasswController extends AbstractController
     /**
      * @Route("/changePasswd", name="ChangePasswd")
      */
-    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request)
+    public function index(EntityManagerInterface $manager, UserPasswordEncoderInterface $passwordEncoder, Request $request)
     {
-
         $user = $this->getUser();
 
 
@@ -42,9 +41,8 @@ class ChangepasswController extends AbstractController
 
 
         if ($form->isSubmitted() && $form->isValid()) {
-
-            if ($user){
-                $password = $passwordEncoder->encodePassword($newUser , $newUser->getPlainPassword()) ;
+            if ($user) {
+                $password = $passwordEncoder->encodePassword($newUser, $newUser->getPlainPassword()) ;
                 if ($password == $user->getPassword()) {
                     $user->setPassword($password);
 
@@ -56,20 +54,12 @@ class ChangepasswController extends AbstractController
                         'form' => $form->createView(),
 
                     ]);
-                 }
+                }
             }
-
-
-
-
         }
         return $this->render('user/EditProfile.html.twig', [
             'form' => $form->createView(),
             'message' => 'password updated succesfully '
         ]);
-
-
     }
-
 }
-

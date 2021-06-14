@@ -17,7 +17,7 @@ class UserController extends AbstractController
     /**
      * @Route("/EditProfile", name="Edit_Profile")
      */
-    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request)
+    public function index(EntityManagerInterface $manager, UserPasswordEncoderInterface $passwordEncoder, Request $request)
     {
         $user = $this->getUser();
         $newUser = new User();
@@ -31,47 +31,28 @@ class UserController extends AbstractController
 
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $oldpassword = $passwordEncoder->encodePassword($newUser, $form->get("oldPassword")->getData()) ;
 
-            $oldpassword = $passwordEncoder->encodePassword($newUser , $form->get("oldPassword")->getData()) ;
+            if ($passwordEncoder->isPasswordValid($user, $form->get("oldPassword")->getData())) {
+                $newpassword = $passwordEncoder->encodePassword($newUser, $form->get('plainPassword')->getData()) ;
+                $user->setPassword($newpassword);
 
-                if ($passwordEncoder->isPasswordValid($user , $form->get("oldPassword")->getData())) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($user);
+                $em->flush();
 
-                    $newpassword = $passwordEncoder->encodePassword($newUser , $form->get('plainPassword')->getData()) ;
-                    $user->setPassword($newpassword);
-
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($user);
-                    $em->flush();
-
-                    return $this->render('user/EditProfile.html.twig', [
+                return $this->render('user/EditProfile.html.twig', [
                         'form' => $form->createView(),
                         'user' => $user,
 
                     ]);
-
-                            }
-
-
-
-
+            }
         }
         return $this->render('user/EditProfile.html.twig', [
             'form' => $form->createView(),
             'user' => $user,
             'message' => 'password updated succesfully '
         ]);
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
@@ -80,7 +61,8 @@ class UserController extends AbstractController
      * @Route("/Profile", name="Profile")
      */
     public function indexProfile(): Response
-    {   $user = $this->getUser();
+    {
+        $user = $this->getUser();
         return $this->render('user/Profile.html.twig', [
             'controller_name' => 'UserController',
             'user' =>$user

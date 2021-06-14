@@ -207,7 +207,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"";
+        // line 66
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 0, "ProjectName" => "Machine Learning Web APP", "Field" => "Programming languages"]), "html", null, true);
+        echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -231,7 +234,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"";
+        // line 90
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 1, "ProjectName" => "Create PING-PONG Game", "Field" => "Programming languages"]), "html", null, true);
+        echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -268,7 +274,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
             <div class=\"project-info-box mb-10\">
                 
-                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
             </div>
             <!-- / project-info-box -->
@@ -301,7 +307,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
     public function getDebugInfo()
     {
-        return array (  254 => 105,  241 => 95,  191 => 48,  181 => 41,  177 => 40,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  260 => 105,  247 => 95,  239 => 90,  212 => 66,  191 => 48,  181 => 41,  177 => 40,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -371,7 +377,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':0 , 'ProjectName':'Machine Learning Web APP' ,'Field':'Programming languages' }) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -395,7 +401,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':1 , 'ProjectName':'Create PING-PONG Game','Field':'Programming languages'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -426,7 +432,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
             <div class=\"project-info-box mb-10\">
                 
-                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
             </div>
             <!-- / project-info-box -->

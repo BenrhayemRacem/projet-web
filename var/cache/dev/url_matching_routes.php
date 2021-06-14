@@ -20,6 +20,7 @@ return [
         '/anglais/result' => [[['_route' => 'anglaisQuiz', '_controller' => 'App\\Controller\\CourseController::indexanglaisQuiz'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/registration' => [[['_route' => 'registration', '_controller' => 'App\\Controller\\InscriptionController::index'], null, null, null, false, false, null]],
+        '/projectViewBase' => [[['_route' => 'ProjectViewBase', '_controller' => 'App\\Controller\\ProjectsController::indexproject'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\UserController::indexProfile'], null, null, null, false, false, null]],
@@ -77,6 +78,7 @@ return [
                     .'|/([^/]++)(*:569)'
                     .'|(*:577)'
                 .')'
+                .'|/projectView/(\\d+)/([^/]++)/([^/]++)(*:622)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -102,8 +104,9 @@ return [
         501 => [[['_route' => 'ItalienCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexItalien'], ['num'], null, null, false, true, null]],
         526 => [[['_route' => 'RusseCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexRusse'], ['num'], null, null, false, true, null]],
         569 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
-        577 => [
-            [['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null],
+        577 => [[['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null]],
+        622 => [
+            [['_route' => 'ProjectView', 'num' => '0', '_controller' => 'App\\Controller\\ProjectsController::index'], ['num', 'ProjectName', 'Field'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

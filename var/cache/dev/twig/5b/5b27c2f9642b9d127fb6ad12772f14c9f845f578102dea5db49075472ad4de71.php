@@ -211,7 +211,10 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"";
+        // line 70
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 4, "ProjectName" => "Write Your First Song", "Field" => "Music"]), "html", null, true);
+        echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -272,7 +275,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
 
     public function getDebugInfo()
     {
-        return array (  246 => 100,  193 => 50,  179 => 39,  175 => 38,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  249 => 100,  216 => 70,  193 => 50,  179 => 39,  175 => 38,  167 => 33,  156 => 24,  146 => 23,  133 => 19,  127 => 16,  121 => 12,  111 => 11,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -346,7 +349,7 @@ class __TwigTemplate_af39af864c7c9f219524d0c6d55cb9f3172c151ce3f64cdf3028d293655
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':4 , 'ProjectName':'Write Your First Song','Field':'Music'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>

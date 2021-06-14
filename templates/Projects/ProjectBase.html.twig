@@ -1,0 +1,160 @@
+{% extends 'User.html.twig'%}
+
+{% block Title %}{% endblock %}
+
+{% block StyleSheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/Projects/ProjectView.css') }}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block Activated %}
+    <li class="nav-item actived">
+        <a href="#">DISCOVER</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyCourses') }}">MY COURSES</a>
+    </li>
+    <li class="nav-item" id = "header">
+        <a class="nav-link" href="{{ path('MyProjects') }}">MY PROJECTS</a>
+    </li>
+{% endblock %}
+
+{% block Body %}
+
+    <div id="Presentation-content" >
+        <div class="container-fluid" id="Heading-container">
+            {% block ProjectTitle %}
+                <h1 id="Project-title">Project Title</h1>
+            {% endblock %}
+            <div class="headingField">
+                <h1 class="FieldName">{% block ProjectField %}field Name{% endblock %}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="blog-page">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 left-box">
+                    <!-- Description-->
+                    <div class="card single_post">
+                        <div class="body">
+                            {% block Description %}
+                            <div class="img-post">
+                                <img class="d-block img-fluid" height="280px" width="800px" src="https://via.placeholder.com/800x280/87CEFA/000000" alt="First slide">
+                            </div>
+                            <h2 class="SmallHeading">Quick discription</h2>
+                            <p style="border: white solid 1px ; border-radius: 15px ; padding: 10px; ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            {% endblock %}
+                        </div>
+                    </div>
+                    <!--/Description-->
+
+                    <!-- Designer -->
+                    <div class="card">
+                        {% block Designer %}
+                        <div class="header">
+                            <h2 class="SmallHeading">A Word from the designer</h2>
+                        </div>
+                        <div class="body">
+                            <ul class="comment-reply list-unstyled">
+                                <li class="row clearfix">
+                                    <div class="icon-box col-md-4"><img class="img-fluid img-thumbnail"  id="DesignerPic" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Designer Pic" style="border-radius: 50%" width="150px" height="150px"></div>
+                                    <div class="text-box col-md-7 " style="margin: 10px 0 0 30px ; font-weight: normal; color: #1a1a1a">
+                                        <p> Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </p> <br>
+                                        <span id="DesignerWord"> <i class="fas fa-splotch"></i> - Designer's name </span>
+                                    </div>
+                                </li>
+                        </div>
+                        {% endblock %}
+                    </div>
+
+                    <!-- /designer -->
+
+                    <!-- Project description -->
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="SmallHeading">Project description </h2>
+                        </div>
+                        <div class="body" style="padding: 0 20px 20px 20px">
+                            {% block ProjectDescription %}
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Main Headings -->
+                <div class="col-lg-4 col-md-12 right-box">
+
+                    <div class="card">
+                        <div class="header">
+
+                            <h2 class="SmallHeading">Contents</h2>
+                        </div>
+                        <div class="body widget" style="padding-top: 0">
+                            {% block Contents %}
+                            <ol class="list-unstyled m-b-0" id="Content" >
+                                <li><a href="#">eCommerce</a></li>
+                                <li><a href="#">Microsoft Technologies</a></li>
+                                <li><a href="#">Creative UX</a></li>
+                                <li><a href="#">Wordpress</a></li>
+                                <li><a href="#">Angular JS</a></li>
+                                <li><a href="#">Enterprise Mobility</a></li>
+                                <li><a href="#">Website Design</a></li>
+                                <li><a href="#">HTML5</a></li>
+                                <li><a href="#">Infographics</a></li>
+                                <li><a href="#">Wordpress Development</a></li>
+                            </ol>
+                            {% endblock %}
+                        </div>
+
+                    </div>
+                    <!-- /Main Headings -->
+
+                    <!-- Galerie -->
+                    {% block Galerie %}
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="SmallHeading">Galerie</h2>
+                        </div>
+                        <div class="body widget popular-post">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_post">
+                                        <p class="m-b-0">Apple Introduces Search Ads Basic</p>
+                                        <span>jun 22, 2018</span>
+                                        <div class="img-post">
+                                            <img class="Galerie"  src="https://via.placeholder.com/280x280/87CEFA/000000" alt="Awesome Image">
+                                        </div>
+                                    </div>
+                                    <div class="single_post">
+                                        <p class="m-b-0">new rules, more cars, more races</p>
+                                        <span>jun 8, 2018</span>
+                                        <div class="img-post">
+                                            <img class="Galerie" src="https://via.placeholder.com/280x280/87CEFA/000000" alt="Awesome Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock %}
+                    <!-- /Galerie -->
+
+                    <div class="card" style="background-color: white ; box-shadow: none;">
+                       <div><a href="{{ path('Discover_LP') }}" class="btn-grad">Go back</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock  %}
+
+{% block Scripts %}
+    {{ parent() }}
+    <script src="{{ asset('Scripts/ProjectScripts/ImageDesignerScript.js')}}"></script>
+{% endblock  %}

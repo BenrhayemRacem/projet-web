@@ -6,6 +6,4 @@ document.querySelector(".UserIcon").addEventListener('mouseenter' , (e)=> {
 
 document.querySelector(".UserIcon").addEventListener('mouseleave' , (e)=> {
     document.querySelector(".UserIcon").style.background = "#79B1C1" ;
-
-
 })

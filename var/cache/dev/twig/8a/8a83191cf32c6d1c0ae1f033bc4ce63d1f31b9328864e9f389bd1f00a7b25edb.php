@@ -208,12 +208,15 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
             <div class=\"project-info-box mb-10\">
                
-                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"";
+        // line 72
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 2, "ProjectName" => "Write Your First Bestselling  Book", "Field" => "Languages"]), "html", null, true);
+        echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -237,7 +240,10 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"";
+        // line 96
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 3, "ProjectName" => "Write your first Poetry", "Field" => "Languages"]), "html", null, true);
+        echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 
@@ -311,7 +317,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
     public function getDebugInfo()
     {
-        return array (  260 => 111,  247 => 101,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  266 => 111,  253 => 101,  245 => 96,  218 => 72,  195 => 52,  183 => 43,  176 => 39,  168 => 34,  157 => 25,  147 => 24,  134 => 20,  128 => 17,  122 => 13,  112 => 12,  99 => 8,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -382,12 +388,12 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
             <div class=\"project-info-box mb-10\">
                
-                <p><b>Designer:</b> Hadil Hellali</p>
+                <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b> Inspiration, Motivation &amp; a Pen</p>
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':2 , 'ProjectName':'Write Your First Bestselling  Book','Field':'Languages'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>
@@ -411,7 +417,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"#\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':3 , 'ProjectName':'Write your first Poetry','Field':'Languages'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
 

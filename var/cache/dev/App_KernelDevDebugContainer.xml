@@ -395,6 +395,13 @@
         <argument type="service" id=".service_locator.5nX7ca3.App\Controller\MailController"/>
       </call>
     </service>
+    <service id="App\Controller\ProjectsController" class="App\Controller\ProjectsController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.5nX7ca3.App\Controller\ProjectsController"/>
+      </call>
+    </service>
     <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -5452,6 +5459,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\MailController" class="App\Controller\MailController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\MailController" class="App\Controller\MailController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\MailController" class="App\Controller\MailController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ProjectsController" class="App\Controller\ProjectsController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ProjectsController" class="App\Controller\ProjectsController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ProjectsController" class="App\Controller\ProjectsController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5810,12 +5820,14 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.c5QZuvk" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.Gv9D7kA" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\CourseController::indexCSS" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController::indexHTML" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController::indexJS" type="service_closure" id=".service_locator.oiABibH"/>
+        <argument key="App\Controller\CourseController::indexanglais" type="service_closure" id=".service_locator.oiABibH"/>
+        <argument key="App\Controller\CourseController::indexfrancais" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\InscriptionController::index" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\MailController::verificationEmail" type="service_closure" id=".service_locator.lqzS9y4"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
@@ -5830,6 +5842,8 @@
         <argument key="App\Controller\CourseController:indexCSS" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController:indexHTML" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController:indexJS" type="service_closure" id=".service_locator.oiABibH"/>
+        <argument key="App\Controller\CourseController:indexanglais" type="service_closure" id=".service_locator.oiABibH"/>
+        <argument key="App\Controller\CourseController:indexfrancais" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\InscriptionController:index" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\MailController:verificationEmail" type="service_closure" id=".service_locator.lqzS9y4"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
@@ -6174,6 +6188,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.5nX7ca3" method="withContext"/>
     </service>
+    <service id=".service_locator.5nX7ca3.App\Controller\ProjectsController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ProjectsController"/>
+      <argument>App\Controller\ProjectsController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.5nX7ca3" method="withContext"/>
+    </service>
     <service id=".service_locator.5nX7ca3.App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>
       <argument>App\Controller\SecurityController</argument>
@@ -6351,12 +6371,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.c5QZuvk"/>
+      <argument type="service" id=".service_locator.Gv9D7kA"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.c5QZuvk"/>
+      <argument type="service" id=".service_locator.Gv9D7kA"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -6790,7 +6810,7 @@
     <service id="Swift_Transport" alias="swiftmailer.mailer.default.transport.spool"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.Kbr2i2X" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.c5QZuvk"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.Gv9D7kA"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

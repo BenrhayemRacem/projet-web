@@ -38,6 +38,8 @@ return [
     'registration' => [[], ['_controller' => 'App\\Controller\\InscriptionController::index'], [], [['text', '/registration']], [], []],
     'mail' => [['name', 'mail', 'uniqueId'], ['_controller' => 'App\\Controller\\MailController::index'], [], [['variable', '/', '[^/]++', 'uniqueId', true], ['variable', '/', '[^/]++', 'mail', true], ['variable', '/', '[^/]++', 'name', true], ['text', '/mail']], [], []],
     'mail.verif' => [['mail', 'uniqueId'], ['_controller' => 'App\\Controller\\MailController::verificationEmail'], [], [['variable', '/', '[^/]++', 'uniqueId', true], ['variable', '/', '[^/]++', 'mail', true], ['text', '/mail']], [], []],
+    'ProjectView' => [['num', 'ProjectName', 'Field'], ['num' => '0', '_controller' => 'App\\Controller\\ProjectsController::index'], ['num' => '\\d+'], [['variable', '/', '[^/]++', 'Field', true], ['variable', '/', '[^/]++', 'ProjectName', true], ['variable', '/', '\\d+', 'num', true], ['text', '/projectView']], [], []],
+    'ProjectViewBase' => [[], ['_controller' => 'App\\Controller\\ProjectsController::indexproject'], [], [['text', '/projectViewBase']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'Profile' => [[], ['_controller' => 'App\\Controller\\UserController::indexProfile'], [], [['text', '/Profile']], [], []],

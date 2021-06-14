@@ -49,10 +49,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 
         $this->parent = $this->loadTemplate("User.html.twig", "user/Discover_Projects/DiscoverPLP.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
     }
 
@@ -67,10 +67,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
 
         echo "Discover with us";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -97,10 +97,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/Projects/projects.css"), "html", null, true);
         echo "\">
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -131,10 +131,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
         echo "\">MY PROJECTS</a>
     </li>
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -197,7 +197,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Si Racem Ben Rhayem</p>
                 <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
             </div>
@@ -219,12 +219,12 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <div class=\"project-info-box mt-0\">
                 <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
                 <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
-                </p> 
+                </p>
                        </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Mehdi Ghorbel</p>
                 <p><b>Tools:</b> Python &amp; Turtle graphics </p>
             </div>
@@ -269,7 +269,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
             </div>
@@ -283,10 +283,10 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
 </div>
 
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -366,7 +366,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-               
+
                 <p><b>Designer:</b> Si Racem Ben Rhayem</p>
                 <p><b>Tools:</b> Python tensorFlow &amp; scikit-learn</p>
             </div>
@@ -385,12 +385,12 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <div class=\"project-info-box mt-0\">
                 <h5 class=\"NextTitle\">Create PING-PONG Game</h5>
                 <p>By the end of this project, you will be able to create The Classic Ping Pong game using Python and Turtle graphics. You’ll also be able to identify and use most of Turtle’s modules and functions that helps you develop and build your own game. Moreover, you’ll be able to edit and manipulate the objects created by Turtle however you like.
-                </p> 
+                </p>
                        </div>
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Mehdi Ghorbel</p>
                 <p><b>Tools:</b> Python &amp; Turtle graphics </p>
             </div>
@@ -426,7 +426,7 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
             <!-- / project-info-box -->
 
             <div class=\"project-info-box mb-10\">
-                
+
                 <p><b>Designer:</b> Hadil Helali</p>
                 <p><b>Tools:</b>Natural Language Processing Technologies &amp; Tensoflow</p>
             </div>

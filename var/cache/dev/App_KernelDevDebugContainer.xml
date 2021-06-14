@@ -366,6 +366,14 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\ChangepasswController" class="App\Controller\ChangepasswController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="security.user_password_encoder.generic"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.5nX7ca3.App\Controller\ChangepasswController"/>
+      </call>
+    </service>
     <service id="App\Controller\CourseController" class="App\Controller\CourseController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -427,6 +435,9 @@
       <tag name="form.type"/>
     </service>
     <service id="App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\changepasswdType" class="App\Form\changepasswdType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
     <service id="App\Repository\CourseRepository" class="App\Repository\CourseRepository" autowire="true" autoconfigure="true">
@@ -924,6 +935,7 @@
       <argument type="collection">
         <argument>App\Form\UserModifyType</argument>
         <argument>App\Form\UserType</argument>
+        <argument>App\Form\changepasswdType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -1280,7 +1292,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.Sn9Poqo"/>
+      <argument type="service" id=".service_locator.3v6fCXj"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -5447,6 +5459,9 @@
     <service id="swiftmailer.mailer.default.plugin.messagelogger" class="Swift_Plugins_MessageLogger" public="true">
       <tag name="swiftmailer.default.plugin"/>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ChangepasswController" class="App\Controller\ChangepasswController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ChangepasswController" class="App\Controller\ChangepasswController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ChangepasswController" class="App\Controller\ChangepasswController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CourseController" class="App\Controller\CourseController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CourseController" class="App\Controller\CourseController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CourseController" class="App\Controller\CourseController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5476,6 +5491,8 @@
     <service id=".abstract.instanceof.App\Form\UserModifyType" class="App\Form\UserModifyType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\changepasswdType" class="App\Form\changepasswdType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\changepasswdType" class="App\Form\changepasswdType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CourseRepository" class="App\Repository\CourseRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CourseRepository" class="App\Repository\CourseRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ProjectRepository" class="App\Repository\ProjectRepository" autowire="true" abstract="true"/>
@@ -5796,6 +5813,13 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
+    <service id=".service_locator.GFm1rxI" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="manager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+        <argument key="passwordEncoder" type="service_closure" id="security.user_password_encoder.generic"/>
+      </argument>
+    </service>
     <service id=".service_locator.oiABibH" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5820,9 +5844,17 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.Gv9D7kA" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.GoXXPot" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="id" type="service_closure" id=".errored..service_locator.GoXXPot.App\Entity\Course"/>
+        <argument key="manager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
+    <service id=".service_locator.D63.Q2y" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Controller\ChangepasswController::index" type="service_closure" id=".service_locator.GFm1rxI"/>
         <argument key="App\Controller\CourseController::indexCSS" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController::indexHTML" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController::indexJS" type="service_closure" id=".service_locator.oiABibH"/>
@@ -5831,14 +5863,17 @@
         <argument key="App\Controller\InscriptionController::index" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\MailController::verificationEmail" type="service_closure" id=".service_locator.lqzS9y4"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
+        <argument key="App\Controller\UserController::index" type="service_closure" id=".service_locator.GFm1rxI"/>
         <argument key="App\Controller\UserController::indexEditInfo" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\UserController::indexPassword" type="service_closure" id=".service_locator.pwZ6MTM"/>
+        <argument key="App\Controller\UserController::indexRemoveMyCourses" type="service_closure" id=".service_locator.GoXXPot"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
+        <argument key="App\Controller\ChangepasswController:index" type="service_closure" id=".service_locator.GFm1rxI"/>
         <argument key="App\Controller\CourseController:indexCSS" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController:indexHTML" type="service_closure" id=".service_locator.oiABibH"/>
         <argument key="App\Controller\CourseController:indexJS" type="service_closure" id=".service_locator.oiABibH"/>
@@ -5847,8 +5882,10 @@
         <argument key="App\Controller\InscriptionController:index" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\MailController:verificationEmail" type="service_closure" id=".service_locator.lqzS9y4"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
+        <argument key="App\Controller\UserController:index" type="service_closure" id=".service_locator.GFm1rxI"/>
         <argument key="App\Controller\UserController:indexEditInfo" type="service_closure" id=".service_locator.pwZ6MTM"/>
         <argument key="App\Controller\UserController:indexPassword" type="service_closure" id=".service_locator.pwZ6MTM"/>
+        <argument key="App\Controller\UserController:indexRemoveMyCourses" type="service_closure" id=".service_locator.GoXXPot"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:terminate" type="service_closure" id=".service_locator.KfwZsne"/>
@@ -5913,11 +5950,12 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.Sn9Poqo" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.3v6fCXj" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\UserModifyType" type="service_closure" id="App\Form\UserModifyType"/>
         <argument key="App\Form\UserType" type="service_closure" id="App\Form\UserType"/>
+        <argument key="App\Form\changepasswdType" type="service_closure" id="App\Form\changepasswdType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service_closure" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service_closure" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ColorType" type="service_closure" id="form.type.color"/>
@@ -6164,6 +6202,12 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.5nX7ca3.App\Controller\ChangepasswController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ChangepasswController"/>
+      <argument>App\Controller\ChangepasswController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.5nX7ca3" method="withContext"/>
+    </service>
     <service id=".service_locator.5nX7ca3.App\Controller\CourseController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\CourseController"/>
       <argument>App\Controller\CourseController</argument>
@@ -6371,12 +6415,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.Gv9D7kA"/>
+      <argument type="service" id=".service_locator.D63.Q2y"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.Gv9D7kA"/>
+      <argument type="service" id=".service_locator.D63.Q2y"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -6394,6 +6438,7 @@
     </service>
     <service id=".errored..service_locator.KfwZsne.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
     <service id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
+    <service id=".errored..service_locator.GoXXPot.App\Entity\Course" class="App\Entity\Course"/>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <tag name="container.no_preload"/>
       <argument type="service" id=".service_locator.yTitcr6"/>
@@ -6810,7 +6855,7 @@
     <service id="Swift_Transport" alias="swiftmailer.mailer.default.transport.spool"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.Kbr2i2X" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.Gv9D7kA"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.D63.Q2y"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

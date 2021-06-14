@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Course;
 use App\Entity\User;
 
 use App\Form\changepasswdType;
@@ -229,8 +230,23 @@ class UserController extends AbstractController
     public function indexMyCourses(): Response
     {
         $user=$this->getUser() ;
+        $Courses = $user->getCourses();
         return $this->render('user/MyCourses.html.twig', [
-            'user' =>$user
+            'user' =>$user ,
+            'Courses' => $Courses
         ]);
+    }
+
+    /**
+     * @Route("/RemoveMyCourse/{id}", name="RemoteMyCourses")
+     */
+    public function indexRemoveMyCourses(Course $id,EntityManagerInterface $manager): Response
+    {
+        $user=$this->getUser() ;
+        $user->removeCourse($id);
+        $manager->persist($user);
+        $manager->flush();
+        $this->addFlash('success','successfully left the course');
+        return $this->redirectToRoute('MyCourses');
     }
 }

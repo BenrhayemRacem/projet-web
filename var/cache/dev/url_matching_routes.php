@@ -13,6 +13,7 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/changePasswd' => [[['_route' => 'ChangePasswd', '_controller' => 'App\\Controller\\ChangepasswController::index'], null, null, null, false, false, null]],
         '/HTML/result' => [[['_route' => 'HTMLQuiz', '_controller' => 'App\\Controller\\CourseController::indexHTMLQuiz'], null, null, null, false, false, null]],
         '/CSS/result' => [[['_route' => 'CSSQuiz', '_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], null, null, null, false, false, null]],
         '/JS/result' => [[['_route' => 'JSQuiz', '_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], null, null, null, false, false, null]],
@@ -23,7 +24,7 @@ return [
         '/projectViewBase' => [[['_route' => 'ProjectViewBase', '_controller' => 'App\\Controller\\ProjectsController::indexproject'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
-        '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\UserController::indexProfile'], null, null, null, false, false, null]],
+        '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
         '/EditProfilePassword' => [[['_route' => 'Edit_Profile_Password', '_controller' => 'App\\Controller\\UserController::indexPassword'], null, null, null, false, false, null]],
         '/EditProfileInfo' => [[['_route' => 'Edit_Profile_Info', '_controller' => 'App\\Controller\\UserController::indexEditInfo'], null, null, null, false, false, null]],
         '/home/C/P' => [[['_route' => 'Discover', '_controller' => 'App\\Controller\\UserController::indexDiscover_C_P'], null, null, null, false, false, null]],
@@ -73,12 +74,15 @@ return [
                 .')'
                 .'|/espagnol(?:/(\\d+))?(*:474)'
                 .'|/Italien(?:/(\\d+))?(*:501)'
-                .'|/Russe(?:/(\\d+))?(*:526)'
-                .'|/mail/([^/]++)/([^/]++)(?'
-                    .'|/([^/]++)(*:569)'
-                    .'|(*:577)'
+                .'|/R(?'
+                    .'|usse(?:/(\\d+))?(*:529)'
+                    .'|emoveMyCourse/([^/]++)(*:559)'
                 .')'
-                .'|/projectView/(\\d+)/([^/]++)/([^/]++)(*:622)'
+                .'|/mail/([^/]++)/([^/]++)(?'
+                    .'|/([^/]++)(*:603)'
+                    .'|(*:611)'
+                .')'
+                .'|/projectView/(\\d+)/([^/]++)/([^/]++)(*:656)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -102,10 +106,11 @@ return [
         445 => [[['_route' => 'AllemandCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexAllemand'], ['num'], null, null, false, true, null]],
         474 => [[['_route' => 'EspagnolCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexEspagnol'], ['num'], null, null, false, true, null]],
         501 => [[['_route' => 'ItalienCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexItalien'], ['num'], null, null, false, true, null]],
-        526 => [[['_route' => 'RusseCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexRusse'], ['num'], null, null, false, true, null]],
-        569 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
-        577 => [[['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null]],
-        622 => [
+        529 => [[['_route' => 'RusseCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexRusse'], ['num'], null, null, false, true, null]],
+        559 => [[['_route' => 'RemoteMyCourses', '_controller' => 'App\\Controller\\UserController::indexRemoveMyCourses'], ['id'], null, null, false, true, null]],
+        603 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
+        611 => [[['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null]],
+        656 => [
             [['_route' => 'ProjectView', 'num' => '0', '_controller' => 'App\\Controller\\ProjectsController::index'], ['num', 'ProjectName', 'Field'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

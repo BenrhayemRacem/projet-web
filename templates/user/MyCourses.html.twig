@@ -21,8 +21,45 @@
 
 {% block Body %}
     <section id="Courses">
+        <div class="container">
+        {% for flashMessage in app.session.flashbag.get('success') %}
+            <div class="alert alert-success"> {{ flashMessage }}</div>
+        {% endfor %}
         <div class="TitleContainer"><h2 class="TitlePage"> <span></span>MY<span>COURSES</span></h2></div>
+
+
+            <table class="table table-hover" style="margin: 30px 0 0 0; text-align:center;">
+                <thead>
+                <tr class="table-info">
+                    <th scope="col" style="color: #0F9CAC"><h4 style="margin: 20px 20px 0 20px ">#</h4></th>
+                    <th scope="col" style="color: #0F9CAC"><h4 style="margin: 20px 20px 0 20px ">Course Name</h4></th>
+                    <th scope="col" style="color: #0F9CAC">    </th>
+                    <th scope="col" style="color: #0F9CAC">    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for Course in Courses %}
+                <tr>
+                    <th scope="row"><h4 style="margin: 40px 20px 0 20px ">{{ loop.index }}</h4></th>
+                    <td><h4 style="margin: 40px 20px 0 20px ">{{ Course.Name }}</h4></td>
+                    <td><div class="container">
+                            <a href="{{ path(''~Course.Path~'') }}" class="btn-grad Modified" style="padding: 10px 0 ;">
+                                Go to Course</a></div></td>
+                    <td><div class="container">
+                            <a href="{{ path('RemoteMyCourses',{'id':Course.id}) }}" class="btn-grad Modified" style="padding: 10px 0 ;">
+                            Leave Course</a></div></td>
+                </tr>
+                {% else %}
+                <tr class="table-warning">
+                    You still didn't sign up in any course
+                </tr>
+                {% endfor%}
+                </tbody>
+            </table>
+        </div>
+
     </section>
+
 
 {% endblock %}
 

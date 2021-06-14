@@ -15,6 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'ChangePasswd' => [[], ['_controller' => 'App\\Controller\\ChangepasswController::index'], [], [['text', '/changePasswd']], [], []],
     'HTMLQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexHTMLQuiz'], [], [['text', '/HTML/result']], [], []],
     'HTMLCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexHTML'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/HTML']], [], []],
     'CSSQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], [], [['text', '/CSS/result']], [], []],
@@ -42,7 +43,7 @@ return [
     'ProjectViewBase' => [[], ['_controller' => 'App\\Controller\\ProjectsController::indexproject'], [], [['text', '/projectViewBase']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
-    'Profile' => [[], ['_controller' => 'App\\Controller\\UserController::indexProfile'], [], [['text', '/Profile']], [], []],
+    'Profile' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/Profile']], [], []],
     'Edit_Profile_Password' => [[], ['_controller' => 'App\\Controller\\UserController::indexPassword'], [], [['text', '/EditProfilePassword']], [], []],
     'Edit_Profile_Info' => [[], ['_controller' => 'App\\Controller\\UserController::indexEditInfo'], [], [['text', '/EditProfileInfo']], [], []],
     'Discover' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_C_P'], [], [['text', '/home/C/P']], [], []],
@@ -53,4 +54,5 @@ return [
     'Discover_Projects_Music' => [[], ['_controller' => 'App\\Controller\\UserController::indexDiscover_P_M'], [], [['text', '/home/P/M']], [], []],
     'MyProjects' => [[], ['_controller' => 'App\\Controller\\UserController::indexMyProjects'], [], [['text', '/MyProjets']], [], []],
     'MyCourses' => [[], ['_controller' => 'App\\Controller\\UserController::indexMyCourses'], [], [['text', '/MyCourses']], [], []],
+    'RemoteMyCourses' => [['id'], ['_controller' => 'App\\Controller\\UserController::indexRemoveMyCourses'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/RemoveMyCourse']], [], []],
 ];

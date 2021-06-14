@@ -157,30 +157,49 @@ class __TwigTemplate_26a23f172947c2ad331bf098f5b1ffd512ad36af6531d33ab32135b9bde
         <div class=\"main-body\">
             <div class=\"row\">
 
-                ";
-        // line 28
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 28, $this->source); })()), 'form_start');
-        echo "
-                ";
-        // line 29
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 29, $this->source); })()), "oldPassword", [], "any", false, false, false, 29), 'row');
-        echo "
-                ";
-        // line 30
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 30, $this->source); })()), "plainPassword", [], "any", false, false, false, 30), "first", [], "any", false, false, false, 30), 'row');
-        echo "
-                ";
-        // line 31
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 31, $this->source); })()), "plainPassword", [], "any", false, false, false, 31), "second", [], "any", false, false, false, 31), 'row');
-        echo "
 
 
-                <button type=\"submit\">Register!</button>
-
-                ";
-        // line 36
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 36, $this->source); })()), 'form_end');
+                <div class=\"card\">
+                    <div class=\"card-body\">
+                        <div class=\"row headings gradient-underline\"> <h5 style=\"text-align: center ; margin: 20px\">Change your password </h5></div>
+                        ";
+        // line 33
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 33, $this->source); })()), 'form_start');
         echo "
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\"> ";
+        // line 35
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 35, $this->source); })()), "oldPassword", [], "any", false, false, false, 35), 'row');
+        echo " </h5>
+                        </div>
+
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\">";
+        // line 39
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 39, $this->source); })()), "plainPassword", [], "any", false, false, false, 39), "first", [], "any", false, false, false, 39), 'row');
+        echo "</h5>
+                        </div>
+
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\">  ";
+        // line 43
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 43, $this->source); })()), "plainPassword", [], "any", false, false, false, 43), "second", [], "any", false, false, false, 43), 'row');
+        echo "   </h5>
+                        </div>
+
+
+                        <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
+                            <button type=\"submit\" class=\"btn-grad\" id=\"EditInfo\" >Register!</button>
+                        </div>
+                        ";
+        // line 50
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formPass"]) || array_key_exists("formPass", $context) ? $context["formPass"] : (function () { throw new RuntimeError('Variable "formPass" does not exist.', 50, $this->source); })()), 'form_end');
+        echo "
+
+                    </div>
+                </div>
+            </div>
+
 
             </div>
         </div>
@@ -194,7 +213,7 @@ class __TwigTemplate_26a23f172947c2ad331bf098f5b1ffd512ad36af6531d33ab32135b9bde
 
     }
 
-    // line 43
+    // line 62
     public function block_greetings($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -205,7 +224,7 @@ class __TwigTemplate_26a23f172947c2ad331bf098f5b1ffd512ad36af6531d33ab32135b9bde
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
 
         echo " <div class=\"col Greeting \"> Welcome,";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 43, $this->source); })()), "FirstName", [], "any", false, false, false, 43), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 62, $this->source); })()), "FirstName", [], "any", false, false, false, 62), "html", null, true);
         echo " </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -227,7 +246,7 @@ class __TwigTemplate_26a23f172947c2ad331bf098f5b1ffd512ad36af6531d33ab32135b9bde
 
     public function getDebugInfo()
     {
-        return array (  198 => 43,  182 => 36,  174 => 31,  170 => 30,  166 => 29,  162 => 28,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  217 => 62,  196 => 50,  186 => 43,  179 => 39,  172 => 35,  167 => 33,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -259,15 +278,34 @@ class __TwigTemplate_26a23f172947c2ad331bf098f5b1ffd512ad36af6531d33ab32135b9bde
         <div class=\"main-body\">
             <div class=\"row\">
 
-                {{ form_start(formPass) }}
-                {{ form_row(formPass.oldPassword) }}
-                {{ form_row(formPass.plainPassword.first) }}
-                {{ form_row(formPass.plainPassword.second) }}
 
 
-                <button type=\"submit\">Register!</button>
+                <div class=\"card\">
+                    <div class=\"card-body\">
+                        <div class=\"row headings gradient-underline\"> <h5 style=\"text-align: center ; margin: 20px\">Change your password </h5></div>
+                        {{ form_start(formPass) }}
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\"> {{ form_row(formPass.oldPassword) }} </h5>
+                        </div>
 
-                {{ form_end(formPass) }}
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\">{{ form_row(formPass.plainPassword.first) }}</h5>
+                        </div>
+
+                        <div class=\"row mb-3\">
+                            <h5 class=\"mb-0\">  {{ form_row(formPass.plainPassword.second) }}   </h5>
+                        </div>
+
+
+                        <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
+                            <button type=\"submit\" class=\"btn-grad\" id=\"EditInfo\" >Register!</button>
+                        </div>
+                        {{ form_end(formPass) }}
+
+                    </div>
+                </div>
+            </div>
+
 
             </div>
         </div>

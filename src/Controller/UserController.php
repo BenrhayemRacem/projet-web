@@ -30,10 +30,12 @@ class UserController extends AbstractController
     /**
      * @Route("/EditProfile", name="Edit_Profile")
      */
-    public function indexEditInfo(Request $request): Response
+    public function indexEditInfo(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
     {
         $user = $this->getUser();
         $form = $this->createForm(UserModifyType::class, $user);
+        $newUser = new User();
+        $formPass = $this->createForm(changepasswdType::class, $newUser);
         try {
             $form->handleRequest($request);
         } catch (\Exception $e) {
@@ -47,11 +49,47 @@ class UserController extends AbstractController
                 'user' => $user
             ]);
         } else { $this->addFlash('error','Changes not applied , please try again');}
+
+
+
+        try {
+            $formPass->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : " . $e->getMessage();
+        }
+
+        if ($formPass->isSubmitted() && $formPass->isValid()) {
+
+
+
+            if ($passwordEncoder->isPasswordValid($user , $formPass->get("oldPassword")->getData())) {
+
+                $newpassword = $passwordEncoder->encodePassword($newUser , $formPass->get('plainPassword')->getData()) ;
+                $user->setPassword($newpassword);
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($user);
+                $em->flush();
+
+                return $this->render('user/EditProfileInfo.html.twig', [
+                    'form' => $form->createView(),
+                    'formPass' => $formPass->createView(),
+                    'user' => $user,
+
+                ]);
+
+            }
+
+
+
+
+        }
         return $this->render(
             'user/EditProfileInfo.html.twig', [
+            'formPass' => $formPass->createView(),
             'form' => $form->createView(),
             'user' => $user
-            ]);
+        ]);
     }
 
     /**

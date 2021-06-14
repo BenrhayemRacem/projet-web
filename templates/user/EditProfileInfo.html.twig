@@ -83,15 +83,15 @@
 
                             </div>
 
-                           {{ form_start(form) }}
-                            {{ form_row(form.oldPassword) }}
-                                {{ form_row(form.plainPassword.first) }}
-                                {{ form_row(form.plainPassword.second) }}
+                           {{ form_start(formPass) }}
+                            {{ form_row(formPass.oldPassword) }}
+                                {{ form_row(formPass.plainPassword.first) }}
+                                {{ form_row(formPass.plainPassword.second) }}
 
 
                                 <button type="submit">Register!</button>
 
-                                {{ form_end(form) }}
+                                {{ form_end(formPass) }}
 
 
                     </div>

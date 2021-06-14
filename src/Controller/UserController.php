@@ -34,23 +34,39 @@ class UserController extends AbstractController
     {
         $user = $this->getUser();
         $form = $this->createForm(UserModifyType::class, $user);
-        $newUser = new User();
-        $formPass = $this->createForm(changepasswdType::class, $newUser);
         try {
             $form->handleRequest($request);
         } catch (\Exception $e) {
             echo "failed : " . $e->getMessage();
         }
 
-        if ($form->isSubmitted() && $form->isValid()) {
+
+        if ($form->isSubmitted() ) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
+
            $this->addFlash('success','Changes Applied');
-            return $this->render('user/Profile.html.twig', [
-                'controller_name' => 'UserController',
-                'user' => $user
-            ]);
+
         } else { $this->addFlash('error','Changes not applied , please try again');}
 
 
+
+        return $this->render(
+            'user/EditProfileInfo.html.twig', [
+            'form' => $form->createView(),
+            'user' => $user
+        ]);
+    }
+
+    /**
+     * @Route("/EditPasswd", name="Edit_Passwd")
+     */
+    public function indexEditPasswd(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    {
+        $user = $this->getUser();
+        $newUser = new User();
+        $formPass = $this->createForm(changepasswdType::class, $newUser);
 
         try {
             $formPass->handleRequest($request);
@@ -71,8 +87,7 @@ class UserController extends AbstractController
                 $em->persist($user);
                 $em->flush();
 
-                return $this->render('user/EditProfileInfo.html.twig', [
-                    'form' => $form->createView(),
+                return $this->render('user/EditProfilePassword.html.twig', [
                     'formPass' => $formPass->createView(),
                     'user' => $user,
 
@@ -81,16 +96,22 @@ class UserController extends AbstractController
             }
 
 
-
-
         }
         return $this->render(
-            'user/EditProfileInfo.html.twig', [
+            'user/EditProfilePassword.html.twig', [
             'formPass' => $formPass->createView(),
-            'form' => $form->createView(),
             'user' => $user
         ]);
     }
+
+
+
+
+
+
+
+
+
 
     /**
      * @Route("/home/C/P", name="Discover")

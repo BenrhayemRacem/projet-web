@@ -66,4 +66,35 @@ class MailController extends AbstractController
 
         return  $this->render('emailVerification/GoCheckCredentials.html.twig') ;
     }
+
+    /**
+     * @Route("/forgetPasswdEmail/{mail}/{newPasswd}" , name="emailForgetPasswd")
+     */
+
+    public function envoyerEmail($mail , $newPasswd) {
+
+        $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+            ->setUsername("ltconlineschool@gmail.com")
+            ->setPassword("projetweb") ;
+        $mailer = new \Swift_Mailer($transport) ;
+
+        $message = (new \Swift_Message('Password changed successfully'))
+            ->setFrom("ltconlineschool@gmail.com")
+            ->addTo($mail)
+            ->setBody(
+                $this->renderView(
+                // templates/emails/registration.html.twig
+                    'mail/passwdChanged.html.twig',
+                    ['passwd'=>$newPasswd ]
+                ),
+                'text/html'
+            );
+
+
+        $mailer->send($message) ;
+
+        return $this->render('home.html.twig') ;
+    }
+
+
 }

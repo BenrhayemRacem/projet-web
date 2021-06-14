@@ -19,22 +19,43 @@
      </li>
  {% endblock %}
 
-
 {% block Body %}
     <div id = "Editing" class="container">
         <div class="main-body">
             <div class="row">
 
-                {{ form_start(form) }}
-                {{ form_row(form.FirstName) }}
-                {{ form_row(form.LastName) }}
-                {{ form_row(form.address) }}
-                {{ form_row(form.Bio) }}
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row headings gradient-underline"> <h5 style="text-align: center ; margin: 20px">Update your Informations </h5></div>
+                        {{ form_start(form) }}
+                        <div class="row mb-3">
+                            <h5 class="mb-0"> {{ form_row(form.FirstName) }} </h5>
+                        </div>
 
-                <button type="submit">Update Infos!</button>
+                        <div class="row mb-3">
+                            <h5 class="mb-0">{{ form_row(form.LastName) }} </h5>
+                        </div>
 
-                {{ form_end(form) }}
+                        <div class="row mb-3">
+                            <h5 class="mb-0">   {{ form_row(form.address) }}   </h5>
+                        </div>
+
+                        <div class="row mb-3">
+                            <h5 class="mb-0"> {{ form_row(form.Bio) }} </h5>
+                        </div>
+
+                        <div class="row" style="margin-top: 20px; width: 50%; font-size: 15px">
+                            <button type="submit" class="btn-grad" id="EditInfo" >Update Infos!</button>
+                        </div>
+                        {{ form_end(form) }}
+
+                    </div>
+                </div>
             </div>
+
+
+
+        </div>
 
         </div>
     </div>

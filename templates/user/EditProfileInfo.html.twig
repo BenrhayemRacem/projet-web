@@ -83,14 +83,21 @@
 
                             </div>
 
-                            <div class="row" style="margin-top: 20px; width: 50%; font-size: 15px">
-                                <a class="btn-grad" id="SaveChanges" href="#">Save changes</a>
-                            </div>
+                           {{ form_start(form) }}
+                            {{ form_row(form.oldPassword) }}
+                                {{ form_row(form.plainPassword.first) }}
+                                {{ form_row(form.plainPassword.second) }}
+
+
+                                <button type="submit">Register!</button>
+
+                                {{ form_end(form) }}
+
 
                     </div>
-
                 </div>
             </div>
+
         </div>
     </div>
         </div>

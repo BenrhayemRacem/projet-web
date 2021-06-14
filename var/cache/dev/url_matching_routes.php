@@ -13,6 +13,7 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/changePasswd' => [[['_route' => 'ChangePasswd', '_controller' => 'App\\Controller\\ChangepasswController::index'], null, null, null, false, false, null]],
         '/HTML/result' => [[['_route' => 'HTMLQuiz', '_controller' => 'App\\Controller\\CourseController::indexHTMLQuiz'], null, null, null, false, false, null]],
         '/CSS/result' => [[['_route' => 'CSSQuiz', '_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], null, null, null, false, false, null]],
         '/JS/result' => [[['_route' => 'JSQuiz', '_controller' => 'App\\Controller\\CourseController::indexJSQuiz'], null, null, null, false, false, null]],

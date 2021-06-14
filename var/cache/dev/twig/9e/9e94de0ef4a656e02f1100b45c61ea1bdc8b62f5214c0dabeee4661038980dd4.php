@@ -259,6 +259,6 @@ class __TwigTemplate_abd30243c15002114c700a42f4cc659347a4f060ec0620a52865358a01f
     </div>
 
 {% endblock  %}
-", "user/Discover_Courses/DiscoverCM.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\Web Project\\WebProject\\templates\\user\\Discover_Courses\\DiscoverCM.html.twig");
+", "user/Discover_Courses/DiscoverCM.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\user\\Discover_Courses\\DiscoverCM.html.twig");
     }
 }

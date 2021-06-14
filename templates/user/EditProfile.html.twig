@@ -89,46 +89,18 @@
                                         </textarea>
                             </div>
 
-                            <div class="row" style="margin-top: 20px; width: 50%; font-size: 15px">
-                                <a class="btn-grad" id="SaveChanges" href="#">Save changes</a>
-                            </div>
+                           {{ form_start(form) }}
+                            {{ form_row(form.oldPassword) }}
+                                {{ form_row(form.plainPassword.first) }}
+                                {{ form_row(form.plainPassword.second) }}
 
-                            <div  class="row headings gradient-underline "> <h5>Change Password</h5></div>
-                            <div class="row mb-3">
-                                <div class="col-sm-3">
-                                    <h6 class="mb-0">Current Password</h6>
-                                </div>
-                                <div class="col-sm-9 text-secondary">
-                                    <input type="password" class="form-control" placeholder="••••••">
-                                </div>
-                            </div>
 
-                            <div class="row mb-3">
-                                <div class="col-sm-3">
-                                    <h6 class="mb-0">New Password</h6>
-                                </div>
-                                <div class="col-sm-9 text-secondary">
-                                    <input type="password" class="form-control" placeholder="••••••">
-                                </div>
-                            </div>
+                                <button type="submit">Register!</button>
 
-                            <div class="row mb-3">
-                                <div class="col-sm-3">
-                                    <h6 class="mb-0">Confirm Password</h6>
-                                </div>
-                                <div class="col-sm-9 text-secondary">
-                                    <input type="password" class="form-control" placeholder="••••••">
-                                </div>
-                            </div>
+                                {{ form_end(form) }}
 
-                            <div class="row" style="margin-top: 20px; width: 50%; font-size: 15px ">
-                                    <a class="btn-grad" id="SavePassword" href="#">Save password changes</a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+
         </div>
     </div>
 {% endblock %}

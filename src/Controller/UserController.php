@@ -3,26 +3,78 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Form\changepasswdType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserController extends AbstractController
 {
     /**
      * @Route("/EditProfile", name="Edit_Profile")
      */
-    public function index(): Response
-    {$user = $this->getUser();
+    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request)
+    {
+        $user = $this->getUser();
+        $newUser = new User();
+        $form = $this->createForm(changepasswdType::class, $newUser);
+
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : ".$e->getMessage();
+        }
+
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $oldpassword = $passwordEncoder->encodePassword($newUser , $form->get("oldPassword")->getData()) ;
+
+                if ($passwordEncoder->isPasswordValid($user , $form->get("oldPassword")->getData())) {
+
+                    $newpassword = $passwordEncoder->encodePassword($newUser , $form->get('plainPassword')->getData()) ;
+                    $user->setPassword($newpassword);
+
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($user);
+                    $em->flush();
+
+                    return $this->render('user/EditProfile.html.twig', [
+                        'form' => $form->createView(),
+                        'user' => $user,
+
+                    ]);
+
+                            }
+
+
+
+
+        }
         return $this->render('user/EditProfile.html.twig', [
-            'controller_name' => 'UserController',
-            'user' =>$user
-
-
+            'form' => $form->createView(),
+            'user' => $user,
+            'message' => 'password updated succesfully '
         ]);
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
 
     /**
      * @Route("/Profile", name="Profile")

@@ -15,6 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'ChangePasswd' => [[], ['_controller' => 'App\\Controller\\ChangepasswController::index'], [], [['text', '/changePasswd']], [], []],
     'HTMLQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexHTMLQuiz'], [], [['text', '/HTML/result']], [], []],
     'HTMLCourse' => [['num'], ['num' => '0', '_controller' => 'App\\Controller\\CourseController::indexHTML'], ['num' => '\\d+'], [['variable', '/', '\\d+', 'num', true], ['text', '/HTML']], [], []],
     'CSSQuiz' => [[], ['_controller' => 'App\\Controller\\CourseController::indexCSSQuiz'], [], [['text', '/CSS/result']], [], []],

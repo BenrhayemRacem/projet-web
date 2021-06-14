@@ -258,46 +258,33 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         echo "                                        </textarea>
                             </div>
 
-                            <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
-                                <a class=\"btn-grad\" id=\"SaveChanges\" href=\"#\">Save changes</a>
-                            </div>
+                           ";
+        // line 92
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 92, $this->source); })()), 'form_start');
+        echo "
+                            ";
+        // line 93
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 93, $this->source); })()), "oldPassword", [], "any", false, false, false, 93), 'row');
+        echo "
+                                ";
+        // line 94
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 94, $this->source); })()), "plainPassword", [], "any", false, false, false, 94), "first", [], "any", false, false, false, 94), 'row');
+        echo "
+                                ";
+        // line 95
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 95, $this->source); })()), "plainPassword", [], "any", false, false, false, 95), "second", [], "any", false, false, false, 95), 'row');
+        echo "
 
-                            <div  class=\"row headings gradient-underline \"> <h5>Change Password</h5></div>
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Current Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
 
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">New Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
+                                <button type=\"submit\">Register!</button>
 
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Confirm Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
+                                ";
+        // line 100
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 100, $this->source); })()), 'form_end');
+        echo "
 
-                            <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px \">
-                                    <a class=\"btn-grad\" id=\"SavePassword\" href=\"#\">Save password changes</a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+
         </div>
     </div>
 ";
@@ -309,7 +296,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
     }
 
-    // line 136
+    // line 108
     public function block_greetings($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -320,7 +307,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "greetings"));
 
         echo " <div class=\"col Greeting \"> Welcome,";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 136, $this->source); })()), "FirstName", [], "any", false, false, false, 136), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 108, $this->source); })()), "FirstName", [], "any", false, false, false, 108), "html", null, true);
         echo " </div> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -342,7 +329,7 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
     public function getDebugInfo()
     {
-        return array (  313 => 136,  258 => 89,  253 => 87,  248 => 86,  244 => 84,  242 => 83,  230 => 73,  225 => 71,  220 => 70,  216 => 68,  214 => 67,  202 => 58,  189 => 50,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  300 => 108,  283 => 100,  275 => 95,  271 => 94,  267 => 93,  263 => 92,  258 => 89,  253 => 87,  248 => 86,  244 => 84,  242 => 83,  230 => 73,  225 => 71,  220 => 70,  216 => 68,  214 => 67,  202 => 58,  189 => 50,  168 => 34,  156 => 24,  146 => 23,  133 => 18,  127 => 15,  121 => 12,  118 => 11,  108 => 10,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -438,46 +425,18 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
                                         </textarea>
                             </div>
 
-                            <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px\">
-                                <a class=\"btn-grad\" id=\"SaveChanges\" href=\"#\">Save changes</a>
-                            </div>
+                           {{ form_start(form) }}
+                            {{ form_row(form.oldPassword) }}
+                                {{ form_row(form.plainPassword.first) }}
+                                {{ form_row(form.plainPassword.second) }}
 
-                            <div  class=\"row headings gradient-underline \"> <h5>Change Password</h5></div>
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Current Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
 
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">New Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
+                                <button type=\"submit\">Register!</button>
 
-                            <div class=\"row mb-3\">
-                                <div class=\"col-sm-3\">
-                                    <h6 class=\"mb-0\">Confirm Password</h6>
-                                </div>
-                                <div class=\"col-sm-9 text-secondary\">
-                                    <input type=\"password\" class=\"form-control\" placeholder=\"••••••\">
-                                </div>
-                            </div>
+                                {{ form_end(form) }}
 
-                            <div class=\"row\" style=\"margin-top: 20px; width: 50%; font-size: 15px \">
-                                    <a class=\"btn-grad\" id=\"SavePassword\" href=\"#\">Save password changes</a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+
         </div>
     </div>
 {% endblock %}
@@ -485,6 +444,6 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 {% block greetings %} <div class=\"col Greeting \"> Welcome,{{ user.FirstName }} </div> {% endblock %}
 
 
-", "user/EditProfile.html.twig", "D:\\XAMPP\\htdocs\\projetWeb\\templates\\user\\EditProfile.html.twig");
+", "user/EditProfile.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\user\\EditProfile.html.twig");
     }
 }

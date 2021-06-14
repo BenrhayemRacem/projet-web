@@ -50,10 +50,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
 
         $this->parent = $this->loadTemplate("User.html.twig", "user/EditProfile.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
     }
 
@@ -68,10 +68,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Title"));
 
         echo "Edit Profile";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -94,10 +94,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CSS/User/EditProfileUser.css"), "html", null, true);
         echo "\">
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -131,10 +131,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         echo "\">MY PROJECTS</a>
      </li>
  ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -316,10 +316,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
         </div>
     </div>
 ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 
@@ -338,10 +338,10 @@ class __TwigTemplate_2bf2a5e326b147504d503791fbd86b2bc8318506c1717772a5360536228
             throw new RuntimeError('Variable "user" does not exist.', 108, $this->source);
         })()), "FirstName", [], "any", false, false, false, 108), "html", null, true);
         echo " </div> ";
-        
+
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-        
+
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
     }
 

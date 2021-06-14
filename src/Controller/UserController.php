@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\User;
+
+use App\Form\changepasswdType;
 use App\Form\UserModifyType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -17,13 +19,70 @@ class UserController extends AbstractController
     /**
      * @Route("/Profile", name="Profile")
      */
+    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request)
+    {
+        $user = $this->getUser();
+        $newUser = new User();
+        $form = $this->createForm(changepasswdType::class, $newUser);
+
+        try {
+            $form->handleRequest($request);
+        } catch (\Exception $e) {
+            echo "failed : ".$e->getMessage();
+        }
+
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $oldpassword = $passwordEncoder->encodePassword($newUser , $form->get("oldPassword")->getData()) ;
+
+                if ($passwordEncoder->isPasswordValid($user , $form->get("oldPassword")->getData())) {
+
+                    $newpassword = $passwordEncoder->encodePassword($newUser , $form->get('plainPassword')->getData()) ;
+                    $user->setPassword($newpassword);
+
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($user);
+                    $em->flush();
+
+                    return $this->render('user/EditProfile.html.twig', [
+                        'form' => $form->createView(),
+                        'user' => $user,
+
+                    ]);
+
+                            }
+
+
+
+
+        }
+        return $this->render('user/EditProfile.html.twig', [
+            'form' => $form->createView(),
+            'user' => $user,
+            'message' => 'password updated succesfully ']) ;
+    }
     public function indexProfile(): Response
     {   $user = $this->getUser();
         return $this->render('user/Profile.html.twig', [
             'controller_name' => 'UserController',
             'user' =>$user
         ]);
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
 
     /**
      * @Route("/EditProfilePassword", name="Edit_Profile_Password")

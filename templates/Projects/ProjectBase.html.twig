@@ -56,7 +56,7 @@
                     <div class="card">
                         {% block Designer %}
                         <div class="header">
-                            <h2 class="SmallHeading">A Word from the designer</h2>
+                            <h2 class="SmallHeading">A Word from the instructor</h2>
                         </div>
                         <div class="body">
                             <ul class="comment-reply list-unstyled">
@@ -64,7 +64,7 @@
                                     <div class="icon-box col-md-4"><img class="img-fluid img-thumbnail"  id="DesignerPic" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Designer Pic" style="border-radius: 50%" width="150px" height="150px"></div>
                                     <div class="text-box col-md-7 " style="margin: 10px 0 0 30px ; font-weight: normal; color: #1a1a1a">
                                         <p> Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </p> <br>
-                                        <span id="DesignerWord"> <i class="fas fa-splotch"></i> - Designer's name </span>
+                                        <span id="DesignerWord"> <i class="fas fa-splotch"></i> - the instructor's name </span>
                                     </div>
                                 </li>
                         </div>
@@ -145,6 +145,9 @@
                     <!-- /Galerie -->
 
                     <div class="card" style="background-color: white ; box-shadow: none;">
+                        {% block JoinProject %}
+                        <div><a href="#" class="btn-grad">Join the project</a></div>
+                        {% endblock %}
                        <div><a href="{{ path('Discover_LP') }}" class="btn-grad">Go back</a></div>
                     </div>
                 </div>

@@ -25,8 +25,7 @@ return [
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
-        '/EditProfilePassword' => [[['_route' => 'Edit_Profile_Password', '_controller' => 'App\\Controller\\UserController::indexPassword'], null, null, null, false, false, null]],
-        '/EditProfileInfo' => [[['_route' => 'Edit_Profile_Info', '_controller' => 'App\\Controller\\UserController::indexEditInfo'], null, null, null, false, false, null]],
+        '/EditProfile' => [[['_route' => 'Edit_Profile', '_controller' => 'App\\Controller\\UserController::indexEditInfo'], null, null, null, false, false, null]],
         '/home/C/P' => [[['_route' => 'Discover', '_controller' => 'App\\Controller\\UserController::indexDiscover_C_P'], null, null, null, false, false, null]],
         '/home/C/L' => [[['_route' => 'Discover_Courses_Languages', '_controller' => 'App\\Controller\\UserController::indexDiscover_C_L'], null, null, null, false, false, null]],
         '/home/C/M' => [[['_route' => 'Discover_Courses_Music', '_controller' => 'App\\Controller\\UserController::indexDiscover_C_M'], null, null, null, false, false, null]],
@@ -76,13 +75,17 @@ return [
                 .'|/Italien(?:/(\\d+))?(*:501)'
                 .'|/R(?'
                     .'|usse(?:/(\\d+))?(*:529)'
-                    .'|emoveMyCourse/([^/]++)(*:559)'
+                    .'|emoveMy(?'
+                        .'|Project/([^/]++)(*:563)'
+                        .'|Course/([^/]++)(*:586)'
+                    .')'
                 .')'
                 .'|/mail/([^/]++)/([^/]++)(?'
-                    .'|/([^/]++)(*:603)'
-                    .'|(*:611)'
+                    .'|/([^/]++)(*:631)'
+                    .'|(*:639)'
                 .')'
-                .'|/projectView/(\\d+)/([^/]++)/([^/]++)(*:656)'
+                .'|/projectView/(\\d+)/([^/]++)/([^/]++)(*:684)'
+                .'|/Addproject/(\\d+)/([^/]++)/([^/]++)(*:727)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -107,11 +110,13 @@ return [
         474 => [[['_route' => 'EspagnolCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexEspagnol'], ['num'], null, null, false, true, null]],
         501 => [[['_route' => 'ItalienCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexItalien'], ['num'], null, null, false, true, null]],
         529 => [[['_route' => 'RusseCourse', 'num' => '0', '_controller' => 'App\\Controller\\CourseController::indexRusse'], ['num'], null, null, false, true, null]],
-        559 => [[['_route' => 'RemoteMyCourses', '_controller' => 'App\\Controller\\UserController::indexRemoveMyCourses'], ['id'], null, null, false, true, null]],
-        603 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
-        611 => [[['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null]],
-        656 => [
-            [['_route' => 'ProjectView', 'num' => '0', '_controller' => 'App\\Controller\\ProjectsController::index'], ['num', 'ProjectName', 'Field'], null, null, false, true, null],
+        563 => [[['_route' => 'RemoteMyProjects', '_controller' => 'App\\Controller\\UserController::indexRemoveMyProjects'], ['id'], null, null, false, true, null]],
+        586 => [[['_route' => 'RemoteMyCourses', '_controller' => 'App\\Controller\\UserController::indexRemoveMyCourses'], ['id'], null, null, false, true, null]],
+        631 => [[['_route' => 'mail', '_controller' => 'App\\Controller\\MailController::index'], ['name', 'mail', 'uniqueId'], null, null, false, true, null]],
+        639 => [[['_route' => 'mail.verif', '_controller' => 'App\\Controller\\MailController::verificationEmail'], ['mail', 'uniqueId'], null, null, false, true, null]],
+        684 => [[['_route' => 'ProjectView', 'num' => '0', '_controller' => 'App\\Controller\\ProjectsController::index'], ['num', 'ProjectName', 'Field'], null, null, false, true, null]],
+        727 => [
+            [['_route' => 'AddProject', 'num' => '0', '_controller' => 'App\\Controller\\ProjectsController::indexAddProject'], ['num', 'ProjectName', 'Field'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

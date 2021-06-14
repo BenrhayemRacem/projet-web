@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ProjectRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -23,15 +25,19 @@ class Project
     private $Name;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="projects")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $User;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $Path;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=User::class, mappedBy="Projects")
+     */
+    private $users;
+
+    public function __construct()
+    {
+        $this->users = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -50,18 +56,6 @@ class Project
         return $this;
     }
 
-    public function getUser(): ?User
-    {
-        return $this->User;
-    }
-
-    public function setUser(?User $User): self
-    {
-        $this->User = $User;
-
-        return $this;
-    }
-
     public function getPath(): ?string
     {
         return $this->Path;
@@ -70,6 +64,33 @@ class Project
     public function setPath(string $Path): self
     {
         $this->Path = $Path;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|User[]
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): self
+    {
+        if (!$this->users->contains($user)) {
+            $this->users[] = $user;
+            $user->addProject($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): self
+    {
+        if ($this->users->removeElement($user)) {
+            $user->removeProject($this);
+        }
 
         return $this;
     }

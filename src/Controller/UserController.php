@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Course;
+use App\Entity\Project;
 use App\Entity\User;
 
 use App\Form\changepasswdType;
@@ -20,78 +21,18 @@ class UserController extends AbstractController
     /**
      * @Route("/Profile", name="Profile")
      */
-    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request)
+    public function index(): Response
     {
         $user = $this->getUser();
-        $newUser = new User();
-        $form = $this->createForm(changepasswdType::class, $newUser);
-
-        try {
-            $form->handleRequest($request);
-        } catch (\Exception $e) {
-            echo "failed : ".$e->getMessage();
-        }
-
-
-        if ($form->isSubmitted() && $form->isValid()) {
-
-            $oldpassword = $passwordEncoder->encodePassword($newUser , $form->get("oldPassword")->getData()) ;
-
-                if ($passwordEncoder->isPasswordValid($user , $form->get("oldPassword")->getData())) {
-
-                    $newpassword = $passwordEncoder->encodePassword($newUser , $form->get('plainPassword')->getData()) ;
-                    $user->setPassword($newpassword);
-
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($user);
-                    $em->flush();
-
-                    return $this->render('user/EditProfile.html.twig', [
-                        'form' => $form->createView(),
-                        'user' => $user,
-
-                    ]);
-
-                            }
-
-
-
-
-        }
-        return $this->render('user/EditProfile.html.twig', [
-            'form' => $form->createView(),
-            'user' => $user,
-            'message' => 'password updated succesfully ']) ;
-    }
-    public function indexProfile(): Response
-    {   $user = $this->getUser();
-        return $this->render('user/Profile.html.twig', [
-            'controller_name' => 'UserController',
-            'user' =>$user
-        ]);
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
+                    return $this->render('user/Profile.html.twig', [
+                        'user' => $user, ]);}
 
     /**
-     * @Route("/EditProfilePassword", name="Edit_Profile_Password")
+     * @Route("/EditProfile", name="Edit_Profile")
      */
-    public function indexPassword(UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    public function indexEditInfo(Request $request): Response
     {
         $user = $this->getUser();
-        $user = new User();
         $form = $this->createForm(UserModifyType::class, $user);
         try {
             $form->handleRequest($request);
@@ -100,52 +41,18 @@ class UserController extends AbstractController
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
-            $user->setPassword($password);
-
-            return $this->render('user/EditProfilePassword.html.twig', [
+           $this->addFlash('success','Changes Applied');
+            return $this->render('user/Profile.html.twig', [
                 'controller_name' => 'UserController',
                 'user' => $user
             ]);
-        }
-        return  $this->render('user/EditProfilePassword.html.twig', [
-            'controller_name' => 'UserController',
-            'user' => $user
-        ]);
-    }
-
-    /**
-     * @Route("/EditProfileInfo", name="Edit_Profile_Info")
-     */
-    public function indexEditInfo(UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
-    {
-        $user = $this->getUser();
-        $user = new User();
-        $form = $this->createForm(UserModifyType::class, $user);
-        try {
-            $form->handleRequest($request);
-        } catch (\Exception $e) {
-            echo "failed : " . $e->getMessage();
-        }
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
-            $user->setPassword($password);
-
-            return $this->render('user/EditProfileInfo.html.twig', [
-                'controller_name' => 'UserController',
-                'user' => $user
-
-
-            ]);
-        }
+        } else { $this->addFlash('error','Changes not applied , please try again');}
         return $this->render(
-            'user/EditProfilePassword.html.twig', [
-                'controller_name' => 'UserController',
-                'user' => $user
+            'user/EditProfileInfo.html.twig', [
+            'form' => $form->createView(),
+            'user' => $user
             ]);
     }
-
 
     /**
      * @Route("/home/C/P", name="Discover")
@@ -219,9 +126,24 @@ class UserController extends AbstractController
     public function indexMyProjects(): Response
     {
         $user=$this->getUser() ;
+        $Projects = $user->getProjects();
         return $this->render('user/Project.html.twig', [
-            'user' =>$user
+            'user' =>$user ,
+            'Projects' => $Projects
         ]);
+    }
+
+    /**
+     * @Route("/RemoveMyProject/{id}", name="RemoteMyProjects")
+     */
+    public function indexRemoveMyProjects(Project $id,EntityManagerInterface $manager): Response
+    {
+        $user=$this->getUser() ;
+        $user->removeProject($id);
+        $manager->persist($user);
+        $manager->flush();
+        $this->addFlash('success','successfully left the project');
+        return $this->redirectToRoute('MyProjects');
     }
 
     /**

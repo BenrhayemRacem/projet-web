@@ -33,6 +33,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
             'Contents' => [$this, 'block_Contents'],
             'ProjectDescription' => [$this, 'block_ProjectDescription'],
             'Galerie' => [$this, 'block_Galerie'],
+            'JoinProject' => [$this, 'block_JoinProject'],
         ];
     }
 
@@ -91,8 +92,22 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "ProjectTitle"));
 
         // line 5
+        echo "    ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 5, $this->source); })()), "session", [], "any", false, false, false, 5), "flashbag", [], "any", false, false, false, 5), "get", [0 => "success"], "method", false, false, false, 5));
+        foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
+            // line 6
+            echo "        <div class=\"alert alert-success\"> ";
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
+            echo "</div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 8
         echo "    <h1 id=\"Project-title\">";
-        echo twig_escape_filter($this->env, (isset($context["ProjectName"]) || array_key_exists("ProjectName", $context) ? $context["ProjectName"] : (function () { throw new RuntimeError('Variable "ProjectName" does not exist.', 5, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["ProjectName"]) || array_key_exists("ProjectName", $context) ? $context["ProjectName"] : (function () { throw new RuntimeError('Variable "ProjectName" does not exist.', 8, $this->source); })()), "html", null, true);
         echo "</h1>
 ";
         
@@ -103,7 +118,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 8
+    // line 11
     public function block_ProjectField($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -113,7 +128,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "ProjectField"));
 
-        echo twig_escape_filter($this->env, (isset($context["Field"]) || array_key_exists("Field", $context) ? $context["Field"] : (function () { throw new RuntimeError('Variable "Field" does not exist.', 8, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["Field"]) || array_key_exists("Field", $context) ? $context["Field"] : (function () { throw new RuntimeError('Variable "Field" does not exist.', 11, $this->source); })()), "html", null, true);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -122,7 +137,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 10
+    // line 13
     public function block_Description($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +147,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Description"));
 
-        // line 11
+        // line 14
         echo "    <div class=\"img-post\">
         <iframe width=\"800px\" height=\"280px\" src=\"https://www.youtube.com/embed/ezyeeNi4g2I\" title=\"YouTube video player\" frameborder=\"0\"
                 allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"
@@ -153,7 +168,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 24
+    // line 27
     public function block_Designer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -163,9 +178,9 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Designer"));
 
-        // line 25
+        // line 28
         echo "      <div class=\"header\">
-          <h2 class=\"SmallHeading\">A Word from the designer</h2>
+          <h2 class=\"SmallHeading\">A Word from the instructor</h2>
       </div>
       <div class=\"body\">
           <ul class=\"comment-reply list-unstyled\">
@@ -187,7 +202,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 42
+    // line 45
     public function block_Contents($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -197,7 +212,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Contents"));
 
-        // line 43
+        // line 46
         echo "    <ol class=\"list-unstyled m-b-0\" id=\"Content\" >
         <li><a href=\"#Intro\">1. Find your “big idea”</a></li>
         <li><a href=\"#Second\">2. Research your genre</a></li>
@@ -213,7 +228,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 51
+    // line 54
     public function block_ProjectDescription($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -223,7 +238,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "ProjectDescription"));
 
-        // line 52
+        // line 55
         echo "     <div id=\"Intro\">
          <h3 class=\"SubTitle\">Find your “big idea”</h3>
          <p>
@@ -319,7 +334,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
-    // line 140
+    // line 143
     public function block_Galerie($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -329,7 +344,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Galerie"));
 
-        // line 141
+        // line 144
         echo "     <div class=\"card\">
          <div class=\"header\">
              <h2 class=\"SmallHeading\">Galerie</h2>
@@ -364,6 +379,29 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     }
 
+    // line 171
+    public function block_JoinProject($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "JoinProject"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "JoinProject"));
+
+        // line 172
+        echo "     <div><a href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("AddProject", ["num" => 2, "ProjectName" => (isset($context["ProjectName"]) || array_key_exists("ProjectName", $context) ? $context["ProjectName"] : (function () { throw new RuntimeError('Variable "ProjectName" does not exist.', 172, $this->source); })()), "Field" => (isset($context["Field"]) || array_key_exists("Field", $context) ? $context["Field"] : (function () { throw new RuntimeError('Variable "Field" does not exist.', 172, $this->source); })())]), "html", null, true);
+        echo "\" class=\"btn-grad\">Join the project</a></div>
+ ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "Projects/index2.html.twig";
@@ -376,7 +414,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
     public function getDebugInfo()
     {
-        return array (  333 => 141,  323 => 140,  227 => 52,  217 => 51,  201 => 43,  191 => 42,  167 => 25,  157 => 24,  136 => 11,  126 => 10,  107 => 8,  94 => 5,  84 => 4,  65 => 2,  42 => 1,);
+        return array (  393 => 172,  383 => 171,  348 => 144,  338 => 143,  242 => 55,  232 => 54,  216 => 46,  206 => 45,  182 => 28,  172 => 27,  151 => 14,  141 => 13,  122 => 11,  109 => 8,  100 => 6,  95 => 5,  85 => 4,  66 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -385,6 +423,9 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 {% block Title %}{{ ProjectName }}{% endblock %}
 
 {% block ProjectTitle %}
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class=\"alert alert-success\"> {{ flashMessage }}</div>
+    {% endfor %}
     <h1 id=\"Project-title\">{{ ProjectName }}</h1>
 {% endblock %}
 
@@ -406,7 +447,7 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
 
   {% block Designer %}
       <div class=\"header\">
-          <h2 class=\"SmallHeading\">A Word from the designer</h2>
+          <h2 class=\"SmallHeading\">A Word from the instructor</h2>
       </div>
       <div class=\"body\">
           <ul class=\"comment-reply list-unstyled\">
@@ -548,6 +589,8 @@ class __TwigTemplate_5318ad0ccb57a0cb9f65f4f9b9b7d95e111823d13257fbc52caa3ea72e0
      </div>
  {% endblock %}
 
-", "Projects/index2.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\Projects\\index2.html.twig");
+ {% block JoinProject %}
+     <div><a href=\"{{path('AddProject',{'num': 2 ,'ProjectName' : ProjectName , 'Field': Field})}}\" class=\"btn-grad\">Join the project</a></div>
+ {% endblock %}", "Projects/index2.html.twig", "C:\\Users\\DELL\\OneDrive\\Bureau\\GL2-Sem2\\DeveloppementWeb\\projet-web\\templates\\Projects\\index2.html.twig");
     }
 }

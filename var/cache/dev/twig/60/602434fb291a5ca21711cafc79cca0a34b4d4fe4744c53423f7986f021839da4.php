@@ -234,17 +234,20 @@ class __TwigTemplate_0f0d240774690bfaea3ffec6c4105c21b2e9d4d73ab20dd3e2d81466083
         }
         if (!$context['_iterated']) {
             // line 53
-            echo "                <tr class=\"table-warning\">
-                    You still didn't sign up in any course
-                </tr>
-                ";
+            echo "                </tbody>
+            </table>
+        </div>
+        <div class=\"container alert alert-warning\" style=\"width: 85%\">
+            You still didn't join any project
+        </div>
+        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Course'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 57
-        echo "                </tbody>
-            </table>
+        // line 60
+        echo "        </tbody>
+        </table>
         </div>
 
     </section>
@@ -271,7 +274,7 @@ class __TwigTemplate_0f0d240774690bfaea3ffec6c4105c21b2e9d4d73ab20dd3e2d81466083
 
     public function getDebugInfo()
     {
-        return array (  246 => 57,  237 => 53,  220 => 49,  214 => 46,  209 => 44,  205 => 43,  202 => 42,  184 => 41,  169 => 28,  160 => 26,  156 => 25,  152 => 23,  142 => 22,  129 => 18,  120 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  249 => 60,  237 => 53,  220 => 49,  214 => 46,  209 => 44,  205 => 43,  202 => 42,  184 => 41,  169 => 28,  160 => 26,  156 => 25,  152 => 23,  142 => 22,  129 => 18,  120 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -328,12 +331,15 @@ class __TwigTemplate_0f0d240774690bfaea3ffec6c4105c21b2e9d4d73ab20dd3e2d81466083
                             Leave Course</a></div></td>
                 </tr>
                 {% else %}
-                <tr class=\"table-warning\">
-                    You still didn't sign up in any course
-                </tr>
-                {% endfor%}
                 </tbody>
             </table>
+        </div>
+        <div class=\"container alert alert-warning\" style=\"width: 85%\">
+            You still didn't join any project
+        </div>
+        {% endfor%}
+        </tbody>
+        </table>
         </div>
 
     </section>

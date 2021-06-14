@@ -16,16 +16,10 @@ class UserModifyType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('password')
             ->add('FirstName', TextType::class)
             ->add('LastName', TextType::class)
             ->add('Bio',TextareaType::class)
             ->add('address')
-            ->add('plainPassword', RepeatedType::class, array(
-                'type' => PasswordType::class ,
-                'first_options'=> array('label'=>'Password') ,
-                'second_options' => array('label' => 'Repeat Password') ,
-            ))
         ;
     }
 

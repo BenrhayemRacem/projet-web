@@ -36,6 +36,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
             'ProjectDescription' => [$this, 'block_ProjectDescription'],
             'Contents' => [$this, 'block_Contents'],
             'Galerie' => [$this, 'block_Galerie'],
+            'JoinProject' => [$this, 'block_JoinProject'],
             'Scripts' => [$this, 'block_Scripts'],
         ];
     }
@@ -239,8 +240,11 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
         echo "                    <!-- /Galerie -->
 
                     <div class=\"card\" style=\"background-color: white ; box-shadow: none;\">
-                       <div><a href=\"";
+                        ";
         // line 148
+        $this->displayBlock('JoinProject', $context, $blocks);
+        // line 151
+        echo "                       <div><a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Discover_LP");
         echo "\" class=\"btn-grad\">Go back</a></div>
                     </div>
@@ -336,7 +340,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
 
         // line 58
         echo "                        <div class=\"header\">
-                            <h2 class=\"SmallHeading\">A Word from the designer</h2>
+                            <h2 class=\"SmallHeading\">A Word from the instructor</h2>
                         </div>
                         <div class=\"body\">
                             <ul class=\"comment-reply list-unstyled\">
@@ -344,7 +348,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
                                     <div class=\"icon-box col-md-4\"><img class=\"img-fluid img-thumbnail\"  id=\"DesignerPic\" src=\"https://bootdey.com/img/Content/avatar/avatar7.png\" alt=\"Designer Pic\" style=\"border-radius: 50%\" width=\"150px\" height=\"150px\"></div>
                                     <div class=\"text-box col-md-7 \" style=\"margin: 10px 0 0 30px ; font-weight: normal; color: #1a1a1a\">
                                         <p> Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </p> <br>
-                                        <span id=\"DesignerWord\"> <i class=\"fas fa-splotch\"></i> - Designer's name </span>
+                                        <span id=\"DesignerWord\"> <i class=\"fas fa-splotch\"></i> - the instructor's name </span>
                                     </div>
                                 </li>
                         </div>
@@ -454,7 +458,28 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
 
     }
 
-    // line 157
+    // line 148
+    public function block_JoinProject($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "JoinProject"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "JoinProject"));
+
+        // line 149
+        echo "                        <div><a href=\"#\" class=\"btn-grad\">Join the project</a></div>
+                        ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 160
     public function block_Scripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -464,12 +489,12 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "Scripts"));
 
-        // line 158
+        // line 161
         echo "    ";
         $this->displayParentBlock("Scripts", $context, $blocks);
         echo "
     <script src=\"";
-        // line 159
+        // line 162
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Scripts/ProjectScripts/ImageDesignerScript.js"), "html", null, true);
         echo "\"></script>
 ";
@@ -493,7 +518,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
 
     public function getDebugInfo()
     {
-        return array (  473 => 159,  468 => 158,  458 => 157,  423 => 119,  413 => 118,  391 => 99,  381 => 98,  371 => 83,  361 => 82,  338 => 58,  328 => 57,  312 => 44,  302 => 43,  283 => 31,  272 => 28,  262 => 27,  244 => 148,  239 => 145,  237 => 118,  229 => 112,  227 => 98,  211 => 84,  209 => 82,  197 => 72,  195 => 57,  187 => 51,  185 => 43,  170 => 31,  167 => 30,  165 => 27,  160 => 24,  150 => 23,  137 => 19,  131 => 16,  125 => 12,  115 => 11,  102 => 7,  97 => 6,  87 => 5,  69 => 3,  46 => 1,);
+        return array (  498 => 162,  493 => 161,  483 => 160,  472 => 149,  462 => 148,  427 => 119,  417 => 118,  395 => 99,  385 => 98,  375 => 83,  365 => 82,  342 => 58,  332 => 57,  316 => 44,  306 => 43,  287 => 31,  276 => 28,  266 => 27,  247 => 151,  245 => 148,  240 => 145,  238 => 118,  230 => 112,  228 => 98,  212 => 84,  210 => 82,  198 => 72,  196 => 57,  188 => 51,  186 => 43,  171 => 31,  168 => 30,  166 => 27,  161 => 24,  151 => 23,  138 => 19,  132 => 16,  126 => 12,  116 => 11,  103 => 7,  98 => 6,  88 => 5,  70 => 3,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -556,7 +581,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
                     <div class=\"card\">
                         {% block Designer %}
                         <div class=\"header\">
-                            <h2 class=\"SmallHeading\">A Word from the designer</h2>
+                            <h2 class=\"SmallHeading\">A Word from the instructor</h2>
                         </div>
                         <div class=\"body\">
                             <ul class=\"comment-reply list-unstyled\">
@@ -564,7 +589,7 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
                                     <div class=\"icon-box col-md-4\"><img class=\"img-fluid img-thumbnail\"  id=\"DesignerPic\" src=\"https://bootdey.com/img/Content/avatar/avatar7.png\" alt=\"Designer Pic\" style=\"border-radius: 50%\" width=\"150px\" height=\"150px\"></div>
                                     <div class=\"text-box col-md-7 \" style=\"margin: 10px 0 0 30px ; font-weight: normal; color: #1a1a1a\">
                                         <p> Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </p> <br>
-                                        <span id=\"DesignerWord\"> <i class=\"fas fa-splotch\"></i> - Designer's name </span>
+                                        <span id=\"DesignerWord\"> <i class=\"fas fa-splotch\"></i> - the instructor's name </span>
                                     </div>
                                 </li>
                         </div>
@@ -645,6 +670,9 @@ class __TwigTemplate_c120eedb9ee90031d9da062615924bb832f4edbf18d831d75f74f936b9f
                     <!-- /Galerie -->
 
                     <div class=\"card\" style=\"background-color: white ; box-shadow: none;\">
+                        {% block JoinProject %}
+                        <div><a href=\"#\" class=\"btn-grad\">Join the project</a></div>
+                        {% endblock %}
                        <div><a href=\"{{ path('Discover_LP') }}\" class=\"btn-grad\">Go back</a></div>
                     </div>
                 </div>

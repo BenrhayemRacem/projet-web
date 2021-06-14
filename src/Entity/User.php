@@ -65,7 +65,6 @@ class User implements UserInterface
     private $address;
 
     /**
-
      * @Assert\NotBlank()
      * @Assert\Length(max=4096)
      */
@@ -82,11 +81,11 @@ class User implements UserInterface
         $this->roles = array('ROLE_USER');
         $this->Course = new ArrayCollection();
         $this->Courses = new ArrayCollection();
-        $this->projects = new ArrayCollection();
+        $this->Projects = new ArrayCollection();
     }
 
-        /**
-         *
+    /**
+     *
      * @ORM\OneToMany(targetEntity=Course::class, mappedBy="user")
      */
 
@@ -98,10 +97,9 @@ class User implements UserInterface
     private $Courses;
 
     /**
-     * @ORM\OneToMany(targetEntity=Project::class, mappedBy="User")
+     * @ORM\ManyToMany(targetEntity=Project::class, inversedBy="users")
      */
-    private $projects;
-
+    private $Projects;
 
 
     public function getId(): ?int
@@ -246,7 +244,7 @@ class User implements UserInterface
     public function setPlainPassword(?string $plainPassword): self
     {
         $this->plainPassword = $plainPassword;
-        return $this ;
+        return $this;
     }
 
     /**
@@ -293,14 +291,13 @@ class User implements UserInterface
      */
     public function getProjects(): Collection
     {
-        return $this->projects;
+        return $this->Projects;
     }
 
     public function addProject(Project $project): self
     {
-        if (!$this->projects->contains($project)) {
-            $this->projects[] = $project;
-            $project->setUser($this);
+        if (!$this->Projects->contains($project)) {
+            $this->Projects[] = $project;
         }
 
         return $this;
@@ -308,12 +305,7 @@ class User implements UserInterface
 
     public function removeProject(Project $project): self
     {
-        if ($this->projects->removeElement($project)) {
-            // set the owning side to null (unless already changed)
-            if ($project->getUser() === $this) {
-                $project->setUser(null);
-            }
-        }
+        $this->Projects->removeElement($project);
 
         return $this;
     }

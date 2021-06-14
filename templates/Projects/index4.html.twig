@@ -2,6 +2,9 @@
 {% block Title %}{{ ProjectName }}{% endblock %}
 
 {% block ProjectTitle %}
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="alert alert-success"> {{ flashMessage }}</div>
+    {% endfor %}
     <h1 id="Project-title">{{ ProjectName }}</h1>
 {% endblock %}
 
@@ -20,7 +23,7 @@
 
   {% block Designer %}
       <div class="header">
-          <h2 class="SmallHeading">A Word from the designer</h2>
+          <h2 class="SmallHeading">A Word from the instructor</h2>
       </div>
       <div class="body">
           <ul class="comment-reply list-unstyled">
@@ -136,5 +139,9 @@
              </div>
          </div>
      </div>
+ {% endblock %}
+
+ {% block JoinProject %}
+     <div><a href="{{path('AddProject',{'num': 4 ,'ProjectName' : ProjectName , 'Field': Field})}}" class="btn-grad">Join the project</a></div>
  {% endblock %}
 

@@ -215,7 +215,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
 
             <a href=\"";
         // line 72
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 2, "ProjectName" => "Write Your First Bestselling  Book", "Field" => "Languages"]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ProjectView", ["num" => 2, "ProjectName" => "Write Your First Bestselling Book", "Field" => "Languages"]), "html", null, true);
         echo "\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
@@ -393,7 +393,7 @@ class __TwigTemplate_f1ca4053d36e75ece865f2a50fc9236fab6c075b0175280e29d83b6e182
             </div>
             <!-- / project-info-box -->
 
-            <a href=\"{{ path('ProjectView' , {'num':2 , 'ProjectName':'Write Your First Bestselling  Book','Field':'Languages'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
+            <a href=\"{{ path('ProjectView' , {'num':2 , 'ProjectName':'Write Your First Bestselling Book','Field':'Languages'}) }}\" class=\"btn-grad\">VIEW PROJECT</a>
         </div>
         <!-- / column -->
     </div>

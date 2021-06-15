@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '07ea7dac835deaff99d9cd12bf8d71a6fc6cad6f',
+    'reference' => '1ca6da53fedc6d997461a446a3e6303263392e93',
     'name' => '__root__',
   ),
   'versions' => 
@@ -44,7 +44,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '07ea7dac835deaff99d9cd12bf8d71a6fc6cad6f',
+      'reference' => '1ca6da53fedc6d997461a446a3e6303263392e93',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -1356,9 +1356,23 @@ return $installed[0]['root'];
 
 
 
+
 public static function getRawData()
 {
+@trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
+
 return self::$installed;
+}
+
+
+
+
+
+
+
+public static function getAllRawData()
+{
+return self::getInstalled();
 }
 
 

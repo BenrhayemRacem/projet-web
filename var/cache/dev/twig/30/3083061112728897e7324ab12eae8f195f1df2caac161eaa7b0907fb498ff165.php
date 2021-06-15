@@ -444,6 +444,6 @@ class __TwigTemplate_a2b347b213e9acfa6c1535d6b1806ea2d4e590a26bc5ead87bc911e7208
     <!-- / row list-project -->
 </div>
 
-{% endblock  %}", "user/Discover_Projects/DiscoverPLP.html.twig", "D:\\newalkheeeer\\projet-web\\templates\\user\\Discover_Projects\\DiscoverPLP.html.twig");
+{% endblock  %}", "user/Discover_Projects/DiscoverPLP.html.twig", "C:\\Users\\zayne\\projet-web\\templates\\user\\Discover_Projects\\DiscoverPLP.html.twig");
     }
 }

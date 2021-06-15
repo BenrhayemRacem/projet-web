@@ -30,13 +30,13 @@ class CourseFixtures extends Fixture
 
         $course = new Course();
         $course->setName('français');
-        $course->setPath('françaisCourse');
+        $course->setPath('francais');
         $manager->persist($course);
         $manager->flush();
 
         $course = new Course();
         $course->setName('anglais');
-        $course->setPath('anglaisCourse');
+        $course->setPath('anglais');
         $manager->persist($course);
         $manager->flush();
     }

@@ -43,7 +43,7 @@
                     <th scope="row"><h4 style="margin: 40px 20px 0 20px ">{{ loop.index }}</h4></th>
                     <td><h4 style="margin: 40px 20px 0 20px ">{{ Course.Name }}</h4></td>
                     <td><div class="container">
-                            <a href="{{ path(''~Course.Path~'') }}" class="btn-grad Modified" style="padding: 10px 0 ;">
+                            <a href="{{ Course.Path }}" class="btn-grad Modified" style="padding: 10px 0 ;">
                                 Go to Course</a></div></td>
                     <td><div class="container">
                             <a href="{{ path('RemoteMyCourses',{'id':Course.id}) }}" class="btn-grad Modified" style="padding: 10px 0 ;">
@@ -54,7 +54,7 @@
             </table>
         </div>
         <div class="container alert alert-warning" style="width: 85%">
-            You still didn't join any project
+            You still didn't join any course
         </div>
         {% endfor%}
         </tbody>

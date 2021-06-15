@@ -55,13 +55,14 @@
                     <li></li>
                     <li></li>
                     <li> <div class="row dropdown User">
-                        {% block greetings %} <div class="col Greeting "> Welcome , Hadil </div> {% endblock %}
+                        {% block greetings %} <div class="col Greeting "> Welcome,{{ app.user.FirstName}} </div> {% endblock %}
                                 <div class=" col wrapperUser dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="UserIcon"> <i class="fas fa-user"></i></div>
                                 </div>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width : 60% ; left : 5% ;">
                                 <li><a class="dropdown-item" href="{{ path('Profile') }}">My Profile</a></li>
-                                <li><a class="dropdown-item" href="{{ path('Edit_Profile') }}">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ path('Edit_Profile') }}">Edit Profile Infos</a></li>
+                                <li><a class="dropdown-item" href="{{ path('Edit_Passwd') }}">Edit Password</a></li>
                                 <li><a class="dropdown-item" href="{{ path('app_logout') }}">Log out</a></li>
                             </ul>
                         </div>

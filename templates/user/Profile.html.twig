@@ -20,7 +20,13 @@
  {% endblock %}
 
 {% block Body %}
+
     <div id = "Profile" class="container">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
         <div class="main-body">
             <div class="row">
                 <div class="col-lg-4">
@@ -99,7 +105,7 @@
                             </div>
 
                             <div class="row" style=" width: 50%; font-size: 15px">
-                                <a class="btn-grad" id="ChangePassword" href="{{ path('Edit_Profile') }}" style="margin-top: 0;">Change password</a>
+                                <a class="btn-grad" id="ChangePassword" href="{{ path('Edit_Passwd') }}" style="margin-top: 0;">Change password</a>
                             </div>
                         </div>
                     </div>

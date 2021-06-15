@@ -16,7 +16,7 @@ class ForgetPasswdController extends AbstractController
 {
     /**
      *
-     * @Route("/forget" , name="forget")
+     * @Route("/forget" , name="forgetPasswd")
      *
      *
      */

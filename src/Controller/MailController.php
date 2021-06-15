@@ -71,8 +71,8 @@ class MailController extends AbstractController
      * @Route("/forgetPasswdEmail/{mail}/{newPasswd}" , name="emailForgetPasswd")
      */
 
-    public function envoyerEmail($mail , $newPasswd) {
-
+    public function envoyerEmail($mail, $newPasswd)
+    {
         $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
             ->setUsername("ltconlineschool@gmail.com")
             ->setPassword("projetweb") ;
@@ -95,6 +95,4 @@ class MailController extends AbstractController
 
         return $this->render('home.html.twig') ;
     }
-
-
 }

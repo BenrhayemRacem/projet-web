@@ -24,13 +24,14 @@ class UserController extends AbstractController
     public function index(): Response
     {
         $user = $this->getUser();
-                    return $this->render('user/Profile.html.twig', [
-                        'user' => $user, ]);}
+        return $this->render('user/Profile.html.twig', [
+                        'user' => $user, ]);
+    }
 
     /**
      * @Route("/EditProfile", name="Edit_Profile")
      */
-    public function indexEditInfo(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    public function indexEditInfo(EntityManagerInterface $manager, UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
     {
         $user = $this->getUser();
         $form = $this->createForm(UserModifyType::class, $user);
@@ -41,32 +42,33 @@ class UserController extends AbstractController
         }
 
 
-        if ($form->isSubmitted() ) {
+        if ($form->isSubmitted()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
 
-           $this->addFlash('success','Changes Applied');
+            $this->addFlash('success', 'Changes Applied');
             return $this->render('user/Profile.html.twig', [
                 'user' => $user,
 
             ]);
-
         };
 
 
 
         return $this->render(
-            'user/EditProfileInfo.html.twig', [
+            'user/EditProfileInfo.html.twig',
+            [
             'form' => $form->createView(),
             'user' => $user
-        ]);
+        ]
+        );
     }
 
     /**
      * @Route("/EditPasswd", name="Edit_Passwd")
      */
-    public function indexEditPasswd(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    public function indexEditPasswd(EntityManagerInterface $manager, UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
     {
         $user = $this->getUser();
         $newUser = new User();
@@ -79,35 +81,30 @@ class UserController extends AbstractController
         }
 
         if ($formPass->isSubmitted() && $formPass->isValid()) {
-
-
-
-            if ($passwordEncoder->isPasswordValid($user , $formPass->get("oldPassword")->getData())) {
-
-                $newpassword = $passwordEncoder->encodePassword($newUser , $formPass->get('plainPassword')->getData()) ;
+            if ($passwordEncoder->isPasswordValid($user, $formPass->get("oldPassword")->getData())) {
+                $newpassword = $passwordEncoder->encodePassword($newUser, $formPass->get('plainPassword')->getData()) ;
                 $user->setPassword($newpassword);
 
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);
                 $em->flush();
-                $this->addFlash('success' , "password updated successfully");
+                $this->addFlash('success', "password updated successfully");
                 return $this->render('user/Profile.html.twig', [
                     'formPass' => $formPass->createView(),
                     'user' => $user,
 
                 ]);
-
             } else {
-                $this->addFlash("error" ,"old password is wrong ");
+                $this->addFlash("error", "old password is wrong ");
             }
-
-
         }
         return $this->render(
-            'user/EditProfilePassword.html.twig', [
+            'user/EditProfilePassword.html.twig',
+            [
             'formPass' => $formPass->createView(),
             'user' => $user
-        ]);
+        ]
+        );
     }
 
 
@@ -201,13 +198,13 @@ class UserController extends AbstractController
     /**
      * @Route("/RemoveMyProject/{id}", name="RemoteMyProjects")
      */
-    public function indexRemoveMyProjects(Project $id,EntityManagerInterface $manager): Response
+    public function indexRemoveMyProjects(Project $id, EntityManagerInterface $manager): Response
     {
         $user=$this->getUser() ;
         $user->removeProject($id);
         $manager->persist($user);
         $manager->flush();
-        $this->addFlash('success','successfully left the project');
+        $this->addFlash('success', 'successfully left the project');
         return $this->redirectToRoute('MyProjects');
     }
 
@@ -227,13 +224,13 @@ class UserController extends AbstractController
     /**
      * @Route("/RemoveMyCourse/{id}", name="RemoteMyCourses")
      */
-    public function indexRemoveMyCourses(Course $id,EntityManagerInterface $manager): Response
+    public function indexRemoveMyCourses(Course $id, EntityManagerInterface $manager): Response
     {
         $user=$this->getUser() ;
         $user->removeCourse($id);
         $manager->persist($user);
         $manager->flush();
-        $this->addFlash('success','successfully left the course');
+        $this->addFlash('success', 'successfully left the course');
         return $this->redirectToRoute('MyCourses');
     }
 }

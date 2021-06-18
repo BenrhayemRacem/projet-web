@@ -20,7 +20,7 @@ class ForgetPasswdController extends AbstractController
      *
      *
      */
-    public function index(EntityManagerInterface $manager,UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
+    public function index(EntityManagerInterface $manager, UserPasswordEncoderInterface $passwordEncoder, Request $request): Response
     {
         $user = new User();
         $form = $this->createForm(ForgetPasswordType::class, $user);
@@ -30,24 +30,23 @@ class ForgetPasswdController extends AbstractController
             echo "failed : ".$e->getMessage();
         }
 
-        if($form->isSubmitted()) {
+        if ($form->isSubmitted()) {
             $repository = $this->getDoctrine()->getRepository(User::class);
             $userActual = $repository->findOneBy(array('email' => $user->getUsername())) ;
-          if  (  $userActual) {
-            $newPasswd = Uuid::v4();
+            if ($userActual) {
+                $newPasswd = Uuid::v4();
 
-            $userActual->setPassword($passwordEncoder->encodePassword($userActual, $newPasswd)) ;
-              $em = $this->getDoctrine()->getManager();
-              $em->persist($userActual);
-              $em->flush();
-              return $this->redirectToRoute('emailForgetPasswd' , array(
+                $userActual->setPassword($passwordEncoder->encodePassword($userActual, $newPasswd)) ;
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($userActual);
+                $em->flush();
+                return $this->redirectToRoute('emailForgetPasswd', array(
                   "mail" => $userActual->getUsername(),
                   "newPasswd"=> $newPasswd
               )) ;
-          } else {
-              echo 'ghaleeeeeeeeeeeeeet' ;
-          };
-
+            } else {
+                echo 'ghaleeeeeeeeeeeeeet' ;
+            };
         }
         return $this->render('forget_passwd/index.html.twig', [
             'controller_name' => 'ForgetPasswdController',
